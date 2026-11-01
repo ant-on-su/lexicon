@@ -1,0 +1,25 @@
+*.iml
+.gradle
+/local.properties
+/.idea/
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+.cxx
+
+# Kotlin compiler session data (created by Kotlin 2.x)
+.kotlin/
+
+# Build outputs and signing material
+*.apk
+*.aab
+*.jks
+*.keystore
+keystore.properties
+
+# Secrets
+.env
+
+# Claude Code per-user settings
+.claude/settings.local.json
