@@ -1,5 +1,6 @@
 package com.example.lexicon
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.SystemBarStyle
@@ -33,7 +34,14 @@ class MainActivity : ComponentActivity() {
             navigationBarStyle = SystemBarStyle.light(transparent, transparent),
         )
         val prefs = Prefs(this)
-        setContent { LexiconTheme { LexiconApp(prefs) } }
+        setContent {
+            LexiconTheme {
+                Box {
+                    LexiconApp(prefs)
+                    Splash()
+                }
+            }
+        }
     }
 }
 
@@ -47,10 +55,12 @@ private sealed interface Screen {
 
 @Composable
 private fun LexiconApp(prefs: Prefs) {
-    val assets = LocalContext.current.assets
-    val languages by produceState<List<Language>?>(null) {
-        value = withContext(Dispatchers.IO) { loadLanguages(assets) }
+    val context = LocalContext.current.applicationContext
+    var folder by remember { mutableStateOf(prefs.wordFolder) }
+    val library by produceState<Library?>(null, folder) {
+        value = withContext(Dispatchers.IO) { loadLibrary(context, folder) }
     }
+    val languages = library?.languages
     var screen by remember { mutableStateOf<Screen>(Screen.Languages) }
     val colorOf = { lang: Language -> Pastels[(languages?.indexOf(lang) ?: 0).coerceAtLeast(0) % Pastels.size] }
 
@@ -66,21 +76,36 @@ private fun LexiconApp(prefs: Prefs) {
 
     Box(Modifier.fillMaxSize().background(Cream).safeDrawingPadding()) {
         when (val s = screen) {
-            Screen.Languages -> LanguageScreen(languages, colorOf) { screen = Screen.Modes(it) }
-            is Screen.Modes -> ModeScreen(s.lang, colorOf(s.lang)) { screen = Screen.Start(s.lang) }
-            is Screen.Start -> {
+            Screen.Languages -> LanguageScreen(
+                library = library,
+                colorOf = colorOf,
+                onFolder = { uri ->
+                    val read = Intent.FLAG_GRANT_READ_URI_PERMISSION
+                    folder?.let { runCatching { context.contentResolver.releasePersistableUriPermission(it, read) } }
+                    uri?.let { context.contentResolver.takePersistableUriPermission(it, read) }
+                    prefs.wordFolder = uri
+                    folder = uri
+                },
+                onPick = { screen = Screen.Modes(it) },
+            )
+            is Screen.Modes -> {
                 var options by remember(s.lang) { mutableStateOf(prefs.options(s.lang.folder)) }
-                StartScreen(
+                ModeScreen(
                     lang = s.lang,
                     color = colorOf(s.lang),
                     options = options,
-                    bestMs = prefs.best(bestKey(s.lang, options)),
                     onOptions = {
                         options = it
                         prefs.saveOptions(s.lang.folder, it)
                     },
-                    onStart = { screen = Screen.Racing(s.lang, options) },
+                    onRace = { screen = Screen.Start(s.lang) },
                 )
+            }
+            is Screen.Start -> {
+                val options = remember(s.lang) { prefs.options(s.lang.folder) }
+                StartScreen(s.lang, colorOf(s.lang), options, prefs.best(bestKey(s.lang, options))) {
+                    screen = Screen.Racing(s.lang, options)
+                }
             }
             is Screen.Racing -> RaceScreen(s.lang, colorOf(s.lang), s.options) { totalMs, mistakes, roundsMs ->
                 val key = bestKey(s.lang, s.options)

@@ -1,7 +1,9 @@
 package com.example.lexicon
 
 import android.content.Context
+import android.net.Uri
 import androidx.core.content.edit
+import androidx.core.net.toUri
 
 val PairsRange = 5..10
 val RoundsRange = 3..10
@@ -16,9 +18,14 @@ data class RaceOptions(
     val showGender: Boolean = false,
 )
 
-/** Options per language and best times, remembered between launches. */
+/** Options per language, the word folder and best times, remembered between launches. */
 class Prefs(context: Context) {
     private val prefs = context.getSharedPreferences("lexicon", Context.MODE_PRIVATE)
+
+    /** The folder with the user's own `<language>/words/` YAML files, shared by all languages. */
+    var wordFolder: Uri?
+        get() = prefs.getString("wordFolder", null)?.toUri()
+        set(value) = prefs.edit { putString("wordFolder", value?.toString()) }
 
     fun options(lang: String) = RaceOptions(
         excludedUnits = prefs.getStringSet("$lang.excludedUnits", null).orEmpty().toSet(),

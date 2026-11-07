@@ -1,13 +1,21 @@
 package com.example.lexicon
 
+import android.net.Uri
+import androidx.activity.compose.rememberLauncherForActivityResult
+import androidx.activity.result.contract.ActivityResultContracts
+import androidx.compose.animation.AnimatedVisibility
 import androidx.compose.animation.core.RepeatMode
 import androidx.compose.animation.core.animateFloat
 import androidx.compose.animation.core.infiniteRepeatable
 import androidx.compose.animation.core.rememberInfiniteTransition
 import androidx.compose.animation.core.tween
+import androidx.compose.animation.fadeOut
+import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
+import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.layout.BoxScope
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.ColumnScope
 import androidx.compose.foundation.layout.ExperimentalLayoutApi
@@ -30,14 +38,18 @@ import androidx.compose.material3.ModalBottomSheet
 import androidx.compose.material3.Switch
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.draw.blur
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.graphicsLayer
+import androidx.compose.ui.layout.ContentScale
+import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.AnnotatedString
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
@@ -47,6 +59,7 @@ import com.example.lexicon.ui.theme.Cream
 import com.example.lexicon.ui.theme.Ink
 import com.example.lexicon.ui.theme.Muted
 import com.example.lexicon.ui.theme.SoonGrey
+import kotlinx.coroutines.delay
 
 @Composable
 private fun CenterColumn(content: @Composable ColumnScope.() -> Unit) {
@@ -63,47 +76,67 @@ private fun Title(text: String) {
     Text(text, color = Ink, fontSize = 44.sp, fontWeight = FontWeight.Black, textAlign = TextAlign.Center)
 }
 
+/**
+ * The splash poster, shown over the app for 1.5 s at start, then fading out to reveal it.
+ * A blurred, cropped copy fills the screen around the poster. Taps are swallowed meanwhile.
+ */
 @Composable
-fun LanguageScreen(languages: List<Language>?, colorOf: (Language) -> Color, onPick: (Language) -> Unit) {
-    CenterColumn {
-        Title("Lexicon")
-        when {
-            languages == null -> Unit
-            languages.isEmpty() -> Text("No word lists found", color = Muted)
-            else -> languages.forEach { lang -> ChunkyButton(lang.name, colorOf(lang), { onPick(lang) }) }
+fun Splash() {
+    var visible by rememberSaveable { mutableStateOf(true) }
+    LaunchedEffect(Unit) {
+        delay(1_500)
+        visible = false
+    }
+    AnimatedVisibility(visible, exit = fadeOut()) {
+        Box(Modifier.fillMaxSize().clickable(interactionSource = null, indication = null) {}) {
+            val poster = painterResource(R.drawable.splash)
+            Image(poster, null, Modifier.fillMaxSize().blur(24.dp), contentScale = ContentScale.Crop)
+            Image(poster, "Lexicon", Modifier.fillMaxSize(), contentScale = ContentScale.Fit)
         }
     }
 }
 
 @Composable
-fun ModeScreen(lang: Language, color: Color, onRace: () -> Unit) {
-    CenterColumn {
-        Title(lang.name)
-        ChunkyButton("Learn", SoonGrey, {}, note = "soon", enabled = false)
-        ChunkyButton("Test", SoonGrey, {}, note = "soon", enabled = false)
-        ChunkyButton("Race!", color, onRace)
+fun LanguageScreen(
+    library: Library?,
+    colorOf: (Language) -> Color,
+    onFolder: (Uri?) -> Unit,
+    onPick: (Language) -> Unit,
+) {
+    var showSettings by rememberSaveable { mutableStateOf(false) }
+    Box(Modifier.fillMaxSize()) {
+        CenterColumn {
+            Title("Lexicon")
+            val languages = library?.languages
+            when {
+                languages == null -> Unit
+                languages.isEmpty() -> Text("No word lists found", color = Muted)
+                else -> languages.forEach { lang -> ChunkyButton(lang.name, colorOf(lang), { onPick(lang) }) }
+            }
+        }
+        SettingsButton { showSettings = true }
     }
+    if (showSettings && library != null) GeneralSettings(library, onFolder) { showSettings = false }
 }
 
 @Composable
-fun StartScreen(
-    lang: Language,
-    color: Color,
-    options: RaceOptions,
-    bestMs: Long?,
-    onOptions: (RaceOptions) -> Unit,
-    onStart: () -> Unit,
-) {
-    var showOptions by rememberSaveable { mutableStateOf(false) }
+fun ModeScreen(lang: Language, color: Color, options: RaceOptions, onOptions: (RaceOptions) -> Unit, onRace: () -> Unit) {
+    var showSettings by rememberSaveable { mutableStateOf(false) }
     Box(Modifier.fillMaxSize()) {
-        Chunky(
-            Color.White,
-            { showOptions = true },
-            Modifier.align(Alignment.TopEnd).padding(16.dp).size(56.dp),
-            shape = CircleShape,
-            depth = 4.dp,
-        ) { Text("⚙", fontSize = 26.sp, color = Muted) }
+        CenterColumn {
+            Title(lang.name)
+            ChunkyButton("Learn", SoonGrey, {}, note = "soon", enabled = false)
+            ChunkyButton("Test", SoonGrey, {}, note = "soon", enabled = false)
+            ChunkyButton("Race!", color, onRace)
+        }
+        SettingsButton { showSettings = true }
+    }
+    if (showSettings) LanguageSettings(lang, color, options, onOptions) { showSettings = false }
+}
 
+@Composable
+fun StartScreen(lang: Language, color: Color, options: RaceOptions, bestMs: Long?, onStart: () -> Unit) {
+    Box(Modifier.fillMaxSize()) {
         Column(
             Modifier.align(Alignment.Center).padding(24.dp),
             verticalArrangement = Arrangement.spacedBy(24.dp),
@@ -118,18 +151,22 @@ fun StartScreen(
             if (bestMs != null) Text("Best: ${formatTime(bestMs)}", color = Ink, fontWeight = FontWeight.Bold)
         }
     }
-    if (showOptions) OptionsSheet(lang, color, options, onOptions) { showOptions = false }
+}
+
+@Composable
+private fun BoxScope.SettingsButton(onClick: () -> Unit) {
+    Chunky(
+        Color.White,
+        onClick,
+        Modifier.align(Alignment.TopEnd).padding(16.dp).size(56.dp),
+        shape = CircleShape,
+        depth = 4.dp,
+    ) { Text("⚙", fontSize = 26.sp, color = Muted) }
 }
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-private fun OptionsSheet(
-    lang: Language,
-    color: Color,
-    options: RaceOptions,
-    onChange: (RaceOptions) -> Unit,
-    onDismiss: () -> Unit,
-) {
+private fun SettingsSheet(onDismiss: () -> Unit, content: @Composable ColumnScope.() -> Unit) {
     ModalBottomSheet(onDismissRequest = onDismiss, containerColor = Cream) {
         Column(
             Modifier
@@ -138,46 +175,93 @@ private fun OptionsSheet(
                 .padding(horizontal = 24.dp)
                 .padding(bottom = 32.dp),
             verticalArrangement = Arrangement.spacedBy(12.dp),
-        ) {
-            Heading("Units")
-            val included = lang.activeUnits(options).map { it.id }.toSet()
-            lang.units.forEach { unit ->
-                val on = unit.id in included
-                val isLast = on && included.size == 1
-                Row(
-                    Modifier.fillMaxWidth().toggleable(on, enabled = !isLast) {
-                        val excluded = if (it) lang.units.map { u -> u.id } - included - unit.id else lang.units.map { u -> u.id } - included + unit.id
-                        onChange(options.copy(excludedUnits = excluded.toSet()))
-                    },
-                    verticalAlignment = Alignment.CenterVertically,
-                ) {
-                    Checkbox(on, onCheckedChange = null, enabled = !isLast)
-                    Text(unit.title, Modifier.padding(start = 8.dp), color = Ink)
-                }
-            }
+            content = content,
+        )
+    }
+}
 
-            Heading("Direction")
-            Row(horizontalArrangement = Arrangement.spacedBy(12.dp)) {
-                listOf(false, true).forEach { reverse ->
-                    val (from, to) = if (reverse) lang.translationName to lang.name else lang.name to lang.translationName
-                    Chunky(
-                        if (options.reverse == reverse) color else Color.White,
-                        { onChange(options.copy(reverse = reverse)) },
-                        Modifier.weight(1f).height(64.dp),
-                        shape = RoundedCornerShape(20.dp),
-                        depth = 4.dp,
-                    ) { FitText(AnnotatedString("$from → $to"), maxSize = 16.sp, Modifier.padding(8.dp), maxLines = 1) }
-                }
-            }
-
-            Stepper("Pairs per round", options.pairs, PairsRange) { onChange(options.copy(pairs = it)) }
-            Stepper("Rounds", options.rounds, RoundsRange) { onChange(options.copy(rounds = it)) }
-            SwitchRow("Show forms", options.showForms) { onChange(options.copy(showForms = it)) }
-            if (lang.hasGender) {
-                SwitchRow("Show gender (m/v/o)", options.showGender) { onChange(options.copy(showGender = it)) }
-            }
+/** Settings shared by all languages: the word folder, and any word files that couldn't be used. */
+@Composable
+private fun GeneralSettings(library: Library, onFolder: (Uri?) -> Unit, onDismiss: () -> Unit) {
+    val pick = rememberLauncherForActivityResult(ActivityResultContracts.OpenDocumentTree()) { uri ->
+        if (uri != null) onFolder(uri)
+    }
+    SettingsSheet(onDismiss) {
+        SectionTitle("Word folder")
+        Text(
+            "Your own word lists, in a folder per language with a words folder inside, like the built-in ones. " +
+                "They're read at every start. A unit with the same id replaces the built-in one.",
+            color = Muted,
+        )
+        Text(library.folderName ?: "None: built-in words only", color = Ink, fontSize = 20.sp, fontWeight = FontWeight.Black)
+        Row(horizontalArrangement = Arrangement.spacedBy(12.dp)) {
+            SheetButton("Choose folder", Modifier.weight(1f)) { pick.launch(null) }
+            if (library.folderName != null) SheetButton("Remove", Modifier.weight(1f)) { onFolder(null) }
+        }
+        if (library.problems.isNotEmpty()) {
+            Heading("Skipped")
+            library.problems.forEach { Text(it, color = Muted) }
         }
     }
+}
+
+@Composable
+private fun SheetButton(text: String, modifier: Modifier, color: Color = Color.White, onClick: () -> Unit) {
+    Chunky(color, onClick, modifier.height(64.dp), shape = RoundedCornerShape(20.dp), depth = 4.dp) {
+        FitText(AnnotatedString(text), maxSize = 16.sp, Modifier.padding(8.dp), maxLines = 1)
+    }
+}
+
+/** Settings for one language: the units shared by every mode, then a section per mode. */
+@Composable
+private fun LanguageSettings(
+    lang: Language,
+    color: Color,
+    options: RaceOptions,
+    onChange: (RaceOptions) -> Unit,
+    onDismiss: () -> Unit,
+) {
+    SettingsSheet(onDismiss) {
+        SectionTitle("Units")
+        val included = lang.activeUnits(options).map { it.id }.toSet()
+        lang.units.forEach { unit ->
+            val on = unit.id in included
+            val isLast = on && included.size == 1
+            Row(
+                Modifier.fillMaxWidth().toggleable(on, enabled = !isLast) {
+                    val excluded = if (it) lang.units.map { u -> u.id } - included - unit.id else lang.units.map { u -> u.id } - included + unit.id
+                    onChange(options.copy(excludedUnits = excluded.toSet()))
+                },
+                verticalAlignment = Alignment.CenterVertically,
+            ) {
+                Checkbox(on, onCheckedChange = null, enabled = !isLast)
+                Text(unit.title, Modifier.padding(start = 8.dp), color = Ink)
+            }
+        }
+
+        SectionTitle("Race")
+        Heading("Direction")
+        Row(horizontalArrangement = Arrangement.spacedBy(12.dp)) {
+            listOf(false, true).forEach { reverse ->
+                val (from, to) = if (reverse) lang.translationName to lang.name else lang.name to lang.translationName
+                SheetButton("$from → $to", Modifier.weight(1f), if (options.reverse == reverse) color else Color.White) {
+                    onChange(options.copy(reverse = reverse))
+                }
+            }
+        }
+
+        Stepper("Pairs per round", options.pairs, PairsRange) { onChange(options.copy(pairs = it)) }
+        Stepper("Rounds", options.rounds, RoundsRange) { onChange(options.copy(rounds = it)) }
+        SwitchRow("Show forms", options.showForms) { onChange(options.copy(showForms = it)) }
+        if (lang.hasGender) {
+            SwitchRow("Show gender (m/v/o)", options.showGender) { onChange(options.copy(showGender = it)) }
+        }
+    }
+}
+
+@Composable
+private fun SectionTitle(text: String) {
+    Text(text, color = Ink, fontSize = 30.sp, fontWeight = FontWeight.Black, modifier = Modifier.padding(top = 16.dp))
 }
 
 @Composable

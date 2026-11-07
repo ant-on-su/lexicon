@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <style name="Theme.Lexicon" parent="android:Theme.Material.Light.NoActionBar" />
+    <style name="Theme.Lexicon" parent="android:Theme.Material.Light.NoActionBar">
+        <!-- System splash (launcher icon) until the first frame, then the Compose Splash poster. -->
+        <item name="android:windowSplashScreenBackground">@color/ic_launcher_background</item>
+    </style>
 </resources>
