@@ -2,10 +2,19 @@ package com.example.lexicon.ui.theme
 
 import androidx.compose.ui.graphics.Color
 
-val Purple80 = Color(0xFFD0BCFF)
-val PurpleGrey80 = Color(0xFFCCC2DC)
-val Pink80 = Color(0xFFEFB8C8)
+val Cream = Color(0xFFFFF7EA)
+val Ink = Color(0xFF3B3355)
+val Muted = Color(0xFF8A829E)
+val GoodGreen = Color(0xFF8EDB82)
+val BadRed = Color(0xFFFF8A8A)
+val SoonGrey = Color(0xFFE8E2D8)
 
-val Purple40 = Color(0xFF6650a4)
-val PurpleGrey40 = Color(0xFF625b71)
-val Pink40 = Color(0xFF7D5260)
+/** One cheerful pastel per language, in folder order. */
+val Pastels = listOf(
+    Color(0xFFFFD36E), // honey
+    Color(0xFF9FD3F7), // sky
+    Color(0xFFC6B3F5), // lavender
+    Color(0xFFA8E6B8), // mint
+    Color(0xFFFFB0C8), // pink
+    Color(0xFFFFC09A), // peach
+)

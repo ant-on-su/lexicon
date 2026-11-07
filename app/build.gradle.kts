@@ -34,6 +34,8 @@ android {
     buildFeatures {
         compose = true
     }
+    // Word lists (one folder per language) are bundled as assets.
+    sourceSets.getByName("main").assets.directories.add("resources")
 }
 
 dependencies {
@@ -45,6 +47,7 @@ dependencies {
     implementation(libs.androidx.compose.ui.tooling.preview)
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
+    implementation(libs.snakeyaml.engine)
     testImplementation(libs.junit)
     androidTestImplementation(platform(libs.androidx.compose.bom))
     androidTestImplementation(libs.androidx.compose.ui.test.junit4)
