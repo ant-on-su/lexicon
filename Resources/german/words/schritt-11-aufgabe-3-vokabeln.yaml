@@ -1,0 +1,166 @@
+meta:
+  id: schritt-11-aufgabe-3-vokabeln-verkehr
+  title: Schritt 11 Aufgabe 3 Vokabeln (Verkehr)
+  language: de
+  translation_language: nl
+  tags: [verkehr]
+
+entries:
+  - id: ab
+    term: ab
+    translation:
+      - vanaf
+
+  - id: ampel
+    term: die Ampel
+    translation:
+      - het verkeerslicht
+
+  - id: an_der_ampel
+    term: an der Ampel
+    translation:
+      - bij het verkeerslicht
+
+  - id: bahnhof
+    term: der Bahnhof
+    forms: { plural: die Bahnhöfe }
+    translation:
+      - het station
+    translation_forms: { plural: de stations }
+
+  - id: bus
+    term: der Bus
+    translation:
+      - de bus
+
+  - id: mit_dem_bus
+    term: mit dem Bus
+    translation:
+      - met de bus
+
+  - id: dauern
+    term: dauern
+    translation:
+      - duren
+
+  - id: denn
+    term: denn
+    translation:
+      - want
+
+  - id: fahrgast
+    term: der Fahrgast
+    forms: { plural: die Fahrgäste }
+    translation:
+      - de passagier
+    translation_forms: { plural: de passagiers }
+
+  - id: hinten
+    term: hinten
+    translation:
+      - achterin
+
+  - id: lkw
+    term: der Lkw
+    forms: { plural: die Lkws }
+    translation:
+      - de vrachtwagen
+    translation_forms: { plural: de vrachtwagens }
+
+  - id: lastkraftwagen
+    term: der Lastkraftwagen
+    translation:
+      - de vrachtwagen
+    translation_forms: { plural: de vrachtwagens }
+
+  - id: pkw
+    term: der Pkw
+    translation:
+      - de auto
+
+  - id: personenkraftwagen
+    term: der Personenkraftwagen
+    translation:
+      - de auto
+
+  - id: auto
+    term: das Auto
+    translation:
+      - de auto
+
+  - id: planen
+    term: planen
+    translation:
+      - plannen
+
+  - id: reisenden
+    term: die Reisenden
+    translation:
+      - de reizigers
+
+  - id: schiff
+    term: das Schiff
+    translation:
+      - het schip
+
+  - id: mit_dem_schiff
+    term: mit dem Schiff
+    translation:
+      - met het schip
+
+  - id: strassenbahn
+    term: die Straßenbahn
+    translation:
+      - de tram
+
+  - id: mit_der_strassenbahn
+    term: mit der Straßenbahn
+    translation:
+      - met de tram
+
+  - id: u_bahn
+    term: die U-Bahn
+    translation:
+      - de metro
+
+  - id: verkehr
+    term: der Verkehr
+    translation:
+      - het verkeer
+
+  - id: vermieten
+    term: vermieten
+    translation:
+      - verhuren
+
+  - id: vorn
+    term: vorn(e)
+    translation:
+      - voorin
+
+  - id: umsteigen
+    term: umsteigen
+    translation:
+      - overstappen
+
+  - id: oeffentlichen_verkehrsmittel
+    term: die öffentlichen Verkehrsmittel
+    translation:
+      - het openbaar vervoer
+
+  - id: verpassen
+    term: verpassen
+    translation:
+      - missen
+
+  - id: zug
+    term: der Zug
+    forms: { plural: die Züge }
+    translation:
+      - de trein
+    translation_forms: { plural: de treinen }
+
+  - id: zwischen
+    term: zwischen
+    translation:
+      - tussen

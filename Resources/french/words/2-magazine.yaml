@@ -1,0 +1,109 @@
+meta:
+  id: fr-2-magazine
+  title: 2 MAGAZINE
+  language: fr
+  translation_language: nl
+
+entries:
+  - id: bouteille
+    term: la bouteille
+    translation:
+      - de fles
+    example_sentence: Tu mets la bouteille d’eau sur la table ?
+  - id: tartine
+    term: la tartine
+    translation:
+      - de boterham
+    example_sentence: Le matin, nous mangeons une tartine.
+  - id: assiette
+    term: l’assiette
+    forms: { gender: v }
+    translation:
+      - het bord
+    example_sentence: Tu mets les assiettes sur la table ?
+  - id: pomme
+    term: la pomme
+    translation:
+      - de appel
+    example_sentence: Elle prend une pomme tous les jours !
+  - id: morceau
+    term: le morceau
+    translation:
+      - het stukje
+    example_sentence: Je voudrais un morceau de la quiche.
+  - id: lait
+    term: le lait
+    translation:
+      - de melk
+    example_sentence: Ma sœur n’aime pas le lait.
+  - id: the
+    term: le thé
+    translation:
+      - de thee
+    example_sentence: Léonie boit une grande tasse de thé.
+  - id: cafe
+    term: le café
+    translation:
+      - de koffie
+    example_sentence: Mes parents boivent leur café sans lait.
+  - id: chocolat-chaud
+    term: le chocolat chaud
+    translation:
+      - de warme chocolademelk
+    example_sentence: En hiver, j’adore le chocolat chaud.
+  - id: jus-d-orange
+    term: le jus d’orange
+    translation:
+      - het sinaasappelsap
+    example_sentence: Ma boisson préférée c’est le jus d’orange frais.
+  - id: verre-d-eau
+    term: le verre d’eau
+    translation:
+      - het glas water
+    example_sentence: J’ai soif, je voudrais un verre d’eau.
+  - id: tarte
+    term: la tarte
+    translation:
+      - de taart
+    example_sentence: La tarte est vraiment délicieuse.
+  - id: entree
+    term: l’entrée
+    forms: { gender: v }
+    translation:
+      - het voorgerecht
+    example_sentence: Comme entrée, je prends une soupe.
+  - id: plat-principal
+    term: le plat principal
+    translation:
+      - het hoofdgerecht
+    example_sentence: Nous préparons le plat principal ce soir.
+  - id: dessert
+    term: le dessert
+    translation:
+      - het nagerecht / het toetje
+    example_sentence: Quel est ton dessert préféré ?
+  - id: couteau
+    term: le couteau
+    translation:
+      - het mes
+    example_sentence: Je coupe la viande avec mon couteau.
+  - id: fourchette
+    term: la fourchette
+    translation:
+      - de vork
+    example_sentence: Je n’ai pas de fourchette.
+  - id: cuillere
+    term: la cuillère
+    translation:
+      - de lepel
+    example_sentence: Elle ajoute une cuillère d’huile d’olive.
+  - id: ajouter
+    term: ajouter
+    translation:
+      - toevoegen
+    example_sentence: Tu peux ajouter un peu de sucre.
+  - id: prendre
+    term: prendre
+    translation:
+      - nemen
+    example_sentence: "Qu’est-ce qu’on va prendre : pizza ou quiche ?"

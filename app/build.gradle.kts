@@ -3,6 +3,12 @@ plugins {
     alias(libs.plugins.kotlin.compose)
 }
 
+// versionName is the latest git tag (a leading "v" is dropped), or "0.0" if there are no tags yet.
+val gitTagVersion = providers.exec {
+    commandLine("git", "describe", "--tags", "--abbrev=0")
+    isIgnoreExitValue = true
+}.standardOutput.asText.map { it.trim().removePrefix("v").ifEmpty { "0.0" } }
+
 android {
     namespace = "com.example.lexicon"
     compileSdk {
@@ -10,11 +16,12 @@ android {
     }
 
     defaultConfig {
-        applicationId = "com.example.lexicon"
+        // Hyphens aren't allowed in application IDs, hence ant_on_su.
+        applicationId = "io.github.ant_on_su.lexicon"
         minSdk = 34
         targetSdk = 37
         versionCode = 1
-        versionName = "1.0"
+        versionName = gitTagVersion.get()
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }

@@ -1,0 +1,205 @@
+meta:
+  id: la-woorden-tekst-2a-2b
+  title: Woorden Tekst 2A en 2B
+  language: la
+  translation_language: nl
+
+entries:
+  # --- Woorden Tekst 2A ---
+  - id: laetus
+    term: laetus, -a, -um
+    translation:
+      - blij, vrolijk, opgewekt
+
+  - id: regia
+    term: regia
+    translation:
+      - paleis
+
+  - id: amat
+    term: amat (amare)
+    translation:
+      - hij/zij/het houdt van, bemint
+
+  - id: donum
+    term: donum
+    translation:
+      - geschenk
+
+  - id: tangit
+    term: tangit (tangĕre)
+    translation:
+      - hij/zij/het raakt aan
+
+  - id: quoque
+    term: quoque
+    translation:
+      - ook
+
+  - id: statim
+    term: statim
+    translation:
+      - meteen
+
+  - id: incipit
+    term: incipit (incipĕre)
+    translation:
+      - hij/zij/het begint
+
+  - id: cibus
+    term: cibus
+    translation:
+      - voedsel, eten
+
+  - id: in
+    term: in + acc.
+    translation:
+      - naar, naar binnen
+      - in
+
+  - id: mensa
+    term: mensa
+    translation:
+      - tafel
+
+  - id: accipit
+    term: accipit (accipĕre)
+    translation:
+      - hij/zij/het ontvangt, krijgt
+
+  - id: nunc
+    term: nunc
+    translation:
+      - nu
+
+  - id: per
+    term: per + acc.
+    translation:
+      - door ... heen
+
+  - id: rex
+    term: rex
+    forms: { accusative: regem }
+    translation:
+      - koning
+
+  - id: vinum
+    term: vinum
+    translation:
+      - wijn
+
+  - id: mirus
+    term: mirus, -a, -um
+    translation:
+      - wonderbaarlijk, schitterend
+
+  - id: mutat
+    term: mutat (mutare)
+    translation:
+      - hij/zij/het verandert, verwisselt
+
+  - id: servus
+    term: servus
+    translation:
+      - slaaf
+
+  - id: et
+    term: et
+    translation:
+      - en
+      - ook
+
+  - id: est
+    term: est
+    translation:
+      - hij/zij/het is
+
+  - id: aurum
+    term: aurum
+    translation:
+      - goud
+
+  - id: currit
+    term: currit (currĕre)
+    translation:
+      - hij/zij/het rent
+
+  # --- Woorden Tekst 2B ---
+  - id: autem
+    term: autem
+    translation:
+      - echter, maar
+
+  - id: victoria
+    term: victoria
+    translation:
+      - overwinning
+
+  - id: dat
+    term: dat (dare)
+    translation:
+      - hij/zij/het geeft
+
+  - id: certant
+    term: certant (certare)
+    translation:
+      - zij strijden
+
+  - id: victor
+    term: victor
+    forms: { accusative: victorem }
+    translation:
+      - winnaar
+
+  - id: clamat
+    term: clamat (clamare)
+    translation:
+      - hij/zij/het roept
+
+  - id: mons
+    term: mons
+    forms: { accusative: montem }
+    translation:
+      - berg
+
+  - id: errat
+    term: errat (errare)
+    translation:
+      - hij/zij/het zwerft rond, dwaalt
+      - hij/zij/het vergist zich
+
+  - id: deus
+    term: deus
+    translation:
+      - god
+
+  - id: habet
+    term: habet (habēre)
+    translation:
+      - hij/zij/het heeft, houdt
+
+  - id: stultus
+    term: stultus, -a, -um
+    translation:
+      - dom, stom, dwaas
+
+  - id: audit
+    term: audit (audire)
+    translation:
+      - hij/zij/het luistert, hoort
+
+  - id: canit
+    term: canit (canĕre)
+    translation:
+      - hij/zij/het zingt
+      - hij/zij/het speelt
+
+  - id: silva
+    term: silva
+    translation:
+      - bos
+
+  - id: videt
+    term: videt (vidēre)
+    translation:
+      - hij/zij/het ziet

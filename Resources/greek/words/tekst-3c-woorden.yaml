@@ -1,0 +1,50 @@
+meta:
+  id: gr-tekst-3c-woorden
+  title: Tekst 3C Woorden
+  language: el
+  translation_language: nl
+
+entries:
+  - id: pheugei
+    term: φεύγει (+ acc.)
+    translation:
+      - (hij, zij, het) vlucht (voor)
+  - id: mache
+    term: ἡ μάχη
+    translation:
+      - gevecht, strijd
+  - id: nun
+    term: νῦν
+    translation:
+      - nu
+  - id: eis
+    term: εἰς + acc.
+    translation:
+      - naar, naar binnen, tot
+  - id: kai
+    term: καί
+    translation:
+      - en
+      - ook
+      - zelfs
+  - id: lambanei
+    term: λαμβάνει
+    translation:
+      - (hij, zij, het) neemt, pakt (vast)
+  - id: touto
+    term: τοῦτο
+    translation:
+      - dit, dat (nom. + acc. onz.)
+  - id: poiei
+    term: ποιεῖ
+    translation:
+      - (hij, zij, het) doet
+      - (hij, zij, het) maakt
+  - id: despotes
+    term: ὁ δεσπότης
+    translation:
+      - heerser, meester
+  - id: gar
+    term: γάρ
+    translation:
+      - want (γάρ staat op de 2de plaats van de zin)
