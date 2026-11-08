@@ -1,0 +1,169 @@
+meta:
+  id: schritt-7-aufgabe-3-vokabeln
+  title: Schritt 7 Aufgabe 3 Vokabeln
+  language: de
+  translation_language: nl
+  tags: [wohnen]
+
+entries:
+  - id: ausserdem
+    term: außerdem
+    translation:
+      - bovendien
+
+  - id: bild
+    term: das Bild
+    translation:
+      - de foto
+
+  - id: foto
+    term: das Foto
+    translation:
+      - de foto
+
+  - id: daneben
+    term: daneben
+    translation:
+      - ernaast
+
+  - id: deshalb
+    term: deshalb
+    translation:
+      - daarom
+
+  - id: darum
+    term: darum
+    translation:
+      - daarom
+
+  - id: dorf
+    term: das Dorf
+    forms: { plural: die Dörfer }
+    translation:
+      - het dorp
+    translation_forms: { plural: de dorpen }
+
+  - id: im_dorf
+    term: im Dorf
+    translation:
+      - in het dorp
+
+  - id: fertig
+    term: fertig
+    translation:
+      - klaar
+
+  - id: gern
+    term: gern
+    translation:
+      - graag
+
+  - id: gleich
+    term: gleich
+    translation:
+      - zo
+
+  - id: haus
+    term: das Haus
+    forms: { plural: die Häuser }
+    translation:
+      - het huis
+    translation_forms: { plural: de huizen }
+
+  - id: herd
+    term: der Herd
+    translation:
+      - het fornuis
+
+  - id: kueche
+    term: die Küche
+    translation:
+      - de keuken
+
+  - id: kuehlschrank
+    term: der Kühlschrank
+    translation:
+      - de koelkast
+
+  - id: mitte
+    term: die Mitte
+    translation:
+      - het midden
+
+  - id: in_der_mitte
+    term: in der Mitte
+    translation:
+      - in het midden
+
+  - id: moebel
+    term: die Möbel
+    translation:
+      - het meubilair
+
+  - id: schrank
+    term: der Schrank
+    translation:
+      - de kast
+
+  - id: stadt
+    term: die Stadt
+    forms: { plural: die Städte }
+    translation:
+      - de stad
+    translation_forms: { plural: de steden }
+
+  - id: in_der_stadt
+    term: in der Stadt
+    translation:
+      - in de stad
+
+  - id: tisch
+    term: der Tisch
+    translation:
+      - de tafel
+
+  - id: schon
+    term: schon
+    translation:
+      - al
+
+  - id: sitzen
+    term: sitzen
+    translation:
+      - zitten
+
+  - id: sofa
+    term: das Sofa
+    translation:
+      - de bank
+
+  - id: stuhl
+    term: der Stuhl
+    forms: { plural: die Stühle }
+    translation:
+      - de stoel
+    translation_forms: { plural: de stoelen }
+
+  - id: tuer
+    term: die Tür
+    forms: { plural: die Türen }
+    translation:
+      - de deur
+    translation_forms: { plural: de deuren }
+
+  - id: weil
+    term: weil
+    translation:
+      - omdat
+
+  - id: wohnen
+    term: wohnen
+    translation:
+      - wonen
+
+  - id: zimmer
+    term: das Zimmer
+    forms: { plural: die Zimmer }
+    translation:
+      - de kamer
+    translation_forms: { plural: de kamers }

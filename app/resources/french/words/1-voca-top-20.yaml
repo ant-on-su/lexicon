@@ -1,0 +1,211 @@
+meta:
+  id: fr-1-voca-top-20
+  title: 1 VOCA Top 20
+  language: fr
+  translation_language: nl
+
+entries:
+  - id: pain
+    term: le pain
+    translation:
+      - het brood
+    example_sentence: Il n’y a plus de pain au supermarché. Dommage !
+  - id: baguette
+    term: la baguette
+    translation:
+      - het stokbrood
+    example_sentence: Les Français mangent beaucoup de baguettes.
+  - id: viande
+    term: la viande
+    translation:
+      - het vlees
+    example_sentence: Je ne mange pas de viande, je suis végétarien.
+  - id: poisson
+    term: le poisson
+    translation:
+      - de vis
+    example_sentence: Ma mère aime préparer des plats au poisson.
+  - id: fromage
+    term: le fromage
+    translation:
+      - de kaas
+    example_sentence: Le fromage français est très fameux.
+  - id: boisson
+    term: la boisson
+    translation:
+      - het drankje
+    example_sentence: Tu préfères quelle boisson, le jus d’orange ou le coca ?
+  - id: boire
+    term: boire
+    translation:
+      - drinken
+    example_sentence: Qu’est-ce que tu aimes boire ?
+  - id: manger
+    term: manger
+    translation:
+      - eten
+    example_sentence: On va manger à quelle heure ?
+  - id: avoir-faim
+    term: avoir faim
+    translation:
+      - honger hebben
+    example_sentence: Tu as faim, n’est-ce pas ?
+  - id: avoir-soif
+    term: avoir soif
+    translation:
+      - dorst hebben
+    example_sentence: Après le sport, j’ai toujours soif.
+  - id: detester
+    term: détester
+    translation:
+      - een hekel hebben aan
+    example_sentence: Mon père déteste le poisson, il préfère la viande.
+  - id: faire-les-courses
+    term: faire les courses
+    translation:
+      - boodschappen doen
+    example_sentence: Demain, on va faire les courses à l’hypermarché.
+  - id: supermarche
+    term: le supermarché
+    translation:
+      - de supermarkt
+    example_sentence: Tu peux aller au supermarché pour acheter du beurre ?
+  - id: boulangerie
+    term: la boulangerie
+    translation:
+      - de bakkerij
+    example_sentence: Le samedi, ma petite soeur va toujours à la boulangerie.
+  - id: frais-fraiche
+    term: frais / fraîche
+    translation:
+      - vers
+    example_sentence: On achète du pain frais, miam.
+  - id: repas
+    term: le repas
+    translation:
+      - de maaltijd
+    example_sentence: Vous prenez aussi trois repas par jour ?
+  - id: petit-dejeuner
+    term: le petit déjeuner
+    translation:
+      - het ontbijt
+    example_sentence: Je ne prends pas de petit déjeuner.
+  - id: dejeuner
+    term: le déjeuner
+    translation:
+      - de lunch
+    example_sentence: Je t’invite pour un déjeuner chez moi.
+  - id: diner
+    term: le dîner
+    translation:
+      - het diner
+    example_sentence: Le dîner est mon repas préféré.
+  - id: legumes
+    term: les légumes
+    forms: { gender: m }   # printed as "(m. mv)"
+    translation:
+      - de groenten
+    example_sentence: Nous préférons acheter des légumes de saison.
+  - id: utiliser
+    term: utiliser
+    translation:
+      - gebruiken
+    example_sentence: Il va utiliser tous les ingrédients.
+  - id: preparer
+    term: préparer
+    translation:
+      - klaarmaken / bereiden
+    example_sentence: Mika aime préparer des desserts très sucrés.
+  - id: probable
+    term: probable
+    translation:
+      - waarschijnlijk
+    example_sentence: Ce n’est pas sûr, mais c’est très probable.
+  - id: port
+    term: le port
+    translation:
+      - de haven
+    example_sentence: Le bateau arrive dans le port de Marseille.
+  - id: acheter
+    term: acheter
+    translation:
+      - kopen
+    example_sentence: Tu veux acheter du fromage ?
+  - id: barre-de-chocolat
+    term: la barre de chocolat
+    translation:
+      - de chocoladereep
+    example_sentence: Je préfère les barres de chocolat sans noix.
+  - id: noix
+    term: la noix
+    translation:
+      - de noot
+    example_sentence: Je suis allergique aux noix.
+  - id: huile-d-olive
+    term: l’huile d’olive
+    forms: { gender: v }
+    translation:
+      - de olijfolie
+    example_sentence: Où est l’huile d’olive ?
+  - id: haricot-vert
+    term: le haricot vert
+    translation:
+      - de sperzieboon
+    example_sentence: Aujourd’hui, on mange des haricots verts.
+  - id: orange
+    term: l’orange
+    forms: { gender: v }
+    translation:
+      - de sinaasappel
+    example_sentence: Les oranges ont beaucoup de vitamines.
+  - id: cent
+    term: cent
+    translation:
+      - honderd
+    example_sentence: Tu as besoin de cent grammes de sucre.
+  - id: ingredient
+    term: l’ingrédient
+    forms: { gender: m }
+    translation:
+      - het ingrediënt
+    example_sentence: Tu as tous les ingrédients de la recette ?
+  - id: produit
+    term: le produit
+    translation:
+      - het product
+    example_sentence: Ce produit est d’origine africaine.
+  - id: gout
+    term: le goût
+    translation:
+      - de smaak
+    example_sentence: Ils n’aiment pas le goût du fromage bleu.
+  - id: sucre
+    term: le sucre
+    translation:
+      - de suiker
+    example_sentence: Il y a beaucoup de sucre dans les bonbons !
+  - id: c-est-bon
+    term: C’est bon !
+    translation:
+      - Het is lekker.
+    example_sentence: Miam, c’est bon, ta tarte aux pommes !
+  - id: delicieux
+    term: délicieux / délicieuse
+    translation:
+      - lekker / heerlijk
+    example_sentence: C’est délicieux ! Je prends encore un peu de chocolat.
+  - id: grace-a
+    term: grâce à
+    translation:
+      - dankzij
+    example_sentence: Grâce à Sébastien, la salade est parfaite.
+  - id: sante
+    term: la santé
+    translation:
+      - de gezondheid
+    example_sentence: Les légumes sont bons pour la santé.
+  - id: savais-tu
+    term: savais-tu ?
+    translation:
+      - wist je (dat)?
+    example_sentence: Savais-tu qu’il y a beaucoup de fromages différents ?

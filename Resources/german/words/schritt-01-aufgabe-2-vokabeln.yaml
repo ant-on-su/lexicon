@@ -1,0 +1,143 @@
+meta:
+  id: schritt-1-aufgabe-2-vokabeln
+  title: Schritt 1 Aufgabe 2 Vokabeln
+  language: de
+  translation_language: nl
+  tags: [familie, reise]
+
+entries:
+  - id: adresse
+    term: die Adresse
+    translation:
+      - het adres
+
+  - id: alter
+    term: das Alter
+    translation:
+      - de leeftijd
+
+  - id: auch
+    term: auch
+    translation:
+      - ook
+
+  - id: autobahn
+    term: die Autobahn
+    translation:
+      - de snelweg
+
+  - id: auf_der_autobahn
+    term: auf der Autobahn
+    translation:
+      - op de snelweg
+
+  - id: besuchen
+    term: besuchen
+    translation:
+      - bezoeken
+
+  - id: danke
+    term: danke
+    translation:
+      - dank je, dank u
+
+  - id: deutschland
+    term: Deutschland
+    translation:
+      - Duitsland
+
+  - id: fahren
+    term: fahren
+    translation:
+      - rijden
+
+  - id: familie
+    term: die Familie
+    translation:
+      - het gezin
+
+  - id: kennenlernen
+    term: kennenlernen
+    translation:
+      - leren kennen
+
+  - id: kind
+    term: das Kind
+    forms: { plural: die Kinder }
+    translation:
+      - het kind
+    translation_forms: { plural: de kinderen }
+
+  - id: mutter
+    term: die Mutter
+    translation:
+      - de moeder
+
+  - id: oesterreich
+    term: Österreich
+    translation:
+      - Oostenrijk
+
+  - id: postleitzahl
+    term: die Postleitzahl
+    translation:
+      - de postcode
+
+  - id: reise
+    term: die Reise
+    translation:
+      - de reis
+
+  - id: schwierig
+    term: schwierig
+    translation:
+      - lastig, moeilijk
+
+  - id: schwer
+    term: schwer
+    translation:
+      - lastig, moeilijk
+
+  - id: sohn
+    term: der Sohn
+    forms: { plural: die Söhne }
+    translation:
+      - de zoon
+    translation_forms: { plural: de zoons }
+
+  - id: tochter
+    term: die Tochter
+    forms: { plural: die Töchter }
+    translation:
+      - de dochter
+    translation_forms: { plural: de dochters }
+
+  - id: tourist
+    term: der Tourist
+    translation:
+      - de toerist
+
+  - id: touristin
+    term: die Touristin
+    translation:
+      - de toeriste
+
+  - id: urlaub
+    term: der Urlaub
+    translation:
+      - de vakantie
+
+  - id: ferien
+    term: die Ferien
+    translation:
+      - de vakantie
+
+  - id: vater
+    term: der Vater
+    translation:
+      - de vader
+
+  - id: verwandten
+    term: die Verwandten
+    translation:
+      - de familieleden

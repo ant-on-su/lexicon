@@ -1,0 +1,33 @@
+meta:
+  id: gr-tekst-3b-woorden
+  title: Tekst 3B Woorden
+  language: el
+  translation_language: nl
+
+entries:
+  - id: pherei
+    term: φέρει
+    translation:
+      - (hij, zij, het) draagt
+      - (hij, zij, het) brengt
+  - id: therion
+    term: τὸ θηρίον
+    forms: { plural: τὰ θηρία }
+    translation:
+      - wild dier, beest
+  - id: bainei
+    term: βαίνει
+    translation:
+      - (hij, zij, het) gaat
+  - id: pros
+    term: πρός + acc.
+    translation:
+      - naar(toe), tot
+  - id: alla
+    term: ἀλλά, ἀλλ'
+    translation:
+      - maar
+  - id: houtos
+    term: οὕτως, οὕτω
+    translation:
+      - zo, op die manier
