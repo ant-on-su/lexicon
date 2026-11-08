@@ -56,12 +56,13 @@ private enum class Look { Idle, Selected, Good, Bad }
 
 private const val FEEDBACK_MS = 450L
 
-/** Counts down 3-2-1, then runs the race. Reports total time, mistakes and time per round. */
+/** Counts down 3-2-1, then runs the race. Reports matches and mistakes as they happen, then total time, mistakes and time per round. */
 @Composable
 fun RaceScreen(
     lang: Language,
     color: Color,
     options: RaceOptions,
+    onCue: (Cue) -> Unit,
     onFinish: (totalMs: Long, mistakes: Int, roundsMs: List<Long>) -> Unit,
 ) {
     val race = remember { Race(lang.cards(options), options.pairs, options.rounds) }
@@ -77,9 +78,11 @@ fun RaceScreen(
 
     LaunchedEffect(Unit) {
         while (countdown > 0) {
+            onCue(Cue.Countdown)
             delay(1000)
             countdown--
         }
+        onCue(Cue.Go)
     }
     // The clock only ticks while the app is in the foreground.
     LaunchedEffect(countdown == 0) {
@@ -109,6 +112,7 @@ fun RaceScreen(
         if (l == r) {
             val at = elapsed + race.mistakes * PENALTY_MS
             good += l
+            onCue(Cue.Correct)
             scope.launch {
                 delay(FEEDBACK_MS)
                 val roundDone = race.solve(card)
@@ -121,6 +125,7 @@ fun RaceScreen(
         } else {
             race.miss()
             bad = l to r
+            onCue(Cue.Mistake)
             scope.launch {
                 delay(FEEDBACK_MS)
                 bad = null

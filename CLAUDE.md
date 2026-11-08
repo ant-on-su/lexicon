@@ -22,7 +22,8 @@ After making changes, build and run lint and unit tests before calling a task do
 
 - `Words.kt`: YAML parsing (snakeyaml-engine) into `Card` / `WordUnit` / `Language`, loading from assets plus the user's word folder (`loadLibrary`), and the ambiguity rule (`meanings()`, `Card.conflictsWith`).
 - `Race.kt`: pure race logic (board, refill, card picking). Compose snapshot state, no UI. `PENALTY_MS`, `RaceResult`.
-- `Options.kt`: `RaceOptions`, `Prefs` (SharedPreferences: options per language and best times), `bestKey()`.
+- `Options.kt`: `RaceOptions`, `FeedbackOptions`, `Prefs` (SharedPreferences: options per language, sound/vibration and best times), `bestKey()`.
+- `Feedback.kt`: sound and vibration per `Cue` (countdown, go, correct, mistake, finish, new best). Built-in `Tone`s are synthesized in code (no audio files) and played from static `AudioTrack`s; phone sounds via `RingtoneManager`.
 - `MainActivity.kt`: screen navigation as a `Screen` sealed interface in `remember` state, plus `BackHandler`. No nav library, no ViewModel.
 - `Screens.kt`: Language (+ general settings sheet: word folder), Mode (+ language settings sheet: Units, then a section per mode), Start, Results. `RaceScreen.kt`: countdown, timer, board UI.
 - `Components.kt`: `Chunky` / `ChunkyButton` (press-down button), `FitText` (auto-size text), `Confetti`, `formatTime`.

@@ -1,5 +1,8 @@
 package com.example.lexicon
 
+import android.content.ActivityNotFoundException
+import android.content.Intent
+import android.media.RingtoneManager
 import android.net.Uri
 import androidx.activity.compose.rememberLauncherForActivityResult
 import androidx.activity.result.contract.ActivityResultContracts
@@ -28,19 +31,24 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.rememberScrollState
+import androidx.compose.foundation.selection.selectable
 import androidx.compose.foundation.selection.toggleable
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.verticalScroll
+import androidx.compose.material3.AlertDialog
 import androidx.compose.material3.Checkbox
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.ModalBottomSheet
+import androidx.compose.material3.RadioButton
 import androidx.compose.material3.Switch
 import androidx.compose.material3.Text
+import androidx.compose.material3.TextButton
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
 import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
@@ -50,11 +58,13 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.graphicsLayer
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.semantics.Role
 import androidx.compose.ui.text.AnnotatedString
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import androidx.core.net.toUri
 import com.example.lexicon.ui.theme.Cream
 import com.example.lexicon.ui.theme.Ink
 import com.example.lexicon.ui.theme.Muted
@@ -101,6 +111,9 @@ fun LanguageScreen(
     library: Library?,
     colorOf: (Language) -> Color,
     onFolder: (Uri?) -> Unit,
+    feedback: Feedback,
+    feedbackOptions: FeedbackOptions,
+    onFeedbackOptions: (FeedbackOptions) -> Unit,
     onPick: (Language) -> Unit,
 ) {
     var showSettings by rememberSaveable { mutableStateOf(false) }
@@ -116,7 +129,9 @@ fun LanguageScreen(
         }
         SettingsButton { showSettings = true }
     }
-    if (showSettings && library != null) GeneralSettings(library, onFolder) { showSettings = false }
+    if (showSettings && library != null) {
+        GeneralSettings(library, onFolder, feedback, feedbackOptions, onFeedbackOptions) { showSettings = false }
+    }
 }
 
 @Composable
@@ -180,13 +195,40 @@ private fun SettingsSheet(onDismiss: () -> Unit, content: @Composable ColumnScop
     }
 }
 
-/** Settings shared by all languages: the word folder, and any word files that couldn't be used. */
+/** Settings shared by all languages: sound and vibration, the word folder, and any word files that couldn't be used. */
 @Composable
-private fun GeneralSettings(library: Library, onFolder: (Uri?) -> Unit, onDismiss: () -> Unit) {
+private fun GeneralSettings(
+    library: Library,
+    onFolder: (Uri?) -> Unit,
+    feedback: Feedback,
+    feedbackOptions: FeedbackOptions,
+    onFeedbackOptions: (FeedbackOptions) -> Unit,
+    onDismiss: () -> Unit,
+) {
     val pick = rememberLauncherForActivityResult(ActivityResultContracts.OpenDocumentTree()) { uri ->
         if (uri != null) onFolder(uri)
     }
+    var soundFor by rememberSaveable { mutableStateOf<Cue?>(null) }
+    var vibeFor by rememberSaveable { mutableStateOf<Cue?>(null) }
     SettingsSheet(onDismiss) {
+        SectionTitle("Sound & vibration")
+        SwitchRow("Sound", feedbackOptions.sound) { onFeedbackOptions(feedbackOptions.copy(sound = it)) }
+        if (feedback.canVibrate) {
+            SwitchRow("Vibration", feedbackOptions.vibration) { onFeedbackOptions(feedbackOptions.copy(vibration = it)) }
+        }
+        val vibration = feedbackOptions.vibration && feedback.canVibrate
+        if (feedbackOptions.sound || vibration) Cue.entries.forEach { cue ->
+            Heading(cue.title)
+            Row(horizontalArrangement = Arrangement.spacedBy(12.dp)) {
+                if (feedbackOptions.sound) {
+                    val sound = feedbackOptions.sounds.getValue(cue)
+                    val title = remember(sound) { feedback.title(sound) }
+                    SheetButton("♪ $title", Modifier.weight(1f)) { soundFor = cue }
+                }
+                if (vibration) SheetButton("📳 ${feedbackOptions.vibes.getValue(cue).title}", Modifier.weight(1f)) { vibeFor = cue }
+            }
+        }
+
         SectionTitle("Word folder")
         Text(
             "Your own word lists, in a folder per language with a words folder inside, like the built-in ones. " +
@@ -202,6 +244,74 @@ private fun GeneralSettings(library: Library, onFolder: (Uri?) -> Unit, onDismis
             Heading("Skipped")
             library.problems.forEach { Text(it, color = Muted) }
         }
+    }
+    soundFor?.let { cue ->
+        SoundChoice(cue, feedbackOptions.sounds.getValue(cue), feedback, onDismiss = { soundFor = null }) {
+            onFeedbackOptions(feedbackOptions.copy(sounds = feedbackOptions.sounds + (cue to it)))
+        }
+    }
+    vibeFor?.let { cue ->
+        ChoiceDialog(cue.title, onDismiss = { vibeFor = null }) {
+            Vibe.entries.forEach { vibe ->
+                ChoiceRow(vibe.title, feedbackOptions.vibes[cue] == vibe) {
+                    onFeedbackOptions(feedbackOptions.copy(vibes = feedbackOptions.vibes + (cue to vibe)))
+                    feedback.vibrate(vibe)
+                }
+            }
+        }
+    }
+}
+
+/** Built-in sounds (the ones made for this cue first), silence, or a sound from the phone's picker. Each is played when picked. */
+@Composable
+private fun SoundChoice(cue: Cue, current: String, feedback: Feedback, onDismiss: () -> Unit, onPick: (String) -> Unit) {
+    val phonePicker = rememberLauncherForActivityResult(ActivityResultContracts.StartActivityForResult()) { result ->
+        result.data?.getParcelableExtra(RingtoneManager.EXTRA_RINGTONE_PICKED_URI, Uri::class.java)?.let { onPick(it.toString()) }
+    }
+    ChoiceDialog(cue.title, onDismiss) {
+        ChoiceRow("Off", current.isEmpty()) { onPick("") }
+        Tone.entries.sortedBy { it.cue != cue }.forEach { tone ->
+            ChoiceRow(tone.title, current == tone.name) {
+                onPick(tone.name)
+                feedback.sound(tone.name)
+            }
+        }
+        val isPhone = current.startsWith("content:")
+        val phoneTitle = remember(current) { if (isPhone) feedback.title(current) else null }
+        ChoiceRow(phoneTitle?.let { "Phone: $it" } ?: "Phone sound…", isPhone) {
+            val intent = Intent(RingtoneManager.ACTION_RINGTONE_PICKER)
+                .putExtra(RingtoneManager.EXTRA_RINGTONE_TYPE, RingtoneManager.TYPE_NOTIFICATION)
+                .putExtra(RingtoneManager.EXTRA_RINGTONE_TITLE, cue.title)
+                .putExtra(RingtoneManager.EXTRA_RINGTONE_SHOW_SILENT, false)
+                .putExtra(RingtoneManager.EXTRA_RINGTONE_SHOW_DEFAULT, false)
+                .putExtra(RingtoneManager.EXTRA_RINGTONE_EXISTING_URI, if (isPhone) current.toUri() else null)
+            try {
+                phonePicker.launch(intent)
+            } catch (_: ActivityNotFoundException) {
+            }
+        }
+    }
+}
+
+@Composable
+private fun ChoiceDialog(title: String, onDismiss: () -> Unit, content: @Composable ColumnScope.() -> Unit) {
+    AlertDialog(
+        onDismissRequest = onDismiss,
+        confirmButton = { TextButton(onDismiss) { Text("Done", color = Ink, fontWeight = FontWeight.Black) } },
+        title = { Text(title, color = Ink, fontWeight = FontWeight.Black) },
+        text = { Column(Modifier.verticalScroll(rememberScrollState()), content = content) },
+        containerColor = Cream,
+    )
+}
+
+@Composable
+private fun ChoiceRow(label: String, selected: Boolean, onClick: () -> Unit) {
+    Row(
+        Modifier.fillMaxWidth().selectable(selected, role = Role.RadioButton, onClick = onClick).padding(vertical = 4.dp),
+        verticalAlignment = Alignment.CenterVertically,
+    ) {
+        RadioButton(selected, onClick = null)
+        Text(label, Modifier.padding(start = 8.dp), color = Ink, fontSize = 18.sp)
     }
 }
 

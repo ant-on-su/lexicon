@@ -18,7 +18,15 @@ data class RaceOptions(
     val showGender: Boolean = false,
 )
 
-/** Options per language, the word folder and best times, remembered between launches. */
+/** Sound and vibration, shared by all languages. A cue's sound is a [Tone] name, a phone sound's URI, or "" for none. */
+data class FeedbackOptions(
+    val sound: Boolean = true,
+    val vibration: Boolean = true,
+    val sounds: Map<Cue, String> = Cue.entries.associateWith { it.defaultTone.name },
+    val vibes: Map<Cue, Vibe> = Cue.entries.associateWith { it.defaultVibe },
+)
+
+/** Options per language, the word folder, sound and vibration, and best times, remembered between launches. */
 class Prefs(context: Context) {
     private val prefs = context.getSharedPreferences("lexicon", Context.MODE_PRIVATE)
 
@@ -43,6 +51,26 @@ class Prefs(context: Context) {
         putInt("$lang.rounds", options.rounds)
         putBoolean("$lang.showForms", options.showForms)
         putBoolean("$lang.showGender", options.showGender)
+    }
+
+    fun feedback() = FeedbackOptions(
+        sound = prefs.getBoolean("sound", true),
+        vibration = prefs.getBoolean("vibration", true),
+        sounds = Cue.entries.associateWith { cue ->
+            prefs.getString("sound.$cue", null)
+                ?.takeIf { s -> s.isEmpty() || s.startsWith("content:") || Tone.entries.any { it.name == s } }
+                ?: cue.defaultTone.name
+        },
+        vibes = Cue.entries.associateWith { cue ->
+            Vibe.entries.find { it.name == prefs.getString("vibe.$cue", null) } ?: cue.defaultVibe
+        },
+    )
+
+    fun saveFeedback(options: FeedbackOptions) = prefs.edit {
+        putBoolean("sound", options.sound)
+        putBoolean("vibration", options.vibration)
+        options.sounds.forEach { (cue, sound) -> putString("sound.$cue", sound) }
+        options.vibes.forEach { (cue, vibe) -> putString("vibe.$cue", vibe.name) }
     }
 
     fun best(key: String): Long? = prefs.getLong("best.$key", -1L).takeIf { it >= 0 }

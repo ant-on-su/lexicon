@@ -26,6 +26,8 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 
 class MainActivity : ComponentActivity() {
+    private lateinit var feedback: Feedback
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         val transparent = android.graphics.Color.TRANSPARENT
@@ -34,14 +36,20 @@ class MainActivity : ComponentActivity() {
             navigationBarStyle = SystemBarStyle.light(transparent, transparent),
         )
         val prefs = Prefs(this)
+        feedback = Feedback(this)
         setContent {
             LexiconTheme {
                 Box {
-                    LexiconApp(prefs)
+                    LexiconApp(prefs, feedback)
                     Splash()
                 }
             }
         }
+    }
+
+    override fun onDestroy() {
+        feedback.release()
+        super.onDestroy()
     }
 }
 
@@ -54,9 +62,10 @@ private sealed interface Screen {
 }
 
 @Composable
-private fun LexiconApp(prefs: Prefs) {
+private fun LexiconApp(prefs: Prefs, feedback: Feedback) {
     val context = LocalContext.current.applicationContext
     var folder by remember { mutableStateOf(prefs.wordFolder) }
+    var feedbackOptions by remember { mutableStateOf(prefs.feedback()) }
     val library by produceState<Library?>(null, folder) {
         value = withContext(Dispatchers.IO) { loadLibrary(context, folder) }
     }
@@ -86,6 +95,12 @@ private fun LexiconApp(prefs: Prefs) {
                     prefs.wordFolder = uri
                     folder = uri
                 },
+                feedback = feedback,
+                feedbackOptions = feedbackOptions,
+                onFeedbackOptions = {
+                    feedbackOptions = it
+                    prefs.saveFeedback(it)
+                },
                 onPick = { screen = Screen.Modes(it) },
             )
             is Screen.Modes -> {
@@ -107,10 +122,17 @@ private fun LexiconApp(prefs: Prefs) {
                     screen = Screen.Racing(s.lang, options)
                 }
             }
-            is Screen.Racing -> RaceScreen(s.lang, colorOf(s.lang), s.options) { totalMs, mistakes, roundsMs ->
+            is Screen.Racing -> RaceScreen(
+                s.lang,
+                colorOf(s.lang),
+                s.options,
+                onCue = { feedback.play(it, feedbackOptions) },
+            ) { totalMs, mistakes, roundsMs ->
                 val key = bestKey(s.lang, s.options)
                 val previous = prefs.best(key)
                 if (previous == null || totalMs < previous) prefs.saveBest(key, totalMs)
+                val newBest = previous != null && totalMs < previous
+                feedback.play(if (newBest) Cue.Record else Cue.Finish, feedbackOptions)
                 screen = Screen.Results(
                     s.lang,
                     s.options,
@@ -119,7 +141,7 @@ private fun LexiconApp(prefs: Prefs) {
                         mistakes = mistakes,
                         roundsMs = roundsMs,
                         bestMs = minOf(previous ?: totalMs, totalMs),
-                        newBest = previous != null && totalMs < previous,
+                        newBest = newBest,
                     ),
                 )
             }
