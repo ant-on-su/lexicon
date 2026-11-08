@@ -50,6 +50,21 @@ class RaceTest {
     }
 
     @Test
+    fun refillMovesEveryRemainingTranslation() {
+        repeat(20) { seed ->
+            val race = Race(cards(30), pairs = 6, rounds = 3, random = Random(seed))
+            while (!race.finished) {
+                val before = race.right.toList()
+                val filled = board(race).size
+                race.solve(board(race).first())
+                if (board(race).size >= filled) {
+                    before.forEachIndexed { k, card -> if (card != null && card in race.right) assertFalse(race.right[k] == card) }
+                }
+            }
+        }
+    }
+
+    @Test
     fun prefersCardsNotShownYet() {
         val race = Race(cards(30), pairs = 6, rounds = 3, random = Random(4))
         val seen = mutableListOf<Card>()
@@ -60,7 +75,7 @@ class RaceTest {
 
     @Test
     fun boardIsNeverAmbiguous() {
-        listOf("latin", "german").forEach { lang ->
+        listOf("latin", "german", "french", "greek").forEach { lang ->
             repeat(20) { seed ->
                 val race = Race(pool(lang), pairs = 10, rounds = 10, random = Random(seed))
                 play(race) {

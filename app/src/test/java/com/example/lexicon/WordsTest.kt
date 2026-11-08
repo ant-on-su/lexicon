@@ -124,4 +124,14 @@ class WordsTest {
             assertTrue("${file.name} has no cards", parsed.cards.isNotEmpty())
         }
     }
+
+    @Test
+    fun languagesUseTheirOwnNames() {
+        val files = File("resources").walkTopDown().filter { it.extension == "yaml" }.map { file ->
+            UnitFile(file.parentFile!!.parentFile!!.name, file.name) { file.readText() }
+        }.toList()
+        val names = loadLanguages(files).associate { it.folder to it.name }
+        assertEquals("Français", names["french"])
+        assertEquals("Ελληνικά", names["greek"])
+    }
 }

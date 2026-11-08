@@ -77,10 +77,13 @@ class Race(
         if (fresh.isEmpty()) return
         val emptyLeft = left.indices.filter { left[it] == null }.shuffled(random)
         fresh.forEachIndexed { k, card -> left[emptyLeft[k]] = card }
+        val before = right.toList()
         val rightCards = right.filterNotNull() + fresh
-        (rightCards + List(pairs - rightCards.size) { null })
-            .shuffled(random)
-            .forEachIndexed { k, card -> right[k] = card }
+        val slots = rightCards + List(pairs - rightCards.size) { null }
+        // Every card already on the right moves, so its old position gives nothing away.
+        var order: List<Card?>
+        do order = slots.shuffled(random) while (order.indices.any { before[it] != null && order[it] == before[it] })
+        order.forEachIndexed { k, card -> right[k] = card }
     }
 
     /** A card that is unambiguous next to [board], preferring the least shown ones. */
