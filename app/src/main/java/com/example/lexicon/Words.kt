@@ -46,7 +46,7 @@ data class Language(
 ) {
     val hasGender = units.any { unit -> unit.cards.any { it.gender != null } }
 
-    fun activeUnits(options: RaceOptions) = units.filter { it.id !in options.excludedUnits }.ifEmpty { units }
+    fun activeUnits(options: RaceOptions) = units.filter { it.id !in options.excludedUnits }
 
     fun cards(options: RaceOptions) = activeUnits(options).flatMap { it.cards }
 }
@@ -124,7 +124,7 @@ class Library(val languages: List<Language>, val folderName: String?, val proble
 
 private fun isYaml(name: String) = name.endsWith(".yaml") || name.endsWith(".yml")
 
-/** Every asset folder with a `words/` folder of YAML units is a language. */
+/** Every asset folder with a `words/` folder of YAML units is a language: the demo words shipped with the app. */
 fun assetFiles(assets: AssetManager): List<UnitFile> =
     assets.list("").orEmpty().flatMap { folder ->
         assets.list("$folder/words").orEmpty().filter(::isYaml).map { file ->
@@ -163,7 +163,7 @@ private fun folderName(resolver: ContentResolver, tree: Uri): String? {
     }
 }
 
-/** The bundled units plus those in the word folder, if one is set. */
+/** The units in the word folder, or the demo units while no folder is set or it has no usable words. */
 fun loadLibrary(context: Context, folder: Uri?): Library {
     val problems = mutableListOf<String>()
     val folderFiles = folder?.let {
@@ -172,15 +172,18 @@ fun loadLibrary(context: Context, folder: Uri?): Library {
             .getOrNull()
     }.orEmpty()
     val name = folder?.let { runCatching { folderName(context.contentResolver, it) }.getOrNull() ?: it.lastPathSegment }
-    val languages = loadLanguages(assetFiles(context.assets) + folderFiles, problems)
+    val languages = loadLanguages(folderFiles, problems).ifEmpty {
+        if (folder != null) problems += "No usable <language>/words/*.yaml files in the word folder: showing the demo words"
+        loadLanguages(assetFiles(context.assets), problems)
+    }
     return Library(languages, name, problems)
 }
 
 private val lineNumber = Regex("line \\d+")
 
 /**
- * Groups unit files into languages by folder. A later file replaces an earlier unit with the same id,
- * so put the word folder after the bundled files. Unusable files are added to `problems`.
+ * Groups unit files into languages by folder. A later file replaces an earlier unit with the same id.
+ * Unusable files are added to `problems`.
  */
 fun loadLanguages(files: List<UnitFile>, problems: MutableList<String> = mutableListOf()): List<Language> =
     files.groupBy { it.language }.toSortedMap().mapNotNull { (folder, group) ->

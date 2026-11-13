@@ -20,7 +20,7 @@ After making changes, build and run lint and unit tests before calling a task do
 
 ## Code map (`app/src/main/java/com/example/lexicon/`, single flat package)
 
-- `Words.kt`: YAML parsing (snakeyaml-engine) into `Card` / `WordUnit` / `Language`, loading from assets plus the user's word folder (`loadLibrary`), and the ambiguity rule (`meanings()`, `Card.conflictsWith`).
+- `Words.kt`: YAML parsing (snakeyaml-engine) into `Card` / `WordUnit` / `Language`, loading from the user's word folder or else the demo assets (`loadLibrary`), and the ambiguity rule (`meanings()`, `Card.conflictsWith`).
 - `Race.kt`: pure race logic (board, refill, card picking). Compose snapshot state, no UI. `PENALTY_MS`, `RaceResult`.
 - `Options.kt`: `RaceOptions`, `FeedbackOptions`, `Prefs` (SharedPreferences: options per language, sound/vibration and best times), `bestKey()`.
 - `Feedback.kt`: sound and vibration per `Cue` (countdown, go, correct, mistake, finish, new best). Built-in `Tone`s are synthesized in code (no audio files) and played from static `AudioTrack`s; phone sounds via `RingtoneManager`.
@@ -28,12 +28,12 @@ After making changes, build and run lint and unit tests before calling a task do
 - `Screens.kt`: Language (+ general settings sheet: word folder), Mode (+ language settings sheet: Units, then a section per mode), Start, Results. `RaceScreen.kt`: countdown, timer, board UI.
 - `Components.kt`: `Chunky` / `ChunkyButton` (press-down button), `FitText` (auto-size text), `Confetti`, `formatTime`.
 - `ui/theme/`: colours (`Pastels` per language, `Cream`, `Ink`, …) and `LexiconTheme`. Light only, no dynamic colour.
-- Tests in `app/src/test/`: `WordsTest`, `RaceTest`. They read the real word files via `File("resources/...")`.
+- Tests in `app/src/test/`: `WordsTest`, `RaceTest`. They read the demo files and the full lists via `wordFolders` (`File("demo")`, `File("../Resources")`).
 
 ## Word data
 
-- `app/resources/<language>/words/*.yaml` is bundled as assets (`assets.directories.add("resources")` in `app/build.gradle.kts`). A new folder is a new language.
-- The user can also pick a word folder (SAF tree, persisted permission) with the same `<language>/words/*.yaml` layout. It's read at every start; a unit with the same `meta.id` replaces the bundled one, and unusable files are listed in the general settings.
+- The real word lists live in the user's word folder (SAF tree, persisted permission), with a `<language>/words/*.yaml` layout; a new folder is a new language. The repo keeps a copy in `Resources/` (not bundled). The folder is read at every start, and unusable files are listed in the general settings.
+- `app/demo/<language>/words/demo.yaml` (~30 words each, picked from `Resources/`) is bundled as assets (`assets.directories.add("demo")` in `app/build.gradle.kts`). It's used only while no folder is set or the folder has no usable words.
 - Fields: `meta.{id,title,language,translation_language}`, `entries[].{id,term,translation[],forms{plural,genitive,perfect,gender},translation_forms{plural},card_per_sense}`. `form_of` and `tags` are ignored.
 
 ## Race rules (agreed with the user)
@@ -41,7 +41,7 @@ After making changes, build and run lint and unit tests before calling a task do
 - One continuous board: when at least half the pairs are matched, new pairs fill the empty left slots and the right column reshuffles. A round is every `pairs` matches; a race is `pairs × rounds` matches.
 - Never two cards from the same entry, the same term, or with a shared Dutch meaning on the board at once. Meanings: split on `, / ;`, ignore brackets, case, accents and leading `de/het/een`.
 - A mistake adds +3 s. The timer only runs while the app is resumed. Least-shown cards are preferred.
-- Pairs 5–10 (default 6), rounds 3–10 (default 3). Units are stored as excluded, so new units are on by default.
+- Pairs 5–10 (default 6), rounds 3–10 (default 3). Units are stored as excluded, so new units are on by default. An "All units" tri-state toggle can clear them all; Race! is then disabled until a unit is picked.
 - Only the Race! mode exists; Learn and Test are "soon" placeholders.
 
 ## Build gotchas

@@ -1,0 +1,108 @@
+meta:
+  id: fr-4-paroles-3
+  title: 3-4 PAROLES
+  language: fr
+  translation_language: nl
+
+entries:
+  - id: ou
+    term: où
+    translation:
+      - waar
+    example_sentence: Excusez-moi, où sont les toilettes ?
+  - id: a-gauche
+    term: à gauche (de)
+    translation:
+      - links (van), naar links
+    example_sentence: Pour aller au cinéma, vous allez à gauche.
+  - id: a-droite
+    term: à droite (de)
+    translation:
+      - rechts (van), naar rechts
+    example_sentence: C’est à droite après le bar.
+  - id: en-face-de
+    term: en face de
+    translation:
+      - tegenover
+    example_sentence: Le gymnase est en face de la cantine.
+  - id: a-cote-de
+    term: à côté de
+    translation:
+      - naast
+    example_sentence: Qui est la femme à coté de Justin Bieber ?   # CHECK: printed "coté" without circumflex in the example
+  - id: entre
+    term: entre
+    translation:
+      - tussen
+    example_sentence: On fait une petite pause entre deux concerts.
+  - id: demander
+    term: demander
+    translation:
+      - vragen
+    example_sentence: Pardon, madame, je peux vous demander quelque chose ?
+  - id: perdre
+    term: perdre
+    forms: { perfect: perdu }   # printed as "perdre, perdu"
+    translation:
+      - verliezen, kwijtraken
+    example_sentence: Zut, j’ai perdu mon porte-monnaie !
+  - id: remplir
+    term: remplir
+    translation:
+      - vullen
+    example_sentence: Je peux remplir ma gourde ?
+  - id: chercher
+    term: chercher
+    translation:
+      - zoeken
+    example_sentence: Je cherche le magasin de souvenirs.
+  - id: se-trouver
+    term: se trouver (se trouve)
+    translation:
+      - zich bevinden
+    example_sentence: Le restaurant se trouve entre la scène et la sortie.
+  - id: toilettes
+    term: les toilettes
+    translation:
+      - de wc
+    example_sentence: Vous savez où sont les toilettes ?
+  - id: gourde
+    term: la gourde
+    translation:
+      - de drinkfles
+    example_sentence: Vous avez trouvé une gourde rouge ?
+  - id: caisse
+    term: la caisse
+    translation:
+      - de kassa
+    example_sentence: Excusez-moi, où sont les caisses ?
+  - id: point-d-eau
+    term: le point d’eau
+    translation:
+      - het waterpunt
+    example_sentence: Il y a un point d’eau ici ?
+  - id: carte-d-identite
+    term: la carte d’identité
+    translation:
+      - de ID-kaart
+    example_sentence: Il ne faut pas perdre sa carte d’identité.
+  - id: poste-de-secours
+    term: le poste de secours
+    translation:
+      - de hulppost, de EHBO-post
+    example_sentence: Excusez-moi, je cherche le poste de secours.
+  - id: probleme
+    term: le problème
+    translation:
+      - het probleem
+    example_sentence: Nous avons un petit problème.
+  - id: entree
+    term: l’entrée
+    translation:
+      - de ingang
+    example_sentence: Il y a beaucoup de monde devant l’entrée.
+  - id: sortie
+    term: la sortie
+    translation:
+      - de uitgang
+    example_sentence: J’attends ma copine à la sortie.

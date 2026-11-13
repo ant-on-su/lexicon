@@ -1,0 +1,109 @@
+meta:
+  id: fr-3-studio-2
+  title: 1-3 STUDIO
+  language: fr
+  translation_language: nl
+
+entries:
+  - id: repas
+    term: le repas
+    translation:
+      - de maaltijd
+    example_sentence: Vous prenez aussi trois repas par jour ?
+  - id: vegetarien
+    term: végétarien / végétarienne
+    translation:
+      - vegetarier
+    example_sentence: Elle ne mange pas de viande, elle est végétarienne.
+  - id: etre-amoureux
+    term: être amoureux / amoureuse
+    translation:
+      - verliefd zijn
+    example_sentence: Il est amoureux d’Amélie.
+  - id: pommes-de-terre
+    term: les pommes de terre
+    forms: { gender: v }   # printed as "(v. mv.)"
+    translation:
+      - de aardappels
+    example_sentence: On fait des frites avec les pommes de terre.
+  - id: oignon
+    term: l’oignon
+    forms: { gender: m }
+    translation:
+      - de ui
+    example_sentence: Yannick coupe l’oignon en petit morceaux.
+  - id: recette
+    term: la recette
+    translation:
+      - het recept
+    example_sentence: J’ai la recette pour faire une tarte aux légumes.
+  - id: liste-des-courses
+    term: la liste des courses
+    translation:
+      - de boodschappenlijst
+    example_sentence: Je fais une liste des courses avant d’aller au supermarché.
+  - id: soupe
+    term: la soupe
+    translation:
+      - de soep
+    example_sentence: Lisa mange souvent de la soupe aux légumes.
+  - id: beurre
+    term: le beurre
+    translation:
+      - de boter
+    example_sentence: Je mets du beurre sur ma tartine.
+  - id: farine
+    term: la farine
+    translation:
+      - het meel
+    example_sentence: Le pain est fait de farine et d’eau.
+  - id: frigo
+    term: le frigo
+    translation:
+      - de koelkast
+    example_sentence: Le beurre et le lait sont dans le frigo.
+  - id: apprendre
+    term: apprendre
+    translation:
+      - leren
+    example_sentence: Elle veut apprendre à faire une tarte aux pommes.
+  - id: patisserie
+    term: la pâtisserie
+    translation:
+      - de banketbakkerij
+    example_sentence: J’achète un gâteau au chocolat à la pâtisserie.
+  - id: gateau
+    term: le gâteau
+    translation:
+      - het gebak, de taart
+    example_sentence: Il a fait un gâteau super bon.
+  - id: caissiere
+    term: la caissière
+    translation:
+      - de kassière
+    example_sentence: Cette caissière ne travaille pas le lundi.
+  - id: incroyable
+    term: incroyable
+    translation:
+      - ongelofelijk
+    example_sentence: C’est incroyable !
+  - id: souvent
+    term: souvent
+    translation:
+      - vaak
+    example_sentence: Frédérique mange souvent des frites.
+  - id: poivron
+    term: le poivron
+    translation:
+      - de paprika
+    example_sentence: Le poivron est rouge, jaune ou vert.
+  - id: oeuf
+    term: un oeuf
+    translation:
+      - een ei
+    example_sentence: Un oeuf, c’est assez pour faire une omelette.
+  - id: pate
+    term: la pâte (toute prête)
+    translation:
+      - het (kant-en-klaar) deeg
+    example_sentence: La pâte toute prête est très pratique.

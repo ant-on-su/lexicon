@@ -8,7 +8,7 @@ import java.io.File
 import kotlin.random.Random
 
 class RaceTest {
-    private fun pool(lang: String) = File("resources/$lang/words").listFiles()!!
+    private fun pool(folder: File, lang: String) = File(folder, "$lang/words").listFiles()!!
         .flatMap { parseUnit(it.readText(), it.nameWithoutExtension).cards }
 
     private fun cards(n: Int) = List(n) { Card("c$it", "e$it", "term $it", "vertaling $it") }
@@ -75,12 +75,14 @@ class RaceTest {
 
     @Test
     fun boardIsNeverAmbiguous() {
-        listOf("latin", "german", "french", "greek").forEach { lang ->
-            repeat(20) { seed ->
-                val race = Race(pool(lang), pairs = 10, rounds = 10, random = Random(seed))
-                play(race) {
-                    val board = board(it)
-                    board.forEach { a -> board.forEach { b -> if (a !== b) assertFalse(a.conflictsWith(b)) } }
+        wordFolders.forEach { folder ->
+            listOf("latin", "german", "french", "greek").forEach { lang ->
+                repeat(20) { seed ->
+                    val race = Race(pool(folder, lang), pairs = 10, rounds = 10, random = Random(seed))
+                    play(race) {
+                        val board = board(it)
+                        board.forEach { a -> board.forEach { b -> if (a !== b) assertFalse(a.conflictsWith(b)) } }
+                    }
                 }
             }
         }

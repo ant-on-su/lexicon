@@ -40,8 +40,8 @@ android {
     buildFeatures {
         compose = true
     }
-    // Word lists (one folder per language) are bundled as assets.
-    sourceSets.getByName("main").assets.directories.add("resources")
+    // Demo word lists (one folder per language) are bundled as assets, until the user picks a word folder.
+    sourceSets.getByName("main").assets.directories.add("demo")
 }
 
 dependencies {

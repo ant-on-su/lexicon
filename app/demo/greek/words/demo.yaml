@@ -1,0 +1,130 @@
+meta:
+  id: gr-demo
+  title: Demo
+  language: el
+  translation_language: nl
+
+entries:
+  - id: ou
+    term: οὐ, οὐκ, οὐχ
+    translation:
+      - niet
+  - id: esti
+    term: ἐστί(ν)
+    translation:
+      - (hij, zij, het) is
+  - id: anthropos
+    term: ὁ ἄνθρωπος
+    translation:
+      - mens
+      - man
+  - id: theos
+    term: ὁ θεός
+    translation:
+      - god
+  - id: eisi
+    term: εἰσί(ν)
+    translation:
+      - (zij) zijn
+  - id: doulos
+    term: ὁ δοῦλος
+    translation:
+      - slaaf, tot slaaf gemaakte
+  - id: ti
+    term: τί...;
+    translation:
+      - waarom?
+  - id: echei
+    term: ἔχει
+    translation:
+      - (hij, zij, het) heeft
+  - id: echousi
+    term: ἔχουσι(ν)
+    translation:
+      - (zij) hebben
+  - id: chora
+    term: ἡ χώρα
+    translation:
+      - land, streek
+  - id: oikei
+    term: οἰκεῖ
+    translation:
+      - (hij, zij, het) woont, bewoont
+  - id: phobos
+    term: ὁ φόβος
+    translation:
+      - angst, vrees
+  - id: de
+    term: δέ, δ'
+    translation:
+      - en
+      - maar
+  - id: pherei
+    term: φέρει
+    translation:
+      - (hij, zij, het) draagt
+      - (hij, zij, het) brengt
+  - id: therion
+    term: τὸ θηρίον
+    forms: { plural: τὰ θηρία }
+    translation:
+      - wild dier, beest
+  - id: bainei
+    term: βαίνει
+    translation:
+      - (hij, zij, het) gaat
+  - id: pros
+    term: πρός + acc.
+    translation:
+      - naar(toe), tot
+  - id: alla
+    term: ἀλλά, ἀλλ'
+    translation:
+      - maar
+  - id: houtos
+    term: οὕτως, οὕτω
+    translation:
+      - zo, op die manier
+  - id: pheugei
+    term: φεύγει (+ acc.)
+    translation:
+      - (hij, zij, het) vlucht (voor)
+  - id: mache
+    term: ἡ μάχη
+    translation:
+      - gevecht, strijd
+  - id: nun
+    term: νῦν
+    translation:
+      - nu
+  - id: eis
+    term: εἰς + acc.
+    translation:
+      - naar, naar binnen, tot
+  - id: kai
+    term: καί
+    translation:
+      - en
+      - ook
+      - zelfs
+  - id: lambanei
+    term: λαμβάνει
+    translation:
+      - (hij, zij, het) neemt, pakt (vast)
+  - id: touto
+    term: τοῦτο
+    translation:
+      - dit, dat (nom. + acc. onz.)
+  - id: poiei
+    term: ποιεῖ
+    translation:
+      - (hij, zij, het) doet
+      - (hij, zij, het) maakt
+  - id: despotes
+    term: ὁ δεσπότης
+    translation:
+      - heerser, meester
+  - id: gar
+    term: γάρ
+    translation:
+      - want (γάρ staat op de 2de plaats van de zin)

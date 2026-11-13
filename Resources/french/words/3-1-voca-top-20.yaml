@@ -1,0 +1,215 @@
+meta:
+  id: fr-1-voca-top-20-3
+  title: 3-1 VOCA Top 20
+  language: fr
+  translation_language: nl
+
+entries:
+  - id: cinema
+    term: le cinéma
+    translation:
+      - de bioscoop
+    example_sentence: Nous allons au cinéma ce soir, il y a un bon film.
+  - id: concert
+    term: le concert
+    translation:
+      - het concert
+    example_sentence: Je suis allé au concert de Stromae, c’était super !
+  - id: chanson
+    term: la chanson
+    translation:
+      - het lied
+    example_sentence: Louana a chanté une belle chanson.
+  - id: artiste
+    term: l’artiste
+    translation:
+      - de artiest
+    example_sentence: L’artiste joue de la guitare.
+  - id: affiche
+    term: l’affiche
+    forms: { gender: v }
+    translation:
+      - het affiche
+    example_sentence: L’affiche du film est très belle.
+  - id: organiser
+    term: organiser
+    translation:
+      - organiseren
+    example_sentence: J’organise une fête pour mon anniversaire.
+  - id: entrer
+    term: entrer
+    translation:
+      - naar binnen gaan
+    example_sentence: Il veut entrer, mais la porte est fermée.
+  - id: rire
+    term: rire
+    translation:
+      - lachen
+    example_sentence: Cet acteur me fait toujours rire.
+  - id: pleurer
+    term: pleurer
+    translation:
+      - huilen
+    example_sentence: C’est un film triste, j’ai pleuré.
+  - id: sortir
+    term: sortir
+    translation:
+      - uitgaan / naar buiten gaan
+    example_sentence: Tu veux sortir ce soir ?
+  - id: spectacle
+    term: le spectacle
+    translation:
+      - de voorstelling
+    example_sentence: Le spectacle commence à 20 heures.
+  - id: vente
+    term: la vente
+    translation:
+      - de verkoop
+    example_sentence: La vente des billets se fait par Internet.
+  - id: ambiance
+    term: l’ambiance
+    forms: { gender: v }
+    translation:
+      - de sfeer
+    example_sentence: Il y a une bonne ambiance dans notre classe.
+  - id: favori
+    term: favori(te)
+    translation:
+      - lievelings-
+    example_sentence: C’est ma chanson favorite.
+  - id: derriere
+    term: derrière
+    translation:
+      - achter
+    example_sentence: Le parking est derrière le théâtre.
+  - id: pres-de
+    term: près de
+    translation:
+      - dichtbij
+    example_sentence: Il y a un arrêt de bus près d’ici.
+  - id: avant
+    term: avant
+    translation:
+      - voor (tijd)
+    example_sentence: Il faut partir avant 8 heures pour arriver à temps.
+  - id: apres
+    term: après
+    translation:
+      - na
+    example_sentence: Après l’école, je fais du sport.
+  - id: sur
+    term: sur
+    translation:
+      - op
+    example_sentence: Les fans sont allés sur la scène.
+  - id: devant
+    term: devant
+    translation:
+      - voor (plaats)
+    example_sentence: Il y a beaucoup de fans devant la salle de concert.
+  - id: gratuit
+    term: gratuit
+    translation:
+      - gratis
+    example_sentence: Le festival est gratuit. Super !
+  - id: pratique
+    term: pratique
+    translation:
+      - praktisch
+    example_sentence: Je vais à vélo, c’est plus pratique.
+  - id: terrain
+    term: le terrain
+    translation:
+      - het terrein
+    example_sentence: Il est interdit de fumer sur le terrain du festival.
+  - id: scene
+    term: la scène
+    translation:
+      - het podium
+    example_sentence: Les artistes sont déjà sur la scène.
+  - id: performance
+    term: la performance
+    translation:
+      - de voorstelling / het optreden
+    example_sentence: La performance n’est pas très bonne.
+  - id: arret-de-bus-metro
+    term: l’arrêt de bus / métro
+    forms: { gender: m }
+    translation:
+      - de bushalte / de metrohalte
+    example_sentence: Il y a un arrêt de bus tout près du musée.
+  - id: garer
+    term: garer
+    translation:
+      - parkeren
+    example_sentence: On ne peut pas garer la voiture là-bas.
+  - id: a-pied
+    term: à pied
+    translation:
+      - te voet
+    example_sentence: Je vais à pied, j’adore marcher.
+  - id: a-bicyclette
+    term: à bicyclette
+    translation:
+      - met de fiets
+  - id: a-velo
+    term: à vélo
+    translation:
+      - met de fiets
+    example_sentence: Nous allons à vélo, c’est plus rapide.
+  - id: en-metro
+    term: en métro
+    translation:
+      - met de metro
+    example_sentence: On peut aller au musée en métro ?
+  - id: toute-la-journee
+    term: toute la journée
+    translation:
+      - de hele dag
+    example_sentence: La fête dure toute la journée.
+  - id: bienvenue
+    term: bienvenue
+    translation:
+      - welkom
+    example_sentence: Bienvenue à tous !
+  - id: partout
+    term: partout
+    translation:
+      - overal
+    example_sentence: Il y a des bouteilles en plastique partout.
+  - id: avoir-lieu
+    term: avoir lieu
+    translation:
+      - plaatsvinden
+    example_sentence: Le festival a lieu dans le parc.
+  - id: trouver
+    term: trouver
+    translation:
+      - vinden
+    example_sentence: Tu ne trouves pas tes chaussures ?
+  - id: disponible
+    term: disponible
+    translation:
+      - beschikbaar
+    example_sentence: Les billets sont disponibles à partir du 11 juin.
+  - id: emporter
+    term: emporter
+    translation:
+      - meenemen
+    example_sentence: Il pleut, j’emporte un parapluie.
+  - id: eau-potable
+    term: l’eau potable
+    forms: { gender: v }
+    translation:
+      - drinkwater
+    example_sentence: Attention, ce n’est pas de l’eau potable.
+  - id: a-l-occasion-de
+    term: à l’occasion de
+    translation:
+      - ter gelegenheid van
+    example_sentence: Il y a une fête à l’occasion de son anniversaire.
+  - id: rater
+    term: rater
+    translation:
+      - missen
+    example_sentence: Viens vite, je ne veux pas rater le bus !

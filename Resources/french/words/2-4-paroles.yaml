@@ -1,0 +1,109 @@
+meta:
+  id: fr-4-paroles-2
+  title: 2-4 PAROLES
+  language: fr
+  translation_language: nl
+
+entries:
+  - id: tres
+    term: très
+    translation:
+      - heel, erg
+    example_sentence: J’ai toujours très faim après le cours d’EPS.
+  - id: alors
+    term: alors
+    translation:
+      - dus
+    example_sentence: Alors tu es en quatrième ?
+  - id: ou
+    term: ou
+    translation:
+      - of
+    example_sentence: Tu choisis le cours de musique ou de théâtre ?
+  - id: trop-de
+    term: trop (de)
+    translation:
+      - te, te veel
+    example_sentence: Nous avons trop de devoirs.
+  - id: theatre
+    term: le théâtre
+    translation:
+      - drama, toneel
+    example_sentence: On rigole toujours pendant le cours de théâtre.
+  - id: svt
+    term: SVT (sciences de la vie et de la terre)
+    translation:
+      - biologie
+    example_sentence: J’aime les cours de SVT car j’aime les animaux.
+  - id: neerlandais
+    term: le néerlandais
+    translation:
+      - Nederlands
+    example_sentence: La prof de néerlandais est sympathique.
+  - id: espagnol
+    term: l’espagnol
+    forms: { gender: m }
+    translation:
+      - Spaans
+    example_sentence: Je vais choisir l’espagnol.
+  - id: physique
+    term: la physique
+    translation:
+      - natuurkunde
+    example_sentence: La physique est difficile.
+  - id: technologie
+    term: la technologie
+    translation:
+      - techniek
+    example_sentence: La technologie est une matière pratique.
+  - id: utile
+    term: utile
+    translation:
+      - nuttig
+    example_sentence: Parler trois langues, c’est utile.
+  - id: amusant
+    term: amusant
+    translation:
+      - leuk
+    example_sentence: Chanter ensemble, c’est amusant.
+  - id: interessant
+    term: intéressant
+    translation:
+      - interessant
+    example_sentence: C’est un livre intéressant.
+  - id: interdit
+    term: interdit
+    translation:
+      - verboden
+    example_sentence: Les portables sont interdits dans la classe.
+  - id: emploi-du-temps
+    term: l’emploi du temps
+    forms: { gender: m }
+    translation:
+      - het rooster
+    example_sentence: Mon emploi du temps est génial ce semestre.
+  - id: matiere
+    term: la matière
+    translation:
+      - het schoolvak
+    example_sentence: Quelle est ta matière préférée ?
+  - id: casier
+    term: le casier
+    translation:
+      - het kluisje
+    example_sentence: Mes livres sont dans mon casier.
+  - id: couloir
+    term: le couloir
+    translation:
+      - de gang
+    example_sentence: Il faut être calme dans les couloirs.
+  - id: gymnase
+    term: le gymnase
+    translation:
+      - de gymzaal
+    example_sentence: Notre collège a deux gymnases.
+  - id: salle-de-classe
+    term: la salle (de classe)
+    translation:
+      - het lokaal
+    example_sentence: J’ai cours de français dans la salle 8.

@@ -33,6 +33,7 @@ import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.selection.selectable
 import androidx.compose.foundation.selection.toggleable
+import androidx.compose.foundation.selection.triStateToggleable
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.verticalScroll
@@ -44,6 +45,7 @@ import androidx.compose.material3.RadioButton
 import androidx.compose.material3.Switch
 import androidx.compose.material3.Text
 import androidx.compose.material3.TextButton
+import androidx.compose.material3.TriStateCheckbox
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
@@ -59,6 +61,7 @@ import androidx.compose.ui.graphics.graphicsLayer
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.semantics.Role
+import androidx.compose.ui.state.ToggleableState
 import androidx.compose.ui.text.AnnotatedString
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
@@ -142,7 +145,8 @@ fun ModeScreen(lang: Language, color: Color, options: RaceOptions, onOptions: (R
             Title(lang.name)
             ChunkyButton("Learn", SoonGrey, {}, note = "soon", enabled = false)
             ChunkyButton("Test", SoonGrey, {}, note = "soon", enabled = false)
-            ChunkyButton("Race!", color, onRace)
+            val hasUnits = lang.activeUnits(options).isNotEmpty()
+            ChunkyButton("Race!", color, onRace, note = if (hasUnits) null else "no units selected", enabled = hasUnits)
         }
         SettingsButton { showSettings = true }
     }
@@ -231,11 +235,11 @@ private fun GeneralSettings(
 
         SectionTitle("Word folder")
         Text(
-            "Your own word lists, in a folder per language with a words folder inside, like the built-in ones. " +
-                "They're read at every start. A unit with the same id replaces the built-in one.",
+            "Your word lists: a folder per language with a words folder of YAML files inside. " +
+                "They're read at every start and replace the demo words.",
             color = Muted,
         )
-        Text(library.folderName ?: "None: built-in words only", color = Ink, fontSize = 20.sp, fontWeight = FontWeight.Black)
+        Text(library.folderName ?: "None: demo words only", color = Ink, fontSize = 20.sp, fontWeight = FontWeight.Black)
         Row(horizontalArrangement = Arrangement.spacedBy(12.dp)) {
             SheetButton("Choose folder", Modifier.weight(1f)) { pick.launch(null) }
             if (library.folderName != null) SheetButton("Remove", Modifier.weight(1f)) { onFolder(null) }
@@ -333,18 +337,35 @@ private fun LanguageSettings(
 ) {
     SettingsSheet(onDismiss) {
         SectionTitle("Units")
+        val ids = lang.units.map { it.id }
         val included = lang.activeUnits(options).map { it.id }.toSet()
-        lang.units.forEach { unit ->
-            val on = unit.id in included
-            val isLast = on && included.size == 1
+        if (ids.size > 1) {
+            val all = when (included.size) {
+                ids.size -> ToggleableState.On
+                0 -> ToggleableState.Off
+                else -> ToggleableState.Indeterminate
+            }
             Row(
-                Modifier.fillMaxWidth().toggleable(on, enabled = !isLast) {
-                    val excluded = if (it) lang.units.map { u -> u.id } - included - unit.id else lang.units.map { u -> u.id } - included + unit.id
+                Modifier.fillMaxWidth().triStateToggleable(all, role = Role.Checkbox) {
+                    val excluded = if (all == ToggleableState.On) ids else emptyList()
                     onChange(options.copy(excludedUnits = excluded.toSet()))
                 },
                 verticalAlignment = Alignment.CenterVertically,
             ) {
-                Checkbox(on, onCheckedChange = null, enabled = !isLast)
+                TriStateCheckbox(all, onClick = null)
+                Text("All units", Modifier.padding(start = 8.dp), color = Ink, fontWeight = FontWeight.Black)
+            }
+        }
+        lang.units.forEach { unit ->
+            val on = unit.id in included
+            Row(
+                Modifier.fillMaxWidth().toggleable(on) {
+                    val excluded = if (it) ids - included - unit.id else ids - included + unit.id
+                    onChange(options.copy(excludedUnits = excluded.toSet()))
+                },
+                verticalAlignment = Alignment.CenterVertically,
+            ) {
+                Checkbox(on, onCheckedChange = null)
                 Text(unit.title, Modifier.padding(start = 8.dp), color = Ink)
             }
         }

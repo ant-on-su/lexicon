@@ -1,0 +1,169 @@
+meta:
+  id: la-demo
+  title: Demo
+  language: la
+  translation_language: nl
+
+entries:
+  - id: cura
+    term: cura
+    translation:
+      - zorg
+
+  - id: princeps
+    term: princeps
+    forms: { genitive: principis, gender: m }
+    translation:
+      - de eerste, leider
+      - keizer
+
+  - id: pax
+    term: pax
+    forms: { genitive: pacis, gender: v }
+    translation:
+      - vrede
+
+  - id: bellum
+    term: bellum
+    translation:
+      - oorlog
+
+  - id: urbs
+    term: urbs
+    forms: { genitive: urbis, gender: v }
+    translation:
+      - stad
+      - dé stad, Rome
+    card_per_sense: true
+
+  - id: hostis
+    term: hostis
+    forms: { genitive: hostis, gender: m }
+    translation:
+      - vijand
+
+  - id: dux
+    term: dux
+    forms: { genitive: ducis, gender: m }
+    translation:
+      - leider
+
+  - id: populus
+    term: populus
+    translation:
+      - volk
+
+  - id: ius
+    term: ius
+    forms: { genitive: iuris, gender: o }
+    translation:
+      - recht
+
+  - id: sicut
+    term: sicut
+    translation:
+      - zoals
+
+  - id: novus
+    term: novus, -a, -um
+    translation:
+      - nieuw
+
+  - id: scelus
+    term: scelus
+    forms: { genitive: sceleris, gender: o }
+    translation:
+      - misdaad
+
+  - id: virtus
+    term: virtus
+    forms: { genitive: virtutis, gender: v }
+    translation:
+      - deugd, goede eigenschap
+      - moed, dapperheid
+
+  - id: vinco
+    term: vinco (vincĕre)
+    forms: { perfect: vici }
+    translation:
+      - overwinnen, overtreffen
+
+  - id: laetus
+    term: laetus, -a, -um
+    translation:
+      - blij, vrolijk, opgewekt
+
+  - id: regia
+    term: regia
+    translation:
+      - paleis
+
+  - id: donum
+    term: donum
+    translation:
+      - geschenk
+
+  - id: statim
+    term: statim
+    translation:
+      - meteen
+
+  - id: cibus
+    term: cibus
+    translation:
+      - voedsel, eten
+
+  - id: mensa
+    term: mensa
+    translation:
+      - tafel
+
+  - id: nunc
+    term: nunc
+    translation:
+      - nu
+
+  - id: rex
+    term: rex
+    translation:
+      - koning
+
+  - id: vinum
+    term: vinum
+    translation:
+      - wijn
+
+  - id: servus
+    term: servus
+    translation:
+      - slaaf
+
+  - id: aurum
+    term: aurum
+    translation:
+      - goud
+
+  - id: victoria
+    term: victoria
+    translation:
+      - overwinning
+
+  - id: mons
+    term: mons
+    translation:
+      - berg
+
+  - id: deus
+    term: deus
+    translation:
+      - god
+
+  - id: silva
+    term: silva
+    translation:
+      - bos
+
+  - id: videt
+    term: videt (vidēre)
+    translation:
+      - hij/zij/het ziet

@@ -7,6 +7,9 @@ import org.junit.Assert.assertTrue
 import org.junit.Test
 import java.io.File
 
+/** The demo words shipped with the app, and the full word lists kept in the repo's `Resources` folder. */
+val wordFolders = listOf(File("demo"), File("../Resources"))
+
 class WordsTest {
     private val unit = parseUnit(
         """
@@ -96,7 +99,7 @@ class WordsTest {
         val files = listOf(
             UnitFile("german", "b.yaml") { yaml("b", "bundled") },
             UnitFile("german", "a.yaml") { yaml("a", "bundled") },
-            // From the word folder, after the bundled files.
+            // A later file with the same id replaces the earlier unit.
             UnitFile("german", "b-edited.yaml") { yaml("b", "edited") },
             UnitFile("german", "c.yaml") { yaml("c", "new") },
             UnitFile("german", "broken.yaml") { "meta: [\n  id: oops" },
@@ -117,9 +120,8 @@ class WordsTest {
 
     @Test
     fun bundledWordListsParse() {
-        val files = File("resources").walkTopDown().filter { it.extension == "yaml" }.toList()
-        assertTrue(files.isNotEmpty())
-        files.forEach { file ->
+        wordFolders.forEach { folder -> assertTrue("$folder has no words", folder.walkTopDown().any { it.extension == "yaml" }) }
+        wordFolders.flatMap { folder -> folder.walkTopDown().filter { it.extension == "yaml" } }.forEach { file ->
             val parsed = parseUnit(file.readText(), file.nameWithoutExtension)
             assertTrue("${file.name} has no cards", parsed.cards.isNotEmpty())
         }
@@ -127,7 +129,7 @@ class WordsTest {
 
     @Test
     fun languagesUseTheirOwnNames() {
-        val files = File("resources").walkTopDown().filter { it.extension == "yaml" }.map { file ->
+        val files = File("demo").walkTopDown().filter { it.extension == "yaml" }.map { file ->
             UnitFile(file.parentFile!!.parentFile!!.name, file.name) { file.readText() }
         }.toList()
         val names = loadLanguages(files).associate { it.folder to it.name }

@@ -1,0 +1,109 @@
+meta:
+  id: fr-4-paroles
+  title: 1-4 PAROLES
+  language: fr
+  translation_language: nl
+
+entries:
+  - id: je-voudrais
+    term: je voudrais
+    translation:
+      - ik zou willen
+    example_sentence: Je voudrais deux croissants.
+  - id: appli
+    term: l’appli
+    forms: { gender: v }
+    translation:
+      - de app
+    example_sentence: J’ai beaucoup d’applis sur mon téléphone.
+  - id: rapide
+    term: rapide
+    translation:
+      - snel
+    example_sentence: Le service au bistro est rapide.
+  - id: poubelle
+    term: la poubelle
+    translation:
+      - de vuilnisbak
+    example_sentence: On jette les restes dans la poubelle.
+  - id: choix
+    term: le choix
+    translation:
+      - de keuze
+    example_sentence: Il y a beaucoup de choix dans ce restaurant.
+  - id: pomme
+    term: la pomme
+    translation:
+      - de appel
+    example_sentence: Je coupe la pomme en quatre.
+  - id: banane
+    term: la banane
+    translation:
+      - de banaan
+    example_sentence: La banane est jaune.
+  - id: fraise
+    term: la fraise
+    translation:
+      - de aardbei
+    example_sentence: Juliette adore les fraises.
+  - id: melon
+    term: le melon
+    translation:
+      - de meloen
+    example_sentence: Ce melon est très sucré.
+  - id: reserver
+    term: réserver
+    translation:
+      - reserveren
+    example_sentence: Je voudrais réserver une table pour quatre personnes.
+  - id: entree
+    term: l’entrée
+    forms: { gender: v }
+    translation:
+      - het voorgerecht
+    example_sentence: Comme entrée, je prends une soupe.
+  - id: plat-principal
+    term: le plat principal
+    translation:
+      - het hoofdgerecht
+    example_sentence: Nous préparons le plat principal ce soir.
+  - id: dessert
+    term: le dessert
+    translation:
+      - het nagerecht / het toetje
+    example_sentence: Quel est ton dessert préféré ?
+  - id: local
+    term: local
+    translation:
+      - plaatselijk / lokaal
+    example_sentence: La pâtisserie locale fait de bons gâteaux.
+  - id: nourriture
+    term: la nourriture
+    translation:
+      - het voedsel / het eten
+    example_sentence: Comment est la nourriture dans votre cantine ?
+  - id: jeter
+    term: jeter
+    translation:
+      - (weg)gooien
+    example_sentence: Jette ça à la poubelle, Léo !
+  - id: choisir
+    term: choisir
+    translation:
+      - kiezen
+    example_sentence: Je choisis la salade aux tomates. Et toi ?
+  - id: noter-la-qualite
+    term: noter la qualité
+    translation:
+      - beoordelen / een review geven
+    example_sentence: On peut noter la qualité de ce restaurant.
+  - id: bio
+    term: bio
+    translation:
+      - biologisch
+    example_sentence: Je préfère la nourriture bio.
+  - id: saucisse
+    term: la saucisse
+    translation:
+      - de (warme) worst
+    example_sentence: Ce soir, on mange des saucisses grillées avec une salade verte.
