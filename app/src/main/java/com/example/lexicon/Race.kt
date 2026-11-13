@@ -6,12 +6,15 @@ import androidx.compose.runtime.mutableStateListOf
 import androidx.compose.runtime.setValue
 import kotlin.random.Random
 
-const val PENALTY_MS = 3_000L
+/** Fewer mistaken words than this are only shown, not raced. */
+const val MIN_CORRECTION_WORDS = 3
 
 data class RaceResult(
     val totalMs: Long,
     val mistakes: Int,
     val roundsMs: List<Long>,
+    /** Time spent on retries of mistaken cards after the last round, 0 when there were none. */
+    val retryMs: Long,
     val bestMs: Long,
     val newBest: Boolean,
 )
@@ -19,15 +22,21 @@ data class RaceResult(
 /**
  * The board of a race. It is one continuous board: when half of the pairs are matched,
  * new pairs fill the empty left slots and the right column is reshuffled.
- * A round is every [pairs] matches, a race is [pairs] × rounds matches.
+ * A round is every [pairs] matches; [total] starts at the number of cards to deal.
+ * Mistaken cards come back when one pair is left after the last card is dealt, until none are mistaken again.
+ * [priority] (higher first) breaks ties between equally shown cards.
  */
 class Race(
     private val pool: List<Card>,
     val pairs: Int,
-    rounds: Int,
+    total: Int,
     private val random: Random = Random.Default,
+    private val priority: Map<String, Int> = emptyMap(),
 ) {
-    val total = pairs * rounds
+    /** Cards dealt from the pool, without retries. */
+    val regular = total
+    var total by mutableIntStateOf(total)
+        private set
     val left = mutableStateListOf<Card?>()
     val right = mutableStateListOf<Card?>()
     var matched by mutableIntStateOf(0)
@@ -36,6 +45,15 @@ class Race(
         private set
     val finished get() = matched >= total
 
+    /** Left cards that were mistaken in this race. */
+    val missed: Set<Card> get() = missedCards
+    /** Cards matched in this race. */
+    val solved: Set<Card> get() = solvedCards
+
+    private val missedCards = mutableSetOf<Card>()
+    private val solvedCards = mutableSetOf<Card>()
+    private val retries = mutableSetOf<Card>()
+    private val again = mutableListOf<Card>()
     private var dealt = 0
     private val shown = mutableMapOf<String, Int>()
 
@@ -48,8 +66,11 @@ class Race(
         refill()
     }
 
-    fun miss() {
+    /** A wrong pair was tapped with [card] on the left: it comes back at the end. */
+    fun miss(card: Card) {
         mistakes++
+        missedCards += card
+        retries += card
     }
 
     /** Removes a matched pair from the board. Returns true when this match ends a round. */
@@ -60,19 +81,31 @@ class Race(
         left[i] = null
         right[j] = null
         matched++
-        if (left.count { it != null } * 2 <= pairs) refill()
-        return matched % pairs == 0
+        solvedCards += card
+        val onBoard = left.count { it != null }
+        if (dealt >= regular && again.isEmpty() && onBoard <= 1 && retries.isNotEmpty()) {
+            again += retries.shuffled(random)
+            total += retries.size
+            retries.clear()
+        }
+        if (onBoard * 2 <= pairs) refill()
+        return matched % pairs == 0 && matched <= regular
     }
 
     private fun refill() {
         val board = left.filterNotNull().toMutableList()
         val fresh = mutableListOf<Card>()
-        while (board.size < pairs && dealt < total) {
-            val card = pick(board) ?: break
+        while (board.size < pairs) {
+            val card = if (dealt < regular) {
+                pick(board)?.also {
+                    dealt++
+                    shown[it.id] = (shown[it.id] ?: 0) + 1
+                }
+            } else {
+                again.firstOrNull { card -> board.none { it.conflictsWith(card) } }?.also { again -= it }
+            } ?: break
             board += card
             fresh += card
-            dealt++
-            shown[card.id] = (shown[card.id] ?: 0) + 1
         }
         if (fresh.isEmpty()) return
         val emptyLeft = left.indices.filter { left[it] == null }.shuffled(random)
@@ -86,10 +119,12 @@ class Race(
         order.forEachIndexed { k, card -> right[k] = card }
     }
 
-    /** A card that is unambiguous next to [board], preferring the least shown ones. */
+    /** A card that is unambiguous next to [board], preferring the least shown ones, then the highest priority. */
     private fun pick(board: List<Card>): Card? {
         val options = pool.filter { card -> board.none { it.conflictsWith(card) } }
         val least = options.minOfOrNull { shown[it.id] ?: 0 } ?: return null
-        return options.filter { (shown[it.id] ?: 0) == least }.random(random)
+        val fewest = options.filter { (shown[it.id] ?: 0) == least }
+        val top = fewest.maxOf { priority[it.id] ?: 0 }
+        return fewest.filter { (priority[it.id] ?: 0) == top }.random(random)
     }
 }

@@ -40,8 +40,10 @@ After making changes, build and run lint and unit tests before calling a task do
 
 - One continuous board: when at least half the pairs are matched, new pairs fill the empty left slots and the right column reshuffles. A round is every `pairs` matches; a race is `pairs × rounds` matches.
 - Never two cards from the same entry, the same term, or with a shared Dutch meaning on the board at once. Meanings: split on `, / ;`, ignore brackets, case, accents and leading `de/het/een`.
-- A mistake adds +3 s. The timer only runs while the app is resumed. Least-shown cards are preferred.
+- No time penalty. A mistake counts only the left card. Mistaken cards come back (shuffled) once every card is dealt and one pair is left, and again until none is mistaken; the timer runs through these retries (shown as a "Retries" chip after the rounds). The timer only runs while the app is resumed. Least-shown cards are preferred.
 - Pairs 5–10 (default 6), rounds 3–10 (default 3). Units are stored as excluded, so new units are on by default. An "All units" tri-state toggle can clear them all; Race! is then disabled until a unit is picked.
+- Mistakes are counted per card id and per language over all races (`Prefs.mistakes`, from all units, saved at each miss). "Correct mistakes" (below Race!) shows the sum and goes from pink to red as different mistaken words approach the cap. Below 3 words it only shows them with their translations. From 3 it runs an untimed race over all of them, highest count first, with the same retries; words matched without a mistake are cleared, and clearing all is applauded.
+- Max mistaken words 5–30 (default 10): with more different words than that (11 by default), Race!, Start and Again are blocked until mistakes are corrected.
 - Only the Race! mode exists; Learn and Test are "soon" placeholders.
 
 ## Build gotchas

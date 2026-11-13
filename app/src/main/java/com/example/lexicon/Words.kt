@@ -49,6 +49,9 @@ data class Language(
     fun activeUnits(options: RaceOptions) = units.filter { it.id !in options.excludedUnits }
 
     fun cards(options: RaceOptions) = activeUnits(options).flatMap { it.cards }
+
+    /** The cards in [mistakes], from all units. Ids no longer in the word files are left out. */
+    fun mistakenCards(mistakes: Map<String, Int>) = units.flatMap { it.cards }.filter { it.id in mistakes }
 }
 
 private val brackets = Regex("\\([^)]*\\)")

@@ -58,6 +58,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.blur
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.graphicsLayer
+import androidx.compose.ui.graphics.lerp
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.semantics.Role
@@ -70,6 +71,8 @@ import androidx.compose.ui.unit.sp
 import androidx.core.net.toUri
 import com.example.lexicon.ui.theme.Cream
 import com.example.lexicon.ui.theme.Ink
+import com.example.lexicon.ui.theme.MistakePink
+import com.example.lexicon.ui.theme.MistakeRed
 import com.example.lexicon.ui.theme.Muted
 import com.example.lexicon.ui.theme.SoonGrey
 import kotlinx.coroutines.delay
@@ -137,24 +140,75 @@ fun LanguageScreen(
     }
 }
 
+/**
+ * Race!, blocked while there are more mistaken words than [RaceOptions.maxMistakes], and "Correct mistakes",
+ * which shows the words while there are fewer than [MIN_CORRECTION_WORDS] and runs a correction from there.
+ */
 @Composable
-fun ModeScreen(lang: Language, color: Color, options: RaceOptions, onOptions: (RaceOptions) -> Unit, onRace: () -> Unit) {
+fun ModeScreen(
+    lang: Language,
+    color: Color,
+    options: RaceOptions,
+    onOptions: (RaceOptions) -> Unit,
+    mistakes: Map<String, Int>,
+    onRace: () -> Unit,
+    onCorrect: () -> Unit,
+) {
     var showSettings by rememberSaveable { mutableStateOf(false) }
+    var showMistakes by rememberSaveable { mutableStateOf(false) }
+    val mistaken = remember(lang, mistakes) { lang.mistakenCards(mistakes) }
     Box(Modifier.fillMaxSize()) {
         CenterColumn {
             Title(lang.name)
             ChunkyButton("Learn", SoonGrey, {}, note = "soon", enabled = false)
             ChunkyButton("Test", SoonGrey, {}, note = "soon", enabled = false)
             val hasUnits = lang.activeUnits(options).isNotEmpty()
-            ChunkyButton("Race!", color, onRace, note = if (hasUnits) null else "no units selected", enabled = hasUnits)
+            val blocked = mistaken.size > options.maxMistakes
+            ChunkyButton(
+                "Race!",
+                color,
+                onRace,
+                note = if (!hasUnits) "no units selected" else if (blocked) TOO_MANY_MISTAKES else null,
+                enabled = hasUnits && !blocked,
+            )
+            val count = mistaken.sumOf { mistakes.getValue(it.id) }
+            val heat = (mistaken.size.toFloat() / options.maxMistakes).coerceIn(0f, 1f)
+            ChunkyButton(
+                if (count > 0) "Correct mistakes · $count" else "Correct mistakes",
+                if (count > 0) lerp(MistakePink, MistakeRed, heat) else SoonGrey,
+                { if (mistaken.size >= MIN_CORRECTION_WORDS) onCorrect() else showMistakes = true },
+                note = when {
+                    count == 0 -> "none yet"
+                    mistaken.size < MIN_CORRECTION_WORDS -> "see the words · runs from $MIN_CORRECTION_WORDS words"
+                    else -> null
+                },
+                enabled = count > 0,
+            )
         }
         SettingsButton { showSettings = true }
     }
     if (showSettings) LanguageSettings(lang, color, options, onOptions) { showSettings = false }
+    if (showMistakes) {
+        ChoiceDialog("Your mistakes", onDismiss = { showMistakes = false }) {
+            mistaken.forEach { card ->
+                Row(Modifier.fillMaxWidth().padding(vertical = 6.dp), horizontalArrangement = Arrangement.spacedBy(12.dp)) {
+                    Text(card.term, Modifier.weight(1f), color = Ink, fontSize = 18.sp, fontWeight = FontWeight.Black)
+                    Text(card.translation, Modifier.weight(1f), color = Ink, fontSize = 18.sp)
+                }
+            }
+            Text(
+                "A correction run starts from $MIN_CORRECTION_WORDS words.",
+                Modifier.padding(top = 8.dp),
+                color = Muted,
+            )
+        }
+    }
 }
 
+private const val TOO_MANY_MISTAKES = "too many mistakes: correct them first"
+
 @Composable
-fun StartScreen(lang: Language, color: Color, options: RaceOptions, bestMs: Long?, onStart: () -> Unit) {
+fun StartScreen(lang: Language, color: Color, options: RaceOptions, bestMs: Long?, blocked: Boolean, onStart: () -> Unit) {
     Box(Modifier.fillMaxSize()) {
         Column(
             Modifier.align(Alignment.Center).padding(24.dp),
@@ -162,9 +216,10 @@ fun StartScreen(lang: Language, color: Color, options: RaceOptions, bestMs: Long
             horizontalAlignment = Alignment.CenterHorizontally,
         ) {
             Title(lang.name)
-            Chunky(color, onStart, Modifier.size(240.dp), shape = CircleShape, depth = 10.dp) {
-                Text("START", color = Ink, fontSize = 44.sp, fontWeight = FontWeight.Black)
+            Chunky(if (blocked) SoonGrey else color, onStart, Modifier.size(240.dp), !blocked, CircleShape, 10.dp) {
+                Text("START", color = if (blocked) Muted else Ink, fontSize = 44.sp, fontWeight = FontWeight.Black)
             }
+            if (blocked) Text(TOO_MANY_MISTAKES, color = Ink, fontWeight = FontWeight.Bold, textAlign = TextAlign.Center)
             val (from, to) = if (options.reverse) lang.translationName to lang.name else lang.name to lang.translationName
             Text("$from → $to · ${options.pairs} pairs · ${options.rounds} rounds", color = Muted, textAlign = TextAlign.Center)
             if (bestMs != null) Text("Best: ${formatTime(bestMs)}", color = Ink, fontWeight = FontWeight.Bold)
@@ -387,6 +442,7 @@ private fun LanguageSettings(
         if (lang.hasGender) {
             SwitchRow("Show gender (m/v/o)", options.showGender) { onChange(options.copy(showGender = it)) }
         }
+        Stepper("Max mistaken words", options.maxMistakes, MaxMistakesRange) { onChange(options.copy(maxMistakes = it)) }
     }
 }
 
@@ -424,35 +480,77 @@ private fun SwitchRow(label: String, checked: Boolean, onChange: (Boolean) -> Un
 
 @OptIn(ExperimentalLayoutApi::class)
 @Composable
-fun ResultsScreen(color: Color, result: RaceResult, onAgain: () -> Unit, onMenu: () -> Unit) {
+fun ResultsScreen(color: Color, result: RaceResult, canAgain: Boolean, onAgain: () -> Unit, onMenu: () -> Unit) {
     Box(Modifier.fillMaxSize()) {
         CenterColumn {
-            if (result.newBest) NewBest(color)
+            if (result.newBest) Banner("🏆 New best!", color)
             Text(formatTime(result.totalMs), color = Ink, fontSize = 64.sp, fontWeight = FontWeight.Black)
-            val penalty = if (result.mistakes > 0) "  (+${result.mistakes * PENALTY_MS / 1000} s)" else ""
-            Text("Mistakes: ${result.mistakes}$penalty", color = Ink, fontSize = 20.sp, fontWeight = FontWeight.Bold)
+            Text("Mistakes: ${result.mistakes}", color = Ink, fontSize = 20.sp, fontWeight = FontWeight.Bold)
             FlowRow(
                 horizontalArrangement = Arrangement.spacedBy(8.dp, Alignment.CenterHorizontally),
                 verticalArrangement = Arrangement.spacedBy(8.dp),
             ) {
-                result.roundsMs.forEachIndexed { i, ms ->
+                val chips = result.roundsMs.mapIndexed { i, ms -> "R${i + 1}  ${formatTime(ms)}" } +
+                    listOfNotNull(result.retryMs.takeIf { it > 0 }?.let { "Retries  ${formatTime(it)}" })
+                chips.forEach { chip ->
                     Text(
-                        "R${i + 1}  ${formatTime(ms)}",
+                        chip,
                         Modifier.background(Color.White, RoundedCornerShape(50)).padding(horizontal = 12.dp, vertical = 6.dp),
                         color = Ink,
                     )
                 }
             }
             Text("Best: ${formatTime(result.bestMs)}", color = Muted, fontSize = 18.sp, fontWeight = FontWeight.Bold)
-            ChunkyButton("Again", color, onAgain)
+            ChunkyButton("Again", color, onAgain, note = if (canAgain) null else TOO_MANY_MISTAKES, enabled = canAgain)
             ChunkyButton("Menu", Color.White, onMenu)
         }
         Confetti(pieces = if (result.newBest) 220 else 110)
     }
 }
 
+/**
+ * The end of a correction run: [cleared] words matched without a mistake are gone, [left] are still to correct.
+ * When none are left, it's applauded.
+ */
 @Composable
-private fun NewBest(color: Color) {
+fun CorrectedScreen(color: Color, mistakes: Int, cleared: Int, left: Int, onAgain: () -> Unit, onDone: () -> Unit) {
+    Box(Modifier.fillMaxSize()) {
+        CenterColumn {
+            if (left == 0) {
+                Applause()
+                Banner("🎉 All clear!", color)
+                Text("$cleared words corrected", color = Ink, fontSize = 20.sp, fontWeight = FontWeight.Bold)
+            } else {
+                Text("Mistakes: $mistakes", color = Ink, fontSize = 32.sp, fontWeight = FontWeight.Black)
+                Text("$cleared cleared · $left to go", color = Muted, fontSize = 20.sp, fontWeight = FontWeight.Bold)
+                val canAgain = left >= MIN_CORRECTION_WORDS
+                ChunkyButton(
+                    "Again",
+                    color,
+                    onAgain,
+                    note = if (canAgain) null else "runs from $MIN_CORRECTION_WORDS words",
+                    enabled = canAgain,
+                )
+            }
+            ChunkyButton("Done", Color.White, onDone)
+        }
+        if (left == 0) Confetti(pieces = 260)
+    }
+}
+
+@Composable
+private fun Applause() {
+    val clap by rememberInfiniteTransition(label = "clap").animateFloat(
+        initialValue = 1f,
+        targetValue = 1.25f,
+        animationSpec = infiniteRepeatable(tween(220), RepeatMode.Reverse),
+        label = "clap",
+    )
+    Text("👏", Modifier.graphicsLayer { scaleX = clap; scaleY = clap; rotationZ = (clap - 1.125f) * 60 }, fontSize = 110.sp)
+}
+
+@Composable
+private fun Banner(text: String, color: Color) {
     val pulse by rememberInfiniteTransition(label = "pulse").animateFloat(
         initialValue = 1f,
         targetValue = 1.12f,
@@ -460,7 +558,7 @@ private fun NewBest(color: Color) {
         label = "pulse",
     )
     Text(
-        "🏆 New best!",
+        text,
         Modifier
             .graphicsLayer { scaleX = pulse; scaleY = pulse }
             .background(color, RoundedCornerShape(50))

@@ -56,17 +56,22 @@ private enum class Look { Idle, Selected, Good, Bad }
 
 private const val FEEDBACK_MS = 450L
 
-/** Counts down 3-2-1, then runs the race. Reports matches and mistakes as they happen, then total time, mistakes and time per round. */
+/**
+ * Runs the race made by [newRace]. A [timed] race counts down 3-2-1 first, and its clock runs until the last retry is matched.
+ * Reports the left card of each mistake as it happens, then the race with total time, time per round and time on retries.
+ */
 @Composable
 fun RaceScreen(
-    lang: Language,
     color: Color,
     options: RaceOptions,
+    timed: Boolean,
+    newRace: () -> Race,
     onCue: (Cue) -> Unit,
-    onFinish: (totalMs: Long, mistakes: Int, roundsMs: List<Long>) -> Unit,
+    onMiss: (Card) -> Unit,
+    onFinish: (race: Race, totalMs: Long, roundsMs: List<Long>, retryMs: Long) -> Unit,
 ) {
-    val race = remember { Race(lang.cards(options), options.pairs, options.rounds) }
-    var countdown by remember { mutableIntStateOf(3) }
+    val race = remember { newRace() }
+    var countdown by remember { mutableIntStateOf(if (timed) 3 else 0) }
     var elapsed by remember { mutableLongStateOf(0L) }
     val splits = remember { mutableListOf<Long>() }
     var selectedLeft by remember { mutableStateOf<String?>(null) }
@@ -77,6 +82,7 @@ fun RaceScreen(
     val lifecycle = LocalLifecycleOwner.current.lifecycle
 
     LaunchedEffect(Unit) {
+        if (!timed) return@LaunchedEffect
         while (countdown > 0) {
             onCue(Cue.Countdown)
             delay(1000)
@@ -86,7 +92,7 @@ fun RaceScreen(
     }
     // The clock only ticks while the app is in the foreground.
     LaunchedEffect(countdown == 0) {
-        if (countdown > 0) return@LaunchedEffect
+        if (!timed || countdown > 0) return@LaunchedEffect
         lifecycle.repeatOnLifecycle(Lifecycle.State.RESUMED) {
             var last = withFrameMillis { it }
             while (true) {
@@ -110,7 +116,7 @@ fun RaceScreen(
         selectedLeft = null
         selectedRight = null
         if (l == r) {
-            val at = elapsed + race.mistakes * PENALTY_MS
+            val at = elapsed
             good += l
             onCue(Cue.Correct)
             scope.launch {
@@ -119,11 +125,14 @@ fun RaceScreen(
                 good -= l
                 if (roundDone) splits += at
                 if (race.finished) {
-                    onFinish(at, race.mistakes, splits.mapIndexed { i, t -> t - (splits.getOrNull(i - 1) ?: 0L) })
+                    val roundsMs = splits.mapIndexed { i, t -> t - (splits.getOrNull(i - 1) ?: 0L) }
+                    onFinish(race, at, roundsMs, at - (splits.lastOrNull() ?: 0L))
                 }
             }
         } else {
-            race.miss()
+            val missed = race.left.first { it?.id == l }!!
+            race.miss(missed)
+            onMiss(missed)
             bad = l to r
             onCue(Cue.Mistake)
             scope.launch {
@@ -152,7 +161,11 @@ fun RaceScreen(
 
     Column(Modifier.fillMaxSize()) {
         Row(Modifier.fillMaxWidth().padding(horizontal = 20.dp, vertical = 12.dp), verticalAlignment = Alignment.CenterVertically) {
-            Text(formatTime(elapsed + race.mistakes * PENALTY_MS), color = Ink, fontSize = 32.sp, fontWeight = FontWeight.Black)
+            if (timed) {
+                Text(formatTime(elapsed), color = Ink, fontSize = 32.sp, fontWeight = FontWeight.Black)
+            } else {
+                Text("Correcting", color = Ink, fontSize = 26.sp, fontWeight = FontWeight.Black)
+            }
             Spacer(Modifier.weight(1f))
             Text("${race.matched}/${race.total}", color = Muted, fontSize = 20.sp, fontWeight = FontWeight.Bold)
             Text("  ✕ ${race.mistakes}", color = BadRed, fontSize = 20.sp, fontWeight = FontWeight.Black)

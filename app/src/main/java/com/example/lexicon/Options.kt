@@ -7,6 +7,7 @@ import androidx.core.net.toUri
 
 val PairsRange = 5..10
 val RoundsRange = 3..10
+val MaxMistakesRange = 5..30
 
 data class RaceOptions(
     /** Units are stored as excluded, so new units are practised by default. */
@@ -16,6 +17,8 @@ data class RaceOptions(
     val rounds: Int = 3,
     val showForms: Boolean = false,
     val showGender: Boolean = false,
+    /** With more different mistaken words than this, the race is blocked until they're corrected. */
+    val maxMistakes: Int = 10,
 )
 
 /** Sound and vibration, shared by all languages. A cue's sound is a [Tone] name, a phone sound's URI, or "" for none. */
@@ -42,6 +45,7 @@ class Prefs(context: Context) {
         rounds = prefs.getInt("$lang.rounds", 3).coerceIn(RoundsRange),
         showForms = prefs.getBoolean("$lang.showForms", false),
         showGender = prefs.getBoolean("$lang.showGender", false),
+        maxMistakes = prefs.getInt("$lang.maxMistakes", 10).coerceIn(MaxMistakesRange),
     )
 
     fun saveOptions(lang: String, options: RaceOptions) = prefs.edit {
@@ -51,6 +55,7 @@ class Prefs(context: Context) {
         putInt("$lang.rounds", options.rounds)
         putBoolean("$lang.showForms", options.showForms)
         putBoolean("$lang.showGender", options.showGender)
+        putInt("$lang.maxMistakes", options.maxMistakes)
     }
 
     fun feedback() = FeedbackOptions(
@@ -76,6 +81,22 @@ class Prefs(context: Context) {
     fun best(key: String): Long? = prefs.getLong("best.$key", -1L).takeIf { it >= 0 }
 
     fun saveBest(key: String, ms: Long) = prefs.edit { putLong("best.$key", ms) }
+
+    /** How many times each card was mistaken, by card id, over all races of a language. Stored as "count<tab>id". */
+    fun mistakes(lang: String): Map<String, Int> =
+        prefs.getStringSet("$lang.mistakes", null).orEmpty().mapNotNull { entry ->
+            val (count, id) = entry.split('\t', limit = 2).takeIf { it.size == 2 } ?: return@mapNotNull null
+            count.toIntOrNull()?.takeIf { it > 0 }?.let { id to it }
+        }.toMap()
+
+    fun saveMistakes(lang: String, mistakes: Map<String, Int>) = prefs.edit {
+        putStringSet("$lang.mistakes", mistakes.map { (id, count) -> "$count\t$id" }.toSet())
+    }
+
+    fun addMistake(lang: String, id: String) {
+        val mistakes = mistakes(lang)
+        saveMistakes(lang, mistakes + (id to (mistakes[id] ?: 0) + 1))
+    }
 }
 
 /** Best times are kept per language and per combination of options. */
