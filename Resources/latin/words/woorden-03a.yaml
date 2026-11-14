@@ -1,0 +1,158 @@
+meta:
+  id: la-woorden-3a
+  title: Woorden 3A
+  language: la
+  translation_language: nl
+
+entries:
+  - id: ager
+    term: ager
+    forms: { genitive: agri }
+    translation:
+      - akker, land
+
+  - id: agricola
+    term: agricola
+    translation:
+      - boer
+
+  - id: aqua
+    term: aqua
+    translation:
+      - water
+
+  - id: bibo
+    term: bibo (bibĕre)
+    translation:
+      - drinken
+
+  - id: cur
+    term: cur
+    translation:
+      - waarom
+
+  - id: dea
+    term: dea
+    translation:
+      - godin
+
+  - id: dico
+    term: dico (dicĕre)
+    forms: { perfect: dixi }
+    translation:
+      - zeggen, spreken
+      - noemen
+    card_per_sense: true
+
+  - id: forte
+    term: forte (bijw.)
+    translation:
+      - toevallig
+
+  - id: habito
+    term: habito (habitare)
+    translation:
+      - wonen
+
+  - id: ibi
+    term: ibi
+    translation:
+      - daar
+
+  - id: iratus_a_um
+    term: iratus, -a, -um
+    translation:
+      - boos
+
+  - id: iter
+    term: iter
+    forms: { genitive: itineris, gender: o }
+    translation:
+      - weg
+      - reis, mars
+    card_per_sense: true
+
+  - id: laboro
+    term: laboro (laborare)
+    translation:
+      - zich inspannen, zwoegen
+      - lijden
+    card_per_sense: true
+
+  - id: liberi
+    term: liberi (mv.)
+    translation:
+      - kinderen
+
+  - id: meus_a_um
+    term: meus, -a, -um
+    translation:
+      - mijn
+
+  - id: moveo
+    term: moveo (movēre)
+    forms: { perfect: movi }
+    translation:
+      - bewegen, ontroeren
+
+  - id: ne
+    term: "-ne"
+    translation:
+      - (leidt een vraag in; niet vertalen)
+
+  - id: non
+    term: non
+    translation:
+      - niet
+
+  - id: nos
+    term: nos (nom./acc.)
+    translation:
+      - wij, ons
+
+  - id: noster_tra_trum
+    term: noster, -tra, -trum (bez. vnw.)
+    translation:
+      - (van) ons, onze
+
+  - id: rogo
+    term: rogo (rogare)
+    translation:
+      - vragen
+
+  - id: sed
+    term: sed
+    translation:
+      - maar
+
+  - id: sino
+    term: sino (sinĕre)
+    translation:
+      - toestaan, (toe)laten
+
+  - id: teneo
+    term: teneo (tenēre)
+    forms: { perfect: tenui }
+    translation:
+      - (vast)houden
+
+  - id: verbum
+    term: verbum
+    translation:
+      - woord
+
+  - id: veto
+    term: veto (vetare)
+    translation:
+      - verbieden
+
+  - id: mitto
+    term: mitto (mittĕre)
+    forms: { perfect: misi }
+    translation:
+      - zenden, sturen
+
+  - id: tu
+    term: tu
+    translation:
+      - jij, u

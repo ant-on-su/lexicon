@@ -1,0 +1,124 @@
+meta:
+  id: el-woorden-11a
+  title: Woorden 11A
+  language: el
+  translation_language: nl
+
+entries:
+  - id: apethanon
+    term: ἀπέθανον (inf. ἀποθανεῖν)
+    translation:
+      - ik stierf (aor. van ἀποθνήσκω)
+    form_of: apothnesko
+
+  - id: apothan
+    term: ἀποθαν-
+    translation:
+      - aoristusstam van ἀποθνήσκω
+
+  - id: apothnesko
+    term: ἀποθνήσκω, aor. ἀπέθανον
+    translation:
+      - sterven
+
+  - id: thapto
+    term: θάπτω
+    translation:
+      - begraven
+
+  - id: id
+    term: ἰδ-
+    translation:
+      - aoristusstam bij ὁράω (zien)
+
+  - id: katelthon
+    term: κατῆλθον
+    translation:
+      - ik ging naar beneden, ik daalde af (aor.)
+
+  - id: lab
+    term: λαβ-
+    translation:
+      - aoristusstam van λαμβάνω
+
+  - id: lambano
+    term: λαμβάνω, aor. ἔλαβον
+    translation:
+      - nemen, (vast)pakken
+
+  - id: lego
+    term: λέγω, aor. εἶπον
+    translation:
+      - zeggen
+
+  - id: leipo
+    term: λείπω, aor. ἔλιπον
+    translation:
+      - (ver)laten
+
+  - id: eidon
+    term: εἶδον (inf. ἰδεῖν)
+    translation:
+      - ik zag (aor. bij ὁράω zien)
+
+  - id: eipon
+    term: εἶπον (inf. εἰπεῖν)
+    translation:
+      - ik zei, ik sprak (aor. bij λέγω zeggen)
+    form_of: lego
+
+  - id: elabon
+    term: ἔλαβον (inf. λαβεῖν)
+    translation:
+      - ik nam, ik pakte (aor. van λαμβάνω)
+    form_of: lambano
+
+  - id: elth
+    term: ἐλθ-
+    translation:
+      - aoristusstam (komen, gaan)
+
+  - id: elthon
+    term: ἦλθον (inf. ἐλθεῖν)
+    translation:
+      - ik kwam, ik ging (aor.)
+
+  - id: suneimi
+    term: σύνειμι (+ dat.)
+    translation:
+      - samenzijn (met), omgaan met
+
+  - id: tauta
+    term: ταῦτα
+    translation:
+      - dit, dat (onz. meervoud nom. + acc.)
+
+  - id: tacha
+    term: τάχα
+    translation:
+      - snel, spoedig (bijwoord)
+
+  - id: trepho
+    term: τρέφω, aor. ἔθρεψα
+    translation:
+      - voeden
+      - opvoeden
+    card_per_sense: true
+
+  - id: tugchano
+    term: τυγχάνω + gen.
+    translation:
+      - treffen
+
+  - id: chthon
+    term: χθών, ἡ
+    forms: { genitive: χθονός }
+    translation:
+      - aarde, grond
+
+  - id: psuche
+    term: ψυχή, ἡ
+    translation:
+      - ziel, geest, schim
+      - leven
+    card_per_sense: true

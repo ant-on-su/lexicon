@@ -1,0 +1,46 @@
+meta:
+  id: el-woorden-10a
+  title: Woorden 10A
+  language: el
+  translation_language: nl
+
+entries:
+  - id: alla
+    term: ἀλλά, ἀλλ'
+    translation:
+      - maar (kom) (bij gebiedende wijs)  # CHECK
+
+  - id: mega
+    term: μέγα
+    translation:
+      - erg, zeer (bijwoord)
+
+  - id: oligos
+    term: ὀλίγος
+    translation:
+      - weinig, gering
+
+  - id: dakruon
+    term: δάκρυον, τό
+    translation:
+      - traan
+
+  - id: elpizo
+    term: ἐλπίζω (+ inf.)
+    translation:
+      - hopen, verwachten (te)
+
+  - id: tek
+    term: τεκ-
+    translation:
+      - aoristusstam van τίκτω
+
+  - id: tikto
+    term: τίκτω, aor. ἔτεκον
+    translation:
+      - baren, ter wereld brengen
+
+  - id: choreo
+    term: χωρέω
+    translation:
+      - gaan, komen

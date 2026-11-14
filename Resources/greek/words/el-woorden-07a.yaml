@@ -1,0 +1,95 @@
+meta:
+  id: el-woorden-7a
+  title: Woorden 7A
+  language: el
+  translation_language: nl
+
+entries:
+  - id: aitios
+    term: αἴτιος + gen.
+    translation:
+      - verantwoordelijk voor, schuldig aan
+
+  - id: apophero
+    term: ἀποφέρω
+    translation:
+      - wegbrengen, wegvoeren
+
+  - id: ieros
+    term: ἱερός + gen.  # CHECK
+    translation:
+      - heilig
+      - gewijd aan
+    card_per_sense: true
+
+  - id: kindunos
+    term: κίνδυνος, ὁ
+    translation:
+      - gevaar
+
+  - id: metecho
+    term: μετέχω + gen.
+    translation:
+      - deelhebben aan, deelnemen aan
+
+  - id: nomizo
+    term: νομίζω + 2 acc.
+    translation:
+      - menen
+      - beschouwen als, vinden
+    card_per_sense: true
+
+  - id: nous
+    term: νοῦς, ὁ
+    translation:
+      - geest, verstand
+
+  - id: en_no_echo
+    term: ἐν νῷ ἔχω
+    translation:
+      - van plan zijn (lett. in de geest hebben)
+
+  - id: oinos
+    term: οἶνος, ὁ
+    translation:
+      - wijn
+
+  - id: oudeis
+    term: οὐδείς
+    translation:
+      - niemand (lett. zelfs niet één)
+
+  - id: auton
+    term: αὐτῶν
+    translation:
+      - (van) hen (genitivus pers. vnw.)
+
+  - id: eauto
+    term: ἑαυτῷ
+    translation:
+      - (voor, tot, bij) zichzelf (dativus)
+
+  - id: eleutheria
+    term: ἐλευθερία, ἡ
+    translation:
+      - vrijheid
+
+  - id: epi
+    term: ἐπί + gen.
+    translation:
+      - op
+
+  - id: polus
+    term: πολύς, πολλή, πολύ
+    translation:
+      - veel
+
+  - id: tugchano
+    term: τυγχάνω + gen.
+    translation:
+      - krijgen
+
+  - id: phuge
+    term: φυγή, ἡ
+    translation:
+      - vlucht

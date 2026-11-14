@@ -1,0 +1,59 @@
+meta:
+  id: el-woorden-13b
+  title: Woorden 13B
+  language: el
+  translation_language: nl
+
+entries:
+  - id: kallistos
+    term: κάλλιστος
+    translation:
+      - mooist, zeer mooi
+
+  - id: lanthano
+    term: λανθάνω + acc.
+    translation:
+      - verborgen zijn voor, ontgaan aan
+
+  - id: ode
+    term: ὅδε, ἥδε, τόδε
+    translation:
+      - deze, dit (mnl., vrl., onz.)
+
+  - id: ote
+    term: ὅτε
+    translation:
+      - toen, wanneer (voegwoord)
+
+  - id: outos
+    term: οὗτος, αὕτη, τοῦτο
+    translation:
+      - deze/dit, die/dat
+      - hij, zij, het
+    card_per_sense: true
+
+  - id: autos_kai
+    term: αὐτὸς καί, ὁ  # CHECK
+    translation:
+      - dezelfde als
+
+  - id: gonu
+    term: γόνυ, τό
+    forms: { genitive: γόνατος }
+    translation:
+      - knie
+
+  - id: dokeo
+    term: δοκέω, aor. ἔδοξα + dat.
+    translation:
+      - (toe)schijnen (aan)
+
+  - id: eti
+    term: ἔτι
+    translation:
+      - nog
+
+  - id: poteron_e
+    term: πότερον...ἤ
+    translation:
+      - (of)...of (in een vraagzin)

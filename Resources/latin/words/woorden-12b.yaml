@@ -1,0 +1,142 @@
+meta:
+  id: la-woorden-12b
+  title: Woorden 12B
+  language: la
+  translation_language: nl
+
+entries:
+  - id: ac
+    term: ac
+    translation:
+      - en
+
+  - id: adsum
+    term: adsum (adesse) + dat.
+    translation:
+      - aanwezig zijn (bij)
+      - helpen
+    card_per_sense: true
+
+  - id: aegre
+    term: aegre (bijw.)
+    translation:
+      - met moeite
+
+  - id: amicitia
+    term: amicitia
+    translation:
+      - vriendschap
+
+  - id: consequor
+    term: consequor (consequi)
+    forms: { perfect: consecutus sum }
+    translation:
+      - volgen, bereiken
+
+  - id: consido
+    term: consido (considĕre)
+    forms: { perfect: consedi }
+    translation:
+      - gaan zitten
+
+  - id: exclamo
+    term: exclamo (exclamare)
+    translation:
+      - uitschreeuwen, uitroepen
+
+  - id: factum
+    term: factum
+    translation:
+      - feit
+      - daad
+      - ppp van facio (facĕre)
+    card_per_sense: true   # CHECK
+
+  - id: fleo
+    term: fleo (flēre)
+    translation:
+      - huilen (om), (be)wenen
+
+  - id: flumen
+    term: flumen
+    forms: { genitive: fluminis, gender: o }
+    translation:
+      - rivier
+
+  - id: hora
+    term: hora
+    translation:
+      - uur
+
+  - id: ita
+    term: ita
+    translation:
+      - zo
+
+  - id: longe
+    term: longe (bijw.)
+    translation:
+      - ver, van verre   # CHECK
+
+  - id: nec
+    term: nec
+    translation:
+      - en niet, ook niet, noch
+
+  - id: nuntio
+    term: nuntio (nuntiare)
+    translation:
+      - berichten
+
+  - id: orior
+    term: orior (oriri)
+    forms: { perfect: ortus sum }
+    translation:
+      - ontstaan, beginnen
+      - opkomen (van de zon)
+    card_per_sense: true
+
+  - id: pereo
+    term: pereo (perire)
+    forms: { perfect: perii }
+    translation:
+      - omkomen, te gronde gaan
+
+  - id: quod
+    term: quod
+    translation:
+      - omdat
+
+  - id: repente
+    term: repente (bijw.)
+    translation:
+      - plotseling
+
+  - id: revertor
+    term: revertor (reverti)
+    forms: { perfect: reversus sum }
+    translation:
+      - terugkeren
+
+  - id: tandem
+    term: tandem (bijw.)
+    translation:
+      - ten slotte, (uit)eindelijk
+
+  - id: tempestas
+    term: tempestas
+    forms: { genitive: tempestatis, gender: v }
+    translation:
+      - tijd
+      - weer, storm
+    card_per_sense: true
+
+  - id: vita
+    term: vita
+    translation:
+      - leven
+
+  - id: vix
+    term: vix
+    translation:
+      - met moeite, nauwelijks

@@ -1,0 +1,43 @@
+meta:
+  id: el-woorden-4c
+  title: Woorden 4C
+  language: el
+  translation_language: nl
+
+entries:
+  - id: athanatos
+    term: ἀθάνατος (2)
+    translation:
+      - onsterfelijk
+
+  - id: allos
+    term: ἄλλος, ἄλλη, ἄλλο
+    translation:
+      - ander
+
+  - id: krupto
+    term: κρύπτω
+    translation:
+      - verbergen
+
+  - id: neos
+    term: νέος, νέα, νέον
+    translation:
+      - nieuw
+      - jong
+    card_per_sense: true
+
+  - id: autika
+    term: αὐτίκα
+    translation:
+      - meteen, onmiddellijk
+
+  - id: ekastos
+    term: ἕκαστος, ἑκάστη, ἕκαστον
+    translation:
+      - ieder
+
+  - id: petra
+    term: πέτρα, ἡ
+    translation:
+      - rots, rotsblok

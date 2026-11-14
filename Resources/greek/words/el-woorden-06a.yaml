@@ -1,0 +1,116 @@
+meta:
+  id: el-woorden-6a
+  title: Woorden 6A
+  language: el
+  translation_language: nl
+
+entries:
+  - id: athenai
+    term: Ἀθῆναι, αἱ
+    translation:
+      - Athene (de stad)
+
+  - id: athenaios
+    term: Ἀθηναῖος
+    translation:
+      - Atheens
+
+  - id: athenaios_2
+    term: Ἀθηναῖος, ὁ
+    translation:
+      - Athener
+
+  - id: leipo
+    term: λείπω, aor. ἔλιπον
+    translation:
+      - (ver)laten
+
+  - id: lupe
+    term: λύπη, ἡ
+    translation:
+      - verdriet
+
+  - id: me
+    term: με, ἐμέ
+    translation:
+      - me, mij (accusativus pers. vnw.)
+
+  - id: meta_met_meth
+    term: μετά/μετ'/μεθ' + acc.
+    translation:
+      - na
+
+  - id: gameo
+    term: γαμέω (+ acc.)
+    translation:
+      - trouwen (met)
+
+  - id: gamos
+    term: γάμος, ὁ
+    translation:
+      - huwelijk
+
+  - id: dia
+    term: διά + acc.
+    translation:
+      - door, wegens
+
+  - id: ego
+    term: ἐγώ
+    translation:
+      - ik (pers. vnw.)
+
+  - id: ei
+    term: εἰ
+    translation:
+      - als, indien
+
+  - id: eimi
+    term: εἰμί (inf. εἶναι)
+    translation:
+      - zijn
+
+  - id: eme
+    term: ἐμέ, με
+    translation:
+      - mij, me (accusativus pers. vnw.)
+
+  - id: ploion
+    term: πλοῖον, τό
+    translation:
+      - schip
+
+  - id: se
+    term: σέ, σε
+    translation:
+      - jou, je, u (accusativus pers. vnw.)
+
+  - id: su
+    term: σύ
+    translation:
+      - jij, u (pers. vnw.)
+
+  - id: sozo
+    term: σῴζω
+    translation:
+      - redden
+
+  - id: teknon
+    term: τέκνον, τό
+    translation:
+      - kind
+
+  - id: uios
+    term: υἱός, ὁ
+    translation:
+      - zoon
+
+  - id: chairo
+    term: χαίρω (+ dat.)
+    translation:
+      - blij zijn (met), zich verheugen (over)
+
+  - id: chronos
+    term: χρόνος, ὁ
+    translation:
+      - tijd

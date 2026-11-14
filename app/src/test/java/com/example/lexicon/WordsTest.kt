@@ -63,9 +63,12 @@ class WordsTest {
         assertEquals("Test unit", unit.title)
         assertEquals("la", unit.language)
         assertEquals("nl", unit.translationLanguage)
-        // princeps uses only its first sense, urbs one card per sense.
+        // princeps uses only its first sense. urbs has all senses on one card, and one card per sense in reverse.
         assertEquals(listOf("de eerste, leider"), unit.cards.filter { it.term == "princeps" }.map { it.translation })
-        assertEquals(2, unit.cards.count { it.term == "urbs" })
+        assertEquals("1. stad\n2. dé stad, Rome", card("urbs").translation)
+        assertEquals(setOf("stad", "rome"), card("urbs").meanings)
+        assertEquals(listOf("stad", "dé stad, Rome"), unit.senseCards.filter { it.term == "urbs" }.map { it.translation })
+        assertEquals(unit.cards.filter { it.term != "urbs" }, unit.senseCards.filter { it.term != "urbs" })
         assertEquals("gen. principis", card("princeps").termForms)
         assertEquals("m", card("princeps").gender)
         assertEquals("die Dörfer", card("das Dorf").termForms)
@@ -86,10 +89,20 @@ class WordsTest {
     fun detectsAmbiguousPairs() {
         assertTrue(card("princeps").conflictsWith(card("dux")))
         assertTrue(card("das Bild").conflictsWith(card("das Foto")))
-        val (urbs1, urbs2) = unit.cards.filter { it.term == "urbs" }
+        val (urbs1, urbs2) = unit.senseCards.filter { it.term == "urbs" }
         assertTrue(urbs1.conflictsWith(urbs2))
         assertFalse(card("das Dorf").conflictsWith(card("im Dorf")))
         assertFalse(card("dux").conflictsWith(card("das Dorf")))
+    }
+
+    @Test
+    fun cardsFollowTheDirection() {
+        val lang = Language("latin", "Latina", "Nederlands", listOf(unit))
+        assertEquals(1, lang.cards(RaceOptions()).count { it.term == "urbs" })
+        assertEquals(2, lang.cards(RaceOptions(reverse = true)).count { it.term == "urbs" })
+        // Mistakes from either direction are found.
+        val mistakes = mapOf("test/urbs/senses" to 1, "test/urbs/1" to 2, "test/gone/0" to 1)
+        assertEquals(listOf("test/urbs/senses", "test/urbs/1"), lang.mistakenCards(mistakes).map { it.id })
     }
 
     @Test

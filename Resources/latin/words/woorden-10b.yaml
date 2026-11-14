@@ -1,0 +1,131 @@
+meta:
+  id: la-woorden-10b
+  title: Woorden 10B
+  language: la
+  translation_language: nl
+
+entries:
+  - id: abeo
+    term: abeo (abire)
+    forms: { perfect: abii }
+    translation:
+      - weggaan
+
+  - id: annus
+    term: annus
+    translation:
+      - jaar
+
+  - id: arx
+    term: arx
+    forms: { genitive: arcis, gender: v }
+    translation:
+      - burcht
+
+  - id: atque
+    term: atque
+    translation:
+      - en
+
+  - id: collectus
+    term: collectus
+    translation:
+      - ppp van colligo (colligĕre)
+    form_of: colligo
+
+  - id: constat
+    term: constat + AcI
+    translation:
+      - het staat vast dat
+
+  - id: custos
+    term: custos
+    forms: { genitive: custodis, gender: m }
+    translation:
+      - bewaker
+
+  - id: decem
+    term: decem (onverbuigbaar)
+    translation:
+      - tien
+
+  - id: deleo
+    term: deleo (delēre)
+    translation:
+      - verwoesten
+
+  - id: exeo
+    term: exeo (exire)
+    forms: { perfect: exii }
+    translation:
+      - gaan uit, weggaan
+
+  - id: fama
+    term: fama
+    translation:
+      - gerucht, verhaal
+      - reputatie
+    card_per_sense: true
+
+  - id: magnitudo
+    term: magnitudo
+    forms: { genitive: magnitudinis, gender: v }
+    translation:
+      - grootte, omvang
+
+  - id: nocte
+    term: nocte (abl.)
+    translation:
+      - "'s nachts, in de nacht"
+
+  - id: occido
+    term: occido (occidĕre)
+    forms: { perfect: occidi }
+    translation:
+      - doden
+
+  - id: porta
+    term: porta
+    translation:
+      - poort
+
+  - id: recipio
+    term: recipio (recipĕre)
+    forms: { perfect: recepi }
+    translation:
+      - terugkrijgen
+      - ontvangen
+    card_per_sense: true
+
+  - id: scribo
+    term: scribo (scribĕre)
+    forms: { perfect: scripsi }
+    translation:
+      - schrijven
+
+  - id: socius
+    term: socius
+    translation:
+      - bondgenoot
+      - maker
+    card_per_sense: true
+
+  - id: statuo
+    term: statuo (statuĕre)
+    forms: { perfect: statui }
+    translation:
+      - plaatsen
+
+  - id: transfero
+    term: transfero (transferre)
+    forms: { perfect: transtuli }
+    translation:
+      - overbrengen, overdragen
+
+  - id: vates
+    term: vates
+    forms: { genitive: vatis, gender: m/v }
+    translation:
+      - waarzegger
+      - dichter
+    card_per_sense: true

@@ -1,0 +1,61 @@
+meta:
+  id: el-woorden-3c
+  title: Woorden 3C
+  language: el
+  translation_language: nl
+
+entries:
+  - id: kai
+    term: καί
+    translation:
+      - en
+      - ook
+      - zelfs
+    card_per_sense: true
+
+  - id: lambano
+    term: λαμβάνω, aor. ἔλαβον
+    translation:
+      - nemen, (vast)pakken
+
+  - id: mache
+    term: μάχη, ἡ
+    translation:
+      - gevecht, strijd
+
+  - id: nun
+    term: νῦν
+    translation:
+      - nu
+
+  - id: gar
+    term: γάρ
+    translation:
+      - want (γάρ staat op de 2de plaats van de zin)
+
+  - id: despotes
+    term: δεσπότης, ὁ
+    translation:
+      - heerser, meester
+
+  - id: eis
+    term: εἰς + acc.
+    translation:
+      - naar, naar binnen, tot
+
+  - id: poieo
+    term: ποιέω
+    translation:
+      - doen
+      - maken
+    card_per_sense: true
+
+  - id: touto
+    term: τοῦτο
+    translation:
+      - dit, dat (nom. + acc. onz.)
+
+  - id: pheugo
+    term: φεύγω, aor. ἔφυγον (+ acc.)
+    translation:
+      - vluchten (voor)

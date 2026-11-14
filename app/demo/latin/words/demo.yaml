@@ -16,6 +16,7 @@ entries:
     translation:
       - de eerste, leider
       - keizer
+    card_per_sense: true
 
   - id: pax
     term: pax
@@ -81,6 +82,7 @@ entries:
     translation:
       - deugd, goede eigenschap
       - moed, dapperheid
+    card_per_sense: true
 
   - id: vinco
     term: vinco (vincĕre)

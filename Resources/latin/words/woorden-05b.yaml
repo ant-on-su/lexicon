@@ -1,0 +1,100 @@
+meta:
+  id: la-woorden-5b
+  title: Woorden 5B
+  language: la
+  translation_language: nl
+
+entries:
+  - id: ad
+    term: ad + acc.
+    translation:
+      - naar, bij, tot
+
+  - id: aperio
+    term: aperio (aperire)
+    forms: { perfect: aperui }
+    translation:
+      - openen
+
+  - id: cepi
+    term: cepi
+    translation:
+      - perf. van capio (capĕre)
+    form_of: capio
+
+  - id: cito
+    term: cito (bijw.)
+    translation:
+      - snel
+
+  - id: denique
+    term: denique
+    translation:
+      - ten slotte
+
+  - id: duco
+    term: duco (ducĕre)
+    forms: { perfect: duxi }
+    translation:
+      - leiden, brengen
+
+  - id: equus
+    term: equus
+    translation:
+      - paard
+
+  - id: flecto
+    term: flecto (flectĕre)
+    translation:
+      - buigen, veranderen
+
+  - id: fui
+    term: fui
+    translation:
+      - perf. van sum (esse)
+    form_of: sum
+
+  - id: iam
+    term: iam
+    translation:
+      - al, reeds
+
+  - id: ideo
+    term: ideo (bijw.)
+    translation:
+      - daarom
+
+  - id: impono
+    term: impono (imponĕre) (+ dat.)
+    forms: { perfect: imposui }
+    translation:
+      - leggen op, plaatsen op
+
+  - id: iungo
+    term: iungo (iungĕre)
+    forms: { perfect: iunxi }
+    translation:
+      - verbinden
+
+  - id: potui
+    term: potui
+    translation:
+      - perf. van possum (posse)
+    form_of: possum
+
+  - id: quattuor
+    term: quattuor
+    translation:
+      - vier
+
+  - id: sufficio
+    term: sufficio (sufficĕre)
+    translation:
+      - voldoende zijn
+
+  - id: ut
+    term: ut + ind.
+    translation:
+      - zoals
+      - zodra
+    card_per_sense: true   # CHECK

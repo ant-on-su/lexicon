@@ -1,0 +1,51 @@
+meta:
+  id: el-woorden-8c
+  title: Woorden 8C
+  language: el
+  translation_language: nl
+
+entries:
+  - id: athlios
+    term: ἄθλιος
+    translation:
+      - ongelukkig
+
+  - id: anti
+    term: ἀντί + gen.
+    translation:
+      - in plaats van
+
+  - id: aresko
+    term: ἀρέσκω + dat.
+    translation:
+      - bevallen aan, in de smaak vallen bij
+
+  - id: ilion
+    term: Ἴλιον, τό
+    translation:
+      - Troje
+
+  - id: ouden
+    term: οὐδέν
+    translation:
+      - helemaal niet
+
+  - id: ouketi
+    term: οὐκέτι
+    translation:
+      - niet meer
+
+  - id: bomos
+    term: βωμός, ὁ
+    translation:
+      - altaar
+
+  - id: eunous
+    term: εὔνους (2) (+ dat.)
+    translation:
+      - goedgezind (aan)
+
+  - id: ede
+    term: ἤδη
+    translation:
+      - al, reeds

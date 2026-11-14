@@ -1,0 +1,66 @@
+meta:
+  id: el-woorden-5c
+  title: Woorden 5C
+  language: el
+  translation_language: nl
+
+entries:
+  - id: ago
+    term: ἄγω, aor. ἤγαγον
+    translation:
+      - brengen, leiden
+
+  - id: ischuros
+    term: ἰσχυρός
+    translation:
+      - sterk, krachtig
+
+  - id: keleuo
+    term: κελεύω + acc. + inf.
+    translation:
+      - bevelen, verzoeken, vragen om
+
+  - id: krateo
+    term: κρατέω + gen.
+    translation:
+      - macht hebben over, zich meester maken van, overwinnen
+
+  - id: logos
+    term: λόγος, ὁ
+    translation:
+      - woord
+
+  - id: nekros
+    term: νεκρός, ὁ
+    translation:
+      - lijk, dode
+
+  - id: autou
+    term: αὐτοῦ
+    translation:
+      - (van) hem (genitivus pers. vnw.)
+
+  - id: ek
+    term: ἐκ + gen.
+    translation:
+      - uit
+
+  - id: exesti
+    term: ἔξεστι(ν) + dat. + inf.
+    translation:
+      - het is (voor iemand) mogelijk/ geoorloofd om
+
+  - id: epi
+    term: ἐπί + dat.
+    translation:
+      - bij, op, aan
+
+  - id: pulai
+    term: πύλαι, αἱ
+    translation:
+      - poort, ingang
+
+  - id: tote
+    term: τότε
+    translation:
+      - dan, toen

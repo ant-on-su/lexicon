@@ -1,0 +1,141 @@
+meta:
+  id: la-woorden-6a
+  title: Woorden 6A
+  language: la
+  translation_language: nl
+
+entries:
+  - id: arma
+    term: arma (mv.)
+    forms: { gender: o }
+    translation:
+      - wapens
+
+  - id: cado
+    term: cado (cadĕre)
+    forms: { perfect: cecidi }
+    translation:
+      - vallen, sneuvelen
+
+  - id: castra
+    term: castra (mv.)
+    forms: { gender: o }
+    translation:
+      - legerkamp
+
+  - id: cum
+    term: cum + abl.
+    translation:
+      - met
+
+  - id: cum_2
+    term: cum + ind.
+    translation:
+      - toen
+      - wanneer
+    card_per_sense: true   # CHECK
+
+  - id: dignus_a_um
+    term: dignus, -a, -um + abl.
+    translation:
+      - waard, waardig
+
+  - id: dubium
+    term: dubium
+    translation:
+      - twijfel
+
+  - id: interfeci
+    term: interfeci
+    translation:
+      - perf. van interficio (interficĕre)
+    form_of: interficio
+
+  - id: notus_a_um
+    term: notus, -a, -um
+    translation:
+      - bekend
+
+  - id: pareo
+    term: pareo (parēre) + dat.
+    translation:
+      - gehoorzamen
+
+  - id: patria
+    term: patria
+    translation:
+      - vaderland
+
+  - id: peto
+    term: peto (petĕre)
+    forms: { perfect: petivi }
+    translation:
+      - streven naar, proberen te bereiken
+      - vragen
+      - gaan naar, afgaan op
+    card_per_sense: true
+
+  - id: poena
+    term: poena
+    translation:
+      - straf, boete
+
+  - id: pro
+    term: pro + abl.
+    translation:
+      - voor, ten behoeve van
+      - in plaats van
+    card_per_sense: true
+
+  - id: pugna
+    term: pugna
+    translation:
+      - gevecht
+
+  - id: pugno
+    term: pugno (pugnare)
+    translation:
+      - vechten
+
+  - id: quia
+    term: quia
+    translation:
+      - omdat, aangezien
+
+  - id: romanus
+    term: Romanus
+    translation:
+      - Romein
+      - Romeins
+    card_per_sense: true
+
+  - id: sine
+    term: sine + abl.
+    translation:
+      - zonder
+
+  - id: subito
+    term: subito (bijw.)
+    translation:
+      - plotseling
+
+  - id: superbus_a_um
+    term: superbus, -a, -um
+    translation:
+      - trots, hoogmoedig
+
+  - id: tamen
+    term: tamen
+    translation:
+      - toch
+
+  - id: ubi
+    term: ubi?
+    translation:
+      - waar?
+
+  - id: vidi
+    term: vidi
+    translation:
+      - perf. van video (vidēre)
+    form_of: video

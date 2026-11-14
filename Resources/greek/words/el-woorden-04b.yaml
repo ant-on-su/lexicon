@@ -1,0 +1,31 @@
+meta:
+  id: el-woorden-4b
+  title: Woorden 4B
+  language: el
+  translation_language: nl
+
+entries:
+  - id: apokteino
+    term: ἀποκτείνω
+    translation:
+      - doden
+
+  - id: kaleo
+    term: καλέω
+    translation:
+      - roepen
+
+  - id: ethelo
+    term: ἐθέλω
+    translation:
+      - willen, bereid zijn
+
+  - id: proton_men
+    term: πρῶτον μέν..., ἔπειτα δέ
+    translation:
+      - eerst..., daarna
+
+  - id: ti
+    term: "τί...: (met accent!)"
+    translation:
+      - wat?

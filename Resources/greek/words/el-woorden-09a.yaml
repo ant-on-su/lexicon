@@ -1,0 +1,159 @@
+meta:
+  id: el-woorden-9a
+  title: Woorden 9A
+  language: el
+  translation_language: nl
+
+entries:
+  - id: aner
+    term: ἀνήρ, ὁ
+    forms: { genitive: ἀνδρός }
+    translation:
+      - man
+
+  - id: apopempo
+    term: ἀποπέμπω
+    translation:
+      - terugsturen, wegsturen
+
+  - id: aristos
+    term: ἄριστος
+    translation:
+      - beste
+      - zeer goed
+    card_per_sense: true
+
+  - id: emin
+    term: ἡμῖν
+    translation:
+      - (aan/voor) ons (dativus pers. vnw.)
+
+  - id: isos
+    term: ἴσως
+    translation:
+      - misschien, waarschijnlijk
+
+  - id: kathizo
+    term: καθίζω
+    translation:
+      - (gaan) zitten
+
+  - id: kaka
+    term: κακά, τά
+    translation:
+      - rampen, ongeluk, ellende
+
+  - id: leon
+    term: λέων, ὁ
+    forms: { genitive: λέοντος }
+    translation:
+      - leeuw
+
+  - id: meketi
+    term: μηκέτι
+    translation:
+      - niet meer (bij gebiedende wijs)
+
+  - id: nosos
+    term: νόσος, ἡ
+    translation:
+      - ziekte
+
+  - id: oios_te_eimi
+    term: οἷός τέ εἰμι + inf.
+    translation:
+      - in staat zijn om, kunnen
+
+  - id: pais
+    term: παῖς, ὁ/ἡ
+    forms: { genitive: παιδός }
+    translation:
+      - kind (jongen, meisje)
+      - slaaf
+    card_per_sense: true
+
+  - id: aphron
+    term: ἄφρων
+    forms: { genitive: ἄφρονος }
+    translation:
+      - onverstandig, dwaas
+
+  - id: gune
+    term: γυνή, ἡ
+    forms: { genitive: γυναικός }
+    translation:
+      - vrouw
+
+  - id: eggus
+    term: ἐγγύς + gen.
+    translation:
+      - dichtbij
+
+  - id: eris
+    term: ἔρις, ἡ
+    forms: { genitive: ἔριδος }
+    translation:
+      - strijd, ruzie, twist
+
+  - id: etoimos
+    term: ἕτοιμος (+ inf.)
+    translation:
+      - bereid, gereed, klaar (om te)
+
+  - id: eudaimon
+    term: εὐδαίμων
+    forms: { genitive: εὐδαίμονος }
+    translation:
+      - gelukkig
+
+  - id: egemon
+    term: ἡγεμών, ὁ
+    forms: { genitive: ἡγεμόνος }
+    translation:
+      - leider, aanvoerder
+
+  - id: emas
+    term: ἡμᾶς
+    translation:
+      - ons (accusativus pers. vnw.)
+
+  - id: palaios
+    term: παλαιός
+    translation:
+      - oud, van vroeger
+
+  - id: pater
+    term: πατήρ, ὁ
+    forms: { genitive: πατρός }
+    translation:
+      - vader
+
+  - id: sophos
+    term: σοφός
+    translation:
+      - verstandig, wijs
+      - slim
+    card_per_sense: true
+
+  - id: stratopedon
+    term: στρατόπεδον, τό
+    translation:
+      - (leger)kamp
+
+  - id: soma
+    term: σῶμα, τό
+    forms: { genitive: σώματος }
+    translation:
+      - lichaam
+
+  - id: soter
+    term: σωτήρ, ὁ
+    forms: { genitive: σωτῆρος }
+    translation:
+      - redder
+
+  - id: troes
+    term: Τρῶες, οἱ
+    forms: { genitive: Τρῴων }
+    translation:
+      - Trojanen

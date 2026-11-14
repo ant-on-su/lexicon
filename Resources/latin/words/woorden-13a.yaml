@@ -1,0 +1,110 @@
+meta:
+  id: la-woorden-13a
+  title: Woorden 13A
+  language: la
+  translation_language: nl
+
+entries:
+  - id: aliquando
+    term: aliquando (bijw.)
+    translation:
+      - eens, ooit, soms
+
+  - id: alter
+    term: alter
+    forms: { genitive: alterius }
+    translation:
+      - (een) ander
+
+  - id: comes
+    term: comes
+    forms: { genitive: comitis, gender: m/v }
+    translation:
+      - metgezel, vriend
+
+  - id: duo
+    term: duo
+    forms: { genitive: duorum }
+    translation:
+      - twee
+
+  - id: fallo
+    term: fallo (fallĕre)
+    translation:
+      - bedriegen
+      - ontgaan
+    card_per_sense: true
+
+  - id: ille
+    term: ille
+    translation:
+      - die/hij
+
+  - id: invitus_a_um
+    term: invitus, -a, -um
+    translation:
+      - onvrijwillig, tegen de wil van   # CHECK
+
+  - id: iterum
+    term: iterum (bijw.)
+    translation:
+      - weer, opnieuw
+
+  - id: laudo
+    term: laudo (laudare)
+    translation:
+      - prijzen
+
+  - id: medius_a_um
+    term: medius, -a, -um
+    translation:
+      - in het midden, middelste
+
+  - id: multitudo
+    term: multitudo
+    forms: { genitive: multitudinis, gender: v }
+    translation:
+      - menigte
+
+  - id: ordo
+    term: ordo
+    forms: { genitive: ordinis, gender: m }
+    translation:
+      - rij, gelid
+
+  - id: provincia
+    term: provincia
+    translation:
+      - (ambt)gebied, provincie
+
+  - id: quis
+    term: quis?
+    translation:
+      - wie
+
+  - id: sibi
+    term: sibi
+    translation:
+      - dat. van se
+
+  - id: similis_is_e
+    term: similis, -is, -e (similis) + gen./dat.
+    translation:
+      - gelijk aan
+      - gelijkend op
+    card_per_sense: true
+
+  - id: simul
+    term: simul (bijw.)
+    translation:
+      - tegelijk(ertijd)   # CHECK
+
+  - id: sto
+    term: sto (stare)
+    translation:
+      - staan
+
+  - id: videor
+    term: videor (vidēri)
+    translation:
+      - schijnen, de indruk wekken

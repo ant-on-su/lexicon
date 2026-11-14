@@ -1,0 +1,93 @@
+meta:
+  id: el-woorden-8a
+  title: Woorden 8A
+  language: el
+  translation_language: nl
+
+entries:
+  - id: ama
+    term: ἅμα
+    translation:
+      - tegelijk, tegelijkertijd
+
+  - id: koluo
+    term: κωλύω (+ inf.)
+    translation:
+      - verhinderen, beletten (om)
+
+  - id: nautes
+    term: ναύτης, ὁ
+    translation:
+      - zeeman, matroos
+
+  - id: oude
+    term: οὐδέ
+    translation:
+      - en niet, maar niet
+      - ook niet, zelfs niet
+    card_per_sense: true
+
+  - id: achaioi
+    term: Ἀχαιοί, οἱ
+    translation:
+      - Grieken
+
+  - id: boetheo
+    term: βοηθέω + dat.
+    translation:
+      - te hulp komen, helpen
+
+  - id: eisphero
+    term: εἰσφέρω
+    translation:
+      - (naar) binnen brengen
+      - (naar) binnen dragen
+    card_per_sense: true
+
+  - id: echthros
+    term: ἐχθρός (+ dat.)
+    translation:
+      - gehaat (bij), vijandig (aan)
+
+  - id: pantes
+    term: πάντες
+    forms: { genitive: πάντων }
+    translation:
+      - alle(n)
+
+  - id: pareimi
+    term: πάρειμι
+    translation:
+      - aanwezig zijn
+
+  - id: pauo
+    term: παύω
+    translation:
+      - (doen/laten) stoppen, (doen/laten) ophouden
+
+  - id: strategos
+    term: στρατηγός, ὁ
+    translation:
+      - legeraanvoerder
+
+  - id: stratiotes
+    term: στρατιώτης, ὁ
+    translation:
+      - soldaat
+
+  - id: tade
+    term: τάδε
+    translation:
+      - dit, het volgende (onz. meervoud nom. + acc.)
+
+  - id: tode
+    term: τόδε, mv. τάδε
+    translation:
+      - dit
+      - het volgende
+    card_per_sense: true
+
+  - id: chalepaino
+    term: χαλεπαίνω, aor. ἐχαλέπηνα + dat.
+    translation:
+      - boos zijn op

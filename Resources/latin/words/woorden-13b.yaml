@@ -1,0 +1,59 @@
+meta:
+  id: la-woorden-13b
+  title: Woorden 13B
+  language: la
+  translation_language: nl
+
+entries:
+  - id: apud
+    term: apud + acc.
+    translation:
+      - bij
+
+  - id: at
+    term: at
+    translation:
+      - maar
+
+  - id: cogito
+    term: cogito (cogitare)
+    translation:
+      - denken (aan), overwegen
+
+  - id: dens
+    term: dens
+    forms: { genitive: dentis, gender: m }
+    translation:
+      - tand
+
+  - id: dic
+    term: dic
+    translation:
+      - imperatief van dico (dicĕre)
+    form_of: dico
+
+  - id: magis
+    term: magis (bijw.)
+    translation:
+      - meer
+
+  - id: malus_a_um
+    term: malus, -a, -um
+    translation:
+      - slecht
+
+  - id: vere
+    term: vere (bijw.)
+    translation:
+      - echt, waar
+
+  - id: veritas
+    term: veritas
+    forms: { genitive: veritatis, gender: v }
+    translation:
+      - waarheid
+
+  - id: verus_a_um
+    term: verus, -a, -um
+    translation:
+      - echt, waar

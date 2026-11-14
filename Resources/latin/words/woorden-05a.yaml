@@ -1,0 +1,151 @@
+meta:
+  id: la-woorden-5a
+  title: Woorden 5A
+  language: la
+  translation_language: nl
+
+entries:
+  - id: accedo
+    term: accedo (accedĕre)
+    forms: { perfect: accessi }
+    translation:
+      - naderen, (erbij) komen, ernaar toe gaan   # CHECK
+
+  - id: ait
+    term: ait
+    translation:
+      - (hij/zij) zegt, beweert
+      - (hij/zij) zei, beweerde
+    card_per_sense: true
+
+  - id: altus_a_um
+    term: altus, -a, -um
+    translation:
+      - hoog
+      - diep
+    card_per_sense: true
+
+  - id: argentum
+    term: argentum
+    translation:
+      - zilver
+
+  - id: aureus_a_um
+    term: aureus, -a, -um
+    translation:
+      - gouden, van goud
+
+  - id: certus_a_um
+    term: certus, -a, -um
+    translation:
+      - zeker
+
+  - id: cingo
+    term: cingo (cingĕre)
+    translation:
+      - omringen
+
+  - id: cognosco
+    term: cognosco (cognoscĕre)
+    forms: { perfect: cognovi }
+    translation:
+      - leren kennen, vernemen
+
+  - id: depono
+    term: depono (deponĕre)
+    forms: { perfect: deposui }
+    translation:
+      - neerleggen, afleggen
+
+  - id: dixi
+    term: dixi
+    translation:
+      - perf. van dico (dicĕre)
+    form_of: dico
+
+  - id: dubito
+    term: dubito (dubitare)
+    translation:
+      - twijfelen
+      - aarzelen
+    card_per_sense: true
+
+  - id: gaudeo
+    term: gaudeo (gaudēre) (+ abl.)
+    translation:
+      - blij zijn (met)
+      - zich verheugen (over)
+    card_per_sense: true
+
+  - id: intro
+    term: intro (intrare)
+    translation:
+      - binnenkomen, binnengaan
+
+  - id: iussi
+    term: iussi
+    translation:
+      - perf. van iubeo (iubēre)
+    form_of: iubeo
+
+  - id: puer
+    term: puer
+    forms: { genitive: pueri }
+    translation:
+      - jongen
+
+  - id: quod
+    term: quod
+    translation:
+      - omdat
+
+  - id: respondi
+    term: respondi
+    translation:
+      - perf. van respondeo (respondēre)
+    form_of: respondeo
+
+  - id: sic
+    term: sic
+    translation:
+      - zo
+
+  - id: sol
+    term: sol
+    forms: { genitive: solis, gender: m }
+    translation:
+      - zon
+
+  - id: tibi
+    term: tibi (dat.)
+    translation:
+      - (aan/voor) jou
+
+  - id: tum
+    term: tum (bijw.)
+    translation:
+      - dan, toen
+
+  - id: veni
+    term: veni
+    translation:
+      - perf. van venio (venire)
+    form_of: venio
+
+  - id: eram
+    term: eram
+    translation:
+      - ik was imperf. van sum (esse)
+    form_of: sum
+
+  - id: misi
+    term: misi
+    translation:
+      - perf. van mitto (mittĕre)
+    form_of: mitto
+
+  - id: poteram
+    term: poteram
+    translation:
+      - ik kon
+    form_of: possum

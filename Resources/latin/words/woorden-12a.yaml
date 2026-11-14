@@ -1,0 +1,73 @@
+meta:
+  id: la-woorden-12a
+  title: Woorden 12A
+  language: la
+  translation_language: nl
+
+entries:
+  - id: armatus_a_um
+    term: armatus, -a, -um
+    translation:
+      - gewapend
+
+  - id: carus_a_um
+    term: carus, -a, -um
+    translation:
+      - dierbaar, geliefd
+
+  - id: civis
+    term: civis
+    forms: { genitive: civis, gender: m/v }
+    translation:
+      - burger
+
+  - id: deprehendo
+    term: deprehendo (deprehendĕre)
+    forms: { perfect: deprehendi }
+    translation:
+      - grijpen, betrappen
+
+  - id: nisi
+    term: nisi
+    translation:
+      - als niet, tenzij
+      - behalve
+    card_per_sense: true
+
+  - id: perduco
+    term: perduco (perducĕre)
+    forms: { perfect: perduxi }
+    translation:
+      - brengen, leiden (tot)
+
+  - id: qui_quae_quod
+    term: qui, quae, quod (betr. vnw.)   # CHECK
+    translation:
+      - die/dat, wie/wat
+
+  - id: soror
+    term: soror
+    forms: { genitive: sororis, gender: v }
+    translation:
+      - zus
+
+  - id: tertius_a_um
+    term: tertius, -a, -um
+    translation:
+      - derde
+
+  - id: tyrannus
+    term: tyrannus
+    translation:
+      - alleenheerser, tiran
+
+  - id: nec_nec
+    term: nec ... nec
+    translation:
+      - noch ... noch, en niet ... en ook niet
+
+  - id: reversus_sum
+    term: reversus sum
+    translation:
+      - perf. van revertor (reverti)
+    form_of: revertor

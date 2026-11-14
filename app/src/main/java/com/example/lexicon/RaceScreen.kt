@@ -250,7 +250,9 @@ private fun RaceCard(label: AnnotatedString, sub: String?, look: Look, accent: C
             verticalArrangement = Arrangement.Center,
             horizontalAlignment = Alignment.CenterHorizontally,
         ) {
-            FitText(label, maxSize = 22.sp, Modifier.weight(1f, fill = false), minSize = 9.sp)
+            // One extra line on top of the given ones, so a long line can still wrap.
+            val lines = label.text.lines().size + 1
+            FitText(label, maxSize = 22.sp, Modifier.weight(1f, fill = false), minSize = 9.sp, maxLines = lines)
             if (sub != null) {
                 FitText(AnnotatedString(sub), maxSize = 13.sp, minSize = 8.sp, maxLines = 1, color = Muted, weight = FontWeight.Normal)
             }

@@ -1,0 +1,164 @@
+meta:
+  id: el-woorden-11b
+  title: Woorden 11B
+  language: el
+  translation_language: nl
+
+entries:
+  - id: agag
+    term: ἀγαγ-
+    translation:
+      - aoristusstam van ἄγω
+
+  - id: ago
+    term: ἄγω, aor. ἤγαγον
+    translation:
+      - brengen, leiden
+
+  - id: adelphos
+    term: ἀδελφός, ὁ
+    translation:
+      - broer
+
+  - id: enegkon
+    term: ἤνεγκον (inf. ἐνεγκεῖν)
+    translation:
+      - ik droeg, ik bracht (aor. bij φέρω)
+    form_of: phero
+
+  - id: kataleipo
+    term: καταλείπω, aor. κατέλιπον
+    translation:
+      - achterlaten
+
+  - id: lip
+    term: λιπ-
+    translation:
+      - aoristusstam van λείπω
+
+  - id: lupeo
+    term: λυπέω
+    translation:
+      - kwellen, verdriet doen
+
+  - id: onoma
+    term: ὄνομα, τό
+    forms: { genitive: ὀνόματος }
+    translation:
+      - naam
+
+  - id: archo
+    term: ἄρχω + gen.
+    translation:
+      - beginnen met
+
+  - id: diaphtheiro
+    term: διαφθείρω
+    translation:
+      - te gronde richten, vernietigen
+
+  - id: elipon
+    term: ἔλιπον (inf. λιπεῖν)
+    translation:
+      - ik liet, ik verliet (aor. van λείπω)
+    form_of: leipo
+
+  - id: enegk
+    term: ἐνεγκ-
+    translation:
+      - aoristusstam bij φέρω
+
+  - id: epeson
+    term: ἔπεσον (inf. πεσεῖν)
+    translation:
+      - ik viel (aor. bij πίπτω)
+    form_of: pipto
+
+  - id: etekon
+    term: ἔτεκον (inf. τεκεῖν)
+    translation:
+      - ik baarde, ik bracht ter wereld (aor. van τίκτω)
+    form_of: tikto
+
+  - id: e
+    term: ἤ
+    translation:
+      - of
+
+  - id: egagon
+    term: ἤγαγον (inf. ἀγαγεῖν)
+    translation:
+      - ik bracht, ik leidde (aor. van ἄγω)
+    form_of: ago
+
+  - id: pes
+    term: πεσ-
+    translation:
+      - aoristusstam van πίπτω
+
+  - id: pipto
+    term: πίπτω, aor. ἔπεσον
+    translation:
+      - vallen
+
+  - id: pisteuo
+    term: πιστεύω + dat.
+    translation:
+      - vertrouwen
+
+  - id: protos
+    term: πρῶτος
+    translation:
+      - eerste
+
+  - id: ti
+    term: τι (zonder accent!)
+    forms: { genitive: τινος }
+    translation:
+      - iets (zelfstandig gebruikt)
+      - enig(e) (bijvoeglijk gebruikt)
+    card_per_sense: true
+
+  - id: ti_2
+    term: "τί...: (met accent!)"
+    translation:
+      - welk(e)
+
+  - id: tikto
+    term: τίκτω, aor. ἔτεκον
+    translation:
+      - baren, ter wereld brengen
+
+  - id: tis
+    term: τις (zonder accent!)
+    forms: { genitive: τινος }
+    translation:
+      - iemand (zelfstandig gebruikt)
+      - een of ander(e) (bijvoeglijk gebruikt)
+      - enkele(n), sommige(n) (meervoud)
+    card_per_sense: true
+
+  - id: tis_2
+    term: "τίς (τί), τίνος...: (met accent!)"
+    translation:
+      - wie, wat?
+      - welk(e)?
+    card_per_sense: true
+
+  - id: trecho
+    term: τρέχω
+    translation:
+      - rennen
+
+  - id: phero
+    term: φέρω, aor. ἤνεγκον
+    translation:
+      - dragen
+      - brengen
+    card_per_sense: true
+
+  - id: phulax
+    term: φύλαξ, ὁ
+    forms: { genitive: φύλακος }
+    translation:
+      - wachter, bewaker

@@ -1,0 +1,69 @@
+meta:
+  id: el-woorden-12c
+  title: Woorden 12C
+  language: el
+  translation_language: nl
+
+entries:
+  - id: etton
+    term: ἥττων
+    forms: { genitive: ἥττονος }
+    translation:
+      - minder, zwakker
+
+  - id: kateschon
+    term: κατέσχον (inf. κατασχεῖν)
+    translation:
+      - ik had in mijn macht, ik hield vast, ik beheerste (aor. van κατέχω)
+    form_of: katecho
+
+  - id: ge
+    term: γῆ, ἡ
+    translation:
+      - aarde
+      - grond, land
+    card_per_sense: true
+
+  - id: eschon
+    term: ἔσχον (inf. σχεῖν)
+    translation:
+      - ik had, ik kreeg (aor. van ἔχω)
+    form_of: echo
+
+  - id: echo
+    term: ἔχω, imperf. εἶχον, aor. ἔσχον
+    translation:
+      - hebben
+
+  - id: pleion
+    term: πλείων
+    forms: { genitive: πλείονος }
+    translation:
+      - meer
+
+  - id: seauton
+    term: σεαυτόν, σεαυτήν
+    translation:
+      - jezelf (accusativus manl., vrl. enk.)
+
+  - id: sch
+    term: σχ-
+    translation:
+      - aoristusstam van ἔχω
+
+  - id: tachistos
+    term: τάχιστος
+    translation:
+      - snelst
+      - zeer/heel snel
+    card_per_sense: true
+
+  - id: os_tachista
+    term: ὡς τάχιστα (bijw.)
+    translation:
+      - zo snel mogelijk
+
+  - id: oti_tachista
+    term: ὅτι τάχιστα (bijw.)
+    translation:
+      - zo snel mogelijk

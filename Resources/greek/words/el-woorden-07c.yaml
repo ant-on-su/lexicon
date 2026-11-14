@@ -1,0 +1,120 @@
+meta:
+  id: el-woorden-7c
+  title: Woorden 7C
+  language: el
+  translation_language: nl
+
+entries:
+  - id: aei
+    term: ἀεί
+    translation:
+      - altijd
+
+  - id: aitia
+    term: αἰτία, ἡ
+    translation:
+      - oorzaak
+
+  - id: anabaino
+    term: ἀναβαίνω
+    translation:
+      - omhoog gaan, beklimmen
+
+  - id: apo
+    term: ἀπό + gen.
+    translation:
+      - vanaf
+
+  - id: apothnesko
+    term: ἀποθνήσκω, aor. ἀπέθανον
+    translation:
+      - sterven
+
+  - id: thanatos
+    term: θάνατος, ὁ
+    translation:
+      - de dood
+
+  - id: katecho
+    term: κατέχω
+    translation:
+      - in zijn macht hebben, vasthouden, beheersen
+
+  - id: meta_tauta
+    term: μετὰ ταῦτα
+    translation:
+      - na dit, daarna
+
+  - id: monon
+    term: μόνον
+    translation:
+      - slechts, alleen maar (bijwoord)
+
+  - id: ou_monon
+    term: οὐ μόνον..., ἀλλὰ καί
+    translation:
+      - niet alleen..., maar ook
+
+  - id: autos
+    term: αὐτός, αὐτή, αὐτό
+    translation:
+      - zelf (bijvoeglijk gebruikt)
+
+  - id: autos_2
+    term: αὐτός, ὁ  # CHECK
+    translation:
+      - dezelfde
+
+  - id: bios
+    term: βίος, ὁ
+    translation:
+      - leven
+
+  - id: blepo
+    term: βλέπω
+    translation:
+      - kijken
+
+  - id: eauton
+    term: ἑαυτόν
+    translation:
+      - zichzelf (accusativus)
+
+  - id: edone
+    term: ἡδονή, ἡ
+    translation:
+      - genot, vreugde
+
+  - id: peri
+    term: περί + gen.
+    translation:
+      - om, over
+
+  - id: pipto
+    term: πίπτω, aor. ἔπεσον
+    translation:
+      - vallen
+
+  - id: ripto
+    term: ῥίπτω
+    translation:
+      - werpen, gooien
+
+  - id: sumphora
+    term: συμφορά, ἡ
+    translation:
+      - gebeurtenis
+      - ongeluk
+    card_per_sense: true
+
+  - id: tis
+    term: "τίς (τί), τίνος...: (met accent!)"
+    translation:
+      - wie, wat?
+      - welk(e)?
+    card_per_sense: true
+
+  - id: phrontizo
+    term: φροντίζω + gen.
+    translation:
+      - zich bekommeren om

@@ -1,0 +1,128 @@
+meta:
+  id: la-woorden-3b
+  title: Woorden 3B
+  language: la
+  translation_language: nl
+
+entries:
+  - id: capio
+    term: capio (capĕre)
+    forms: { perfect: cepi }
+    translation:
+      - pakken, nemen, innemen
+
+  - id: debeo
+    term: debeo (debēre)
+    translation:
+      - moeten, verschuldigd zijn
+
+  - id: ecce
+    term: ecce
+    translation:
+      - kijk!
+
+  - id: ego
+    term: ego
+    forms: { accusative: me }
+    translation:
+      - ik, mij
+
+  - id: filia
+    term: filia
+    translation:
+      - dochter
+
+  - id: filius
+    term: filius
+    translation:
+      - zoon
+
+  - id: homo
+    term: homo
+    forms: { genitive: hominis, gender: m }
+    translation:
+      - mens
+      - man
+    card_per_sense: true
+
+  - id: igitur
+    term: igitur
+    translation:
+      - dus
+
+  - id: iuvo
+    term: iuvo (iuvare)
+    translation:
+      - helpen
+
+  - id: magnus_a_um
+    term: magnus, -a, -um
+    translation:
+      - groot
+
+  - id: mater
+    term: mater
+    forms: { genitive: matris, gender: v }
+    translation:
+      - moeder
+
+  - id: me
+    term: me (acc./abl.)
+    translation:
+      - mij
+
+  - id: multus_a_um
+    term: multus, -a, -um
+    translation:
+      - veel
+
+  - id: omnia
+    term: omnia (mv.)
+    forms: { gender: o }
+    translation:
+      - alles
+
+  - id: possum
+    term: possum (posse)
+    forms: { perfect: potui }
+    translation:
+      - kunnen
+
+  - id: sedeo
+    term: sedeo (sedēre)
+    translation:
+      - zitten
+
+  - id: sum
+    term: sum (esse)
+    forms: { perfect: fui }
+    translation:
+      - zijn
+
+  - id: unus_a_um
+    term: unus, -a, -um
+    translation:
+      - één
+      - (als) enige, alleen
+    card_per_sense: true
+
+  - id: valde
+    term: valde (bijw.)
+    translation:
+      - erg, zeer
+
+  - id: venio
+    term: venio (venire)
+    forms: { perfect: veni }
+    translation:
+      - komen
+
+  - id: vester_tra_trum
+    term: vester, -tra, -trum (bez. vnw.)   # CHECK
+    translation:
+      - (van) jullie
+
+  - id: vos
+    term: vos (nom./acc.)
+    translation:
+      - jullie

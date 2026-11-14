@@ -1,0 +1,92 @@
+meta:
+  id: el-woorden-6c
+  title: Woorden 6C
+  language: el
+  translation_language: nl
+
+entries:
+  - id: airo
+    term: αἴρω, aor. ἦρα
+    translation:
+      - optillen, oppakken
+
+  - id: andreia
+    term: ἀνδρεία, ἡ
+    translation:
+      - moed, dapperheid
+
+  - id: anemos
+    term: ἄνεμος, ὁ
+    translation:
+      - wind
+
+  - id: emin
+    term: ἡμῖν
+    translation:
+      - (aan/voor) ons (dativus pers. vnw.)
+
+  - id: theos
+    term: θεός, ἡ
+    translation:
+      - godin
+
+  - id: katheudo
+    term: καθεύδω
+    translation:
+      - slapen
+
+  - id: monos
+    term: μόνος
+    translation:
+      - alleen
+
+  - id: nesos
+    term: νῆσος, ἡ
+    translation:
+      - eiland
+
+  - id: bia
+    term: βία, ἡ
+    translation:
+      - kracht, geweld
+
+  - id: eisbaino
+    term: εἰσβαίνω
+    translation:
+      - ingaan, komen in
+
+  - id: ekbaino
+    term: ἐκβαίνω
+    translation:
+      - gaan uit
+
+  - id: exo
+    term: ἔξω
+    translation:
+      - buiten
+
+  - id: emas
+    term: ἡμᾶς
+    translation:
+      - ons (accusativus pers. vnw.)
+
+  - id: parthenos
+    term: παρθένος, ἡ
+    translation:
+      - (ongetrouwd) meisje, maagd
+
+  - id: soteria
+    term: σωτηρία, ἡ
+    translation:
+      - redding, behoud
+
+  - id: telos
+    term: τέλος
+    translation:
+      - ten slotte (bijwoord)
+
+  - id: era
+    term: ἦρα (inf. ἆραι)
+    translation:
+      - ik tilde op, ik pakte op (aor. van αἴρω)  # CHECK
+    form_of: airo

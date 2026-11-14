@@ -18,6 +18,7 @@ entries:
     translation:
       - mens
       - man
+    card_per_sense: true
   - id: theos
     term: ὁ θεός
     translation:
@@ -64,6 +65,7 @@ entries:
     translation:
       - (hij, zij, het) draagt
       - (hij, zij, het) brengt
+    card_per_sense: true
   - id: therion
     term: τὸ θηρίον
     forms: { plural: τὰ θηρία }
@@ -107,6 +109,7 @@ entries:
       - en
       - ook
       - zelfs
+    card_per_sense: true
   - id: lambanei
     term: λαμβάνει
     translation:
@@ -120,6 +123,7 @@ entries:
     translation:
       - (hij, zij, het) doet
       - (hij, zij, het) maakt
+    card_per_sense: true
   - id: despotes
     term: ὁ δεσπότης
     translation:

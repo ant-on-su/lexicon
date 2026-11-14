@@ -1,0 +1,116 @@
+meta:
+  id: el-woorden-12b
+  title: Woorden 12B
+  language: el
+  translation_language: nl
+
+entries:
+  - id: adikeo
+    term: ἀδικέω
+    translation:
+      - onrecht doen
+      - onrechtvaardig (be)handelen
+    card_per_sense: true
+
+  - id: ara
+    term: ἄρα
+    translation:
+      - geeft aan dat er een vraagzin volgt
+
+  - id: kratistos
+    term: κράτιστος
+    translation:
+      - sterkst, best
+      - zeer sterk, zeer goed
+    card_per_sense: true
+
+  - id: mallon
+    term: μᾶλλον
+    translation:
+      - meer (bijwoord)
+
+  - id: meizon
+    term: μείζων
+    forms: { genitive: μείζονος }
+    translation:
+      - groter
+
+  - id: nux
+    term: νύξ, ἡ
+    forms: { genitive: νυκτός }
+    translation:
+      - nacht
+
+  - id: nuktos
+    term: νυκτός (τῆς)
+    translation:
+      - "'s nachts, in de nacht"
+
+  - id: beltistos
+    term: βέλτιστος
+    translation:
+      - best
+      - zeer goed
+    card_per_sense: true
+
+  - id: blapto
+    term: βλάπτω
+    translation:
+      - schade toebrengen, benadelen
+
+  - id: boule
+    term: βουλή, ἡ
+    translation:
+      - plan, besluit
+      - raad, advies
+    card_per_sense: true
+
+  - id: gignosko
+    term: γιγνώσκω
+    translation:
+      - (leren) kennen
+      - inzien, begrijpen
+    card_per_sense: true
+
+  - id: dia_touto
+    term: διὰ τοῦτο
+    translation:
+      - "daarom (lett.: door dát)"
+
+  - id: dolos
+    term: δόλος, ὁ
+    translation:
+      - list
+
+  - id: zeus
+    term: Ζεύς, ὁ
+    forms: { genitive: Διός }
+    translation:
+      - Zeus
+
+  - id: pleistos
+    term: πλεῖστος
+    translation:
+      - meeste(n)
+      - zeer vele(n)
+    card_per_sense: true
+
+  - id: pleon
+    term: πλέον
+    translation:
+      - meer (bijwoord)
+
+  - id: poteros
+    term: πότερος;
+    translation:
+      - wie van beide(n)?
+
+  - id: sophia
+    term: σοφία, ἡ
+    translation:
+      - wijsheid
+
+  - id: os
+    term: ὡς
+    translation:
+      - (zo)als

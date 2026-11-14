@@ -1,0 +1,175 @@
+meta:
+  id: la-woorden-11a
+  title: Woorden 11A
+  language: la
+  translation_language: nl
+
+entries:
+  - id: a_ab
+    term: a, ab + abl.
+    translation:
+      - door (bij pass. werkwoorden)
+
+  - id: ablatus
+    term: ablatus
+    translation:
+      - ppp van aufero (auferre)
+    form_of: aufero
+
+  - id: animal
+    term: animal
+    forms: { genitive: animalis, gender: o }
+    translation:
+      - levend wezen, dier
+
+  - id: aufero
+    term: aufero (auferre) (+ abl.)
+    forms: { perfect: abstuli }
+    translation:
+      - wegnemen, ontnemen (aan)
+
+  - id: avus
+    term: avus
+    translation:
+      - grootvader
+
+  - id: bos
+    term: bos
+    forms: { genitive: bovis, gender: m/v }
+    translation:
+      - rund
+      - koe
+    card_per_sense: true
+
+  - id: dictus
+    term: dictus
+    translation:
+      - ppp van dico (dicĕre)
+    form_of: dico
+
+  - id: diu
+    term: diu (bijw.)
+    translation:
+      - lange tijd
+
+  - id: expello
+    term: expello (expellĕre)
+    translation:
+      - verdrijven
+
+  - id: fero
+    term: fero (ferre)
+    forms: { perfect: tuli }
+    translation:
+      - brengen, dragen
+      - verdragen
+    card_per_sense: true
+
+  - id: illic
+    term: illic
+    translation:
+      - daar
+
+  - id: invenio
+    term: invenio (invenire)
+    forms: { perfect: inveni }
+    translation:
+      - vinden, aantreffen
+
+  - id: latus
+    term: latus
+    translation:
+      - ppp van fero (ferre)
+    form_of: fero
+
+  - id: locus
+    term: locus
+    translation:
+      - plaats, streek (mv. loca of loci)
+
+  - id: ne
+    term: ne + conj.
+    translation:
+      - opdat niet, om niet te
+
+  - id: nepos
+    term: nepos
+    forms: { genitive: nepotis, gender: m }
+    translation:
+      - kleinzoon
+
+  - id: occupo
+    term: occupo (occupare)
+    translation:
+      - bezetten, in bezit nemen
+
+  - id: oppidum
+    term: oppidum
+    translation:
+      - (vesting)stad
+
+  - id: pauci
+    term: pauci
+    forms: { genitive: paucorum }
+    translation:
+      - weinige(n), enkele(n)
+
+  - id: pervenio
+    term: pervenio (pervenire)
+    forms: { perfect: perveni }
+    translation:
+      - (aan)komen, bereiken
+
+  - id: quaesitus
+    term: quaesitus
+    translation:
+      - ppp van quaero (quaerĕre)
+    form_of: quaero
+
+  - id: quaesivi
+    term: quaesivi
+    translation:
+      - perf. van quaero (quaerĕre)
+    form_of: quaero
+
+  - id: tractus
+    term: tractus
+    translation:
+      - ppp van traho (trahĕre)
+    form_of: traho
+
+  - id: traho
+    term: traho (trahĕre)
+    forms: { perfect: traxi }
+    translation:
+      - trekken
+
+  - id: ut
+    term: ut + conj.
+    translation:
+      - opdat, om te
+      - zodat
+    card_per_sense: true   # CHECK
+
+  - id: vestigium
+    term: vestigium
+    translation:
+      - (voet)spoor
+
+  - id: captus
+    term: captus
+    translation:
+      - ppp van capio (capĕre)
+    form_of: capio
+
+  - id: locutus_sum
+    term: locutus sum
+    translation:
+      - perf. van loquor (loqui)
+    form_of: loquor
+
+  - id: tentus
+    term: tentus
+    translation:
+      - ppp van teneo (tenēre)
+    form_of: teneo

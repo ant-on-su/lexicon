@@ -1,0 +1,92 @@
+meta:
+  id: el-woorden-12a
+  title: Woorden 12A
+  language: el
+  translation_language: nl
+
+entries:
+  - id: ameinon
+    term: ἀμείνων
+    forms: { genitive: ἀμείνονος }
+    translation:
+      - beter
+
+  - id: kakion
+    term: κακίων
+    forms: { genitive: κακίονος }
+    translation:
+      - slechter
+
+  - id: kreitton
+    term: κρείττων
+    forms: { genitive: κρείττονος }
+    translation:
+      - beter, sterker
+
+  - id: malista
+    term: μάλιστα
+    translation:
+      - het meest, vooral (bijwoord)
+
+  - id: megistos
+    term: μέγιστος
+    translation:
+      - grootst
+      - zeer groot
+    card_per_sense: true
+
+  - id: beltion
+    term: βελτίων
+    forms: { genitive: βελτίονος }
+    translation:
+      - beter, bekwamer
+
+  - id: deilos
+    term: δειλός
+    translation:
+      - laf
+      - ongelukkig
+    card_per_sense: true
+
+  - id: diaphero
+    term: διαφέρω
+    translation:
+      - verschillen
+
+  - id: ephugon
+    term: ἔφυγον (inf. φυγεῖν) (+ acc.)
+    translation:
+      - ik vluchtte (voor) (aor. van φεύγω)
+    form_of: pheugo
+
+  - id: e
+    term: ἤ
+    translation:
+      - of
+      - dan (na comparatius)
+    card_per_sense: true
+
+  - id: polemios
+    term: πολέμιος, ὁ
+    translation:
+      - vijand
+
+  - id: skopeo
+    term: σκοπέω
+    translation:
+      - bekijken, letten op
+
+  - id: time
+    term: τιμή, ἡ
+    translation:
+      - eer, eerbewijs
+
+  - id: pheugo
+    term: φεύγω, aor. ἔφυγον (+ acc.)
+    translation:
+      - vluchten (voor)
+
+  - id: phug
+    term: φυγ-
+    translation:
+      - aoristusstam van φεύγω

@@ -1,0 +1,113 @@
+meta:
+  id: la-woorden-4b
+  title: Woorden 4B
+  language: la
+  translation_language: nl
+
+entries:
+  - id: ago
+    term: ago (agĕre)
+    forms: { perfect: egi }
+    translation:
+      - drijven, voeren
+      - doen, verrichten
+    card_per_sense: true
+
+  - id: appropinquo
+    term: appropinquo (appropinquare) + dat.
+    translation:
+      - naderen
+
+  - id: custodio
+    term: custodio (custodire)
+    translation:
+      - bewaken, passen op
+
+  - id: deinde
+    term: deinde
+    translation:
+      - daarna, vervolgens
+
+  - id: gladius
+    term: gladius
+    translation:
+      - zwaard
+
+  - id: interficio
+    term: interficio (interficĕre)
+    forms: { perfect: interfeci }
+    translation:
+      - doden
+
+  - id: iubeo
+    term: iubeo (iubēre)
+    forms: { perfect: iussi }
+    translation:
+      - bevelen
+
+  - id: longus_a_um
+    term: longus, -a, -um
+    translation:
+      - lang
+
+  - id: mihi
+    term: mihi (dat.)
+    translation:
+      - (aan/voor) mij
+
+  - id: nam
+    term: nam
+    translation:
+      - want, namelijk
+
+  - id: narro
+    term: narro (narrare)
+    translation:
+      - vertellen
+
+  - id: numquam
+    term: numquam
+    translation:
+      - nooit
+
+  - id: nuntius
+    term: nuntius
+    translation:
+      - bode
+      - bericht
+    card_per_sense: true
+
+  - id: paro
+    term: paro (parare)
+    translation:
+      - gereedmaken, voorbereiden
+
+  - id: plenus_a_um
+    term: plenus, -a, -um + gen.
+    translation:
+      - vol van/met
+
+  - id: primum
+    term: primum
+    translation:
+      - eerst
+
+  - id: que
+    term: "-que"
+    translation:
+      - en (staat altijd achter het woord)
+
+  - id: saluto
+    term: saluto (salutare)
+    translation:
+      - begroeten
+
+  - id: semper
+    term: semper
+    translation:
+      - altijd
+
+  - id: te
+    term: te (acc./abl.)
+    translation:
+      - jou, je

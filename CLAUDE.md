@@ -39,6 +39,7 @@ After making changes, build and run lint and unit tests before calling a task do
 ## Race rules (agreed with the user)
 
 - One continuous board: when at least half the pairs are matched, new pairs fill the empty left slots and the right column reshuffles. A round is every `pairs` matches; a race is `pairs × rounds` matches.
+- An entry with `card_per_sense: true` is one card with all senses numbered on separate lines ("1. …") when going from the language to Dutch, and one card per sense in reverse. Other entries use only their first translation.
 - Never two cards from the same entry, the same term, or with a shared Dutch meaning on the board at once. Meanings: split on `, / ;`, ignore brackets, case, accents and leading `de/het/een`.
 - No time penalty. A mistake counts only the left card. Mistaken cards come back (shuffled) once every card is dealt and one pair is left, and again until none is mistaken; the timer runs through these retries (shown as a "Retries" chip after the rounds). The timer only runs while the app is resumed. Least-shown cards are preferred.
 - Pairs 5–10 (default 6), rounds 3–10 (default 3). Units are stored as excluded, so new units are on by default. An "All units" tri-state toggle can clear them all; Race! is then disabled until a unit is picked.

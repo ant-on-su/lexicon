@@ -1,0 +1,107 @@
+meta:
+  id: la-woorden-7b
+  title: Woorden 7B
+  language: la
+  translation_language: nl
+
+entries:
+  - id: aeque
+    term: aeque (bijw.)
+    translation:
+      - net zo, even(zeer)
+
+  - id: aestimo
+    term: aestimo (aestimare)
+    translation:
+      - schatten, waard achten
+      - beoordelen
+    card_per_sense: true
+
+  - id: alii_alii
+    term: alii ... alii
+    translation:
+      - sommige(n) ... andere(n)
+
+  - id: alius_alius
+    term: alius ... alius
+    translation:
+      - de een ... de ander
+
+  - id: colligo
+    term: colligo (colligĕre)
+    translation:
+      - verzamelen   # CHECK
+
+  - id: enim
+    term: enim
+    translation:
+      - want, immers
+
+  - id: exemplum
+    term: exemplum
+    translation:
+      - voorbeeld
+
+  - id: fortis_is_e
+    term: fortis, -is, -e (fortis)
+    translation:
+      - dapper, sterk
+
+  - id: inferior_or_us
+    term: inferior, -or, -us (inferioris)
+    translation:
+      - lager
+      - minder, zwakker
+    card_per_sense: true
+
+  - id: ingens_ns_ns
+    term: ingens, -ns, -ns (ingentis)
+    translation:
+      - enorm
+
+  - id: licet
+    term: licet + dat.
+    translation:
+      - het is toegestaan, het is mogelijk
+
+  - id: nomen
+    term: nomen
+    forms: { genitive: nominis, gender: o }
+    translation:
+      - naam
+
+  - id: opinio
+    term: opinio
+    forms: { genitive: opinionis, gender: v }
+    translation:
+      - mening, opvatting
+
+  - id: puto
+    term: puto (putare)
+    translation:
+      - menen
+      - (+ 2 acc.) beschouwen als
+    card_per_sense: true
+
+  - id: quemadmodum
+    term: quemadmodum
+    translation:
+      - hoe?
+      - (zo)als
+    card_per_sense: true
+
+  - id: silentium
+    term: silentium
+    translation:
+      - stilte
+
+  - id: vestis
+    term: vestis
+    forms: { genitive: vestis, gender: v }
+    translation:
+      - kleding(stuk)
+
+  - id: vivo
+    term: vivo (vivĕre)
+    translation:
+      - leven

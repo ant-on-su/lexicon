@@ -12,7 +12,7 @@ import org.snakeyaml.engine.v2.api.LoadSettings
 import java.text.Normalizer
 import java.util.Locale
 
-/** One playable pair: a term and one Dutch sense. */
+/** One playable pair: a term and its Dutch translation (one sense, or all senses numbered on separate lines). */
 data class Card(
     val id: String,
     val entry: String,
@@ -21,8 +21,8 @@ data class Card(
     val termForms: String? = null,
     val translationForms: String? = null,
     val gender: String? = null,
+    val meanings: Set<String> = meanings(translation),
 ) {
-    val meanings: Set<String> = meanings(translation)
     private val termKey = normalize(term)
 
     /** True when both cards on the board at once would make a match ambiguous. */
@@ -35,7 +35,10 @@ data class WordUnit(
     val title: String,
     val language: String?,
     val translationLanguage: String?,
+    /** Term to translation: one card per entry, with all senses of a `card_per_sense` entry on it. */
     val cards: List<Card>,
+    /** Translation to term: one card per sense of a `card_per_sense` entry. */
+    val senseCards: List<Card> = cards,
 )
 
 data class Language(
@@ -48,10 +51,11 @@ data class Language(
 
     fun activeUnits(options: RaceOptions) = units.filter { it.id !in options.excludedUnits }
 
-    fun cards(options: RaceOptions) = activeUnits(options).flatMap { it.cards }
+    fun cards(options: RaceOptions) = activeUnits(options).flatMap { if (options.reverse) it.senseCards else it.cards }
 
-    /** The cards in [mistakes], from all units. Ids no longer in the word files are left out. */
-    fun mistakenCards(mistakes: Map<String, Int>) = units.flatMap { it.cards }.filter { it.id in mistakes }
+    /** The cards in [mistakes], from all units and both directions. Ids no longer in the word files are left out. */
+    fun mistakenCards(mistakes: Map<String, Int>) =
+        units.flatMap { it.cards + it.senseCards }.distinctBy { it.id }.filter { it.id in mistakes }
 }
 
 private val brackets = Regex("\\([^)]*\\)")
@@ -82,8 +86,10 @@ fun parseUnit(yaml: String, fallbackId: String): WordUnit {
     val meta = root["meta"] as? Map<String, Any?> ?: emptyMap()
     val unitId = meta["id"]?.toString() ?: fallbackId
     val entries = root["entries"] as? List<Map<String, Any?>> ?: emptyList()
-    val cards = entries.flatMap { entry ->
-        val term = entry["term"]?.toString() ?: return@flatMap emptyList()
+    val cards = mutableListOf<Card>()
+    val senseCards = mutableListOf<Card>()
+    entries.forEach { entry ->
+        val term = entry["term"]?.toString() ?: return@forEach
         val senses = when (val t = entry["translation"]) {
             is List<*> -> t.mapNotNull { it?.toString() }
             null -> emptyList()
@@ -98,7 +104,7 @@ fun parseUnit(yaml: String, fallbackId: String): WordUnit {
         val translationForms = (entry["translation_forms"] as? Map<String, Any?>)?.get("plural")?.toString()
         val entryId = "$unitId/${entry["id"] ?: term}"
         val used = if (entry["card_per_sense"] == true) senses else senses.take(1)
-        used.mapIndexed { i, sense ->
+        val perSense = used.mapIndexed { i, sense ->
             Card(
                 id = "$entryId/$i",
                 entry = entryId,
@@ -109,6 +115,19 @@ fun parseUnit(yaml: String, fallbackId: String): WordUnit {
                 gender = forms["gender"]?.toString(),
             )
         }
+        senseCards += perSense
+        // Term to translation shows every sense on one card, so the card is complete.
+        cards += if (perSense.size > 1) {
+            listOf(
+                perSense.first().copy(
+                    id = "$entryId/senses",
+                    translation = perSense.mapIndexed { i, card -> "${i + 1}. ${card.translation}" }.joinToString("\n"),
+                    meanings = perSense.flatMap { it.meanings }.toSet(),
+                ),
+            )
+        } else {
+            perSense
+        }
     }
     return WordUnit(
         id = unitId,
@@ -116,6 +135,7 @@ fun parseUnit(yaml: String, fallbackId: String): WordUnit {
         language = meta["language"]?.toString(),
         translationLanguage = meta["translation_language"]?.toString(),
         cards = cards,
+        senseCards = senseCards,
     )
 }
 
