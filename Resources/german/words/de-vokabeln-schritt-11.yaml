@@ -1,6 +1,6 @@
 meta:
-  id: schritt-11-aufgabe-3-vokabeln-verkehr
-  title: Schritt 11 Aufgabe 3 Vokabeln (Verkehr)
+  id: de-vokabeln-schritt-11
+  title: VOKABELN Schritt 11
   language: de
   translation_language: nl
   tags: [verkehr]
@@ -62,16 +62,18 @@ entries:
 
   - id: lkw
     term: der Lkw
-    forms: { plural: die Lkws }
     translation:
       - de vrachtwagen
-    translation_forms: { plural: de vrachtwagens }
 
   - id: lastkraftwagen
     term: der Lastkraftwagen
     translation:
       - de vrachtwagen
-    translation_forms: { plural: de vrachtwagens }
+
+  - id: lkws
+    term: die Lkws
+    translation:
+      - de vrachtwagens
 
   - id: pkw
     term: der Pkw

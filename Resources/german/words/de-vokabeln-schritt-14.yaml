@@ -1,0 +1,161 @@
+meta:
+  id: de-vokabeln-schritt-14
+  title: VOKABELN Schritt 14
+  language: de
+  translation_language: nl
+  tags: [einkaufen, essen]
+
+entries:
+  - id: apfel
+    term: der Apfel
+    forms: { plural: die Äpfel }
+    translation:
+      - de appel
+    translation_forms: { plural: de appels }
+
+  - id: baecker
+    term: der Bäcker
+    translation:
+      - de bakker
+
+  - id: zum_baecker_gehen
+    term: zum Bäcker gehen
+    translation:
+      - naar de bakker gaan
+
+  - id: baeckerei
+    term: die Bäckerei
+    translation:
+      - de bakkerij
+
+  - id: banane
+    term: die Banane
+    forms: { plural: die Bananen }
+    translation:
+      - de banaan
+    translation_forms: { plural: de bananen }
+
+  - id: billig
+    term: billig
+    translation:
+      - goedkoop
+
+  - id: birne
+    term: die Birne
+    forms: { plural: die Birnen }
+    translation:
+      - de peer
+    translation_forms: { plural: de peren }
+
+  - id: brauchen
+    term: brauchen
+    translation:
+      - nodig hebben
+
+  - id: broetchen
+    term: das Brötchen
+    forms: { plural: die Brötchen }
+    translation:
+      - het broodje
+    translation_forms: { plural: de broodjes }
+
+  - id: butter
+    term: die Butter
+    translation:
+      - de boter
+
+  - id: vielen_dank
+    term: vielen Dank
+    translation:
+      - dank je wel, dank u wel
+
+  - id: ei
+    term: das Ei
+    forms: { plural: die Eier }
+    translation:
+      - het ei
+    translation_forms: { plural: de eieren }
+
+  - id: einkaufen
+    term: einkaufen
+    translation:
+      - boodschappen doen
+
+  - id: flasche
+    term: die Flasche
+    forms: { plural: die Flaschen }
+    translation:
+      - de fles
+    translation_forms: { plural: de flessen }
+
+  - id: fleisch
+    term: das Fleisch
+    translation:
+      - het vlees
+
+  - id: gemuese
+    term: das Gemüse
+    translation:
+      - de groente
+
+  - id: genau
+    term: genau
+    translation:
+      - precies
+
+  - id: genug
+    term: genug
+    translation:
+      - genoeg
+
+  - id: kartoffel
+    term: die Kartoffel
+    forms: { plural: die Kartoffeln }
+    translation:
+      - de aardappel
+    translation_forms: { plural: de aardappelen }
+
+  - id: lebensmittel
+    term: die Lebensmittel
+    translation:
+      - de levensmiddelen
+
+  - id: milch
+    term: die Milch
+    translation:
+      - de melk
+
+  - id: obst
+    term: das Obst
+    translation:
+      - het fruit
+
+  - id: salz
+    term: das Salz
+    translation:
+      - het zout
+
+  - id: schicken
+    term: schicken
+    translation:
+      - sturen
+
+  - id: schinken
+    term: der Schinken
+    translation:
+      - de ham
+
+  - id: tasche
+    term: die Tasche
+    translation:
+      - de tas
+
+  - id: teuer
+    term: teuer
+    translation:
+      - duur
+
+  - id: verkaeufer
+    term: der Verkäufer
+    translation:
+      - de verkoper

@@ -1,0 +1,179 @@
+meta:
+  id: de-vokabeln-schritt-2
+  title: VOKABELN Schritt 2
+  language: de
+  translation_language: nl
+  tags: [familie, wochentage]
+
+entries:
+  - id: zum_beispiel
+    term: zum Beispiel
+    translation:
+      - bijvoorbeeld
+
+  - id: benutzen
+    term: benutzen
+    translation:
+      - gebruiken
+
+  - id: bruder
+    term: der Bruder
+    forms: { plural: die Brüder }
+    translation:
+      - de broer
+    translation_forms: { plural: de broers }
+
+  - id: draussen
+    term: draußen
+    translation:
+      - buiten
+
+  - id: eltern
+    term: die Eltern
+    translation:
+      - de ouders
+
+  - id: fahrrad
+    term: das Fahrrad
+    forms: { plural: die Fahrräder }
+    translation:
+      - de fiets
+    translation_forms: { plural: de fietsen }
+
+  - id: fernsehen
+    term: fernsehen
+    translation:
+      - tv kijken
+
+  - id: im_fernsehen
+    term: im Fernsehen
+    translation:
+      - op tv
+
+  - id: film
+    term: der Film
+    forms: { plural: die Filme }
+    translation:
+      - de film
+    translation_forms: { plural: de films }
+
+  - id: freizeit
+    term: die Freizeit
+    translation:
+      - de vrije tijd
+
+  - id: fussball
+    term: der Fußball
+    translation:
+      - de voetbal
+
+  - id: geschwister
+    term: die Geschwister
+    translation:
+      - de broers en zussen
+
+  - id: gut
+    term: gut
+    translation:
+      - goed
+
+  - id: immer
+    term: immer
+    translation:
+      - altijd
+
+  - id: internet
+    term: das Internet
+    translation:
+      - het internet
+
+  - id: im_internet
+    term: im Internet
+    translation:
+      - op internet
+
+  - id: junge
+    term: der Junge
+    forms: { plural: die Jungen }
+    translation:
+      - de jongen
+    translation_forms: { plural: de jongens }
+
+  - id: maedchen
+    term: das Mädchen
+    forms: { plural: die Mädchen }
+    translation:
+      - het meisje
+    translation_forms: { plural: de meisjes }
+
+  - id: nie
+    term: nie
+    translation:
+      - nooit
+
+  - id: oft
+    term: oft
+    translation:
+      - vaak
+
+  - id: schlecht
+    term: schlecht
+    translation:
+      - slecht
+
+  - id: schwester
+    term: die Schwester
+    forms: { plural: die Schwestern }
+    translation:
+      - de zus
+    translation_forms: { plural: de zussen }
+
+  - id: wochenende
+    term: das Wochenende
+    translation:
+      - het weekend
+
+  - id: am_wochenende
+    term: am Wochenende
+    translation:
+      - in het weekend
+
+  - id: montag
+    term: der Montag
+    translation:
+      - de maandag
+
+  - id: am_montag
+    term: am Montag
+    translation:
+      - op maandag
+
+  - id: dienstag
+    term: der Dienstag
+    translation:
+      - de dinsdag
+
+  - id: mittwoch
+    term: der Mittwoch
+    translation:
+      - de woensdag
+
+  - id: donnerstag
+    term: der Donnerstag
+    translation:
+      - de donderdag
+
+  - id: freitag
+    term: der Freitag
+    translation:
+      - de vrijdag
+
+  - id: samstag
+    term: der Samstag
+    translation:
+      - de zaterdag
+
+  - id: sonntag
+    term: der Sonntag
+    translation:
+      - de zondag

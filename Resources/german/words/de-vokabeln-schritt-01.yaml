@@ -1,9 +1,9 @@
 meta:
-  id: schritt-1-aufgabe-2-vokabeln
-  title: Schritt 1 Aufgabe 2 Vokabeln
+  id: de-vokabeln-schritt-1
+  title: VOKABELN Schritt 1
   language: de
   translation_language: nl
-  tags: [familie, reise]
+  tags: [familie]
 
 entries:
   - id: adresse
