@@ -1,0 +1,137 @@
+meta:
+  id: la-woorden-2a
+  title: Woorden 2A
+  language: la
+  translation_language: nl
+
+entries:
+  - id: accipio
+    term: accipio (accipĕre)
+    forms: { perfect: accepi }
+    translation:
+      - ontvangen, krijgen
+
+  - id: amo
+    term: amo (amare)
+    translation:
+      - houden van, beminnen
+
+  - id: aurum
+    term: aurum
+    translation:
+      - goud
+
+  - id: cibus
+    term: cibus
+    translation:
+      - eten
+
+  - id: curro
+    term: curro (currĕre)
+    translation:
+      - rennen
+
+  - id: donum
+    term: donum
+    translation:
+      - geschenk
+
+  - id: est
+    term: est
+    translation:
+      - hij/zij/het is
+
+  - id: et
+    term: et
+    translation:
+      - en
+      - ook
+    card_per_sense: true
+
+  - id: in
+    term: in + acc.
+    translation:
+      - naar, naar binnen
+      - "... in"
+    card_per_sense: true
+
+  - id: incipio
+    term: incipio (incipĕre)
+    translation:
+      - beginnen
+
+  - id: laetus_a_um
+    term: laetus, -a, -um
+    translation:
+      - blij, vrolijk, opgewekt
+
+  - id: mensa
+    term: mensa
+    translation:
+      - tafel
+
+  - id: mirus_a_um
+    term: mirus, -a, -um
+    translation:
+      - wonderbaarlijk, schitterend
+
+  - id: muto
+    term: muto (mutare)
+    translation:
+      - veranderen
+      - verwisselen
+    card_per_sense: true
+
+  - id: nunc
+    term: nunc
+    translation:
+      - nu
+
+  - id: per
+    term: per + acc.
+    translation:
+      - door...heen
+      - gedurende
+    card_per_sense: true
+
+  - id: quoque
+    term: quoque
+    translation:
+      - ook
+
+  - id: regia
+    term: regia
+    translation:
+      - paleis
+
+  - id: rex
+    term: rex
+    forms: { genitive: regis, gender: m }
+    translation:
+      - koning
+
+  - id: servus
+    term: servus
+    translation:
+      - slaaf
+
+  - id: statim
+    term: statim
+    translation:
+      - meteen
+
+  - id: tango
+    term: tango (tangĕre)
+    forms: { perfect: tetigi }
+    translation:
+      - aanraken
+
+  - id: vinum
+    term: vinum
+    translation:
+      - wijn
+
+  - id: voco
+    term: voco (vocare)
+    translation:
+      - roepen

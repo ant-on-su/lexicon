@@ -1,0 +1,38 @@
+meta:
+  id: el-woorden-3b
+  title: Woorden 3B
+  language: el
+  translation_language: nl
+
+entries:
+  - id: alla
+    term: ἀλλά, ἀλλ'
+    translation:
+      - maar
+
+  - id: therion
+    term: θηρίον, τό
+    translation:
+      - wild dier, beest
+
+  - id: outos
+    term: οὕτως, οὕτω
+    translation:
+      - zo, op die manier
+
+  - id: baino
+    term: βαίνω
+    translation:
+      - gaan
+
+  - id: pros
+    term: πρός + acc.
+    translation:
+      - naar(toe), tot
+
+  - id: phero
+    term: φέρω, aor. ἤνεγκον
+    translation:
+      - dragen
+      - brengen
+    card_per_sense: true

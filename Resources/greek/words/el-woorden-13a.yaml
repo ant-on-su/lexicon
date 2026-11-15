@@ -1,0 +1,97 @@
+meta:
+  id: el-woorden-13a
+  title: Woorden 13A
+  language: el
+  translation_language: nl
+
+entries:
+  - id: allelous
+    term: ἀλλήλους
+    translation:
+      - elkaar (accusativus)
+
+  - id: anagkaion_esti
+    term: ἀναγκαῖόν ἐστι(ν) + A.c.I.
+    translation:
+      - het is noodzakelijk/ onvermijdelijk (dat)  # CHECK
+
+  - id: anagkaios
+    term: ἀναγκαῖος
+    translation:
+      - noodzakelijk, onvermijdelijk
+
+  - id: apistos
+    term: ἄπιστος
+    translation:
+      - ongelofelijk
+      - onbetrouwbaar
+    card_per_sense: true
+
+  - id: auto
+    term: αὐτό, τό
+    translation:
+      - hetzelfde
+
+  - id: bal
+    term: βαλ-
+    translation:
+      - aoristusstam van βάλλω
+
+  - id: ballo
+    term: βάλλω, aor. ἔβαλον
+    translation:
+      - gooien, werpen
+
+  - id: delon_esti
+    term: δῆλόν ἐστι(ν) (+ A.c.I.)
+    translation:
+      - het is duidelijk (dat)
+
+  - id: delos
+    term: δῆλος
+    translation:
+      - duidelijk
+
+  - id: ebalon
+    term: ἔβαλον (inf. βαλεῖν)
+    translation:
+      - ik gooide, ik wierp, ik trof (aor. van βάλλω)
+    form_of: ballo
+
+  - id: ekeinos
+    term: ἐκεῖνος, ἐκείνη, ἐκεῖνο
+    translation:
+      - die, dat
+      - hij, zij, het (daar)
+    card_per_sense: true
+
+  - id: echren
+    term: ἔχρην
+    translation:
+      - het was nodig om/dat, het moest (impf. van χρή)
+    form_of: chre
+
+  - id: polites
+    term: πολίτης, ὁ
+    translation:
+      - burger
+
+  - id: pros_toutois
+    term: πρὸς τούτοις
+    translation:
+      - bovendien (lett. bij die dingen)
+
+  - id: semeion
+    term: σημεῖον, τό
+    translation:
+      - teken
+
+  - id: phroneo
+    term: φρονέω
+    translation:
+      - verstandig zijn
+
+  - id: chre
+    term: χρή (+ inf./A.c.I.)
+    translation:
+      - het is nodig om/dat, het moet

@@ -1,0 +1,108 @@
+meta:
+  id: fr-3-studio-3
+  title: 2-3 STUDIO
+  language: fr
+  translation_language: nl
+
+entries:
+  - id: retourner
+    term: retourner
+    translation:
+      - terugkeren
+    example_sentence: Il retourne à l’école à dix heures et quart.
+  - id: ennuyeux
+    term: ennuyeux
+    translation:
+      - vervelend, saai
+    example_sentence: Il n’y a pas beaucoup d’activités, c’est ennuyeux.
+  - id: j-en-ai-marre
+    term: j’en ai marre
+    translation:
+      - ik heb er genoeg van
+    example_sentence: Les mauvaises notes, j’en ai marre.
+  - id: cour
+    term: la cour
+    translation:
+      - het schoolplein
+    example_sentence: Les élèves jouent au foot dans la cour.
+  - id: recre
+    term: la récré(ation)
+    translation:
+      - de pauze
+    example_sentence: Pendant la récréation, je mange une pomme.
+  - id: hier
+    term: hier
+    translation:
+      - gisteren
+    example_sentence: Hier, j’ai regardé une série américaine.
+  - id: maintenant
+    term: maintenant
+    translation:
+      - nu
+    example_sentence: Vous retournez maintenant !
+  - id: meilleur
+    term: meilleur / meilleure
+    translation:
+      - beter
+    example_sentence: J’ai une meilleure idée.
+  - id: fier
+    term: fier / fière
+    translation:
+      - trots
+    example_sentence: Elle est fière de sa fille.
+  - id: marche-aux-puces
+    term: le marché aux puces
+    translation:
+      - de vlooienmarkt
+    example_sentence: On trouve des accessoires vintage au marché aux puces.
+  - id: punition
+    term: la punition
+    translation:
+      - de straf
+    example_sentence: La punition, c’est de faire une présentation.
+  - id: gagner-de-l-argent
+    term: gagner de l’argent
+    translation:
+      - geld verdienen
+    example_sentence: Je gagne de l’argent avec mon job.
+  - id: assez
+    term: assez
+    translation:
+      - genoeg
+    example_sentence: Nous avons assez d’argent pour acheter des accessoires.
+  - id: jaloux
+    term: jaloux / jalouse
+    translation:
+      - jaloers
+    example_sentence: Il est jaloux de son frère.
+  - id: pourquoi-pas
+    term: pourquoi pas
+    translation:
+      - waarom niet
+    example_sentence: On part ? Pourquoi pas !
+  - id: allemand
+    term: l’allemand
+    forms: { gender: m }
+    translation:
+      - Duits
+    example_sentence: Tu vas répondre en allemand ?
+  - id: job
+    term: un job
+    translation:
+      - een baan(tje)
+    example_sentence: Le week-end, j’ai un petit job.
+  - id: ravi-de
+    term: ravi(e) de
+    translation:
+      - heel blij zijn met / om
+    example_sentence: Je suis ravi de te voir !
+  - id: cet-apres-midi
+    term: cet après-midi
+    translation:
+      - vanmiddag
+    example_sentence: Cet après-midi, on choisit le thème de la fête scolaire.
+  - id: deux-heures-de-colle
+    term: deux heures de colle
+    translation:
+      - twee uur nablijven
+    example_sentence: La prof nous a donné deux heures de colle.

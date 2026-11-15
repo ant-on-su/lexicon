@@ -1,0 +1,146 @@
+meta:
+  id: la-woorden-9a
+  title: Woorden 9A
+  language: la
+  translation_language: nl
+
+entries:
+  - id: coepi
+    term: coepi (perf.)
+    translation:
+      - ik ben begonnen, ik begin
+
+  - id: corpus
+    term: corpus
+    forms: { genitive: corporis, gender: o }
+    translation:
+      - lichaam
+
+  - id: cum
+    term: cum + conj.
+    translation:
+      - toen, nadat
+      - omdat
+      - hoewel
+    card_per_sense: true
+
+  - id: facilis_is_e
+    term: facilis, -is, -e (facilis)
+    translation:
+      - gemakkelijk
+
+  - id: facio
+    term: facio (facĕre)
+    forms: { perfect: feci }
+    translation:
+      - maken
+      - doen
+    card_per_sense: true
+
+  - id: fingo
+    term: fingo (fingĕre)
+    forms: { perfect: finxi }
+    translation:
+      - vormen
+      - verzinnen
+    card_per_sense: true
+
+  - id: fluvius
+    term: fluvius
+    translation:
+      - rivier
+
+  - id: humus
+    term: humus
+    forms: { gender: v }
+    translation:
+      - grond
+
+  - id: iudex
+    term: iudex
+    forms: { genitive: iudicis, gender: m }
+    translation:
+      - rechter
+
+  - id: iudico
+    term: iudico (iudicare)
+    translation:
+      - oordelen
+
+  - id: possideo
+    term: possideo (possidēre)
+    translation:
+      - bezitten
+
+  - id: praebeo
+    term: praebeo (praebēre)
+    translation:
+      - verschaffen, aanbieden
+
+  - id: primus_a_um
+    term: primus, -a, -um
+    translation:
+      - eerste
+
+  - id: prohibeo
+    term: prohibeo (prohibēre)
+    translation:
+      - verhinderen
+
+  - id: quoniam
+    term: quoniam
+    translation:
+      - aangezien, omdat
+
+  - id: secum
+    term: secum
+    translation:
+      - met/bij zichzelf (= cum se)
+
+  - id: spiritus
+    term: spiritus
+    forms: { genitive: spiritus }
+    translation:
+      - adem
+      - geest
+    card_per_sense: true
+
+  - id: surgo
+    term: surgo (surgĕre)
+    forms: { perfect: surrexi }
+    translation:
+      - zich oprichten, opstaan
+
+  - id: tellus
+    term: tellus
+    forms: { genitive: telluris, gender: v }
+    translation:
+      - aarde
+
+  - id: tollo
+    term: tollo (tollĕre)
+    forms: { perfect: sustuli }
+    translation:
+      - optillen, oppakken
+      - wegnemen
+    card_per_sense: true
+
+  - id: transeo
+    term: transeo (transire)
+    translation:
+      - overgaan, oversteken
+      - voorbijgaan (van tijd)
+    card_per_sense: true
+
+  - id: ut
+    term: ut + conj.
+    translation:
+      - opdat, om te
+      - zodat
+      - dat
+    card_per_sense: true
+
+  - id: videtur
+    term: videtur
+    translation:
+      - hij/zij/het schijnt

@@ -1,0 +1,110 @@
+meta:
+  id: la-woorden-8b
+  title: Woorden 8B
+  language: la
+  translation_language: nl
+
+entries:
+  - id: adhuc
+    term: adhuc
+    translation:
+      - tot nu toe, nog
+
+  - id: clamor
+    term: clamor
+    forms: { genitive: clamoris, gender: m }
+    translation:
+      - geschreeuw, lawaai
+
+  - id: dimitto
+    term: dimitto (dimittĕre)
+    translation:
+      - wegsturen, laten gaan
+
+  - id: etiam
+    term: etiam
+    translation:
+      - ook, zelfs
+
+  - id: invisus_a_um
+    term: invisus, -a, -um (+ dat.)
+    translation:
+      - gehaat (aan/bij)
+
+  - id: levis_is_e
+    term: levis, -is, -e (levis)
+    translation:
+      - licht
+
+  - id: ludus
+    term: ludus
+    translation:
+      - spel
+      - school
+    card_per_sense: true
+
+  - id: nobiscum
+    term: nobiscum
+    translation:
+      - met ons (= cum nobis)
+
+  - id: nondum
+    term: nondum
+    translation:
+      - nog niet
+
+  - id: nox
+    term: nox
+    forms: { genitive: noctis, gender: v }
+    translation:
+      - nacht
+
+  - id: pecunia
+    term: pecunia
+    translation:
+      - geld
+
+  - id: quid
+    term: quid?
+    translation:
+      - wat?
+      - waarom?
+    card_per_sense: true
+
+  - id: rumpo
+    term: rumpo (rumpĕre)
+    forms: { perfect: rupi }
+    translation:
+      - breken, doorbreken
+
+  - id: saevus_a_um
+    term: saevus, -a, -um
+    translation:
+      - woest, wreed
+
+  - id: somnus
+    term: somnus
+    translation:
+      - slaap
+
+  - id: taceo
+    term: taceo (tacēre)
+    translation:
+      - zwijgen
+
+  - id: tam
+    term: tam
+    translation:
+      - zo (zeer)
+
+  - id: virgo
+    term: virgo
+    forms: { genitive: virginis, gender: v }
+    translation:
+      - meisje, maagd
+
+  - id: vox
+    term: vox
+    forms: { genitive: vocis, gender: v }
+    translation:
+      - stem, woord

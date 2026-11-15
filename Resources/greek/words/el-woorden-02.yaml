@@ -1,0 +1,57 @@
+meta:
+  id: el-woorden-2
+  title: Woorden 2
+  language: el
+  translation_language: nl
+
+entries:
+  - id: okto
+    term: ὀκτώ
+    translation:
+      - acht
+
+  - id: deka
+    term: δέκα
+    translation:
+      - tien
+
+  - id: duo
+    term: δύο
+    translation:
+      - twee
+
+  - id: eis
+    term: εἷς
+    forms: { genitive: ἑνός }
+    translation:
+      - één
+
+  - id: ennea
+    term: ἐννέα
+    translation:
+      - negen
+
+  - id: ex
+    term: ἕξ
+    translation:
+      - zes
+
+  - id: epta
+    term: ἑπτά
+    translation:
+      - zeven
+
+  - id: pente
+    term: πέντε
+    translation:
+      - vijf
+
+  - id: tettares
+    term: τέτταρες
+    translation:
+      - vier
+
+  - id: treis
+    term: τρεῖς
+    translation:
+      - drie

@@ -1,0 +1,66 @@
+meta:
+  id: el-woorden-7b
+  title: Woorden 7B
+  language: el
+  translation_language: nl
+
+entries:
+  - id: aneu
+    term: ἄνευ + gen.
+    translation:
+      - zonder
+
+  - id: emeteros
+    term: ἡμέτερος
+    translation:
+      - ons, onze (bezittelijk voornaamwoord)
+
+  - id: authis
+    term: αὖθις
+    translation:
+      - opnieuw, weer (bijwoord)
+
+  - id: egeiro
+    term: ἐγείρω
+    translation:
+      - (op)wekken, wakker maken
+
+  - id: elios
+    term: ἥλιος, ὁ
+    translation:
+      - zon
+
+  - id: emeis
+    term: ἡμεῖς, ἡμῶν, ἡμῖν, ἡμᾶς
+    translation:
+      - wij (nom., gen., dat., acc. pers. vnw.)
+
+  - id: plen
+    term: πλήν + gen.
+    translation:
+      - behalve
+
+  - id: umeis
+    term: ὑμεῖς, ὑμῶν, ὑμῖν, ὑμᾶς
+    translation:
+      - jullie, u (nom., gen., dat., acc. pers. vnw.)
+
+  - id: umeteros
+    term: ὑμέτερος
+    translation:
+      - (van) jullie/u (bezittelijk voornaamwoord)
+
+  - id: upnos
+    term: ὕπνος, ὁ
+    translation:
+      - slaap
+
+  - id: phone
+    term: φωνή, ἡ
+    translation:
+      - stem
+
+  - id: osper
+    term: ὥσπερ
+    translation:
+      - (zo)als

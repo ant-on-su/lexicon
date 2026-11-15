@@ -1,0 +1,220 @@
+meta:
+  id: fr-1-voca-top-20-2
+  title: 2-1 VOCA Top 20
+  language: fr
+  translation_language: nl
+
+entries:
+  - id: detester
+    term: détester
+    translation:
+      - haten, een hekel hebben aan
+    example_sentence: Ma grand-mère déteste les réseaux sociaux.
+  - id: envoyer
+    term: envoyer
+    translation:
+      - versturen
+    example_sentence: Ali envoie un message à son prof.
+  - id: expliquer
+    term: expliquer
+    translation:
+      - uitleggen
+    example_sentence: Je t’explique comment ça fonctionne.
+  - id: etre-fort-en
+    term: être fort(e) en
+    translation:
+      - goed / sterk zijn in
+    example_sentence: Mara est forte en anglais.
+  - id: etre-nul-en
+    term: être nul(le) en
+    translation:
+      - slecht / zwak zijn in
+    example_sentence: Je suis nul en maths, quel désastre.
+  - id: courageux
+    term: courageux / courageuse
+    translation:
+      - moedig
+    example_sentence: C’est courageux de participer au match.
+  - id: content
+    term: content
+    translation:
+      - tevreden
+    example_sentence: Je suis content parce que j’ai une bonne note.
+  - id: libre
+    term: libre
+    translation:
+      - vrij
+    example_sentence: C’est les vacances, donc nous sommes libres.
+  - id: en-quatrieme
+    term: en quatrième
+    translation:
+      - in de tweede klas
+    example_sentence: En quatrième, on a aussi des cours d’allemand.
+  - id: reseaux-sociaux
+    term: les réseaux sociaux
+    translation:
+      - de sociale media(netwerken)
+    example_sentence: Les réseaux sociaux sont très populaires aux Pays-Bas.
+  - id: ordinateur-portable
+    term: l’ordinateur (portable)
+    forms: { gender: m }
+    translation:
+      - de computer / de laptop
+    example_sentence: On utilise des ordinateurs portables en classe.
+  - id: portable
+    term: le portable
+    translation:
+      - de mobiele telefoon
+    example_sentence: Je ne peux pas vivre sans portable.
+  - id: ecouteurs
+    term: les écouteurs
+    translation:
+      - de oortjes, de koptelefoon
+    example_sentence: Je mets mes écouteurs pour me concentrer.
+  - id: appareil
+    term: l’appareil
+    forms: { gender: m }
+    translation:
+      - het apparaat
+    example_sentence: Ce nouvel appareil est trop cher.
+  - id: mot-de-passe
+    term: le mot de passe
+    translation:
+      - het wachtwoord
+    example_sentence: Je ne partage pas mon mot de passe.
+  - id: charger
+    term: charger
+    translation:
+      - opladen
+    example_sentence: Chaque nuit, je charge mon portable.
+  - id: interro
+    term: l’interro(gation)
+    forms: { gender: v }
+    translation:
+      - de toets
+    example_sentence: L’interrogation d’allemand est facile !
+  - id: note
+    term: la note
+    translation:
+      - het cijfer
+    example_sentence: La note ne dit pas tout.
+  - id: se-connecter
+    term: se connecter
+    translation:
+      - contact maken / inloggen
+    example_sentence: En ligne on peut se connecter avec d’autres jeunes.
+  - id: langue
+    term: la langue
+    translation:
+      - de taal
+    example_sentence: La langue française est utile dans beaucoup de pays.
+  - id: site-web
+    term: le site web
+    translation:
+      - de website
+    example_sentence: Ce site web donne de bonnes informations.
+  - id: site-internet
+    term: le site Internet
+    translation:
+      - de website
+  - id: passionne-de
+    term: être passionné(e)(s) de
+    translation:
+      - dol zijn op
+    example_sentence: Elle est passionnée d’histoire.
+  - id: cliquer
+    term: cliquer
+    translation:
+      - klikken
+    example_sentence: Il ne faut pas cliquer sur l’annonce.
+  - id: surtout
+    term: surtout
+    translation:
+      - vooral
+    example_sentence: Ce sont surtout les jeunes qui utilisent Snapchat.
+  - id: librairie
+    term: la librairie
+    translation:
+      - de boekwinkel
+    example_sentence: J’achète deux magazines dans la librairie.
+  - id: en-ligne
+    term: en ligne
+    translation:
+      - online
+    example_sentence: Presque tout le monde est en ligne.
+  - id: cours
+    term: le cours
+    translation:
+      - de les
+    example_sentence: Les cours sont en ligne.
+  - id: journal
+    term: le journal
+    forms: { plural: les journaux }
+    translation:
+      - de krant
+    translation_forms: { plural: de kranten }
+    example_sentence: Les journaux sont publiés chaque jour.
+  - id: interview
+    term: l’interview
+    forms: { gender: v }
+    translation:
+      - het interview
+    example_sentence: L’interview avec la star est intéressante.
+  - id: article
+    term: l’article
+    forms: { gender: m }
+    translation:
+      - het artikel
+    example_sentence: L’article parle du présent et du passé.
+  - id: prix
+    term: le prix
+    forms: { plural: les prix }
+    translation:
+      - de prijs
+    translation_forms: { plural: de prijzen }
+    example_sentence: Les prix sont à partir de 150 euros.
+  - id: conseil
+    term: le conseil
+    translation:
+      - het advies
+    example_sentence: J’ai demandé un conseil à la dame.
+  - id: lieu
+    term: le lieu
+    translation:
+      - de plaats
+    example_sentence: Ce lieu est mystérieux.
+  - id: batiment
+    term: le bâtiment
+    translation:
+      - het gebouw
+    example_sentence: Le bâtiment date de 1895.
+  - id: bureau
+    term: le bureau
+    translation:
+      - het bureau
+    example_sentence: Elle fait ses devoirs à son bureau.
+  - id: il-faut
+    term: Il faut
+    translation:
+      - Je moet
+    example_sentence: Il faut être à l’heure.
+  - id: partager
+    term: partager
+    translation:
+      - delen
+    example_sentence: Sur Internet, on peut partager ses idées.
+  - id: fete-scolaire
+    term: la fête scolaire
+    translation:
+      - het schoolfeest
+    example_sentence: La fête scolaire est le 31 octobre.
+  - id: obligatoire
+    term: obligatoire
+    translation:
+      - verplicht
+    example_sentence: L’anglais est une matière obligatoire.
+  - id: se-concentrer
+    term: se concentrer
+    translation:
+      - zich concentreren
+    example_sentence: Elle se concentre pour écrire l’article.

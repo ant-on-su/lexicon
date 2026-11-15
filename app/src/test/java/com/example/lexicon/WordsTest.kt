@@ -7,6 +7,9 @@ import org.junit.Assert.assertTrue
 import org.junit.Test
 import java.io.File
 
+/** The demo words shipped with the app, and the full word lists kept in the repo's `Resources` folder. */
+val wordFolders = listOf(File("demo"), File("../Resources"))
+
 class WordsTest {
     private val unit = parseUnit(
         """
@@ -60,9 +63,12 @@ class WordsTest {
         assertEquals("Test unit", unit.title)
         assertEquals("la", unit.language)
         assertEquals("nl", unit.translationLanguage)
-        // princeps uses only its first sense, urbs one card per sense.
+        // princeps uses only its first sense. urbs has all senses on one card, and one card per sense in reverse.
         assertEquals(listOf("de eerste, leider"), unit.cards.filter { it.term == "princeps" }.map { it.translation })
-        assertEquals(2, unit.cards.count { it.term == "urbs" })
+        assertEquals("1. stad\n2. dé stad, Rome", card("urbs").translation)
+        assertEquals(setOf("stad", "rome"), card("urbs").meanings)
+        assertEquals(listOf("stad", "dé stad, Rome"), unit.senseCards.filter { it.term == "urbs" }.map { it.translation })
+        assertEquals(unit.cards.filter { it.term != "urbs" }, unit.senseCards.filter { it.term != "urbs" })
         assertEquals("gen. principis", card("princeps").termForms)
         assertEquals("m", card("princeps").gender)
         assertEquals("die Dörfer", card("das Dorf").termForms)
@@ -83,10 +89,20 @@ class WordsTest {
     fun detectsAmbiguousPairs() {
         assertTrue(card("princeps").conflictsWith(card("dux")))
         assertTrue(card("das Bild").conflictsWith(card("das Foto")))
-        val (urbs1, urbs2) = unit.cards.filter { it.term == "urbs" }
+        val (urbs1, urbs2) = unit.senseCards.filter { it.term == "urbs" }
         assertTrue(urbs1.conflictsWith(urbs2))
         assertFalse(card("das Dorf").conflictsWith(card("im Dorf")))
         assertFalse(card("dux").conflictsWith(card("das Dorf")))
+    }
+
+    @Test
+    fun cardsFollowTheDirection() {
+        val lang = Language("latin", "Latina", "Nederlands", listOf(unit))
+        assertEquals(1, lang.cards(RaceOptions()).count { it.term == "urbs" })
+        assertEquals(2, lang.cards(RaceOptions(reverse = true)).count { it.term == "urbs" })
+        // Mistakes from either direction are found.
+        val mistakes = mapOf("test/urbs/senses" to 1, "test/urbs/1" to 2, "test/gone/0" to 1)
+        assertEquals(listOf("test/urbs/senses", "test/urbs/1"), lang.mistakenCards(mistakes).map { it.id })
     }
 
     @Test
@@ -96,7 +112,7 @@ class WordsTest {
         val files = listOf(
             UnitFile("german", "b.yaml") { yaml("b", "bundled") },
             UnitFile("german", "a.yaml") { yaml("a", "bundled") },
-            // From the word folder, after the bundled files.
+            // A later file with the same id replaces the earlier unit.
             UnitFile("german", "b-edited.yaml") { yaml("b", "edited") },
             UnitFile("german", "c.yaml") { yaml("c", "new") },
             UnitFile("german", "broken.yaml") { "meta: [\n  id: oops" },
@@ -117,9 +133,8 @@ class WordsTest {
 
     @Test
     fun bundledWordListsParse() {
-        val files = File("resources").walkTopDown().filter { it.extension == "yaml" }.toList()
-        assertTrue(files.isNotEmpty())
-        files.forEach { file ->
+        wordFolders.forEach { folder -> assertTrue("$folder has no words", folder.walkTopDown().any { it.extension == "yaml" }) }
+        wordFolders.flatMap { folder -> folder.walkTopDown().filter { it.extension == "yaml" } }.forEach { file ->
             val parsed = parseUnit(file.readText(), file.nameWithoutExtension)
             assertTrue("${file.name} has no cards", parsed.cards.isNotEmpty())
         }
@@ -127,7 +142,7 @@ class WordsTest {
 
     @Test
     fun languagesUseTheirOwnNames() {
-        val files = File("resources").walkTopDown().filter { it.extension == "yaml" }.map { file ->
+        val files = File("demo").walkTopDown().filter { it.extension == "yaml" }.map { file ->
             UnitFile(file.parentFile!!.parentFile!!.name, file.name) { file.readText() }
         }.toList()
         val names = loadLanguages(files).associate { it.folder to it.name }

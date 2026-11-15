@@ -1,0 +1,68 @@
+meta:
+  id: el-woorden-8b
+  title: Woorden 8B
+  language: el
+  translation_language: nl
+
+entries:
+  - id: aggello
+    term: ἀγγέλλω, aor. ἤγγειλα
+    translation:
+      - berichten, melden
+
+  - id: aggelos
+    term: ἄγγελος, ὁ
+    translation:
+      - bode
+
+  - id: aletheia
+    term: ἀλήθεια, ἡ
+    translation:
+      - waarheid
+
+  - id: iketeuo
+    term: ἱκετεύω
+    translation:
+      - smeken
+
+  - id: omologeo
+    term: ὁμολογέω + dat.
+    translation:
+      - instemmen met, akkoord gaan met
+
+  - id: omos
+    term: ὅμως
+    translation:
+      - toch
+
+  - id: echo
+    term: ἔχω, imperf. εἶχον, aor. ἔσχον
+    translation:
+      - hebben
+
+  - id: pisteuo
+    term: πιστεύω + dat.
+    translation:
+      - vertrouwen
+
+  - id: stratia
+    term: στρατιά, ἡ
+    translation:
+      - leger
+
+  - id: toioutos
+    term: τοιοῦτος, τοιαύτη, τοιοῦτο
+    translation:
+      - zodanig, dergelijk, zo'n (mnl., vrl., onz.)
+
+  - id: tuche
+    term: τύχη, ἡ
+    translation:
+      - lot
+
+  - id: philtatos
+    term: φίλτατος
+    translation:
+      - liefst(e), dierbaarste
+      - zeer/heel geliefd, zeer/heel dierbaar
+    card_per_sense: true

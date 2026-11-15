@@ -1,0 +1,215 @@
+meta:
+  id: la-woorden-8a
+  title: Woorden 8A
+  language: la
+  translation_language: nl
+
+entries:
+  - id: ante
+    term: ante + acc.
+    translation:
+      - voor
+
+  - id: bellum
+    term: bellum
+    translation:
+      - oorlog
+
+  - id: cura
+    term: cura
+    translation:
+      - zorg
+
+  - id: dedi
+    term: dedi
+    translation:
+      - perf. van do (dare)
+    form_of: do
+
+  - id: dux
+    term: dux
+    forms: { genitive: ducis, gender: m }
+    translation:
+      - leider
+
+  - id: ea
+    term: ea
+    translation:
+      - zij
+      - deze, die (nom. enk. van is)   # CHECK
+    card_per_sense: true
+
+  - id: egi
+    term: egi
+    translation:
+      - perf. van ago (agĕre)
+    form_of: ago
+
+  - id: exerceo
+    term: exerceo (exercēre)
+    translation:
+      - (uit)oefenen
+
+  - id: hic_haec_hoc
+    term: hic, haec, hoc (huius)
+    translation:
+      - deze, dit
+
+  - id: hostis
+    term: hostis
+    forms: { genitive: hostis, gender: m }
+    translation:
+      - vijand
+
+  - id: id
+    term: id
+    translation:
+      - het
+      - dit, dat (nom./acc. onz. van is)
+    card_per_sense: true
+
+  - id: inter
+    term: inter + acc.
+    translation:
+      - tussen, te midden van
+
+  - id: is_ea_id
+    term: is, ea, id (eius)
+    translation:
+      - hij/zij/het
+      - deze/dit, die/dat
+    card_per_sense: true
+
+  - id: ius
+    term: ius
+    forms: { genitive: iuris, gender: o }
+    translation:
+      - recht
+
+  - id: mos
+    term: mos
+    forms: { genitive: moris, gender: m }
+    translation:
+      - gewoonte, gebruik
+
+  - id: munus
+    term: munus
+    forms: { genitive: muneris, gender: o }
+    translation:
+      - geschenk
+      - taak
+    card_per_sense: true
+
+  - id: novus_a_um
+    term: novus, -a, -um
+    translation:
+      - nieuw
+
+  - id: pax
+    term: pax
+    forms: { genitive: pacis, gender: v }
+    translation:
+      - vrede
+
+  - id: populus
+    term: populus
+    translation:
+      - volk
+
+  - id: post
+    term: post + acc.
+    translation:
+      - achter
+      - na
+    card_per_sense: true
+
+  - id: princeps
+    term: princeps
+    forms: { genitive: principis, gender: m }
+    translation:
+      - de eerste, leider
+      - keizer
+    card_per_sense: true
+
+  - id: scelus
+    term: scelus
+    forms: { genitive: sceleris, gender: o }
+    translation:
+      - misdaad
+
+  - id: sicut
+    term: sicut
+    translation:
+      - zoals
+
+  - id: trado
+    term: trado (tradĕre)
+    forms: { perfect: tradidi }
+    translation:
+      - overhandigen, uitleveren, overleveren
+
+  - id: urbs
+    term: urbs
+    forms: { genitive: urbis, gender: v }
+    translation:
+      - stad
+      - dé stad, Rome
+    card_per_sense: true
+
+  - id: vinco
+    term: vinco (vincĕre)
+    forms: { perfect: vici }
+    translation:
+      - overwinnen, overtreffen
+
+  - id: virtus
+    term: virtus
+    forms: { genitive: virtutis, gender: v }
+    translation:
+      - deugd, goede eigenschap
+      - moed, dapperheid
+    card_per_sense: true
+
+  - id: eam
+    term: eam
+    translation:
+      - acc. enk. van ea   # CHECK
+
+  - id: eum
+    term: eum
+    translation:
+      - acc. enk. van is   # CHECK
+
+  - id: me
+    term: me (acc./abl.)
+    translation:
+      - mij
+
+  - id: nobis
+    term: nobis (dat./abl.)
+    translation:
+      - (aan/voor) ons (dat.)
+      - ons (abl.)
+    card_per_sense: true
+
+  - id: nostrum
+    term: nostrum
+    translation:
+      - van ons
+
+  - id: te
+    term: te (acc./abl.)
+    translation:
+      - jou, je
+
+  - id: vestrum
+    term: vestrum
+    translation:
+      - van jullie
+
+  - id: vobis
+    term: vobis (dat./abl.)
+    translation:
+      - (aan/voor) jullie (dat.)
+      - jullie (abl.)
+    card_per_sense: true   # CHECK

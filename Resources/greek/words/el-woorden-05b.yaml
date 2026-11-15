@@ -1,0 +1,131 @@
+meta:
+  id: el-woorden-5b
+  title: Woorden 5B
+  language: el
+  translation_language: nl
+
+entries:
+  - id: thalatta
+    term: θάλαττα, ἡ
+    translation:
+      - zee
+
+  - id: thea
+    term: θεά, ἡ
+    translation:
+      - godin
+
+  - id: ippos
+    term: ἵππος, ὁ
+    translation:
+      - paard
+
+  - id: kakos
+    term: κακός
+    translation:
+      - slecht
+
+  - id: kore
+    term: κόρη, ἡ
+    translation:
+      - meisje, dochter
+
+  - id: luo
+    term: λύω
+    translation:
+      - losmaken
+
+  - id: mello
+    term: μέλλω + inf.
+    translation:
+      - op het punt staan om, van plan zijn om, zullen
+
+  - id: meta_met_meth
+    term: μετά/μετ'/μεθ' + gen.
+    translation:
+      - (samen) met
+
+  - id: moi
+    term: μοί, μοι
+    translation:
+      - (aan/voor) mij/me (dativus pers. vnw.)
+
+  - id: xenos
+    term: ξένος, ὁ
+    translation:
+      - vreemdeling
+
+  - id: oikia
+    term: οἰκία, ἡ
+    translation:
+      - huis
+
+  - id: omoios
+    term: ὅμοιος + dat.
+    translation:
+      - gelijk aan, gelijkend op
+
+  - id: opla
+    term: ὅπλα, τά
+    translation:
+      - wapens
+
+  - id: aute
+    term: αὐτῇ
+    translation:
+      - (aan/voor) haar (dativus pers. vnw.)
+
+  - id: auten
+    term: αὐτήν
+    translation:
+      - haar (accusativus pers. vnw.)
+
+  - id: autes
+    term: αὐτῆς
+    translation:
+      - (van) haar (genitivus pers. vnw.)
+
+  - id: auton
+    term: αὐτόν
+    translation:
+      - hem (accusativus pers. vnw.)
+
+  - id: auto
+    term: αὐτῷ
+    translation:
+      - (aan/voor) hem (dativus pers. vnw.)
+
+  - id: en
+    term: ἐν + dat.
+    translation:
+      - in, op, bij
+
+  - id: enthade
+    term: ἐνθάδε
+    translation:
+      - hier(heen)
+
+  - id: ergon
+    term: ἔργον, τό
+    translation:
+      - werk, daad
+
+  - id: eko
+    term: ἥκω
+    translation:
+      - komen, gekomen zijn
+
+  - id: parecho
+    term: παρέχω
+    translation:
+      - verschaffen, geven
+
+  - id: sun
+    term: σύν + dat.
+    translation:
+      - met, in gezelschap van
+
+  - id: te_kai
+    term: "...τε καί..."
+    translation:
+      - en (verbindt twee woord(groep)en)

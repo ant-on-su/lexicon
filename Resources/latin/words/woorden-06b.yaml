@@ -1,0 +1,102 @@
+meta:
+  id: la-woorden-6b
+  title: Woorden 6B
+  language: la
+  translation_language: nl
+
+entries:
+  - id: a_ab
+    term: a, ab + abl.
+    translation:
+      - van(af), weg van
+
+  - id: alius_a_ud
+    term: alius, -a, -ud (alterius)
+    translation:
+      - (een) ander
+
+  - id: amicus
+    term: amicus
+    translation:
+      - vriend
+
+  - id: aut
+    term: aut
+    translation:
+      - of
+
+  - id: captivus
+    term: captivus
+    translation:
+      - krijgsgevangene
+
+  - id: de
+    term: de + abl.
+    translation:
+      - van (boven)...af
+      - over, aangaande
+    card_per_sense: true
+
+  - id: ei
+    term: ei (dat.)
+    translation:
+      - (aan) hem/haar
+
+  - id: femina
+    term: femina
+    translation:
+      - vrouw
+
+  - id: gigno
+    term: gigno (gignĕre)
+    forms: { perfect: genui }
+    translation:
+      - voortbrengen, baren
+
+  - id: in
+    term: in + abl.
+    translation:
+      - in, op, bij
+
+  - id: libero
+    term: libero (liberare) + abl.
+    translation:
+      - bevrijden van
+
+  - id: movi
+    term: movi
+    translation:
+      - perf. van moveo (movēre)
+    form_of: moveo
+
+  - id: qui_quae_quod
+    term: qui, quae, quod (betr. vnw.)   # CHECK
+    translation:
+      - die/dat, wie/wat
+
+  - id: roma
+    term: Roma
+    translation:
+      - Rome
+
+  - id: statuo
+    term: statuo (statuĕre)
+    forms: { perfect: statui }
+    translation:
+      - besluiten
+
+  - id: timeo
+    term: timeo (timēre)
+    forms: { perfect: timui }
+    translation:
+      - vrezen, bang zijn (voor)
+
+  - id: totus_a_um
+    term: totus, -a, -um
+    translation:
+      - (ge)heel
+
+  - id: tuus_a_um
+    term: tuus, -a, -um
+    translation:
+      - jouw

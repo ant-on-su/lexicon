@@ -59,6 +59,8 @@ private sealed interface Screen {
     data class Start(val lang: Language) : Screen
     data class Racing(val lang: Language, val options: RaceOptions) : Screen
     data class Results(val lang: Language, val options: RaceOptions, val result: RaceResult) : Screen
+    data class Correcting(val lang: Language, val options: RaceOptions) : Screen
+    data class Corrected(val lang: Language, val options: RaceOptions, val mistakes: Int, val cleared: Int, val left: Int) : Screen
 }
 
 @Composable
@@ -72,6 +74,9 @@ private fun LexiconApp(prefs: Prefs, feedback: Feedback) {
     val languages = library?.languages
     var screen by remember { mutableStateOf<Screen>(Screen.Languages) }
     val colorOf = { lang: Language -> Pastels[(languages?.indexOf(lang) ?: 0).coerceAtLeast(0) % Pastels.size] }
+    val tooManyMistakes = { lang: Language, options: RaceOptions ->
+        lang.mistakenCards(prefs.mistakes(lang.folder)).size > options.maxMistakes
+    }
 
     BackHandler(enabled = screen != Screen.Languages) {
         screen = when (val s = screen) {
@@ -80,6 +85,8 @@ private fun LexiconApp(prefs: Prefs, feedback: Feedback) {
             is Screen.Start -> Screen.Modes(s.lang)
             is Screen.Racing -> Screen.Start(s.lang)
             is Screen.Results -> Screen.Start(s.lang)
+            is Screen.Correcting -> Screen.Modes(s.lang)
+            is Screen.Corrected -> Screen.Modes(s.lang)
         }
     }
 
@@ -105,6 +112,7 @@ private fun LexiconApp(prefs: Prefs, feedback: Feedback) {
             )
             is Screen.Modes -> {
                 var options by remember(s.lang) { mutableStateOf(prefs.options(s.lang.folder)) }
+                val mistakes = remember(s.lang) { prefs.mistakes(s.lang.folder) }
                 ModeScreen(
                     lang = s.lang,
                     color = colorOf(s.lang),
@@ -113,21 +121,26 @@ private fun LexiconApp(prefs: Prefs, feedback: Feedback) {
                         options = it
                         prefs.saveOptions(s.lang.folder, it)
                     },
+                    mistakes = mistakes,
                     onRace = { screen = Screen.Start(s.lang) },
+                    onCorrect = { screen = Screen.Correcting(s.lang, options) },
                 )
             }
             is Screen.Start -> {
                 val options = remember(s.lang) { prefs.options(s.lang.folder) }
-                StartScreen(s.lang, colorOf(s.lang), options, prefs.best(bestKey(s.lang, options))) {
+                val blocked = remember(s.lang) { tooManyMistakes(s.lang, options) }
+                StartScreen(s.lang, colorOf(s.lang), options, prefs.best(bestKey(s.lang, options)), blocked) {
                     screen = Screen.Racing(s.lang, options)
                 }
             }
             is Screen.Racing -> RaceScreen(
-                s.lang,
                 colorOf(s.lang),
                 s.options,
+                timed = true,
+                newRace = { Race(s.lang.cards(s.options), s.options.pairs, s.options.pairs * s.options.rounds) },
                 onCue = { feedback.play(it, feedbackOptions) },
-            ) { totalMs, mistakes, roundsMs ->
+                onMiss = { prefs.addMistake(s.lang.folder, it.id) },
+            ) { race, totalMs, roundsMs, retryMs ->
                 val key = bestKey(s.lang, s.options)
                 val previous = prefs.best(key)
                 if (previous == null || totalMs < previous) prefs.saveBest(key, totalMs)
@@ -138,8 +151,9 @@ private fun LexiconApp(prefs: Prefs, feedback: Feedback) {
                     s.options,
                     RaceResult(
                         totalMs = totalMs,
-                        mistakes = mistakes,
+                        mistakes = race.mistakes,
                         roundsMs = roundsMs,
+                        retryMs = retryMs,
                         bestMs = minOf(previous ?: totalMs, totalMs),
                         newBest = newBest,
                     ),
@@ -148,8 +162,37 @@ private fun LexiconApp(prefs: Prefs, feedback: Feedback) {
             is Screen.Results -> ResultsScreen(
                 color = colorOf(s.lang),
                 result = s.result,
+                canAgain = remember(s) { !tooManyMistakes(s.lang, s.options) },
                 onAgain = { screen = Screen.Racing(s.lang, s.options) },
                 onMenu = { screen = Screen.Languages },
+            )
+            is Screen.Correcting -> {
+                val mistakes = remember(s) { prefs.mistakes(s.lang.folder) }
+                val pool = remember(s) { s.lang.mistakenCards(mistakes) }
+                RaceScreen(
+                    colorOf(s.lang),
+                    s.options,
+                    timed = false,
+                    newRace = { Race(pool, minOf(s.options.pairs, pool.size), pool.size, priority = mistakes) },
+                    onCue = { feedback.play(it, feedbackOptions) },
+                    onMiss = { prefs.addMistake(s.lang.folder, it.id) },
+                ) { race, _, _, _ ->
+                    // Words matched without a mistake are corrected; the mistaken ones stay, with their counts raised.
+                    val cleared = (race.solved - race.missed).map { it.id }.toSet()
+                    val now = prefs.mistakes(s.lang.folder) - cleared
+                    prefs.saveMistakes(s.lang.folder, now)
+                    val left = s.lang.mistakenCards(now).size
+                    feedback.play(if (left == 0) Cue.Record else Cue.Finish, feedbackOptions)
+                    screen = Screen.Corrected(s.lang, s.options, race.mistakes, cleared.size, left)
+                }
+            }
+            is Screen.Corrected -> CorrectedScreen(
+                color = colorOf(s.lang),
+                mistakes = s.mistakes,
+                cleared = s.cleared,
+                left = s.left,
+                onAgain = { screen = Screen.Correcting(s.lang, s.options) },
+                onDone = { screen = Screen.Modes(s.lang) },
             )
         }
     }

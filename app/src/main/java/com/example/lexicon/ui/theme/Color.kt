@@ -9,6 +9,10 @@ val GoodGreen = Color(0xFF8EDB82)
 val BadRed = Color(0xFFFF8A8A)
 val SoonGrey = Color(0xFFE8E2D8)
 
+/** The "Correct mistakes" button goes from pink to red as mistaken words pile up. */
+val MistakePink = Color(0xFFFFD6E0)
+val MistakeRed = Color(0xFFFF5C5C)
+
 /** One cheerful pastel per language, in folder order. */
 val Pastels = listOf(
     Color(0xFFFFD36E), // honey

@@ -1,0 +1,109 @@
+meta:
+  id: fr-3-studio-4
+  title: 3-3 STUDIO
+  language: fr
+  translation_language: nl
+
+entries:
+  - id: acteur
+    term: l’acteur / l’actrice
+    translation:
+      - de acteur / de actrice
+    example_sentence: Tu connais cet acteur belge ?
+  - id: si
+    term: si
+    translation:
+      - jawel
+    example_sentence: Si, je connais l’acteur de la série !
+  - id: surprise
+    term: la surprise
+    translation:
+      - de verrassing
+    example_sentence: Nous avons une surprise pour vous.
+  - id: premiere
+    term: la première
+    translation:
+      - de première
+    example_sentence: La première du film, c’est quand ?
+  - id: festival
+    term: le festival
+    translation:
+      - het festival
+    example_sentence: Yada veut aller au festival de cerf-volant.
+  - id: signature
+    term: la signature
+    translation:
+      - de handtekening
+    example_sentence: Je vais demander une signature à l’actrice.
+  - id: impression
+    term: l’impression
+    forms: { gender: v }
+    translation:
+      - de indruk
+    example_sentence: Il fait toujours bonne impression.
+  - id: rentrer
+    term: rentrer
+    translation:
+      - naar huis gaan, thuiskomen
+    example_sentence: On rentre tard ce soir.
+  - id: regarder
+    term: regarder
+    translation:
+      - kijken
+    example_sentence: Tu veux regarder encore une fois ce film ?
+  - id: influencer
+    term: influencer
+    translation:
+      - beïnvloeden
+    example_sentence: Elle influence beaucoup ses camarades de classe.
+  - id: possible
+    term: possible
+    translation:
+      - mogelijk
+    example_sentence: C’est vrai ? Non, ce n’est pas possible !
+  - id: dernier
+    term: dernier / dernière
+    translation:
+      - laatste
+    example_sentence: Je peux vous poser une dernière question ?
+  - id: terrible
+    term: terrible
+    translation:
+      - vreselijk
+    example_sentence: L’organisation de ce festival est terrible !
+  - id: mettre
+    term: mettre
+    translation:
+      - zetten, leggen, aantrekken
+    example_sentence: Jonathan va mettre sa signature sur la carte.
+  - id: autres
+    term: autre(s)
+    translation:
+      - andere
+    example_sentence: Vous avez vu les autres ?
+  - id: repondre
+    term: répondre (à)
+    translation:
+      - antwoorden (op)
+    example_sentence: Je ne peux pas répondre à cette question.
+  - id: entendre
+    term: entendre
+    translation:
+      - horen
+    example_sentence: Je ne t’entends plus !
+  - id: attendre
+    term: attendre
+    translation:
+      - wachten (op)
+    example_sentence: Tu veux m’attendre ?
+  - id: invitation
+    term: l’invitation
+    forms: { gender: v }
+    translation:
+      - een uitnodiging
+    example_sentence: Tu as une invitation pour le dîner ?
+  - id: chaque-annee
+    term: chaque année
+    translation:
+      - ieder jaar
+    example_sentence: Chaque année, elles vont à Cannes.

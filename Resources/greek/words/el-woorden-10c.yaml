@@ -1,0 +1,62 @@
+meta:
+  id: el-woorden-10c
+  title: Woorden 10C
+  language: el
+  translation_language: nl
+
+entries:
+  - id: adikos
+    term: ἄδικος (2)
+    translation:
+      - onrechtvaardig
+
+  - id: amphoteroi
+    term: ἀμφότεροι
+    translation:
+      - beide(n)
+
+  - id: thermos
+    term: θερμός
+    translation:
+      - warm
+
+  - id: kalupto
+    term: καλύπτω
+    translation:
+      - bedekken
+
+  - id: kata
+    term: κατά + gen.
+    translation:
+      - vanaf...naar beneden
+
+  - id: klao
+    term: κλα(ί)ω  # CHECK
+    translation:
+      - huilen, wenen (om)
+
+  - id: krino
+    term: κρίνω
+    translation:
+      - oordelen, beoordelen
+
+  - id: manthano
+    term: μανθάνω
+    translation:
+      - leren kennen, begrijpen, vernemen
+
+  - id: doule
+    term: δούλη, ἡ
+    translation:
+      - slavin
+
+  - id: prosopon
+    term: πρόσωπον, τό
+    translation:
+      - gezicht
+
+  - id: cheir
+    term: χείρ, ἡ, dat. mv. χερσί(ν)
+    forms: { genitive: χειρός }
+    translation:
+      - hand, arm

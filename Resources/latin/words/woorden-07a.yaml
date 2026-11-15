@@ -1,0 +1,147 @@
+meta:
+  id: la-woorden-7a
+  title: Woorden 7A
+  language: la
+  translation_language: nl
+
+entries:
+  - id: bonus_a_um
+    term: bonus, -a, -um
+    translation:
+      - goed
+
+  - id: compleo
+    term: compleo (complēre)
+    translation:
+      - vullen
+
+  - id: crudelis_is_e
+    term: crudelis, -is, -e (crudelis)
+    translation:
+      - wreed
+
+  - id: crudelitas
+    term: crudelitas
+    forms: { genitive: crudelitatis, gender: v }
+    translation:
+      - wreedheid
+
+  - id: dives_es_es
+    term: dives, -es, -es (divitis)
+    translation:
+      - rijk
+
+  - id: dominus
+    term: dominus
+    translation:
+      - heer, heerser
+
+  - id: dum
+    term: dum
+    translation:
+      - terwijl
+      - zolang als
+    card_per_sense: true
+
+  - id: ex
+    term: e(x) + abl.
+    translation:
+      - uit, weg van, van
+
+  - id: ex_2
+    term: ex
+    translation:
+      - zie e(x)   # CHECK
+
+  - id: frango
+    term: frango (frangĕre)
+    forms: { perfect: fregi }
+    translation:
+      - breken
+
+  - id: gravis_is_e
+    term: gravis, -is, -e (gravis)
+    translation:
+      - zwaar
+      - gewichtig
+      - ernstig
+    card_per_sense: true
+
+  - id: habui
+    term: habui
+    translation:
+      - perf. van habeo (habēre)
+    form_of: habeo
+
+  - id: imperator
+    term: imperator
+    forms: { genitive: imperatoris, gender: m }
+    translation:
+      - opperbevelhebber
+      - keizer
+    card_per_sense: true
+
+  - id: invito
+    term: invito (invitare)
+    translation:
+      - uitnodigen
+
+  - id: mors
+    term: mors
+    forms: { genitive: mortis, gender: v }
+    translation:
+      - dood
+
+  - id: necesse
+    term: necesse
+    translation:
+      - noodzakelijk
+
+  - id: neco
+    term: neco (necare)
+    translation:
+      - doden
+
+  - id: omnis_is_e
+    term: omnis, -is, -e (omnis)
+    translation:
+      - ieder, elk
+      - gehele
+      - (mv.) alle(n)
+    card_per_sense: true
+
+  - id: parco
+    term: parco (parcĕre) + dat.
+    translation:
+      - sparen
+
+  - id: praeterea
+    term: praeterea
+    translation:
+      - bovendien
+
+  - id: sanguis
+    term: sanguis
+    forms: { genitive: sanguinis, gender: m }
+    translation:
+      - bloed
+
+  - id: servo
+    term: servo (servare)
+    translation:
+      - redden, beschermen
+
+  - id: si
+    term: si
+    translation:
+      - als
+
+  - id: soleo
+    term: soleo (solēre)
+    translation:
+      - de gewoonte hebben, gewoonlijk doen
+
+  - id: villa
+    term: villa
+    translation:
+      - landhuis

@@ -1,0 +1,105 @@
+meta:
+  id: el-woorden-5a
+  title: Woorden 5A
+  language: el
+  translation_language: nl
+
+entries:
+  - id: aiteo
+    term: αἰτέω (+ 2 acc.)
+    translation:
+      - (iemand) vragen (om)
+
+  - id: andreios
+    term: ἀνδρεῖος
+    translation:
+      - dapper
+
+  - id: thaumazo
+    term: θαυμάζω
+    translation:
+      - bewonderen, zich verwonderen
+
+  - id: kalos
+    term: καλός
+    translation:
+      - mooi
+
+  - id: lego
+    term: λέγω, aor. εἶπον
+    translation:
+      - zeggen
+
+  - id: mala
+    term: μάλα
+    translation:
+      - erg, zeer (bijwoord)
+
+  - id: oti
+    term: ὅτι
+    translation:
+      - dat (voegwoord)
+      - omdat
+    card_per_sense: true
+
+  - id: oun
+    term: οὖν
+    translation:
+      - dan, nu (als een verhaal verder gaat)
+      - dus (in een conclusie)
+    card_per_sense: true
+
+  - id: basileia
+    term: βασίλεια, ἡ
+    translation:
+      - koningin
+
+  - id: doron
+    term: δῶρον, τό
+    translation:
+      - geschenk, cadeau
+
+  - id: epi
+    term: ἐπί + acc.
+    translation:
+      - op...af, naar
+
+  - id: epithumeo
+    term: ἐπιθυμέω + gen.
+    translation:
+      - verlangen (naar), begeren
+
+  - id: etairos
+    term: ἑταῖρος, ὁ
+    translation:
+      - vriend, makker
+
+  - id: pempo
+    term: πέμπω
+    translation:
+      - sturen, zenden
+
+  - id: pleo
+    term: πλέω (+ acc.)
+    translation:
+      - varen (over)
+
+  - id: polemos
+    term: πόλεμος, ὁ
+    translation:
+      - oorlog
+
+  - id: polloi
+    term: πολλοί
+    translation:
+      - veel, velen
+
+  - id: phileo
+    term: φιλέω
+    translation:
+      - houden van, beminnen
+
+  - id: philos
+    term: φίλος
+    translation:
+      - geliefd, dierbaar

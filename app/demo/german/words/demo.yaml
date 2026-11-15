@@ -1,0 +1,179 @@
+meta:
+  id: de-demo
+  title: Demo
+  language: de
+  translation_language: nl
+
+entries:
+  - id: adresse
+    term: die Adresse
+    translation:
+      - het adres
+
+  - id: alter
+    term: das Alter
+    translation:
+      - de leeftijd
+
+  - id: auch
+    term: auch
+    translation:
+      - ook
+
+  - id: autobahn
+    term: die Autobahn
+    translation:
+      - de snelweg
+
+  - id: besuchen
+    term: besuchen
+    translation:
+      - bezoeken
+
+  - id: danke
+    term: danke
+    translation:
+      - dank je, dank u
+
+  - id: deutschland
+    term: Deutschland
+    translation:
+      - Duitsland
+
+  - id: fahren
+    term: fahren
+    translation:
+      - rijden
+
+  - id: familie
+    term: die Familie
+    translation:
+      - het gezin
+
+  - id: kind
+    term: das Kind
+    forms: { plural: die Kinder }
+    translation:
+      - het kind
+    translation_forms: { plural: de kinderen }
+
+  - id: mutter
+    term: die Mutter
+    translation:
+      - de moeder
+
+  - id: reise
+    term: die Reise
+    translation:
+      - de reis
+
+  - id: sohn
+    term: der Sohn
+    forms: { plural: die Söhne }
+    translation:
+      - de zoon
+    translation_forms: { plural: de zoons }
+
+  - id: tochter
+    term: die Tochter
+    forms: { plural: die Töchter }
+    translation:
+      - de dochter
+    translation_forms: { plural: de dochters }
+
+  - id: tourist
+    term: der Tourist
+    translation:
+      - de toerist
+
+  - id: urlaub
+    term: der Urlaub
+    translation:
+      - de vakantie
+
+  - id: vater
+    term: der Vater
+    translation:
+      - de vader
+
+  - id: dorf
+    term: das Dorf
+    forms: { plural: die Dörfer }
+    translation:
+      - het dorp
+    translation_forms: { plural: de dorpen }
+
+  - id: fertig
+    term: fertig
+    translation:
+      - klaar
+
+  - id: gern
+    term: gern
+    translation:
+      - graag
+
+  - id: haus
+    term: das Haus
+    forms: { plural: die Häuser }
+    translation:
+      - het huis
+    translation_forms: { plural: de huizen }
+
+  - id: kueche
+    term: die Küche
+    translation:
+      - de keuken
+
+  - id: kuehlschrank
+    term: der Kühlschrank
+    translation:
+      - de koelkast
+
+  - id: schrank
+    term: der Schrank
+    translation:
+      - de kast
+
+  - id: stadt
+    term: die Stadt
+    forms: { plural: die Städte }
+    translation:
+      - de stad
+    translation_forms: { plural: de steden }
+
+  - id: tisch
+    term: der Tisch
+    translation:
+      - de tafel
+
+  - id: stuhl
+    term: der Stuhl
+    forms: { plural: die Stühle }
+    translation:
+      - de stoel
+    translation_forms: { plural: de stoelen }
+
+  - id: tuer
+    term: die Tür
+    forms: { plural: die Türen }
+    translation:
+      - de deur
+    translation_forms: { plural: de deuren }
+
+  - id: weil
+    term: weil
+    translation:
+      - omdat
+
+  - id: wohnen
+    term: wohnen
+    translation:
+      - wonen
+
+  - id: zimmer
+    term: das Zimmer
+    forms: { plural: die Zimmer }
+    translation:
+      - de kamer
+    translation_forms: { plural: de kamers }

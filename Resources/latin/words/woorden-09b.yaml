@@ -1,0 +1,111 @@
+meta:
+  id: la-woorden-9b
+  title: Woorden 9B
+  language: la
+  translation_language: nl
+
+entries:
+  - id: cum
+    term: cum + ind.
+    translation:
+      - toen
+      - wanneer
+    card_per_sense: true   # CHECK
+
+  - id: fugio
+    term: fugio (fugĕre)
+    forms: { perfect: fugi }
+    translation:
+      - vluchten
+
+  - id: genus
+    term: genus
+    forms: { genitive: generis, gender: o }
+    translation:
+      - afkomst, geslacht
+      - soort
+    card_per_sense: true
+
+  - id: humanus_a_um
+    term: humanus, -a, -um
+    translation:
+      - menselijk
+
+  - id: iacto
+    term: iacto (iactare)
+    translation:
+      - werpen, slingeren
+      - opschepen (over), pochen
+    card_per_sense: true
+
+  - id: intereo
+    term: intereo (interire)
+    forms: { perfect: interii }
+    translation:
+      - sterven
+
+  - id: lapis
+    term: lapis
+    forms: { genitive: lapidis, gender: m }
+    translation:
+      - steen
+
+  - id: mulier
+    term: mulier
+    forms: { genitive: mulieris, gender: v }
+    translation:
+      - vrouw
+      - echtgenote, getrouwde vrouw
+    card_per_sense: true   # CHECK
+
+  - id: ob
+    term: ob + acc.
+    translation:
+      - wegens
+
+  - id: ob_eam_rem
+    term: ob eam rem
+    translation:
+      - daarom
+
+  - id: par
+    term: par (+ dat.)
+    forms: { genitive: paris }
+    translation:
+      - gelijk (aan), opgewassen (tegen)
+
+  - id: praeter
+    term: praeter + acc.
+    translation:
+      - behalve
+      - voorbij
+    card_per_sense: true
+
+  - id: propter
+    term: propter + acc.
+    translation:
+      - vanwege, door
+
+  - id: solitudo
+    term: solitudo
+    forms: { genitive: solitudinis, gender: v }
+    translation:
+      - eenzaamheid
+
+  - id: ut
+    term: ut + ind.
+    translation:
+      - zoals
+      - zodra
+    card_per_sense: true   # CHECK
+
+  - id: vel
+    term: vel
+    translation:
+      - of
+
+  - id: vir
+    term: vir
+    forms: { genitive: viri }
+    translation:
+      - man

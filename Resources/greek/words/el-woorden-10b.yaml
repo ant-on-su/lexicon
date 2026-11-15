@@ -1,0 +1,66 @@
+meta:
+  id: el-woorden-10b
+  title: Woorden 10B
+  language: el
+  translation_language: nl
+
+entries:
+  - id: lampros
+    term: λαμπρός
+    translation:
+      - schitterend
+
+  - id: archo
+    term: ἄρχω + gen.
+    translation:
+      - voorgaan, leiden
+      - heersen over
+    card_per_sense: true
+
+  - id: dioko
+    term: διώκω
+    translation:
+      - achtervolgen
+
+  - id: elauno
+    term: ἐλαύνω
+    translation:
+      - (voort)drijven
+      - optrekken, marcheren
+    card_per_sense: true
+
+  - id: eu
+    term: εὖ
+    translation:
+      - goed (bijwoord)
+
+  - id: pistos
+    term: πιστός
+    translation:
+      - trouw, betrouwbaar
+
+  - id: polis
+    term: πόλις, ἡ
+    forms: { accusative: πόλιν }
+    translation:
+      - stad
+
+  - id: proteron
+    term: πρότερον
+    translation:
+      - eerder (bijwoord)
+
+  - id: proteros
+    term: πρότερος
+    translation:
+      - eerder, vroeger
+
+  - id: teleute
+    term: τελευτή, ἡ
+    translation:
+      - einde
+
+  - id: phulatto
+    term: φυλάττω
+    translation:
+      - bewaken

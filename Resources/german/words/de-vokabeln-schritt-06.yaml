@@ -1,0 +1,148 @@
+meta:
+  id: de-vokabeln-schritt-6
+  title: VOKABELN Schritt 6
+  language: de
+  translation_language: nl
+  tags: [verkehr]
+
+entries:
+  - id: aber
+    term: aber
+    translation:
+      - maar
+
+  - id: achtung
+    term: Achtung!
+    translation:
+      - Pas op!
+
+  - id: also
+    term: also
+    translation:
+      - dus
+
+  - id: aufpassen_auf
+    term: aufpassen auf
+    translation:
+      - letten op
+
+  - id: ausweis
+    term: der Ausweis
+    translation:
+      - het legitimatiebewijs
+
+  - id: autofahrer
+    term: der Autofahrer
+    translation:
+      - de automobilist
+
+  - id: boese
+    term: böse
+    translation:
+      - boos
+
+  - id: das_ist_egal
+    term: Das ist egal.
+    translation:
+      - Dat maakt niet uit.
+
+  - id: sich_entschuldigen
+    term: sich entschuldigen
+    translation:
+      - zich verontschuldigen
+
+  - id: ich_entschuldige_mich_dafuer
+    term: Ich entschuldige mich dafür.
+    translation:
+      - Ik bied daarvoor mijn excuses aan.
+
+  - id: fuehrerschein
+    term: der Führerschein
+    translation:
+      - het rijbewijs
+
+  - id: fast
+    term: fast
+    translation:
+      - bijna
+
+  - id: fehlen
+    term: fehlen
+    translation:
+      - ontbreken
+
+  - id: gueltig
+    term: gültig
+    translation:
+      - geldig
+
+  - id: jetzt
+    term: jetzt
+    translation:
+      - nu
+
+  - id: kaputt
+    term: kaputt
+    translation:
+      - kapot
+
+  - id: das_tut_mir_leid
+    term: Das tut mir leid.
+    translation:
+      - Het spijt me.
+
+  - id: nett_von_ihnen
+    term: Nett von Ihnen!
+    translation:
+      - Aardig van u!
+
+  - id: passieren
+    term: passieren
+    translation:
+      - gebeuren
+
+  - id: was_ist_passiert
+    term: Was ist passiert?
+    translation:
+      - Wat is er gebeurd?
+
+  - id: ploetzlich
+    term: plötzlich
+    translation:
+      - plotseling
+
+  - id: polizei
+    term: die Polizei
+    translation:
+      - de politie
+
+  - id: polizist
+    term: der Polizist
+    forms: { plural: die Polizisten }
+    translation:
+      - de politieagent
+    translation_forms: { plural: de politieagenten }
+
+  - id: radfahrer
+    term: der Radfahrer
+    translation:
+      - de fietser
+
+  - id: schild
+    term: das Schild
+    forms: { plural: die Schilder }
+    translation:
+      - het verkeersbord
+    translation_forms: { plural: de verkeersborden }
+
+  - id: strasse
+    term: die Straße
+    forms: { plural: die Straßen }
+    translation:
+      - de straat
+    translation_forms: { plural: de straten }
+
+  - id: zurueck
+    term: zurück
+    translation:
+      - terug

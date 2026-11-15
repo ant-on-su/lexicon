@@ -1,0 +1,120 @@
+meta:
+  id: la-woorden-4a
+  title: Woorden 4A
+  language: la
+  translation_language: nl
+
+entries:
+  - id: ambulo
+    term: ambulo (ambulare)
+    translation:
+      - wandelen
+
+  - id: circumdo
+    term: circumdo (circumdare)
+    translation:
+      - omgeven
+
+  - id: cupidus_a_um
+    term: cupidus, -a, -um + gen.
+    translation:
+      - begerig naar
+
+  - id: cupio
+    term: cupio (cupĕre)
+    translation:
+      - begeren, willen, verlangen
+
+  - id: descendo
+    term: descendo (descendĕre)
+    translation:
+      - afdalen
+
+  - id: dolus
+    term: dolus
+    translation:
+      - list
+
+  - id: forma
+    term: forma
+    translation:
+      - gestalte
+      - schoonheid
+    card_per_sense: true
+
+  - id: ingenium
+    term: ingenium
+    translation:
+      - karakter
+      - talent
+    card_per_sense: true
+
+  - id: ira
+    term: ira
+    translation:
+      - woede
+
+  - id: iuppiter
+    term: Iuppiter
+    forms: { genitive: Iovis }
+    translation:
+      - Jupiter
+
+  - id: metuo
+    term: metuo (metuĕre)
+    translation:
+      - vrezen, bang zijn
+
+  - id: pater
+    term: pater
+    forms: { genitive: patris, gender: m }
+    translation:
+      - vader
+
+  - id: placeo
+    term: placeo (placēre) + dat.
+    translation:
+      - in de smaak vallen bij
+
+  - id: pulcher_chra_chrum
+    term: pulcher, -chra, -chrum
+    translation:
+      - mooi
+
+  - id: quaero
+    term: quaero (quaerĕre)
+    forms: { perfect: quaesivi }
+    translation:
+      - zoeken
+      - vragen
+    card_per_sense: true
+
+  - id: se
+    term: se (acc./abl.)
+    translation:
+      - zich(zelf)
+
+  - id: specto
+    term: specto (spectare)
+    translation:
+      - kijken naar, zien
+
+  - id: suus_a_um
+    term: suus, -a, -um (bez. vnw.)   # CHECK
+    translation:
+      - zijn, haar, hun
+
+  - id: terra
+    term: terra
+    translation:
+      - aarde, grond, land
+
+  - id: timidus_a_um
+    term: timidus, -a, -um (+ gen.)
+    translation:
+      - bang, angstig (voor)
+
+  - id: tunc
+    term: tunc (bijw.)
+    translation:
+      - dan, toen

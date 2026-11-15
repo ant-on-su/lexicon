@@ -1,0 +1,152 @@
+meta:
+  id: la-woorden-11b
+  title: Woorden 11B
+  language: la
+  translation_language: nl
+
+entries:
+  - id: alo
+    term: alo (alĕre)
+    forms: { perfect: alui }
+    translation:
+      - (op)voeden, grootbrengen
+
+  - id: amnis
+    term: amnis
+    forms: { genitive: amnis, gender: m }
+    translation:
+      - stroom, rivier
+
+  - id: appello
+    term: appello (appellare)
+    translation:
+      - toespreken
+      - noemen
+    card_per_sense: true
+
+  - id: condo
+    term: condo (condĕre)
+    forms: { perfect: condidi }
+    translation:
+      - stichten
+      - opbergen, verbergen
+    card_per_sense: true
+
+  - id: facio
+    term: facio (facĕre)
+    forms: { perfect: feci }
+    translation:
+      - (+ 2 acc.) maken tot
+
+  - id: frater
+    term: frater
+    forms: { genitive: fratris, gender: m }
+    translation:
+      - broer
+
+  - id: imperium
+    term: imperium
+    translation:
+      - macht, gezag
+      - heerschappij, rijk
+    card_per_sense: true
+
+  - id: loquor
+    term: loquor (loqui)
+    forms: { perfect: locutus sum }
+    translation:
+      - spreken
+
+  - id: missus
+    term: missus
+    translation:
+      - ppp van mitto (mittĕre)
+    form_of: mitto
+
+  - id: morior
+    term: morior (mori)
+    forms: { perfect: mortuus sum }
+    translation:
+      - sterven
+
+  - id: moror
+    term: moror (morari)   # CHECK
+    translation:
+      - verblijven
+      - ophouden, vertragen
+    card_per_sense: true
+
+  - id: nascor
+    term: nascor (nasci)
+    forms: { perfect: natus sum }
+    translation:
+      - geboren worden
+
+  - id: nolo
+    term: nolo (nolle)
+    forms: { perfect: nolui }
+    translation:
+      - niet willen
+
+  - id: nuper
+    term: nuper
+    translation:
+      - onlangs
+
+  - id: occisus
+    term: occisus
+    translation:
+      - ppp van occido (occidĕre)
+    form_of: occido
+
+  - id: pello
+    term: pello (pellĕre)
+    forms: { perfect: pepuli }
+    translation:
+      - verdrijven (van)
+
+  - id: postea
+    term: posteā (bijw.)
+    translation:
+      - later
+
+  - id: pulsus
+    term: pulsus
+    translation:
+      - ppp van pello (pellĕre)
+    form_of: pello
+
+  - id: recedo
+    term: recedo (recedĕre)
+    forms: { perfect: recessi }
+    translation:
+      - teruggaan, weggaan
+
+  - id: reperio
+    term: reperio (reperire)
+    forms: { perfect: repperi }
+    translation:
+      - vinden, te weten komen
+
+  - id: revoco
+    term: revoco (revocare)
+    translation:
+      - terugroepen
+
+  - id: ripa
+    term: ripa
+    translation:
+      - oever
+
+  - id: uxor
+    term: uxor
+    forms: { genitive: uxoris, gender: v }
+    translation:
+      - echtgenote, vrouw
+
+  - id: vero
+    term: vero (bijw.)
+    translation:
+      - echter
+      - werkelijk, inderdaad
+    card_per_sense: true

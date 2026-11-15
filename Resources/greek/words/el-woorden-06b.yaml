@@ -1,0 +1,115 @@
+meta:
+  id: el-woorden-6b
+  title: Woorden 6B
+  language: el
+  translation_language: nl
+
+entries:
+  - id: akouo
+    term: ἀκούω
+    translation:
+      - horen
+
+  - id: akouo_2
+    term: ἀκούω + gen.
+    translation:
+      - (bij personen) horen, luisteren (naar)
+
+  - id: emera
+    term: ἡμέρα, ἡ
+    translation:
+      - dag
+
+  - id: thaumazo_oti
+    term: θαυμάζω ὅτι
+    translation:
+      - zich erover verwonderen dat
+
+  - id: thura
+    term: θύρα, ἡ
+    translation:
+      - deur
+
+  - id: meno
+    term: μένω, aor. ἔμεινα
+    translation:
+      - blijven  # CHECK
+      - wachten (op)
+    card_per_sense: true
+
+  - id: me
+    term: μή
+    translation:
+      - niet (bij gebiedende wijs)
+
+  - id: mou
+    term: μου, ἐμοῦ
+    translation:
+      - (van) mij, mijn (genitivus pers. vnw.)
+
+  - id: autois
+    term: αὐτοῖς
+    translation:
+      - (aan/voor) hen (dativus pers. vnw.)
+
+  - id: dakruo
+    term: δακρύω
+    translation:
+      - huilen
+
+  - id: de
+    term: δή
+    translation:
+      - (geeft nadruk) dan, dus (vaak moeilijk te vertalen)
+
+  - id: einai
+    term: εἶναι
+    translation:
+      - (te) zijn (infinitivus)
+
+  - id: emos
+    term: ἐμός, ἐμή, ἐμόν
+    translation:
+      - mijn (bezittelijk vnw.)
+
+  - id: emou
+    term: ἐμοῦ, μου
+    translation:
+      - (van) mij, mijn (genitivus pers. vnw.)
+
+  - id: emeis
+    term: ἡμεῖς, ἡμῶν, ἡμῖν, ἡμᾶς
+    translation:
+      - wij (nom., gen., dat., acc. pers. vnw.)
+
+  - id: palin
+    term: πάλιν
+    translation:
+      - weer, opnieuw
+      - terug
+    card_per_sense: true
+
+  - id: pros
+    term: πρός + dat.
+    translation:
+      - bij
+
+  - id: sos
+    term: σός, σή, σόν
+    translation:
+      - jouw, uw (bezittelijk vnw.)
+
+  - id: sou
+    term: σοῦ, σου
+    translation:
+      - (van) jou/u, jouw/uw (genitivus pers. vnw.)
+
+  - id: umeis
+    term: ὑμεῖς, ὑμῶν, ὑμῖν, ὑμᾶς
+    translation:
+      - jullie, u (nom., gen., dat., acc. pers. vnw.)
+
+  - id: ode
+    term: ὧδε
+    translation:
+      - zo, als volgt

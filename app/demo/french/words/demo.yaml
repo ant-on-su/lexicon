@@ -1,0 +1,130 @@
+meta:
+  id: fr-demo
+  title: Demo
+  language: fr
+  translation_language: nl
+
+entries:
+  - id: pain
+    term: le pain
+    translation:
+      - het brood
+  - id: baguette
+    term: la baguette
+    translation:
+      - het stokbrood
+  - id: viande
+    term: la viande
+    translation:
+      - het vlees
+  - id: poisson
+    term: le poisson
+    translation:
+      - de vis
+  - id: fromage
+    term: le fromage
+    translation:
+      - de kaas
+  - id: boisson
+    term: la boisson
+    translation:
+      - het drankje
+  - id: boire
+    term: boire
+    translation:
+      - drinken
+  - id: manger
+    term: manger
+    translation:
+      - eten
+  - id: avoir-faim
+    term: avoir faim
+    translation:
+      - honger hebben
+  - id: avoir-soif
+    term: avoir soif
+    translation:
+      - dorst hebben
+  - id: faire-les-courses
+    term: faire les courses
+    translation:
+      - boodschappen doen
+  - id: supermarche
+    term: le supermarché
+    translation:
+      - de supermarkt
+  - id: boulangerie
+    term: la boulangerie
+    translation:
+      - de bakkerij
+  - id: repas
+    term: le repas
+    translation:
+      - de maaltijd
+  - id: petit-dejeuner
+    term: le petit déjeuner
+    translation:
+      - het ontbijt
+  - id: dejeuner
+    term: le déjeuner
+    translation:
+      - de lunch
+  - id: diner
+    term: le dîner
+    translation:
+      - het diner
+  - id: legumes
+    term: les légumes
+    forms: { gender: m }
+    translation:
+      - de groenten
+  - id: utiliser
+    term: utiliser
+    translation:
+      - gebruiken
+  - id: preparer
+    term: préparer
+    translation:
+      - klaarmaken / bereiden
+  - id: probable
+    term: probable
+    translation:
+      - waarschijnlijk
+  - id: port
+    term: le port
+    translation:
+      - de haven
+  - id: acheter
+    term: acheter
+    translation:
+      - kopen
+  - id: noix
+    term: la noix
+    translation:
+      - de noot
+  - id: huile-d-olive
+    term: l’huile d’olive
+    forms: { gender: v }
+    translation:
+      - de olijfolie
+  - id: orange
+    term: l’orange
+    forms: { gender: v }
+    translation:
+      - de sinaasappel
+  - id: cent
+    term: cent
+    translation:
+      - honderd
+  - id: gout
+    term: le goût
+    translation:
+      - de smaak
+  - id: sucre
+    term: le sucre
+    translation:
+      - de suiker
+  - id: sante
+    term: la santé
+    translation:
+      - de gezondheid

@@ -12,7 +12,7 @@ import org.snakeyaml.engine.v2.api.LoadSettings
 import java.text.Normalizer
 import java.util.Locale
 
-/** One playable pair: a term and one Dutch sense. */
+/** One playable pair: a term and its Dutch translation (one sense, or all senses numbered on separate lines). */
 data class Card(
     val id: String,
     val entry: String,
@@ -21,8 +21,8 @@ data class Card(
     val termForms: String? = null,
     val translationForms: String? = null,
     val gender: String? = null,
+    val meanings: Set<String> = meanings(translation),
 ) {
-    val meanings: Set<String> = meanings(translation)
     private val termKey = normalize(term)
 
     /** True when both cards on the board at once would make a match ambiguous. */
@@ -35,7 +35,10 @@ data class WordUnit(
     val title: String,
     val language: String?,
     val translationLanguage: String?,
+    /** Term to translation: one card per entry, with all senses of a `card_per_sense` entry on it. */
     val cards: List<Card>,
+    /** Translation to term: one card per sense of a `card_per_sense` entry. */
+    val senseCards: List<Card> = cards,
 )
 
 data class Language(
@@ -46,9 +49,13 @@ data class Language(
 ) {
     val hasGender = units.any { unit -> unit.cards.any { it.gender != null } }
 
-    fun activeUnits(options: RaceOptions) = units.filter { it.id !in options.excludedUnits }.ifEmpty { units }
+    fun activeUnits(options: RaceOptions) = units.filter { it.id !in options.excludedUnits }
 
-    fun cards(options: RaceOptions) = activeUnits(options).flatMap { it.cards }
+    fun cards(options: RaceOptions) = activeUnits(options).flatMap { if (options.reverse) it.senseCards else it.cards }
+
+    /** The cards in [mistakes], from all units and both directions. Ids no longer in the word files are left out. */
+    fun mistakenCards(mistakes: Map<String, Int>) =
+        units.flatMap { it.cards + it.senseCards }.distinctBy { it.id }.filter { it.id in mistakes }
 }
 
 private val brackets = Regex("\\([^)]*\\)")
@@ -79,8 +86,10 @@ fun parseUnit(yaml: String, fallbackId: String): WordUnit {
     val meta = root["meta"] as? Map<String, Any?> ?: emptyMap()
     val unitId = meta["id"]?.toString() ?: fallbackId
     val entries = root["entries"] as? List<Map<String, Any?>> ?: emptyList()
-    val cards = entries.flatMap { entry ->
-        val term = entry["term"]?.toString() ?: return@flatMap emptyList()
+    val cards = mutableListOf<Card>()
+    val senseCards = mutableListOf<Card>()
+    entries.forEach { entry ->
+        val term = entry["term"]?.toString() ?: return@forEach
         val senses = when (val t = entry["translation"]) {
             is List<*> -> t.mapNotNull { it?.toString() }
             null -> emptyList()
@@ -95,7 +104,7 @@ fun parseUnit(yaml: String, fallbackId: String): WordUnit {
         val translationForms = (entry["translation_forms"] as? Map<String, Any?>)?.get("plural")?.toString()
         val entryId = "$unitId/${entry["id"] ?: term}"
         val used = if (entry["card_per_sense"] == true) senses else senses.take(1)
-        used.mapIndexed { i, sense ->
+        val perSense = used.mapIndexed { i, sense ->
             Card(
                 id = "$entryId/$i",
                 entry = entryId,
@@ -106,6 +115,19 @@ fun parseUnit(yaml: String, fallbackId: String): WordUnit {
                 gender = forms["gender"]?.toString(),
             )
         }
+        senseCards += perSense
+        // Term to translation shows every sense on one card, so the card is complete.
+        cards += if (perSense.size > 1) {
+            listOf(
+                perSense.first().copy(
+                    id = "$entryId/senses",
+                    translation = perSense.mapIndexed { i, card -> "${i + 1}. ${card.translation}" }.joinToString("\n"),
+                    meanings = perSense.flatMap { it.meanings }.toSet(),
+                ),
+            )
+        } else {
+            perSense
+        }
     }
     return WordUnit(
         id = unitId,
@@ -113,6 +135,7 @@ fun parseUnit(yaml: String, fallbackId: String): WordUnit {
         language = meta["language"]?.toString(),
         translationLanguage = meta["translation_language"]?.toString(),
         cards = cards,
+        senseCards = senseCards,
     )
 }
 
@@ -124,7 +147,7 @@ class Library(val languages: List<Language>, val folderName: String?, val proble
 
 private fun isYaml(name: String) = name.endsWith(".yaml") || name.endsWith(".yml")
 
-/** Every asset folder with a `words/` folder of YAML units is a language. */
+/** Every asset folder with a `words/` folder of YAML units is a language: the demo words shipped with the app. */
 fun assetFiles(assets: AssetManager): List<UnitFile> =
     assets.list("").orEmpty().flatMap { folder ->
         assets.list("$folder/words").orEmpty().filter(::isYaml).map { file ->
@@ -163,7 +186,7 @@ private fun folderName(resolver: ContentResolver, tree: Uri): String? {
     }
 }
 
-/** The bundled units plus those in the word folder, if one is set. */
+/** The units in the word folder, or the demo units while no folder is set or it has no usable words. */
 fun loadLibrary(context: Context, folder: Uri?): Library {
     val problems = mutableListOf<String>()
     val folderFiles = folder?.let {
@@ -172,15 +195,18 @@ fun loadLibrary(context: Context, folder: Uri?): Library {
             .getOrNull()
     }.orEmpty()
     val name = folder?.let { runCatching { folderName(context.contentResolver, it) }.getOrNull() ?: it.lastPathSegment }
-    val languages = loadLanguages(assetFiles(context.assets) + folderFiles, problems)
+    val languages = loadLanguages(folderFiles, problems).ifEmpty {
+        if (folder != null) problems += "No usable <language>/words/*.yaml files in the word folder: showing the demo words"
+        loadLanguages(assetFiles(context.assets), problems)
+    }
     return Library(languages, name, problems)
 }
 
 private val lineNumber = Regex("line \\d+")
 
 /**
- * Groups unit files into languages by folder. A later file replaces an earlier unit with the same id,
- * so put the word folder after the bundled files. Unusable files are added to `problems`.
+ * Groups unit files into languages by folder. A later file replaces an earlier unit with the same id.
+ * Unusable files are added to `problems`.
  */
 fun loadLanguages(files: List<UnitFile>, problems: MutableList<String> = mutableListOf()): List<Language> =
     files.groupBy { it.language }.toSortedMap().mapNotNull { (folder, group) ->

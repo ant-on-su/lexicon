@@ -1,0 +1,70 @@
+meta:
+  id: el-woorden-3a
+  title: Woorden 3A
+  language: el
+  translation_language: nl
+
+entries:
+  - id: anthropos
+    term: ἄνθρωπος, ὁ
+    translation:
+      - mens
+      - man
+    card_per_sense: true
+
+  - id: theos
+    term: θεός, ὁ
+    translation:
+      - god
+
+  - id: oikeo
+    term: οἰκέω
+    translation:
+      - wonen, bewonen
+
+  - id: ou
+    term: οὐ, οὐκ, οὐχ
+    translation:
+      - niet
+
+  - id: de
+    term: δέ, δ'
+    translation:
+      - en
+      - maar (δέ staat meestal op de 2de, soms op de 3de plaats van de zin. Meestal kun je δέ onvertaald laten, behalve na een komma)
+    card_per_sense: true
+
+  - id: doulos
+    term: δοῦλος, ὁ
+    translation:
+      - slaaf
+
+  - id: eisi
+    term: εἰσί(ν)
+    translation:
+      - (zij) zijn
+
+  - id: esti
+    term: ἐστί(ν)
+    translation:
+      - (hij, zij, het) is
+
+  - id: echo
+    term: ἔχω, imperf. εἶχον, aor. ἔσχον
+    translation:
+      - hebben
+
+  - id: ti
+    term: "τί...: (met accent!)"
+    translation:
+      - waarom?
+
+  - id: phobos
+    term: φόβος, ὁ
+    translation:
+      - angst, vrees
+
+  - id: chora
+    term: χώρα, ἡ
+    translation:
+      - land, streek

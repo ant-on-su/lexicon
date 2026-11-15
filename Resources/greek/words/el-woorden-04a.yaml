@@ -1,0 +1,76 @@
+meta:
+  id: el-woorden-4a
+  title: Woorden 4A
+  language: el
+  translation_language: nl
+
+entries:
+  - id: thnetos
+    term: θνητός
+    translation:
+      - sterfelijk
+
+  - id: kephale
+    term: κεφαλή, ἡ
+    translation:
+      - hoofd, kop
+
+  - id: makros
+    term: μακρός, μακρά, μακρόν
+    translation:
+      - lang
+
+  - id: megas
+    term: μέγας, μεγάλη, μέγα
+    translation:
+      - groot
+
+  - id: men
+    term: μέν
+    translation:
+      - geeft aan dat er nóg een zin komt; die tweede zin begint met δέ; μέν blijft onvertaald
+
+  - id: mia
+    term: μία
+    translation:
+      - één (vrouwelijk)
+
+  - id: ouden
+    term: οὐδέν
+    translation:
+      - niets
+
+  - id: deinos
+    term: δεινός, δεινή, δεινόν
+    translation:
+      - verschrikkelijk, geducht
+
+  - id: entautha
+    term: ἐνταῦθα
+    translation:
+      - daar
+
+  - id: epeita
+    term: ἔπειτα
+    translation:
+      - daarna, vervolgens
+
+  - id: eurisko
+    term: εὑρίσκω
+    translation:
+      - vinden, ontdekken, aantreffen
+
+  - id: zeteo
+    term: ζητέω
+    translation:
+      - zoeken
+
+  - id: philos
+    term: φίλος, ὁ
+    translation:
+      - vriend
+
+  - id: phoberos
+    term: φοβερός, φοβερά, φοβερόν
+    translation:
+      - angstaanjagend

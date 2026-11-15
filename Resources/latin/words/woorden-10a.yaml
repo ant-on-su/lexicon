@@ -1,0 +1,110 @@
+meta:
+  id: la-woorden-10a
+  title: Woorden 10A
+  language: la
+  translation_language: nl
+
+entries:
+  - id: adduco
+    term: adduco (adducĕre)
+    translation:
+      - brengen (naar/tot)
+
+  - id: coniunx
+    term: coniunx
+    forms: { genitive: coniugis, gender: m/v }
+    translation:
+      - echtgenote, vrouw
+      - echtgenoot, man
+    card_per_sense: true
+
+  - id: convivium
+    term: convivium
+    translation:
+      - (feest)maaltijd
+
+  - id: convoco
+    term: convoco (convocare)
+    translation:
+      - bijeenroepen
+
+  - id: impero
+    term: impero (imperare) (+ dat.)
+    translation:
+      - bevelen (aan)
+      - heersen (over)
+    card_per_sense: true
+
+  - id: iudicium
+    term: iudicium
+    translation:
+      - oordeel
+      - proces, vonnis
+    card_per_sense: true
+
+  - id: mortalis_is_e
+    term: mortalis, -is, -e (mortalis)
+    translation:
+      - (bijv. nw.) sterfelijk
+      - (zelfst. nw.) sterveling
+    card_per_sense: true
+
+  - id: natus
+    term: natus
+    translation:
+      - zoon
+
+  - id: optimus_a_um
+    term: optimus, -a, -um
+    translation:
+      - beste, zeer goed
+
+  - id: opto
+    term: opto (optare)
+    translation:
+      - wensen
+
+  - id: promitto
+    term: promitto (promittĕre)
+    forms: { perfect: promisi }
+    translation:
+      - beloven
+
+  - id: regius_a_um
+    term: regius, -a, -um
+    translation:
+      - koninklijk
+
+  - id: regnum
+    term: regnum
+    translation:
+      - rijk
+      - heerschappij
+    card_per_sense: true
+
+  - id: scio
+    term: scio (scire)
+    translation:
+      - weten
+
+  - id: se
+    term: se (acc./abl.)
+    translation:
+      - (acc.) hij/zij (enk.), zij (mv.) (in AcI)   # CHECK
+
+  - id: solus_a_um
+    term: solus, -a, -um
+    translation:
+      - alleen, (als) enige
+
+  - id: venus
+    term: Venus
+    forms: { genitive: Veneris }
+    translation:
+      - Venus
+
+  - id: volo
+    term: volo (velle)
+    forms: { perfect: volui }
+    translation:
+      - willen

@@ -1,0 +1,99 @@
+meta:
+  id: la-woorden-10c
+  title: Woorden 10C
+  language: la
+  translation_language: nl
+
+entries:
+  - id: adeo
+    term: adeo (adire)
+    forms: { perfect: adii }
+    translation:
+      - gaan naar
+
+  - id: ara
+    term: ara
+    translation:
+      - altaar
+
+  - id: aura
+    term: aura
+    translation:
+      - wind, bries, lucht
+
+  - id: cresco
+    term: cresco (crescĕre)
+    forms: { perfect: crevi }
+    translation:
+      - groeien
+
+  - id: divinus_a_um
+    term: divinus, -a, -um
+    translation:
+      - goddelijk
+
+  - id: dulcis_is_e
+    term: dulcis, -is, -e (dulcis)
+    translation:
+      - zoet
+
+  - id: durus_a_um
+    term: durus, -a, -um
+    translation:
+      - hard
+      - moeilijk
+    card_per_sense: true
+
+  - id: litus
+    term: litus
+    forms: { genitive: litoris, gender: o }
+    translation:
+      - kust
+
+  - id: mitis_is_e
+    term: mitis, -is, -e (mitis)
+    translation:
+      - zacht
+      - vriendelijk
+    card_per_sense: true
+
+  - id: pars
+    term: pars
+    forms: { genitive: partis, gender: v }
+    translation:
+      - deel
+      - kant
+    card_per_sense: true
+
+  - id: parvus_a_um
+    term: parvus, -a, -um
+    translation:
+      - klein
+
+  - id: satis
+    term: satis
+    translation:
+      - voldoende
+
+  - id: tacitus_a_um
+    term: tacitus, -a, -um
+    translation:
+      - zwijgend
+
+  - id: templum
+    term: templum
+    translation:
+      - tempel
+
+  - id: turba
+    term: turba
+    translation:
+      - menigte, massa
+      - verwarring
+    card_per_sense: true
+
+  - id: vultus
+    term: vultus
+    forms: { genitive: vultus }
+    translation:
+      - gezicht
