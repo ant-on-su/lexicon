@@ -150,8 +150,10 @@ class WordsTest {
         assertEquals(1, lang.cards(RaceOptions()).count { it.term == "urbs" })
         assertEquals(2, lang.cards(RaceOptions(reverse = true)).count { it.term == "urbs" })
         // Mistakes from either direction are found.
-        val mistakes = mapOf("test/urbs/senses" to 1, "test/urbs/1" to 2, "test/gone/0" to 1)
+        val mistakes = mapOf("test/urbs/senses" to 1, "test/urbs/1" to 3, "test/gone/0" to 5)
         assertEquals(listOf("test/urbs/senses", "test/urbs/1"), lang.mistakenCards(mistakes).map { it.id })
+        // Only the ones mistaken at least POORLY_LEARNED times are added to races.
+        assertEquals(listOf("test/urbs/1"), lang.poorlyLearned(mistakes).map { it.id })
     }
 
     @Test

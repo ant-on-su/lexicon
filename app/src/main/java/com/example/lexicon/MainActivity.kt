@@ -78,9 +78,6 @@ private fun LexiconApp(prefs: Prefs, feedback: Feedback, speech: Speech) {
     val languages = library?.languages
     var screen by remember { mutableStateOf<Screen>(Screen.Languages) }
     val colorOf = { lang: Language -> Pastels[(languages?.indexOf(lang) ?: 0).coerceAtLeast(0) % Pastels.size] }
-    val tooManyMistakes = { lang: Language, options: RaceOptions ->
-        lang.mistakenCards(prefs.mistakes(lang.folder)).size > options.maxMistakes
-    }
 
     BackHandler(enabled = screen != Screen.Languages) {
         screen = when (val s = screen) {
@@ -141,8 +138,8 @@ private fun LexiconApp(prefs: Prefs, feedback: Feedback, speech: Speech) {
             )
             is Screen.Start -> {
                 val options = remember(s.lang) { prefs.options(s.lang.folder) }
-                val blocked = remember(s.lang) { tooManyMistakes(s.lang, options) }
-                StartScreen(s.lang, colorOf(s.lang), options, prefs.best(bestKey(s.lang, options)), blocked) {
+                val extra = remember(s.lang) { s.lang.poorlyLearned(prefs.mistakes(s.lang.folder)).size }
+                StartScreen(s.lang, colorOf(s.lang), options, prefs.best(bestKey(s.lang, options)), extra) {
                     screen = Screen.Racing(s.lang, options)
                 }
             }
@@ -150,10 +147,16 @@ private fun LexiconApp(prefs: Prefs, feedback: Feedback, speech: Speech) {
                 colorOf(s.lang),
                 s.options,
                 timed = true,
-                newRace = { Race(s.lang.cards(s.options), s.options.pairs, s.options.pairs * s.options.rounds) },
+                newRace = {
+                    val extra = s.lang.poorlyLearned(prefs.mistakes(s.lang.folder))
+                    Race(s.lang.cards(s.options), s.options.pairs, s.options.pairs * s.options.rounds, extra = extra)
+                },
                 onCue = { feedback.play(it, feedbackOptions) },
                 onMiss = { prefs.addMistake(s.lang.folder, it.id) },
             ) { race, totalMs, roundsMs, retryMs ->
+                // Poorly learned words matched without a mistake are cleared, as in a correction.
+                val cleared = race.extra.filter { it in race.solved && it !in race.missed }.map { it.id }
+                if (cleared.isNotEmpty()) prefs.saveMistakes(s.lang.folder, prefs.mistakes(s.lang.folder) - cleared.toSet())
                 val key = bestKey(s.lang, s.options)
                 val previous = prefs.best(key)
                 if (previous == null || totalMs < previous) prefs.saveBest(key, totalMs)
@@ -175,7 +178,6 @@ private fun LexiconApp(prefs: Prefs, feedback: Feedback, speech: Speech) {
             is Screen.Results -> ResultsScreen(
                 color = colorOf(s.lang),
                 result = s.result,
-                canAgain = remember(s) { !tooManyMistakes(s.lang, s.options) },
                 onAgain = { screen = Screen.Racing(s.lang, s.options) },
                 onMenu = { screen = Screen.Languages },
             )

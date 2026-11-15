@@ -133,4 +133,30 @@ class RaceTest {
         val race = Race(cards(10), pairs = 3, total = 10, random = Random(8), priority = mapOf("c7" to 5, "c2" to 3, "c4" to 1))
         assertEquals(setOf("c7", "c2", "c4"), board(race).map { it.id }.toSet())
     }
+
+    private fun extra(n: Int) = List(n) { Card("x$it", "ex$it", "extra $it", "extra vertaling $it") }
+
+    @Test
+    fun extraCardsAreDealtOnTop() {
+        val extra = extra(4)
+        repeat(20) { seed ->
+            val race = Race(cards(30), pairs = 6, total = 18, random = Random(seed), extra = extra)
+            val seen = mutableSetOf<Card>()
+            // Three full rounds, then a shorter one with the 4 extra matches.
+            assertEquals(4, play(race) { seen += board(it) })
+            assertEquals(22, race.matched)
+            assertTrue(seen.containsAll(extra))
+            assertEquals(22, seen.size)
+        }
+    }
+
+    @Test
+    fun extraCardsAreSpreadOverTheRace() {
+        val extra = extra(6)
+        val onFirstBoard = List(50) { seed ->
+            board(Race(cards(30), pairs = 6, total = 30, random = Random(seed), extra = extra)).count { it in extra }
+        }
+        assertTrue(onFirstBoard.all { it < 6 })
+        assertTrue(onFirstBoard.any { it > 0 })
+    }
 }

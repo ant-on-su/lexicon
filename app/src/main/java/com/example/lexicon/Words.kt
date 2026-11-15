@@ -79,6 +79,9 @@ data class Language(
     /** The cards in [mistakes], from all units and both directions. Ids no longer in the word files are left out. */
     fun mistakenCards(mistakes: Map<String, Int>) =
         units.flatMap { it.cards + it.senseCards }.distinctBy { it.id }.filter { it.id in mistakes }
+
+    /** The mistaken cards with at least [POORLY_LEARNED] mistakes, from all units: every race adds them until they're cleared. */
+    fun poorlyLearned(mistakes: Map<String, Int>) = mistakenCards(mistakes).filter { mistakes.getValue(it.id) >= POORLY_LEARNED }
 }
 
 private val brackets = Regex("\\([^)]*\\)")

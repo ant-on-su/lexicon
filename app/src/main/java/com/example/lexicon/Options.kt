@@ -7,7 +7,6 @@ import androidx.core.net.toUri
 
 val PairsRange = 5..10
 val RoundsRange = 3..10
-val MaxMistakesRange = 5..30
 
 data class RaceOptions(
     /** Units are stored as excluded, so new units are practised by default. */
@@ -17,8 +16,6 @@ data class RaceOptions(
     val rounds: Int = 3,
     val showForms: Boolean = false,
     val showGender: Boolean = false,
-    /** With more different mistaken words than this, the race is blocked until they're corrected. */
-    val maxMistakes: Int = 10,
 )
 
 /** Sound and vibration, shared by all languages. A cue's sound is a [Tone] name, a phone sound's URI, or "" for none. */
@@ -45,7 +42,6 @@ class Prefs(context: Context) {
         rounds = prefs.getInt("$lang.rounds", 3).coerceIn(RoundsRange),
         showForms = prefs.getBoolean("$lang.showForms", false),
         showGender = prefs.getBoolean("$lang.showGender", false),
-        maxMistakes = prefs.getInt("$lang.maxMistakes", 10).coerceIn(MaxMistakesRange),
     )
 
     fun saveOptions(lang: String, options: RaceOptions) = prefs.edit {
@@ -55,7 +51,6 @@ class Prefs(context: Context) {
         putInt("$lang.rounds", options.rounds)
         putBoolean("$lang.showForms", options.showForms)
         putBoolean("$lang.showGender", options.showGender)
-        putInt("$lang.maxMistakes", options.maxMistakes)
     }
 
     fun feedback() = FeedbackOptions(
