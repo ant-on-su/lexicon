@@ -30,6 +30,24 @@ data class Card(
         entry == other.entry || termKey == other.termKey || meanings.any { it in other.meanings }
 }
 
+/** An example phrase, with its Dutch translation when there is one. [audio] is a path inside the language's `audio/` folder. */
+data class Example(val text: String, val translation: String?, val speak: String, val audio: String)
+
+/** A whole entry, as Learn shows it: every sense, the forms and the example phrases. */
+data class Entry(
+    val id: String,
+    val term: String,
+    val translations: List<String>,
+    val forms: String? = null,
+    val gender: String? = null,
+    val translationForms: String? = null,
+    /** What is spoken: the `speak` field, or else the term as [spokenText] makes it. */
+    val speak: String = spokenText(term),
+    /** The `audio` field, or else `<unit id>/<entry id>.mp3`, inside the language's `audio/` folder. */
+    val audio: String = "$id.mp3",
+    val examples: List<Example> = emptyList(),
+)
+
 data class WordUnit(
     val id: String,
     val title: String,
@@ -39,6 +57,7 @@ data class WordUnit(
     val cards: List<Card>,
     /** Translation to term: one card per sense of a `card_per_sense` entry. */
     val senseCards: List<Card> = cards,
+    val entries: List<Entry> = emptyList(),
 )
 
 data class Language(
@@ -46,6 +65,10 @@ data class Language(
     val name: String,
     val translationName: String,
     val units: List<WordUnit>,
+    /** The words' language code, such as "fr". */
+    val code: String? = null,
+    /** The files in the language's `audio/` folder, by path inside it ("unit/entry.mp3"), as content URIs. */
+    val audio: Map<String, String> = emptyMap(),
 ) {
     val hasGender = units.any { unit -> unit.cards.any { it.gender != null } }
 
@@ -56,6 +79,9 @@ data class Language(
     /** The cards in [mistakes], from all units and both directions. Ids no longer in the word files are left out. */
     fun mistakenCards(mistakes: Map<String, Int>) =
         units.flatMap { it.cards + it.senseCards }.distinctBy { it.id }.filter { it.id in mistakes }
+
+    /** The mistaken cards with at least [POORLY_LEARNED] mistakes, from all units: every race adds them until they're cleared. */
+    fun poorlyLearned(mistakes: Map<String, Int>) = mistakenCards(mistakes).filter { mistakes.getValue(it.id) >= POORLY_LEARNED }
 }
 
 private val brackets = Regex("\\([^)]*\\)")
@@ -80,6 +106,12 @@ fun meanings(translation: String): Set<String> =
         .filter { it.isNotEmpty() }
         .toSet()
 
+private val unspoken = Regex("\\([^)]*\\)|\\+\\s*\\p{L}+\\.")
+
+/** The term as spoken: without bracketed parts ("(amare)") or cases ("+ acc."), and "a / b" as "a, b". Articles stay. */
+fun spokenText(term: String): String =
+    term.replace(unspoken, " ").replace(" / ", ", ").replace(spaces, " ").trim()
+
 @Suppress("UNCHECKED_CAST")
 fun parseUnit(yaml: String, fallbackId: String): WordUnit {
     val root = Load(LoadSettings.builder().build()).loadFromString(yaml) as? Map<String, Any?> ?: emptyMap()
@@ -88,6 +120,7 @@ fun parseUnit(yaml: String, fallbackId: String): WordUnit {
     val entries = root["entries"] as? List<Map<String, Any?>> ?: emptyList()
     val cards = mutableListOf<Card>()
     val senseCards = mutableListOf<Card>()
+    val learnEntries = mutableListOf<Entry>()
     entries.forEach { entry ->
         val term = entry["term"]?.toString() ?: return@forEach
         val senses = when (val t = entry["translation"]) {
@@ -102,7 +135,29 @@ fun parseUnit(yaml: String, fallbackId: String): WordUnit {
             forms["perfect"]?.let { "perf. $it" },
         ).joinToString(" · ").ifEmpty { null }
         val translationForms = (entry["translation_forms"] as? Map<String, Any?>)?.get("plural")?.toString()
-        val entryId = "$unitId/${entry["id"] ?: term}"
+        val id = entry["id"]?.toString() ?: term
+        val entryId = "$unitId/$id"
+        val examples = (entry["examples"] as? List<*>).orEmpty().mapIndexedNotNull { i, example ->
+            val fields = example as? Map<String, Any?> ?: return@mapIndexedNotNull null
+            val text = fields["text"]?.toString() ?: return@mapIndexedNotNull null
+            Example(
+                text = text,
+                translation = fields["translation"]?.toString(),
+                speak = fields["speak"]?.toString() ?: text,
+                audio = fields["audio"]?.toString() ?: "${entryId}_${i + 1}.mp3",
+            )
+        }
+        learnEntries += Entry(
+            id = id,
+            term = term,
+            translations = senses,
+            forms = termForms,
+            gender = forms["gender"]?.toString(),
+            translationForms = translationForms,
+            speak = entry["speak"]?.toString() ?: spokenText(term),
+            audio = entry["audio"]?.toString() ?: "$entryId.mp3",
+            examples = examples,
+        )
         val used = if (entry["card_per_sense"] == true) senses else senses.take(1)
         val perSense = used.mapIndexed { i, sense ->
             Card(
@@ -136,6 +191,7 @@ fun parseUnit(yaml: String, fallbackId: String): WordUnit {
         translationLanguage = meta["translation_language"]?.toString(),
         cards = cards,
         senseCards = senseCards,
+        entries = learnEntries,
     )
 }
 
@@ -155,19 +211,21 @@ fun assetFiles(assets: AssetManager): List<UnitFile> =
         }
     }
 
+private class Doc(val id: String, val name: String, val isDir: Boolean)
+
+private fun ContentResolver.children(tree: Uri, parent: String = DocumentsContract.getTreeDocumentId(tree)): List<Doc> {
+    val uri = DocumentsContract.buildChildDocumentsUriUsingTree(tree, parent)
+    val columns = arrayOf(Document.COLUMN_DOCUMENT_ID, Document.COLUMN_DISPLAY_NAME, Document.COLUMN_MIME_TYPE)
+    return checkNotNull(query(uri, columns, null, null, null)).use { c ->
+        buildList { while (c.moveToNext()) add(Doc(c.getString(0), c.getString(1), c.getString(2) == Document.MIME_TYPE_DIR)) }
+    }
+}
+
 /** The same `<language>/words/` layout of YAML files, inside a folder picked with the system picker. */
 fun folderFiles(resolver: ContentResolver, tree: Uri): List<UnitFile> {
-    class Doc(val id: String, val name: String, val isDir: Boolean)
+    fun children(parent: String) = resolver.children(tree, parent)
 
-    fun children(parent: String): List<Doc> {
-        val uri = DocumentsContract.buildChildDocumentsUriUsingTree(tree, parent)
-        val columns = arrayOf(Document.COLUMN_DOCUMENT_ID, Document.COLUMN_DISPLAY_NAME, Document.COLUMN_MIME_TYPE)
-        return checkNotNull(resolver.query(uri, columns, null, null, null)).use { c ->
-            buildList { while (c.moveToNext()) add(Doc(c.getString(0), c.getString(1), c.getString(2) == Document.MIME_TYPE_DIR)) }
-        }
-    }
-
-    return children(DocumentsContract.getTreeDocumentId(tree)).filter { it.isDir }.flatMap { lang ->
+    return resolver.children(tree).filter { it.isDir }.flatMap { lang ->
         children(lang.id).filter { it.isDir && it.name == "words" }.flatMap { words ->
             children(words.id).filter { !it.isDir && isYaml(it.name) }.map { file ->
                 UnitFile(lang.name, file.name) {
@@ -176,6 +234,21 @@ fun folderFiles(resolver: ContentResolver, tree: Uri): List<UnitFile> {
                 }
             }
         }
+    }
+}
+
+/** Every file in each `<language>/audio/` folder, by language folder and path inside `audio/`, as content URIs. */
+fun folderAudio(resolver: ContentResolver, tree: Uri): Map<String, Map<String, String>> {
+    fun files(dir: String, path: String): List<Pair<String, String>> = resolver.children(tree, dir).flatMap { doc ->
+        if (doc.isDir) {
+            files(doc.id, "$path${doc.name}/")
+        } else {
+            listOf("$path${doc.name}" to DocumentsContract.buildDocumentUriUsingTree(tree, doc.id).toString())
+        }
+    }
+
+    return resolver.children(tree).filter { it.isDir }.associate { lang ->
+        lang.name to resolver.children(tree, lang.id).filter { it.isDir && it.name == "audio" }.flatMap { files(it.id, "") }.toMap()
     }
 }
 
@@ -195,7 +268,12 @@ fun loadLibrary(context: Context, folder: Uri?): Library {
             .getOrNull()
     }.orEmpty()
     val name = folder?.let { runCatching { folderName(context.contentResolver, it) }.getOrNull() ?: it.lastPathSegment }
-    val languages = loadLanguages(folderFiles, problems).ifEmpty {
+    val audio = folder?.takeIf { folderFiles.isNotEmpty() }?.let {
+        runCatching { folderAudio(context.contentResolver, it) }
+            .onFailure { e -> Log.w("Lexicon", "Can't read the audio files", e) }
+            .getOrNull()
+    }.orEmpty()
+    val languages = loadLanguages(folderFiles, problems).map { it.copy(audio = audio[it.folder].orEmpty()) }.ifEmpty {
         if (folder != null) problems += "No usable <language>/words/*.yaml files in the word folder: showing the demo words"
         loadLanguages(assetFiles(context.assets), problems)
     }
@@ -233,6 +311,7 @@ fun loadLanguages(files: List<UnitFile>, problems: MutableList<String> = mutable
             name = languageName(units.first().language, folder),
             translationName = languageName(translationCode, translationCode),
             units = units,
+            code = units.first().language,
         )
     }
 

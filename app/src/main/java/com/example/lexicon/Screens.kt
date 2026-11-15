@@ -58,7 +58,6 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.blur
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.graphicsLayer
-import androidx.compose.ui.graphics.lerp
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.semantics.Role
@@ -141,8 +140,8 @@ fun LanguageScreen(
 }
 
 /**
- * Race!, blocked while there are more mistaken words than [RaceOptions.maxMistakes], and "Correct mistakes",
- * which shows the words while there are fewer than [MIN_CORRECTION_WORDS] and runs a correction from there.
+ * Race! and "Correct mistakes" with the number of mistaken words, red while some are poorly learned (added to every race).
+ * It shows the words while there are fewer than [MIN_CORRECTION_WORDS] and runs a correction from there.
  */
 @Composable
 fun ModeScreen(
@@ -151,6 +150,7 @@ fun ModeScreen(
     options: RaceOptions,
     onOptions: (RaceOptions) -> Unit,
     mistakes: Map<String, Int>,
+    onLearn: () -> Unit,
     onRace: () -> Unit,
     onCorrect: () -> Unit,
 ) {
@@ -160,26 +160,20 @@ fun ModeScreen(
     Box(Modifier.fillMaxSize()) {
         CenterColumn {
             Title(lang.name)
-            ChunkyButton("Learn", SoonGrey, {}, note = "soon", enabled = false)
+            ChunkyButton("Learn", color, onLearn)
             ChunkyButton("Test", SoonGrey, {}, note = "soon", enabled = false)
             val hasUnits = lang.activeUnits(options).isNotEmpty()
-            val blocked = mistaken.size > options.maxMistakes
-            ChunkyButton(
-                "Race!",
-                color,
-                onRace,
-                note = if (!hasUnits) "no units selected" else if (blocked) TOO_MANY_MISTAKES else null,
-                enabled = hasUnits && !blocked,
-            )
-            val count = mistaken.sumOf { mistakes.getValue(it.id) }
-            val heat = (mistaken.size.toFloat() / options.maxMistakes).coerceIn(0f, 1f)
+            ChunkyButton("Race!", color, onRace, note = if (!hasUnits) "no units selected" else null, enabled = hasUnits)
+            val count = mistaken.size
+            val poor = mistaken.count { mistakes.getValue(it.id) >= POORLY_LEARNED }
             ChunkyButton(
                 if (count > 0) "Correct mistakes · $count" else "Correct mistakes",
-                if (count > 0) lerp(MistakePink, MistakeRed, heat) else SoonGrey,
-                { if (mistaken.size >= MIN_CORRECTION_WORDS) onCorrect() else showMistakes = true },
+                if (count == 0) SoonGrey else if (poor > 0) MistakeRed else MistakePink,
+                { if (count >= MIN_CORRECTION_WORDS) onCorrect() else showMistakes = true },
                 note = when {
                     count == 0 -> "none yet"
-                    mistaken.size < MIN_CORRECTION_WORDS -> "see the words · runs from $MIN_CORRECTION_WORDS words"
+                    count < MIN_CORRECTION_WORDS -> "see the words · runs from $MIN_CORRECTION_WORDS words"
+                    poor > 0 -> "${words(poor)} added to every race"
                     else -> null
                 },
                 enabled = count > 0,
@@ -205,10 +199,11 @@ fun ModeScreen(
     }
 }
 
-private const val TOO_MANY_MISTAKES = "too many mistakes: correct them first"
+private fun words(n: Int) = if (n == 1) "1 word" else "$n words"
 
+/** [extra] poorly learned words are added to the race. */
 @Composable
-fun StartScreen(lang: Language, color: Color, options: RaceOptions, bestMs: Long?, blocked: Boolean, onStart: () -> Unit) {
+fun StartScreen(lang: Language, color: Color, options: RaceOptions, bestMs: Long?, extra: Int, onStart: () -> Unit) {
     Box(Modifier.fillMaxSize()) {
         Column(
             Modifier.align(Alignment.Center).padding(24.dp),
@@ -216,12 +211,12 @@ fun StartScreen(lang: Language, color: Color, options: RaceOptions, bestMs: Long
             horizontalAlignment = Alignment.CenterHorizontally,
         ) {
             Title(lang.name)
-            Chunky(if (blocked) SoonGrey else color, onStart, Modifier.size(240.dp), !blocked, CircleShape, 10.dp) {
-                Text("START", color = if (blocked) Muted else Ink, fontSize = 44.sp, fontWeight = FontWeight.Black)
+            Chunky(color, onStart, Modifier.size(240.dp), shape = CircleShape, depth = 10.dp) {
+                Text("START", color = Ink, fontSize = 44.sp, fontWeight = FontWeight.Black)
             }
-            if (blocked) Text(TOO_MANY_MISTAKES, color = Ink, fontWeight = FontWeight.Bold, textAlign = TextAlign.Center)
             val (from, to) = if (options.reverse) lang.translationName to lang.name else lang.name to lang.translationName
             Text("$from → $to · ${options.pairs} pairs · ${options.rounds} rounds", color = Muted, textAlign = TextAlign.Center)
+            if (extra > 0) Text("+ ${words(extra)} to correct", color = Muted, textAlign = TextAlign.Center)
             if (bestMs != null) Text("Best: ${formatTime(bestMs)}", color = Ink, fontWeight = FontWeight.Bold)
         }
     }
@@ -442,7 +437,6 @@ private fun LanguageSettings(
         if (lang.hasGender) {
             SwitchRow("Show gender (m/v/o)", options.showGender) { onChange(options.copy(showGender = it)) }
         }
-        Stepper("Max mistaken words", options.maxMistakes, MaxMistakesRange) { onChange(options.copy(maxMistakes = it)) }
     }
 }
 
@@ -480,7 +474,7 @@ private fun SwitchRow(label: String, checked: Boolean, onChange: (Boolean) -> Un
 
 @OptIn(ExperimentalLayoutApi::class)
 @Composable
-fun ResultsScreen(color: Color, result: RaceResult, canAgain: Boolean, onAgain: () -> Unit, onMenu: () -> Unit) {
+fun ResultsScreen(color: Color, result: RaceResult, onAgain: () -> Unit, onMenu: () -> Unit) {
     Box(Modifier.fillMaxSize()) {
         CenterColumn {
             if (result.newBest) Banner("🏆 New best!", color)
@@ -501,7 +495,7 @@ fun ResultsScreen(color: Color, result: RaceResult, canAgain: Boolean, onAgain: 
                 }
             }
             Text("Best: ${formatTime(result.bestMs)}", color = Muted, fontSize = 18.sp, fontWeight = FontWeight.Bold)
-            ChunkyButton("Again", color, onAgain, note = if (canAgain) null else TOO_MANY_MISTAKES, enabled = canAgain)
+            ChunkyButton("Again", color, onAgain)
             ChunkyButton("Menu", Color.White, onMenu)
         }
         Confetti(pieces = if (result.newBest) 220 else 110)

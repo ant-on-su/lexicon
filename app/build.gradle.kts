@@ -20,7 +20,7 @@ android {
         applicationId = "io.github.ant_on_su.lexicon"
         minSdk = 34
         targetSdk = 37
-        versionCode = 2
+        versionCode = 3
         versionName = gitTagVersion.get()
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"

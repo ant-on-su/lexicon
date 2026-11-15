@@ -1,0 +1,82 @@
+{
+ "el-woorden-2/deka.mp3": {
+  "text": "dekka",
+  "voice": "nl-NL-Wavenet-F"
+ },
+ "el-woorden-2/deka_1.mp3": {
+  "text": "ho didáskalos dekka mathètás échei.",
+  "voice": "nl-NL-Wavenet-F"
+ },
+ "el-woorden-2/duo.mp3": {
+  "text": "duo",
+  "voice": "nl-NL-Wavenet-F"
+ },
+ "el-woorden-2/duo_1.mp3": {
+  "text": "duo adelphóés échoo.",
+  "voice": "nl-NL-Wavenet-F"
+ },
+ "el-woorden-2/eis.mp3": {
+  "text": "heis",
+  "voice": "nl-NL-Wavenet-F"
+ },
+ "el-woorden-2/eis_1.mp3": {
+  "text": "heis anèr en tè oikía ménei.",
+  "voice": "nl-NL-Wavenet-F"
+ },
+ "el-woorden-2/ennea.mp3": {
+  "text": "ennéa",
+  "voice": "nl-NL-Wavenet-F"
+ },
+ "el-woorden-2/ennea_1.mp3": {
+  "text": "ennéa hèméras en tè nèsoo ménomèn.",
+  "voice": "nl-NL-Wavenet-F"
+ },
+ "el-woorden-2/epta.mp3": {
+  "text": "heptá",
+  "voice": "nl-NL-Wavenet-F"
+ },
+ "el-woorden-2/epta_1.mp3": {
+  "text": "heptá naus horóómèn.",
+  "voice": "nl-NL-Wavenet-F"
+ },
+ "el-woorden-2/ex.mp3": {
+  "text": "heks",
+  "voice": "nl-NL-Wavenet-F"
+ },
+ "el-woorden-2/ex_1.mp3": {
+  "text": "heks biblía epí tès trapédzès estín.",
+  "voice": "nl-NL-Wavenet-F"
+ },
+ "el-woorden-2/okto.mp3": {
+  "text": "októó",
+  "voice": "nl-NL-Wavenet-F"
+ },
+ "el-woorden-2/okto_1.mp3": {
+  "text": "októó hippoi en too agróó eisin.",
+  "voice": "nl-NL-Wavenet-F"
+ },
+ "el-woorden-2/pente.mp3": {
+  "text": "péntè",
+  "voice": "nl-NL-Wavenet-F"
+ },
+ "el-woorden-2/pente_1.mp3": {
+  "text": "péntè daktúloes échei hè cheir.",
+  "voice": "nl-NL-Wavenet-F"
+ },
+ "el-woorden-2/tettares.mp3": {
+  "text": "téttarès",
+  "voice": "nl-NL-Wavenet-F"
+ },
+ "el-woorden-2/tettares_1.mp3": {
+  "text": "téttarès hippoi to harma hélkoesin.",
+  "voice": "nl-NL-Wavenet-F"
+ },
+ "el-woorden-2/treis.mp3": {
+  "text": "treis",
+  "voice": "nl-NL-Wavenet-F"
+ },
+ "el-woorden-2/treis_1.mp3": {
+  "text": "treis adelpháí en tè oikía oikóésin.",
+  "voice": "nl-NL-Wavenet-F"
+ }
+}

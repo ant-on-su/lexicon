@@ -9,100 +9,120 @@ entries:
     term: les jeunes
     translation:
       - de jongeren
-    example_sentence: Les jeunes peuvent changer le monde.
+    examples:
+      - text: Les jeunes peuvent changer le monde.
   - id: greve
     term: la grève
     translation:
       - de staking
-    example_sentence: Ils organisent une grève pour le climat.
+    examples:
+      - text: Ils organisent une grève pour le climat.
   - id: secher-les-cours
     term: sécher les cours
     translation:
       - spijbelen
-    example_sentence: Les élèves vont sécher les cours pour protester.
+    examples:
+      - text: Les élèves vont sécher les cours pour protester.
   - id: lutter
     term: lutter (pour / contre)
     translation:
       - strijden (voor / tegen)
-    example_sentence: Ils luttent pour un meilleur climat.
+    examples:
+      - text: Ils luttent pour un meilleur climat.
   - id: manifester
     term: manifester
     translation:
       - demonstreren (voor / tegen)
-    example_sentence: Ils manifestent contre la pollution.
+    examples:
+      - text: Ils manifestent contre la pollution.
   - id: monde-entier
     term: le monde entier
     translation:
       - de hele wereld
-    example_sentence: Il y a des manifestations dans le monde entier.
+    examples:
+      - text: Il y a des manifestations dans le monde entier.
   - id: planete
     term: la planète
     translation:
       - de planeet
-    example_sentence: Notre planète, la Terre, tourne autour du soleil.
+    examples:
+      - text: Notre planète, la Terre, tourne autour du soleil.
   - id: avenir
     term: l’avenir
     forms: { gender: m }
     translation:
       - de toekomst
-    example_sentence: Nous luttons pour notre avenir.
+    examples:
+      - text: Nous luttons pour notre avenir.
   - id: en-colere
     term: en colère
     translation:
       - boos
-    example_sentence: Je suis en colère contre les politiciens.
+    examples:
+      - text: Je suis en colère contre les politiciens.
   - id: sauver
     term: sauver
     translation:
       - redden
-    example_sentence: Qu’est-ce qu’on fait pour sauver la planète ?
+    examples:
+      - text: Qu’est-ce qu’on fait pour sauver la planète ?
   - id: arreter
     term: arrêter
     translation:
       - stoppen (met)
-    example_sentence: Nous n’allons pas arrêter nos actions.
+    examples:
+      - text: Nous n’allons pas arrêter nos actions.
   - id: reussir
     term: réussir (à)
     translation:
       - slagen (voor)
-    example_sentence: Je vais réussir à tous mes examens !
+    examples:
+      - text: Je vais réussir à tous mes examens !
   - id: agir
     term: agir
     translation:
       - handelen, iets doen
-    example_sentence: Il faut agir maintenant !
+    examples:
+      - text: Il faut agir maintenant !
   - id: grandir
     term: grandir
     translation:
       - opgroeien, groot worden
-    example_sentence: Tu grandis vite !
+    examples:
+      - text: Tu grandis vite !
   - id: finir
     term: finir
     translation:
       - ophouden, (be)ëindigen, afmaken
-    example_sentence: Les cours vont finir à quelle heure ?
+    examples:
+      - text: Les cours vont finir à quelle heure ?
   - id: tous-les-vendredis
     term: tous les vendredis
     translation:
       - elke vrijdag
-    example_sentence: Nous avons EPS tous les vendredis.
+    examples:
+      - text: Nous avons EPS tous les vendredis.
   - id: en-classe
     term: en classe
     translation:
       - in de klas
-    example_sentence: Vous travaillez bien en classe ?
+    examples:
+      - text: Vous travaillez bien en classe ?
   - id: seulement
     term: seulement
     translation:
       - (alleen) maar, slechts
-    example_sentence: J’ai seulement cinq euros.
+    examples:
+      - text: J’ai seulement cinq euros.
   - id: car
     term: car
     translation:
       - want
-    example_sentence: Elle ne vient pas, car elle n’a pas d’argent.
+    examples:
+      - text: Elle ne vient pas, car elle n’a pas d’argent.
   - id: copain
     term: le copain / la copine
     translation:
       - de vriend / de vriendin
-    example_sentence: Tu invites tous tes copains ?
+    examples:
+      - text: Tu invites tous tes copains ?

@@ -4,134 +4,281 @@ meta:
   language: la
   translation_language: nl
 
+# speak: classical Latin respelled for an Italian voice: c/ch and g/gh always hard, v as w, x as cs,
+# ae/oe as ai/oi, a grave accent where the stress isn't where Italian would put it.
+
 entries:
   - id: accipio
     term: accipio (accipĕre)
+    speak: acchìpio
     forms: { perfect: accepi }
     translation:
       - ontvangen, krijgen
+    examples:
+      - text: Rex donum laetus accipit.
+        translation: De koning ontvangt blij het geschenk.
+        speak: Recs donum laitus àcchipit.
+        source: generated
 
   - id: amo
     term: amo (amare)
+    speak: amo
     translation:
       - houden van, beminnen
+    examples:
+      - text: Servus vinum et cibum amat.
+        translation: De slaaf houdt van wijn en eten.
+        speak: Serwus winum et chibum amat.
+        source: generated
 
   - id: aurum
     term: aurum
+    speak: aurum
     translation:
       - goud
+    examples:
+      - text: Rex aurum amat.
+        translation: De koning houdt van goud.
+        speak: Recs aurum amat.
+        source: generated
 
   - id: cibus
     term: cibus
+    speak: chibus
     translation:
       - eten
+    examples:
+      - text: Cibus in mensa est.
+        translation: Het eten staat op tafel.
+        speak: Chibus in mensa est.
+        source: generated
 
   - id: curro
     term: curro (currĕre)
+    speak: curro
     translation:
       - rennen
+    examples:
+      - text: Servus statim in regiam currit.
+        translation: De slaaf rent meteen het paleis in.
+        speak: Serwus statim in règhiam currit.
+        source: generated
 
   - id: donum
     term: donum
+    speak: donum
     translation:
       - geschenk
+    examples:
+      - text: Donum regis mirum est.
+        translation: Het geschenk van de koning is schitterend.
+        speak: Donum reghis mirum est.
+        source: generated
 
   - id: est
     term: est
+    speak: est
     translation:
       - hij/zij/het is
+    examples:
+      - text: Rex laetus est.
+        translation: De koning is blij.
+        speak: Recs laitus est.
+        source: generated
 
   - id: et
     term: et
+    speak: et
     translation:
       - en
       - ook
     card_per_sense: true
+    examples:
+      - text: Rex et servus currunt.
+        translation: De koning en de slaaf rennen.
+        speak: Recs et serwus currunt.
+        source: generated
 
   - id: in
     term: in + acc.
+    speak: in
     translation:
       - naar, naar binnen
       - "... in"
     card_per_sense: true
+    examples:
+      - text: Rex servum in regiam vocat.
+        translation: De koning roept de slaaf het paleis in.
+        speak: Recs serwum in règhiam wocat.
+        source: generated
 
   - id: incipio
     term: incipio (incipĕre)
+    speak: inchìpio
     translation:
       - beginnen
+    examples:
+      - text: Servus statim currere incipit.
+        translation: De slaaf begint meteen te rennen.
+        speak: Serwus statim cùrrere ìnchipit.
+        source: generated
 
   - id: laetus_a_um
     term: laetus, -a, -um
+    speak: laitus, laita, laitum
     translation:
       - blij, vrolijk, opgewekt
+    examples:
+      - text: Servi laeti sunt.
+        translation: De slaven zijn vrolijk.
+        speak: Serwi laiti sunt.
+        source: generated
 
   - id: mensa
     term: mensa
+    speak: mensa
     translation:
       - tafel
+    examples:
+      - text: Vinum in mensa est.
+        translation: De wijn staat op tafel.
+        speak: Winum in mensa est.
+        source: generated
 
   - id: mirus_a_um
     term: mirus, -a, -um
+    speak: mirus, mira, mirum
     translation:
       - wonderbaarlijk, schitterend
+    examples:
+      - text: Regia mira est.
+        translation: Het paleis is schitterend.
+        speak: Règhia mira est.
+        source: generated
 
   - id: muto
     term: muto (mutare)
+    speak: muto
     translation:
       - veranderen
       - verwisselen
     card_per_sense: true
+    examples:
+      - text: Rex vinum in aurum mutat.
+        translation: De koning verandert wijn in goud.
+        speak: Recs winum in aurum mutat.
+        source: generated
 
   - id: nunc
     term: nunc
+    speak: nunc
     translation:
       - nu
+    examples:
+      - text: Nunc servus in regia est.
+        translation: Nu is de slaaf in het paleis.
+        speak: Nunc serwus in règhia est.
+        source: generated
 
   - id: per
     term: per + acc.
+    speak: per
     translation:
       - door...heen
       - gedurende
     card_per_sense: true
+    examples:
+      - text: Servus per regiam currit.
+        translation: De slaaf rent door het paleis.
+        speak: Serwus per règhiam currit.
+        source: generated
 
   - id: quoque
     term: quoque
+    speak: quoque
     translation:
       - ook
+    examples:
+      - text: Servus quoque vinum amat.
+        translation: Ook de slaaf houdt van wijn.
+        speak: Serwus quoque winum amat.
+        source: generated
 
   - id: regia
     term: regia
+    speak: règhia
     translation:
       - paleis
+    examples:
+      - text: Regia regis mira est.
+        translation: Het paleis van de koning is schitterend.
+        speak: Règhia reghis mira est.
+        source: generated
 
   - id: rex
     term: rex
+    speak: recs
     forms: { genitive: regis, gender: m }
     translation:
       - koning
+    examples:
+      - text: Rex in regia est.
+        translation: De koning is in het paleis.
+        speak: Recs in règhia est.
+        source: generated
 
   - id: servus
     term: servus
+    speak: serwus
     translation:
       - slaaf
+    examples:
+      - text: Servus regem amat.
+        translation: De slaaf houdt van de koning.
+        speak: Serwus reghem amat.
+        source: generated
 
   - id: statim
     term: statim
+    speak: statim
     translation:
       - meteen
+    examples:
+      - text: Rex vocat; servus statim currit.
+        translation: De koning roept; de slaaf rent meteen.
+        speak: Recs wocat; serwus statim currit.
+        source: generated
 
   - id: tango
     term: tango (tangĕre)
+    speak: tango
     forms: { perfect: tetigi }
     translation:
       - aanraken
+    examples:
+      - text: Rex aurum tangit.
+        translation: De koning raakt het goud aan.
+        speak: Recs aurum tanghit.
+        source: generated
 
   - id: vinum
     term: vinum
+    speak: winum
     translation:
       - wijn
+    examples:
+      - text: Servus regi vinum dat.
+        translation: De slaaf geeft de koning wijn.
+        speak: Serwus reghi winum dat.
+        source: generated
 
   - id: voco
     term: voco (vocare)
+    speak: woco
     translation:
       - roepen
+    examples:
+      - text: Rex servos vocat.
+        translation: De koning roept de slaven.
+        speak: Recs serwos wocat.
+        source: generated

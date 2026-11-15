@@ -9,6 +9,9 @@ import kotlin.random.Random
 /** Fewer mistaken words than this are only shown, not raced. */
 const val MIN_CORRECTION_WORDS = 3
 
+/** Words mistaken this many times are added to every race until they're cleared. */
+const val POORLY_LEARNED = 3
+
 data class RaceResult(
     val totalMs: Long,
     val mistakes: Int,
@@ -22,7 +25,8 @@ data class RaceResult(
 /**
  * The board of a race. It is one continuous board: when half of the pairs are matched,
  * new pairs fill the empty left slots and the right column is reshuffled.
- * A round is every [pairs] matches; [total] starts at the number of cards to deal.
+ * A round is every [pairs] matches (the last one is shorter when [extra] cards don't fill it);
+ * [total] starts at the number of cards to deal.
  * Mistaken cards come back when one pair is left after the last card is dealt, until none are mistaken again.
  * [priority] (higher first) breaks ties between equally shown cards.
  */
@@ -32,10 +36,12 @@ class Race(
     total: Int,
     private val random: Random = Random.Default,
     private val priority: Map<String, Int> = emptyMap(),
+    /** Cards dealt once each on top of [total], at random moments: the poorly learned words. */
+    val extra: List<Card> = emptyList(),
 ) {
-    /** Cards dealt from the pool, without retries. */
-    val regular = total
-    var total by mutableIntStateOf(total)
+    /** Cards dealt from the pool and [extra], without retries. */
+    val regular = total + extra.size
+    var total by mutableIntStateOf(regular)
         private set
     val left = mutableStateListOf<Card?>()
     val right = mutableStateListOf<Card?>()
@@ -54,6 +60,7 @@ class Race(
     private val solvedCards = mutableSetOf<Card>()
     private val retries = mutableSetOf<Card>()
     private val again = mutableListOf<Card>()
+    private val undealt = extra.toMutableList()
     private var dealt = 0
     private val shown = mutableMapOf<String, Int>()
 
@@ -89,7 +96,7 @@ class Race(
             retries.clear()
         }
         if (onBoard * 2 <= pairs) refill()
-        return matched % pairs == 0 && matched <= regular
+        return matched <= regular && (matched % pairs == 0 || matched == regular)
     }
 
     private fun refill() {
@@ -97,7 +104,7 @@ class Race(
         val fresh = mutableListOf<Card>()
         while (board.size < pairs) {
             val card = if (dealt < regular) {
-                pick(board)?.also {
+                deal(board)?.also {
                     dealt++
                     shown[it.id] = (shown[it.id] ?: 0) + 1
                 }
@@ -117,6 +124,22 @@ class Race(
         var order: List<Card?>
         do order = slots.shuffled(random) while (order.indices.any { before[it] != null && order[it] == before[it] })
         order.forEachIndexed { k, card -> right[k] = card }
+    }
+
+    /**
+     * An [extra] card as often as spreads them evenly over the deals left, else one from the pool.
+     * When only extra cards are left to deal and none fits next to [board], nothing is dealt until the board empties.
+     */
+    private fun deal(board: List<Card>): Card? {
+        val dealsLeft = regular - dealt
+        if (undealt.isNotEmpty() && random.nextInt(dealsLeft) < undealt.size) {
+            undealt.filter { card -> board.none { it.conflictsWith(card) } }.randomOrNull(random)?.let {
+                undealt -= it
+                return it
+            }
+            if (undealt.size >= dealsLeft) return null
+        }
+        return pick(board)
     }
 
     /** A card that is unambiguous next to [board], preferring the least shown ones, then the highest priority. */

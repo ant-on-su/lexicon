@@ -23,6 +23,8 @@ After making changes, build and run lint and unit tests before calling a task do
 - `Words.kt`: YAML parsing (snakeyaml-engine) into `Card` / `WordUnit` / `Language`, loading from the user's word folder or else the demo assets (`loadLibrary`), and the ambiguity rule (`meanings()`, `Card.conflictsWith`).
 - `Race.kt`: pure race logic (board, refill, card picking). Compose snapshot state, no UI. `PENALTY_MS`, `RaceResult`.
 - `Options.kt`: `RaceOptions`, `FeedbackOptions`, `Prefs` (SharedPreferences: options per language, sound/vibration and best times), `bestKey()`.
+- `Speech.kt`: Learn's speaker: the word's audio file if there is one, else the phone's text-to-speech (not for Latin and Greek).
+- `LearnScreen.kt`: Learn: loading animation, then a pager over every entry of every unit, a units drawer on the right; the place is saved in `Prefs.learnAt`.
 - `Feedback.kt`: sound and vibration per `Cue` (countdown, go, correct, mistake, finish, new best). Built-in `Tone`s are synthesized in code (no audio files) and played from static `AudioTrack`s; phone sounds via `RingtoneManager`.
 - `MainActivity.kt`: screen navigation as a `Screen` sealed interface in `remember` state, plus `BackHandler`. No nav library, no ViewModel.
 - `Screens.kt`: Language (+ general settings sheet: word folder), Mode (+ language settings sheet: Units, then a section per mode), Start, Results. `RaceScreen.kt`: countdown, timer, board UI.
@@ -34,7 +36,8 @@ After making changes, build and run lint and unit tests before calling a task do
 
 - The real word lists live in the user's word folder (SAF tree, persisted permission), with a `<language>/words/*.yaml` layout; a new folder is a new language. The repo keeps a copy in `Resources/` (not bundled). The folder is read at every start, and unusable files are listed in the general settings.
 - `app/demo/<language>/words/demo.yaml` (~30 words each, picked from `Resources/`) is bundled as assets (`assets.directories.add("demo")` in `app/build.gradle.kts`). It's used only while no folder is set or the folder has no usable words.
-- Fields: `meta.{id,title,language,translation_language}`, `entries[].{id,term,translation[],forms{plural,genitive,perfect,gender},translation_forms{plural},card_per_sense}`. `form_of` and `tags` are ignored.
+- Fields: `meta.{id,title,language,translation_language}`, `entries[].{id,term,speak,audio,translation[],forms{plural,genitive,perfect,gender},translation_forms{plural},card_per_sense,examples[].{text,translation,speak,audio,source}}`. `form_of` and `tags` are ignored.
+- Audio: `<language>/audio/<unit id>/<entry id>.mp3` and `<entry id>_1.mp3`, … for examples, or the `audio:` path inside `audio/`. Made by `tools/make_audio.py` (Google Cloud TTS, see `tools/README.md`). Latin and Greek are spoken only from `speak` respellings (Italian voice for Latin, Dutch voice for Erasmian Greek).
 
 ## Race rules (agreed with the user)
 
@@ -43,9 +46,9 @@ After making changes, build and run lint and unit tests before calling a task do
 - Never two cards from the same entry, the same term, or with a shared Dutch meaning on the board at once. Meanings: split on `, / ;`, ignore brackets, case, accents and leading `de/het/een`.
 - No time penalty. A mistake counts only the left card. Mistaken cards come back (shuffled) once every card is dealt and one pair is left, and again until none is mistaken; the timer runs through these retries (shown as a "Retries" chip after the rounds). The timer only runs while the app is resumed. Least-shown cards are preferred.
 - Pairs 5–10 (default 6), rounds 3–10 (default 3). Units are stored as excluded, so new units are on by default. An "All units" tri-state toggle can clear them all; Race! is then disabled until a unit is picked.
-- Mistakes are counted per card id and per language over all races (`Prefs.mistakes`, from all units, saved at each miss). "Correct mistakes" (below Race!) shows the sum and goes from pink to red as different mistaken words approach the cap. Below 3 words it only shows them with their translations. From 3 it runs an untimed race over all of them, highest count first, with the same retries; words matched without a mistake are cleared, and clearing all is applauded.
-- Max mistaken words 5–30 (default 10): with more different words than that (11 by default), Race!, Start and Again are blocked until mistakes are corrected.
-- Only the Race! mode exists; Learn and Test are "soon" placeholders.
+- Mistakes are counted per card id and per language over all races (`Prefs.mistakes`, from all units, saved at each miss). "Correct mistakes" (below Race!) shows the number of mistaken words: pink, or red while some are poorly learned. Below 3 words it only shows them with their translations. From 3 it runs an untimed race over all of them, highest count first, with the same retries; words matched without a mistake are cleared, and clearing all is applauded.
+- Poorly learned words (3+ mistakes, `POORLY_LEARNED`, from any unit) are added to every race on top of pairs × rounds, spread over it at random; the last round is then shorter. Matched without a mistake, they're cleared. Mistakes never block a race.
+- Learn and Race! exist; Test is a "soon" placeholder. Learn shows all units, whatever the unit selection.
 
 ## Build gotchas
 
