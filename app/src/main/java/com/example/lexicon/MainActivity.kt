@@ -27,6 +27,7 @@ import kotlinx.coroutines.withContext
 
 class MainActivity : ComponentActivity() {
     private lateinit var feedback: Feedback
+    private lateinit var speech: Speech
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -37,10 +38,11 @@ class MainActivity : ComponentActivity() {
         )
         val prefs = Prefs(this)
         feedback = Feedback(this)
+        speech = Speech(this)
         setContent {
             LexiconTheme {
                 Box {
-                    LexiconApp(prefs, feedback)
+                    LexiconApp(prefs, feedback, speech)
                     Splash()
                 }
             }
@@ -49,6 +51,7 @@ class MainActivity : ComponentActivity() {
 
     override fun onDestroy() {
         feedback.release()
+        speech.release()
         super.onDestroy()
     }
 }
@@ -56,6 +59,7 @@ class MainActivity : ComponentActivity() {
 private sealed interface Screen {
     data object Languages : Screen
     data class Modes(val lang: Language) : Screen
+    data class Learning(val lang: Language) : Screen
     data class Start(val lang: Language) : Screen
     data class Racing(val lang: Language, val options: RaceOptions) : Screen
     data class Results(val lang: Language, val options: RaceOptions, val result: RaceResult) : Screen
@@ -64,7 +68,7 @@ private sealed interface Screen {
 }
 
 @Composable
-private fun LexiconApp(prefs: Prefs, feedback: Feedback) {
+private fun LexiconApp(prefs: Prefs, feedback: Feedback, speech: Speech) {
     val context = LocalContext.current.applicationContext
     var folder by remember { mutableStateOf(prefs.wordFolder) }
     var feedbackOptions by remember { mutableStateOf(prefs.feedback()) }
@@ -82,6 +86,7 @@ private fun LexiconApp(prefs: Prefs, feedback: Feedback) {
         screen = when (val s = screen) {
             Screen.Languages -> s
             is Screen.Modes -> Screen.Languages
+            is Screen.Learning -> Screen.Modes(s.lang)
             is Screen.Start -> Screen.Modes(s.lang)
             is Screen.Racing -> Screen.Start(s.lang)
             is Screen.Results -> Screen.Start(s.lang)
@@ -122,10 +127,18 @@ private fun LexiconApp(prefs: Prefs, feedback: Feedback) {
                         prefs.saveOptions(s.lang.folder, it)
                     },
                     mistakes = mistakes,
+                    onLearn = { screen = Screen.Learning(s.lang) },
                     onRace = { screen = Screen.Start(s.lang) },
                     onCorrect = { screen = Screen.Correcting(s.lang, options) },
                 )
             }
+            is Screen.Learning -> LearnScreen(
+                lang = s.lang,
+                color = colorOf(s.lang),
+                speech = speech,
+                start = remember(s.lang) { prefs.learnAt(s.lang.folder) },
+                onPlace = { unit, entry -> prefs.saveLearnAt(s.lang.folder, unit, entry) },
+            )
             is Screen.Start -> {
                 val options = remember(s.lang) { prefs.options(s.lang.folder) }
                 val blocked = remember(s.lang) { tooManyMistakes(s.lang, options) }

@@ -151,6 +151,7 @@ fun ModeScreen(
     options: RaceOptions,
     onOptions: (RaceOptions) -> Unit,
     mistakes: Map<String, Int>,
+    onLearn: () -> Unit,
     onRace: () -> Unit,
     onCorrect: () -> Unit,
 ) {
@@ -160,7 +161,7 @@ fun ModeScreen(
     Box(Modifier.fillMaxSize()) {
         CenterColumn {
             Title(lang.name)
-            ChunkyButton("Learn", SoonGrey, {}, note = "soon", enabled = false)
+            ChunkyButton("Learn", color, onLearn)
             ChunkyButton("Test", SoonGrey, {}, note = "soon", enabled = false)
             val hasUnits = lang.activeUnits(options).isNotEmpty()
             val blocked = mistaken.size > options.maxMistakes

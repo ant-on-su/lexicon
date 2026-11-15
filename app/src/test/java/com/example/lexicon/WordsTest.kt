@@ -77,6 +77,55 @@ class WordsTest {
     }
 
     @Test
+    fun parsesEntriesForLearn() {
+        val unit = parseUnit(
+            """
+            meta: { id: u1, title: Unit 1, language: de }
+            entries:
+              - id: haus
+                term: das Haus
+                forms: { plural: die Häuser, gender: o }
+                translation: [het huis, de woning]
+                examples:
+                  - text: Das Haus ist groß.
+                    translation: Het huis is groot.
+                    source: generated
+                  - text: Ein Haus.
+                    audio: shared/ein-haus.mp3
+              - id: amo
+                term: amo (amare)
+                speak: ahmo
+                audio: amo-book.mp3
+            """.trimIndent(),
+            "fallback",
+        )
+        val (haus, amo) = unit.entries
+        assertEquals(listOf("het huis", "de woning"), haus.translations)
+        assertEquals("die Häuser", haus.forms)
+        assertEquals("o", haus.gender)
+        assertEquals("das Haus", haus.speak)
+        assertEquals("u1/haus.mp3", haus.audio)
+        assertEquals(
+            listOf(
+                Example("Das Haus ist groß.", "Het huis is groot.", "Das Haus ist groß.", "u1/haus_1.mp3"),
+                Example("Ein Haus.", null, "Ein Haus.", "shared/ein-haus.mp3"),
+            ),
+            haus.examples,
+        )
+        assertEquals("ahmo", amo.speak)
+        assertEquals("amo-book.mp3", amo.audio)
+        assertTrue(amo.examples.isEmpty())
+    }
+
+    @Test
+    fun spokenTextDropsBracketsAndCases() {
+        assertEquals("accipio", spokenText("accipio (accipĕre)"))
+        assertEquals("in", spokenText("in + acc."))
+        assertEquals("das Haus", spokenText("das Haus"))
+        assertEquals("frais, fraîche", spokenText("frais / fraîche"))
+    }
+
+    @Test
     fun splitsMeanings() {
         assertEquals(setOf("eerste", "leider"), meanings("de eerste, leider"))
         assertEquals(setOf("stad", "rome"), meanings("dé stad, Rome"))

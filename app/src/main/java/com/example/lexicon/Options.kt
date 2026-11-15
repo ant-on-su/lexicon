@@ -78,6 +78,17 @@ class Prefs(context: Context) {
         options.vibes.forEach { (cue, vibe) -> putString("vibe.$cue", vibe.name) }
     }
 
+    /** Where Learn was left in a language: the unit id and the entry id. */
+    fun learnAt(lang: String): Pair<String, String>? {
+        val unit = prefs.getString("$lang.learnUnit", null) ?: return null
+        return unit to prefs.getString("$lang.learnEntry", null).orEmpty()
+    }
+
+    fun saveLearnAt(lang: String, unit: String, entry: String) = prefs.edit {
+        putString("$lang.learnUnit", unit)
+        putString("$lang.learnEntry", entry)
+    }
+
     fun best(key: String): Long? = prefs.getLong("best.$key", -1L).takeIf { it >= 0 }
 
     fun saveBest(key: String, ms: Long) = prefs.edit { putLong("best.$key", ms) }

@@ -10,56 +10,100 @@ entries:
     term: die Adresse
     translation:
       - het adres
+    examples:
+      - text: Wie ist deine Adresse?
+        translation: Wat is jouw adres?
+        source: generated
 
   - id: alter
     term: das Alter
     translation:
       - de leeftijd
+    examples:
+      - text: Name, Alter und Adresse, bitte.
+        translation: Naam, leeftijd en adres, alsjeblieft.
+        source: generated
 
   - id: auch
     term: auch
     translation:
       - ook
+    examples:
+      - text: Meine Mutter fährt auch nach Österreich.
+        translation: Mijn moeder rijdt ook naar Oostenrijk.
+        source: generated
 
   - id: autobahn
     term: die Autobahn
     translation:
       - de snelweg
+    examples:
+      - text: Die Autobahn ist heute sehr voll.
+        translation: De snelweg is vandaag erg vol.
+        source: generated
 
   - id: auf_der_autobahn
     term: auf der Autobahn
     translation:
       - op de snelweg
+    examples:
+      - text: Wir fahren auf der Autobahn nach Wien.
+        translation: We rijden op de snelweg naar Wenen.
+        source: generated
 
   - id: besuchen
     term: besuchen
     translation:
       - bezoeken
+    examples:
+      - text: Wir besuchen die Verwandten in Deutschland.
+        translation: We bezoeken de familieleden in Duitsland.
+        source: generated
 
   - id: danke
     term: danke
     translation:
       - dank je, dank u
+    examples:
+      - text: Danke für die schöne Reise!
+        translation: Bedankt voor de mooie reis!
+        source: generated
 
   - id: deutschland
     term: Deutschland
     translation:
       - Duitsland
+    examples:
+      - text: Die Familie wohnt in Deutschland.
+        translation: Het gezin woont in Duitsland.
+        source: generated
 
   - id: fahren
     term: fahren
     translation:
       - rijden
+    examples:
+      - text: Mein Vater fährt gern Auto.
+        translation: Mijn vader rijdt graag auto.
+        source: generated
 
   - id: familie
     term: die Familie
     translation:
       - het gezin
+    examples:
+      - text: Meine Familie macht Urlaub in Österreich.
+        translation: Mijn gezin is op vakantie in Oostenrijk.
+        source: generated
 
   - id: kennenlernen
     term: kennenlernen
     translation:
       - leren kennen
+    examples:
+      - text: Im Urlaub lerne ich Touristen kennen.
+        translation: Op vakantie leer ik toeristen kennen.
+        source: generated
 
   - id: kind
     term: das Kind
@@ -67,36 +111,64 @@ entries:
     translation:
       - het kind
     translation_forms: { plural: de kinderen }
+    examples:
+      - text: Das Kind ist sieben Jahre alt.
+        translation: Het kind is zeven jaar oud.
+        source: generated
 
   - id: mutter
     term: die Mutter
     translation:
       - de moeder
+    examples:
+      - text: Meine Mutter heißt Anna.
+        translation: Mijn moeder heet Anna.
+        source: generated
 
   - id: oesterreich
     term: Österreich
     translation:
       - Oostenrijk
+    examples:
+      - text: Wien liegt in Österreich.
+        translation: Wenen ligt in Oostenrijk.
+        source: generated
 
   - id: postleitzahl
     term: die Postleitzahl
     translation:
       - de postcode
+    examples:
+      - text: Wie ist die Postleitzahl von Berlin?
+        translation: Wat is de postcode van Berlijn?
+        source: generated
 
   - id: reise
     term: die Reise
     translation:
       - de reis
+    examples:
+      - text: Die Reise nach Wien ist lang.
+        translation: De reis naar Wenen is lang.
+        source: generated
 
   - id: schwierig
     term: schwierig
     translation:
       - lastig, moeilijk
+    examples:
+      - text: Deutsch ist nicht schwierig.
+        translation: Duits is niet moeilijk.
+        source: generated
 
   - id: schwer
     term: schwer
     translation:
       - lastig, moeilijk
+    examples:
+      - text: Die Reise mit drei Kindern ist schwer.
+        translation: De reis met drie kinderen is lastig.
+        source: generated
 
   - id: sohn
     term: der Sohn
@@ -104,6 +176,10 @@ entries:
     translation:
       - de zoon
     translation_forms: { plural: de zoons }
+    examples:
+      - text: Der Sohn besucht seinen Vater.
+        translation: De zoon bezoekt zijn vader.
+        source: generated
 
   - id: tochter
     term: die Tochter
@@ -111,33 +187,61 @@ entries:
     translation:
       - de dochter
     translation_forms: { plural: de dochters }
+    examples:
+      - text: Ihre Tochter wohnt in Österreich.
+        translation: Haar dochter woont in Oostenrijk.
+        source: generated
 
   - id: tourist
     term: der Tourist
     translation:
       - de toerist
+    examples:
+      - text: Der Tourist sucht die Autobahn.
+        translation: De toerist zoekt de snelweg.
+        source: generated
 
   - id: touristin
     term: die Touristin
     translation:
       - de toeriste
+    examples:
+      - text: Die Touristin kommt aus Deutschland.
+        translation: De toeriste komt uit Duitsland.
+        source: generated
 
   - id: urlaub
     term: der Urlaub
     translation:
       - de vakantie
+    examples:
+      - text: Im Sommer machen wir Urlaub.
+        translation: In de zomer gaan we op vakantie.
+        source: generated
 
   - id: ferien
     term: die Ferien
     translation:
       - de vakantie
+    examples:
+      - text: In den Ferien besuchen wir Oma.
+        translation: In de vakantie bezoeken we oma.
+        source: generated
 
   - id: vater
     term: der Vater
     translation:
       - de vader
+    examples:
+      - text: Mein Vater kommt aus Österreich.
+        translation: Mijn vader komt uit Oostenrijk.
+        source: generated
 
   - id: verwandten
     term: die Verwandten
     translation:
       - de familieleden
+    examples:
+      - text: Die Verwandten kommen zu Besuch.
+        translation: De familieleden komen op bezoek.
+        source: generated

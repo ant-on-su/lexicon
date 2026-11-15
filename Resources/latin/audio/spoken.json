@@ -1,0 +1,194 @@
+{
+ "la-woorden-2a/accipio.mp3": {
+  "text": "acchìpio",
+  "voice": "it-IT-Wavenet-E"
+ },
+ "la-woorden-2a/accipio_1.mp3": {
+  "text": "Recs donum laitus àcchipit.",
+  "voice": "it-IT-Wavenet-E"
+ },
+ "la-woorden-2a/amo.mp3": {
+  "text": "amo",
+  "voice": "it-IT-Wavenet-E"
+ },
+ "la-woorden-2a/amo_1.mp3": {
+  "text": "Serwus winum et chibum amat.",
+  "voice": "it-IT-Wavenet-E"
+ },
+ "la-woorden-2a/aurum.mp3": {
+  "text": "aurum",
+  "voice": "it-IT-Wavenet-E"
+ },
+ "la-woorden-2a/aurum_1.mp3": {
+  "text": "Recs aurum amat.",
+  "voice": "it-IT-Wavenet-E"
+ },
+ "la-woorden-2a/cibus.mp3": {
+  "text": "chibus",
+  "voice": "it-IT-Wavenet-E"
+ },
+ "la-woorden-2a/cibus_1.mp3": {
+  "text": "Chibus in mensa est.",
+  "voice": "it-IT-Wavenet-E"
+ },
+ "la-woorden-2a/curro.mp3": {
+  "text": "curro",
+  "voice": "it-IT-Wavenet-E"
+ },
+ "la-woorden-2a/curro_1.mp3": {
+  "text": "Serwus statim in règhiam currit.",
+  "voice": "it-IT-Wavenet-E"
+ },
+ "la-woorden-2a/donum.mp3": {
+  "text": "donum",
+  "voice": "it-IT-Wavenet-E"
+ },
+ "la-woorden-2a/donum_1.mp3": {
+  "text": "Donum reghis mirum est.",
+  "voice": "it-IT-Wavenet-E"
+ },
+ "la-woorden-2a/est.mp3": {
+  "text": "est",
+  "voice": "it-IT-Wavenet-E"
+ },
+ "la-woorden-2a/est_1.mp3": {
+  "text": "Recs laitus est.",
+  "voice": "it-IT-Wavenet-E"
+ },
+ "la-woorden-2a/et.mp3": {
+  "text": "et",
+  "voice": "it-IT-Wavenet-E"
+ },
+ "la-woorden-2a/et_1.mp3": {
+  "text": "Recs et serwus currunt.",
+  "voice": "it-IT-Wavenet-E"
+ },
+ "la-woorden-2a/in.mp3": {
+  "text": "in",
+  "voice": "it-IT-Wavenet-E"
+ },
+ "la-woorden-2a/in_1.mp3": {
+  "text": "Recs serwum in règhiam wocat.",
+  "voice": "it-IT-Wavenet-E"
+ },
+ "la-woorden-2a/incipio.mp3": {
+  "text": "inchìpio",
+  "voice": "it-IT-Wavenet-E"
+ },
+ "la-woorden-2a/incipio_1.mp3": {
+  "text": "Serwus statim cùrrere ìnchipit.",
+  "voice": "it-IT-Wavenet-E"
+ },
+ "la-woorden-2a/laetus_a_um.mp3": {
+  "text": "laitus, laita, laitum",
+  "voice": "it-IT-Wavenet-E"
+ },
+ "la-woorden-2a/laetus_a_um_1.mp3": {
+  "text": "Serwi laiti sunt.",
+  "voice": "it-IT-Wavenet-E"
+ },
+ "la-woorden-2a/mensa.mp3": {
+  "text": "mensa",
+  "voice": "it-IT-Wavenet-E"
+ },
+ "la-woorden-2a/mensa_1.mp3": {
+  "text": "Winum in mensa est.",
+  "voice": "it-IT-Wavenet-E"
+ },
+ "la-woorden-2a/mirus_a_um.mp3": {
+  "text": "mirus, mira, mirum",
+  "voice": "it-IT-Wavenet-E"
+ },
+ "la-woorden-2a/mirus_a_um_1.mp3": {
+  "text": "Règhia mira est.",
+  "voice": "it-IT-Wavenet-E"
+ },
+ "la-woorden-2a/muto.mp3": {
+  "text": "muto",
+  "voice": "it-IT-Wavenet-E"
+ },
+ "la-woorden-2a/muto_1.mp3": {
+  "text": "Recs winum in aurum mutat.",
+  "voice": "it-IT-Wavenet-E"
+ },
+ "la-woorden-2a/nunc.mp3": {
+  "text": "nunc",
+  "voice": "it-IT-Wavenet-E"
+ },
+ "la-woorden-2a/nunc_1.mp3": {
+  "text": "Nunc serwus in règhia est.",
+  "voice": "it-IT-Wavenet-E"
+ },
+ "la-woorden-2a/per.mp3": {
+  "text": "per",
+  "voice": "it-IT-Wavenet-E"
+ },
+ "la-woorden-2a/per_1.mp3": {
+  "text": "Serwus per règhiam currit.",
+  "voice": "it-IT-Wavenet-E"
+ },
+ "la-woorden-2a/quoque.mp3": {
+  "text": "quoque",
+  "voice": "it-IT-Wavenet-E"
+ },
+ "la-woorden-2a/quoque_1.mp3": {
+  "text": "Serwus quoque winum amat.",
+  "voice": "it-IT-Wavenet-E"
+ },
+ "la-woorden-2a/regia.mp3": {
+  "text": "règhia",
+  "voice": "it-IT-Wavenet-E"
+ },
+ "la-woorden-2a/regia_1.mp3": {
+  "text": "Règhia reghis mira est.",
+  "voice": "it-IT-Wavenet-E"
+ },
+ "la-woorden-2a/rex.mp3": {
+  "text": "recs",
+  "voice": "it-IT-Wavenet-E"
+ },
+ "la-woorden-2a/rex_1.mp3": {
+  "text": "Recs in règhia est.",
+  "voice": "it-IT-Wavenet-E"
+ },
+ "la-woorden-2a/servus.mp3": {
+  "text": "serwus",
+  "voice": "it-IT-Wavenet-E"
+ },
+ "la-woorden-2a/servus_1.mp3": {
+  "text": "Serwus reghem amat.",
+  "voice": "it-IT-Wavenet-E"
+ },
+ "la-woorden-2a/statim.mp3": {
+  "text": "statim",
+  "voice": "it-IT-Wavenet-E"
+ },
+ "la-woorden-2a/statim_1.mp3": {
+  "text": "Recs wocat; serwus statim currit.",
+  "voice": "it-IT-Wavenet-E"
+ },
+ "la-woorden-2a/tango.mp3": {
+  "text": "tango",
+  "voice": "it-IT-Wavenet-E"
+ },
+ "la-woorden-2a/tango_1.mp3": {
+  "text": "Recs aurum tanghit.",
+  "voice": "it-IT-Wavenet-E"
+ },
+ "la-woorden-2a/vinum.mp3": {
+  "text": "winum",
+  "voice": "it-IT-Wavenet-E"
+ },
+ "la-woorden-2a/vinum_1.mp3": {
+  "text": "Serwus reghi winum dat.",
+  "voice": "it-IT-Wavenet-E"
+ },
+ "la-woorden-2a/voco.mp3": {
+  "text": "woco",
+  "voice": "it-IT-Wavenet-E"
+ },
+ "la-woorden-2a/voco_1.mp3": {
+  "text": "Recs serwos wocat.",
+  "voice": "it-IT-Wavenet-E"
+ }
+}

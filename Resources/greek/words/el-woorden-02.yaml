@@ -4,54 +4,119 @@ meta:
   language: el
   translation_language: nl
 
+# speak: Attic Greek respelled for a Dutch voice, Erasmian as taught in Dutch schools: η as è, ω as oo,
+# υ as u, ου as oe, ει as ei, χ as ch, θ as th, φ as ph, ξ as ks, ζ as dz, rough breathing as h.
+# A short ε before one consonant doubles it (dekka), a final ε is è, and an acute marks the stress
+# where a Dutch voice wouldn't put it (óó, óé for the double letters).
+
 entries:
   - id: okto
     term: ὀκτώ
+    speak: októó
     translation:
       - acht
+    examples:
+      - text: ὀκτὼ ἵπποι ἐν τῷ ἀγρῷ εἰσιν.
+        translation: Er zijn acht paarden op het veld.
+        speak: októó hippoi en too agróó eisin.
+        source: generated
 
   - id: deka
     term: δέκα
+    speak: dekka
     translation:
       - tien
+    examples:
+      - text: ὁ διδάσκαλος δέκα μαθητὰς ἔχει.
+        translation: De leraar heeft tien leerlingen.
+        speak: ho didáskalos dekka mathètás échei.
+        source: generated
 
   - id: duo
     term: δύο
+    speak: duo
     translation:
       - twee
+    examples:
+      - text: δύο ἀδελφοὺς ἔχω.
+        translation: Ik heb twee broers.
+        speak: duo adelphóés échoo.
+        source: generated
 
   - id: eis
     term: εἷς
+    speak: heis
     forms: { genitive: ἑνός }
     translation:
       - één
+    examples:
+      - text: εἷς ἀνὴρ ἐν τῇ οἰκίᾳ μένει.
+        translation: Eén man blijft in het huis.
+        speak: heis anèr en tè oikía ménei.
+        source: generated
 
   - id: ennea
     term: ἐννέα
+    speak: ennéa
     translation:
       - negen
+    examples:
+      - text: ἐννέα ἡμέρας ἐν τῇ νήσῳ μένομεν.
+        translation: We blijven negen dagen op het eiland.
+        speak: ennéa hèméras en tè nèsoo ménomèn.
+        source: generated
 
   - id: ex
     term: ἕξ
+    speak: heks
     translation:
       - zes
+    examples:
+      - text: ἓξ βιβλία ἐπὶ τῆς τραπέζης ἐστίν.
+        translation: Er liggen zes boeken op de tafel.
+        speak: heks biblía epí tès trapédzès estín.
+        source: generated
 
   - id: epta
     term: ἑπτά
+    speak: heptá
     translation:
       - zeven
+    examples:
+      - text: ἑπτὰ ναῦς ὁρῶμεν.
+        translation: We zien zeven schepen.
+        speak: heptá naus horóómèn.
+        source: generated
 
   - id: pente
     term: πέντε
+    speak: péntè
     translation:
       - vijf
+    examples:
+      - text: πέντε δακτύλους ἔχει ἡ χείρ.
+        translation: De hand heeft vijf vingers.
+        speak: péntè daktúloes échei hè cheir.
+        source: generated
 
   - id: tettares
     term: τέτταρες
+    speak: téttarès
     translation:
       - vier
+    examples:
+      - text: τέτταρες ἵπποι τὸ ἅρμα ἕλκουσιν.
+        translation: Vier paarden trekken de wagen.
+        speak: téttarès hippoi to harma hélkoesin.
+        source: generated
 
   - id: treis
     term: τρεῖς
+    speak: treis
     translation:
       - drie
+    examples:
+      - text: τρεῖς ἀδελφαὶ ἐν τῇ οἰκίᾳ οἰκοῦσιν.
+        translation: Drie zussen wonen in het huis.
+        speak: treis adelpháí en tè oikía oikóésin.
+        source: generated
