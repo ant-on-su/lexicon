@@ -7,64 +7,136 @@ meta:
 entries:
   - id: anthropos
     term: ἄνθρωπος, ὁ
+    speak: ánthroopos
     translation:
       - mens
       - man
     card_per_sense: true
+    examples:
+      - text: ὁ ἄνθρωπος ἐν τῇ χώρᾳ οἰκεῖ.
+        translation: De mens woont in het land.
+        speak: ho ánthroopos en tè chóóra oikéí.
+        source: generated
 
   - id: theos
     term: θεός, ὁ
+    speak: theós
     translation:
       - god
+    examples:
+      - text: ὁ θεὸς φόβον οὐκ ἔχει.
+        translation: De god heeft geen angst.
+        speak: ho theós phobon oek échei.
+        source: generated
 
   - id: oikeo
     term: οἰκέω
+    speak: oikéoo
     translation:
       - wonen, bewonen
+    examples:
+      - text: ἐν τῇ χώρᾳ οἰκοῦμεν.
+        translation: We wonen in het land.
+        speak: en tè chóóra oikóémèn.
+        source: generated
 
   - id: ou
     term: οὐ, οὐκ, οὐχ
+    speak: oe, oek, oech
     translation:
       - niet
+    examples:
+      - text: ὁ δοῦλος οὐκ ἔστιν ἐν τῇ οἰκίᾳ.
+        translation: De slaaf is niet in het huis.
+        speak: ho doelos oek éstin en tè oikía.
+        source: generated
 
   - id: de
     term: δέ, δ'
+    speak: dè
     translation:
       - en
       - maar (δέ staat meestal op de 2de, soms op de 3de plaats van de zin. Meestal kun je δέ onvertaald laten, behalve na een komma)
     card_per_sense: true
+    examples:
+      - text: ὁ δοῦλος φεύγει, ὁ δὲ δεσπότης μένει.
+        translation: De slaaf vlucht, maar de meester blijft.
+        speak: ho doelos pheugei, ho dè despótès ménei.
+        source: generated
 
   - id: doulos
     term: δοῦλος, ὁ
+    speak: doelos
     translation:
       - slaaf
+    examples:
+      - text: ὁ δοῦλος φόβον ἔχει.
+        translation: De slaaf is bang.
+        speak: ho doelos phobon échei.
+        source: generated
 
   - id: eisi
     term: εἰσί(ν)
+    speak: eisí
     translation:
       - (zij) zijn
+    examples:
+      - text: οἱ δοῦλοι ἐν τῇ χώρᾳ εἰσίν.
+        translation: De slaven zijn in het land.
+        speak: hoi doeloi en tè chóóra eisín.
+        source: generated
 
   - id: esti
     term: ἐστί(ν)
+    speak: estí
     translation:
       - (hij, zij, het) is
+    examples:
+      - text: ὁ θεὸς ἐν τῇ οἰκίᾳ ἐστίν.
+        translation: De god is in het huis.
+        speak: ho theós en tè oikía estín.
+        source: generated
 
   - id: echo
     term: ἔχω, imperf. εἶχον, aor. ἔσχον
+    speak: échoo
     translation:
       - hebben
+    examples:
+      - text: δοῦλον ἔχω.
+        translation: Ik heb een slaaf.
+        speak: doelon échoo.
+        source: generated
 
   - id: ti
     term: "τί...: (met accent!)"
+    speak: ti
     translation:
       - waarom?
+    examples:
+      - text: τί φεύγεις;
+        translation: Waarom vlucht je?
+        speak: ti pheugeis?
+        source: generated
 
   - id: phobos
     term: φόβος, ὁ
+    speak: phobos
     translation:
       - angst, vrees
+    examples:
+      - text: ὁ φόβος μέγας ἐστίν.
+        translation: De angst is groot.
+        speak: ho phobos mégas estín.
+        source: generated
 
   - id: chora
     term: χώρα, ἡ
+    speak: chóóra
     translation:
       - land, streek
+    examples:
+      - text: ἡ χώρα μεγάλη ἐστίν.
+        translation: Het land is groot.
+        speak: hè chóóra megálè estín.
+        source: generated

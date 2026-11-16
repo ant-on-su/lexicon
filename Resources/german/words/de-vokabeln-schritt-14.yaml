@@ -12,21 +12,37 @@ entries:
     translation:
       - de appel
     translation_forms: { plural: de appels }
+    examples:
+      - text: Ich esse jeden Tag einen Apfel.
+        translation: Ik eet elke dag een appel.
+        source: generated
 
   - id: baecker
     term: der Bäcker
     translation:
       - de bakker
+    examples:
+      - text: Der Bäcker backt frisches Brot.
+        translation: De bakker bakt vers brood.
+        source: generated
 
   - id: zum_baecker_gehen
     term: zum Bäcker gehen
     translation:
       - naar de bakker gaan
+    examples:
+      - text: Am Sonntag gehe ich zum Bäcker.
+        translation: Op zondag ga ik naar de bakker.
+        source: generated
 
   - id: baeckerei
     term: die Bäckerei
     translation:
       - de bakkerij
+    examples:
+      - text: Die Bäckerei öffnet um sieben Uhr.
+        translation: De bakkerij gaat om zeven uur open.
+        source: generated
 
   - id: banane
     term: die Banane
@@ -34,11 +50,19 @@ entries:
     translation:
       - de banaan
     translation_forms: { plural: de bananen }
+    examples:
+      - text: Die Bananen sind noch grün.
+        translation: De bananen zijn nog groen.
+        source: generated
 
   - id: billig
     term: billig
     translation:
       - goedkoop
+    examples:
+      - text: Das Obst ist heute billig.
+        translation: Het fruit is vandaag goedkoop.
+        source: generated
 
   - id: birne
     term: die Birne
@@ -46,11 +70,19 @@ entries:
     translation:
       - de peer
     translation_forms: { plural: de peren }
+    examples:
+      - text: Die Birne ist süß und saftig.
+        translation: De peer is zoet en sappig.
+        source: generated
 
   - id: brauchen
     term: brauchen
     translation:
       - nodig hebben
+    examples:
+      - text: Wir brauchen noch Milch und Eier.
+        translation: We hebben nog melk en eieren nodig.
+        source: generated
 
   - id: broetchen
     term: das Brötchen
@@ -58,16 +90,28 @@ entries:
     translation:
       - het broodje
     translation_forms: { plural: de broodjes }
+    examples:
+      - text: Ich hätte gern vier Brötchen, bitte.
+        translation: Ik wil graag vier broodjes, alstublieft.
+        source: generated
 
   - id: butter
     term: die Butter
     translation:
       - de boter
+    examples:
+      - text: Ich esse mein Brötchen mit Butter.
+        translation: Ik eet mijn broodje met boter.
+        source: generated
 
   - id: vielen_dank
     term: vielen Dank
     translation:
       - dank je wel, dank u wel
+    examples:
+      - text: Vielen Dank für Ihre Hilfe!
+        translation: Dank u wel voor uw hulp!
+        source: generated
 
   - id: ei
     term: das Ei
@@ -75,11 +119,19 @@ entries:
     translation:
       - het ei
     translation_forms: { plural: de eieren }
+    examples:
+      - text: Zum Frühstück esse ich ein Ei.
+        translation: Bij het ontbijt eet ik een ei.
+        source: generated
 
   - id: einkaufen
     term: einkaufen
     translation:
       - boodschappen doen
+    examples:
+      - text: Am Samstag kaufen wir im Supermarkt ein.
+        translation: Op zaterdag doen we boodschappen in de supermarkt.
+        source: generated
 
   - id: flasche
     term: die Flasche
@@ -87,26 +139,46 @@ entries:
     translation:
       - de fles
     translation_forms: { plural: de flessen }
+    examples:
+      - text: Ich kaufe eine Flasche Wasser.
+        translation: Ik koop een fles water.
+        source: generated
 
   - id: fleisch
     term: das Fleisch
     translation:
       - het vlees
+    examples:
+      - text: Meine Schwester isst kein Fleisch.
+        translation: Mijn zus eet geen vlees.
+        source: generated
 
   - id: gemuese
     term: das Gemüse
     translation:
       - de groente
+    examples:
+      - text: Gemüse ist gesund.
+        translation: Groente is gezond.
+        source: generated
 
   - id: genau
     term: genau
     translation:
       - precies
+    examples:
+      - text: Das kostet genau fünf Euro.
+        translation: Dat kost precies vijf euro.
+        source: generated
 
   - id: genug
     term: genug
     translation:
       - genoeg
+    examples:
+      - text: Haben wir genug Brot für alle?
+        translation: Hebben we genoeg brood voor iedereen?
+        source: generated
 
   - id: kartoffel
     term: die Kartoffel
@@ -114,48 +186,88 @@ entries:
     translation:
       - de aardappel
     translation_forms: { plural: de aardappelen }
+    examples:
+      - text: Heute gibt es Kartoffeln mit Gemüse.
+        translation: Vandaag eten we aardappelen met groente.
+        source: generated
 
   - id: lebensmittel
     term: die Lebensmittel
     translation:
       - de levensmiddelen
+    examples:
+      - text: Im Supermarkt kaufen wir Lebensmittel.
+        translation: In de supermarkt kopen we levensmiddelen.
+        source: generated
 
   - id: milch
     term: die Milch
     translation:
       - de melk
+    examples:
+      - text: Die Milch ist im Kühlschrank.
+        translation: De melk staat in de koelkast.
+        source: generated
 
   - id: obst
     term: das Obst
     translation:
       - het fruit
+    examples:
+      - text: Ich esse gern Obst.
+        translation: Ik eet graag fruit.
+        source: generated
 
   - id: salz
     term: das Salz
     translation:
       - het zout
+    examples:
+      - text: In der Suppe fehlt Salz.
+        translation: Er zit te weinig zout in de soep.
+        source: generated
 
   - id: schicken
     term: schicken
     translation:
       - sturen
+    examples:
+      - text: Mama schickt mich zum Bäcker.
+        translation: Mama stuurt me naar de bakker.
+        source: generated
 
   - id: schinken
     term: der Schinken
     translation:
       - de ham
+    examples:
+      - text: Ein Brötchen mit Schinken, bitte.
+        translation: Een broodje ham, alstublieft.
+        source: generated
 
   - id: tasche
     term: die Tasche
     translation:
       - de tas
+    examples:
+      - text: Die Tasche ist zu schwer.
+        translation: De tas is te zwaar.
+        source: generated
 
   - id: teuer
     term: teuer
     translation:
       - duur
+    examples:
+      - text: Das Fleisch ist sehr teuer.
+        translation: Het vlees is heel duur.
+        source: generated
 
   - id: verkaeufer
     term: der Verkäufer
     translation:
       - de verkoper
+    examples:
+      - text: Der Verkäufer ist sehr freundlich.
+        translation: De verkoper is heel vriendelijk.
+        source: generated

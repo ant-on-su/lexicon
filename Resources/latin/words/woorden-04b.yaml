@@ -7,107 +7,227 @@ meta:
 entries:
   - id: ago
     term: ago (agĕre)
+    speak: ago
     forms: { perfect: egi }
     translation:
       - drijven, voeren
       - doen, verrichten
     card_per_sense: true
+    examples:
+      - text: Quid agis, serve?
+        translation: Wat doe je, slaaf?
+        speak: Quid aghis, serwe?
+        source: generated
 
   - id: appropinquo
     term: appropinquo (appropinquare) + dat.
+    speak: appropinquo
     translation:
       - naderen
+    examples:
+      - text: Nuntius regiae appropinquat.
+        translation: De bode nadert het paleis.
+        speak: Nùntius règhiai appropinquat.
+        source: generated
 
   - id: custodio
     term: custodio (custodire)
+    speak: custòdio
     translation:
       - bewaken, passen op
+    examples:
+      - text: Servi regiam custodiunt.
+        translation: De slaven bewaken het paleis.
+        speak: Serwi règhiam custòdiunt.
+        source: generated
 
   - id: deinde
     term: deinde
+    speak: deinde
     translation:
       - daarna, vervolgens
+    examples:
+      - text: Primum laboramus, deinde ludimus.
+        translation: Eerst werken we, daarna spelen we.
+        speak: Primum laboramus, deinde lùdimus.
+        source: generated
 
   - id: gladius
     term: gladius
+    speak: glàdius
     translation:
       - zwaard
+    examples:
+      - text: Victor gladium tenet.
+        translation: De winnaar houdt een zwaard vast.
+        speak: Wictor glàdium tenet.
+        source: generated
 
   - id: interficio
     term: interficio (interficĕre)
+    speak: interfìchio
     forms: { perfect: interfeci }
     translation:
       - doden
+    examples:
+      - text: Victor regem gladio interficit.
+        translation: De overwinnaar doodt de koning met een zwaard.
+        speak: Wictor reghem glàdio intèrfichit.
+        source: generated
 
   - id: iubeo
     term: iubeo (iubēre)
+    speak: iùbeo
     forms: { perfect: iussi }
     translation:
       - bevelen
+    examples:
+      - text: Rex servos laborare iubet.
+        translation: De koning beveelt de slaven te werken.
+        speak: Recs serwos laborare iubet.
+        source: generated
 
   - id: longus_a_um
     term: longus, -a, -um
+    speak: longus, longa, longum
     translation:
       - lang
+    examples:
+      - text: Gladius longus est.
+        translation: Het zwaard is lang.
+        speak: Glàdius longus est.
+        source: generated
 
   - id: mihi
     term: mihi (dat.)
+    speak: mihi
     translation:
       - (aan/voor) mij
+    examples:
+      - text: Da mihi aquam!
+        translation: Geef mij water!
+        speak: Da mihi aquam!
+        source: generated
 
   - id: nam
     term: nam
+    speak: nam
     translation:
       - want, namelijk
+    examples:
+      - text: Servus currit, nam rex vocat.
+        translation: De slaaf rent, want de koning roept.
+        speak: Serwus currit, nam recs wocat.
+        source: generated
 
   - id: narro
     term: narro (narrare)
+    speak: narro
     translation:
       - vertellen
+    examples:
+      - text: Pater liberis fabulam narrat.
+        translation: Vader vertelt de kinderen een verhaal.
+        speak: Pater lìberis fàbulam narrat.
+        source: generated
 
   - id: numquam
     term: numquam
+    speak: numquam
     translation:
       - nooit
+    examples:
+      - text: Rex numquam laborat.
+        translation: De koning werkt nooit.
+        speak: Recs numquam laborat.
+        source: generated
 
   - id: nuntius
     term: nuntius
+    speak: nùntius
     translation:
       - bode
       - bericht
     card_per_sense: true
+    examples:
+      - text: Nuntius regi victoriam narrat.
+        translation: De bode vertelt de koning over de overwinning.
+        speak: Nùntius reghi wictòriam narrat.
+        source: generated
 
   - id: paro
     term: paro (parare)
+    speak: paro
     translation:
       - gereedmaken, voorbereiden
+    examples:
+      - text: Mater cenam parat.
+        translation: Moeder maakt het avondeten klaar.
+        speak: Mater chenam parat.
+        source: generated
 
   - id: plenus_a_um
     term: plenus, -a, -um + gen.
+    speak: plenus, plena, plenum
     translation:
       - vol van/met
+    examples:
+      - text: Mensa plena cibi est.
+        translation: De tafel is vol met eten.
+        speak: Mensa plena chibi est.
+        source: generated
 
   - id: primum
     term: primum
+    speak: primum
     translation:
       - eerst
+    examples:
+      - text: Primum aquam bibo.
+        translation: Eerst drink ik water.
+        speak: Primum aquam bibo.
+        source: generated
 
   - id: que
     term: "-que"
+    speak: que
     translation:
       - en (staat altijd achter het woord)
+    examples:
+      - text: Rex reginaque in regia sedent.
+        translation: De koning en de koningin zitten in het paleis.
+        speak: Recs reghinaque in règhia sedent.
+        source: generated
 
   - id: saluto
     term: saluto (salutare)
+    speak: saluto
     translation:
       - begroeten
+    examples:
+      - text: Servus regem salutat.
+        translation: De slaaf begroet de koning.
+        speak: Serwus reghem salutat.
+        source: generated
 
   - id: semper
     term: semper
+    speak: semper
     translation:
       - altijd
+    examples:
+      - text: Pater semper laetus est.
+        translation: Vader is altijd blij.
+        speak: Pater semper laitus est.
+        source: generated
 
   - id: te
     term: te (acc./abl.)
+    speak: te
     translation:
       - jou, je
+    examples:
+      - text: Mater te vocat.
+        translation: Moeder roept je.
+        speak: Mater te wocat.
+        source: generated

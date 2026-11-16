@@ -7,104 +7,218 @@ meta:
 entries:
   - id: aliquando
     term: aliquando (bijw.)
+    speak: aliquando
     translation:
       - eens, ooit, soms
+    examples:
+      - text: Aliquando Romam videbo.
+        translation: Ooit zal ik Rome zien.
+        speak: Aliquando Romam widebo.
+        source: generated
 
   - id: alter
     term: alter
+    speak: alter
     forms: { genitive: alterius }
     translation:
       - (een) ander
+    examples:
+      - text: Alter frater in urbe, alter in agris habitat.
+        translation: De ene broer woont in de stad, de andere op het land.
+        speak: Alter frater in urbe, alter in agris hàbitat.
+        source: generated
 
   - id: comes
     term: comes
+    speak: comes
     forms: { genitive: comitis, gender: m/v }
     translation:
       - metgezel, vriend
+    examples:
+      - text: Comes meus fidus est.
+        translation: Mijn metgezel is trouw.
+        speak: Comes meus fidus est.
+        source: generated
 
   - id: duo
     term: duo
+    speak: duo
     forms: { genitive: duorum }
     translation:
       - twee
+    examples:
+      - text: Duo equi in agro sunt.
+        translation: Er zijn twee paarden op de akker.
+        speak: Duo equi in agro sunt.
+        source: generated
 
   - id: fallo
     term: fallo (fallĕre)
+    speak: fallo
     translation:
       - bedriegen
       - ontgaan
     card_per_sense: true
+    examples:
+      - text: Servus dominum fallit.
+        translation: De slaaf bedriegt zijn heer.
+        speak: Serwus dòminum fallit.
+        source: generated
 
   - id: ille
     term: ille
+    speak: ille
     translation:
       - die/hij
+    examples:
+      - text: Ille vir fortis est.
+        translation: Die man is dapper.
+        speak: Ille wir fortis est.
+        source: generated
 
   - id: invitus_a_um
     term: invitus, -a, -um
+    speak: inwitus, inwita, inwitum
     translation:
       - onvrijwillig, tegen de wil van   # CHECK
+    examples:
+      - text: Puer invitus in ludum it.
+        translation: De jongen gaat tegen zijn zin naar school.
+        speak: Puer inwitus in ludum it.
+        source: generated
 
   - id: iterum
     term: iterum (bijw.)
+    speak: ìterum
     translation:
       - weer, opnieuw
+    examples:
+      - text: Iterum pluit.
+        translation: Het regent weer.
+        speak: Ìterum pluit.
+        source: generated
 
   - id: laudo
     term: laudo (laudare)
+    speak: laudo
     translation:
       - prijzen
+    examples:
+      - text: Magister puerum laudat.
+        translation: De leraar prijst de jongen.
+        speak: Magister puerum laudat.
+        source: generated
 
   - id: medius_a_um
     term: medius, -a, -um
+    speak: mèdius, mèdia, mèdium
     translation:
       - in het midden, middelste
+    examples:
+      - text: In media urbe forum est.
+        translation: Midden in de stad ligt het forum.
+        speak: In mèdia urbe forum est.
+        source: generated
 
   - id: multitudo
     term: multitudo
+    speak: multitudo
     forms: { genitive: multitudinis, gender: v }
     translation:
       - menigte
+    examples:
+      - text: Multitudo civium in foro est.
+        translation: Er is een menigte burgers op het forum.
+        speak: Multitudo chìwium in foro est.
+        source: generated
 
   - id: ordo
     term: ordo
+    speak: ordo
     forms: { genitive: ordinis, gender: m }
     translation:
       - rij, gelid
+    examples:
+      - text: Milites in ordine stant.
+        translation: De soldaten staan in het gelid.
+        speak: Mìlites in òrdine stant.
+        source: generated
 
   - id: provincia
     term: provincia
+    speak: prowìnchia
     translation:
       - (ambt)gebied, provincie
+    examples:
+      - text: Provincia Romana magna est.
+        translation: De Romeinse provincie is groot.
+        speak: Prowìnchia Romana mangna est.
+        source: generated
 
   - id: quis
     term: quis?
+    speak: quis
     translation:
       - wie
+    examples:
+      - text: Quis es?
+        translation: Wie ben jij?
+        speak: Quis es?
+        source: generated
 
   - id: sibi
     term: sibi
+    speak: sibi
     translation:
       - dat. van se
+    examples:
+      - text: Puer sibi cibum parat.
+        translation: De jongen maakt eten voor zichzelf klaar.
+        speak: Puer sibi chibum parat.
+        source: generated
 
   - id: similis_is_e
     term: similis, -is, -e (similis) + gen./dat.
+    speak: sìmilis, sìmile
     translation:
       - gelijk aan
       - gelijkend op
     card_per_sense: true
+    examples:
+      - text: Filius patri similis est.
+        translation: De zoon lijkt op zijn vader.
+        speak: Fìlius patri sìmilis est.
+        source: generated
 
   - id: simul
     term: simul (bijw.)
+    speak: simul
     translation:
       - tegelijk(ertijd)   # CHECK
+    examples:
+      - text: Omnes simul clamant.
+        translation: Iedereen roept tegelijk.
+        speak: Omnes simul clamant.
+        source: generated
 
   - id: sto
     term: sto (stare)
+    speak: sto
     translation:
       - staan
+    examples:
+      - text: Custos ante portam stat.
+        translation: De bewaker staat voor de poort.
+        speak: Custos ante portam stat.
+        source: generated
 
   - id: videor
     term: videor (vidēri)
+    speak: wìdeor
     translation:
       - schijnen, de indruk wekken
+    examples:
+      - text: Laetus esse videris.
+        translation: Je schijnt blij te zijn.
+        speak: Laitus esse wìderis.
+        source: generated

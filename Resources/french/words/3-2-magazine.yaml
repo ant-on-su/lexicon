@@ -11,117 +11,157 @@ entries:
       - uitnodigen
     examples:
       - text: Tu vas inviter tous tes amis ?
+        translation: Ga je al je vrienden uitnodigen?
+        source: book
   - id: assister-a
     term: assister à
     translation:
       - bijwonen
     examples:
       - text: Nous assistons au concert.
+        translation: We wonen het concert bij.
+        source: book
   - id: benevole
     term: le / la bénévole
     translation:
       - de vrijwilliger
     examples:
       - text: Les festivals ont besoin de bénévoles.
+        translation: Festivals hebben vrijwilligers nodig.
+        source: book
   - id: en-plein-air
     term: en plein air
     translation:
       - in de openlucht
     examples:
       - text: C’est un concert en plein air.
+        translation: Het is een openluchtconcert.
+        source: book
   - id: il-y-a
     term: il y a
     translation:
       - er is, er zijn
     examples:
       - text: Il y a des activités variées pendant le festival.
+        translation: Er zijn tijdens het festival allerlei activiteiten.
+        source: book
   - id: gagner
     term: gagner
     translation:
       - winnen, verdienen
     examples:
       - text: Tu vas gagner à la loterie !
+        translation: Jij gaat de loterij winnen!
+        source: book
   - id: jouer-a
     term: jouer à
     translation:
       - spelen (een spel)
     examples:
       - text: Nous jouons aux cartes.
+        translation: We spelen kaart.
+        source: book
   - id: tout-le-monde
     term: tout le monde
     translation:
       - iedereen
     examples:
       - text: Tout le monde est très enthousiaste.
+        translation: Iedereen is heel enthousiast.
+        source: book
   - id: beaucoup-de-monde
     term: beaucoup de monde
     translation:
       - veel mensen
     examples:
       - text: Il y a beaucoup de monde ce soir !
+        translation: Er zijn vanavond veel mensen!
+        source: book
   - id: monde-entier
     term: le monde (entier)
     translation:
       - de (hele) wereld
     examples:
       - text: Il y a des équipes du monde entier.
+        translation: Er zijn teams uit de hele wereld.
+        source: book
   - id: passer
     term: passer
     translation:
       - doorbrengen
     examples:
       - text: On va passer un weekend amusant.
+        translation: We gaan een leuk weekend doorbrengen.
+        source: book
   - id: voir
     term: voir
     translation:
       - zien
     examples:
       - text: On peut voir des artistes célèbres.
+        translation: Je kunt beroemde artiesten zien.
+        source: book
   - id: ne-jamais
     term: ne ... jamais
     translation:
       - nooit
     examples:
       - text: Je n’ai jamais été à un concert.
+        translation: Ik ben nog nooit naar een concert geweest.
+        source: book
   - id: ne-plus
     term: ne ... plus
     translation:
       - niet meer, geen meer
     examples:
       - text: Tu n’as plus d’argent ?
+        translation: Heb je geen geld meer?
+        source: book
   - id: ne-rien
     term: ne ... rien
     translation:
       - niets
     examples:
       - text: Vous n’avez rien vu, hier soir ?
+        translation: Hebben jullie gisteravond niets gezien?
+        source: book
   - id: milliers
     term: des milliers (de)
     translation:
       - duizenden
     examples:
       - text: Le stade de foot contient des milliers de spectateurs.
+        translation: In het voetbalstadion passen duizenden toeschouwers.
+        source: book
   - id: joyeux
     term: joyeux / joyeuse
     translation:
       - vrolijk
     examples:
       - text: C’est de la musique joyeuse.
+        translation: Het is vrolijke muziek.
+        source: book
   - id: varie
     term: varié
     translation:
       - gevarieerd, afwisselend
     examples:
       - text: Le festival a un programme varié.
+        translation: Het festival heeft een gevarieerd programma.
+        source: book
   - id: pendant
     term: pendant
     translation:
       - tijdens
     examples:
       - text: Pendant le week-end, il y a beaucoup de festivals.
+        translation: In het weekend zijn er veel festivals.
+        source: book
   - id: plusieurs
     term: plusieurs
     translation:
       - meerdere
     examples:
       - text: Il y a plusieurs personnes sans ticket.
+        translation: Er zijn meerdere mensen zonder kaartje.
+        source: book

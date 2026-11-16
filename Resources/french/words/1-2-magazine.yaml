@@ -11,12 +11,16 @@ entries:
       - de fles
     examples:
       - text: Tu mets la bouteille d’eau sur la table ?
+        translation: Zet jij de fles water op tafel?
+        source: book
   - id: tartine
     term: la tartine
     translation:
       - de boterham
     examples:
       - text: Le matin, nous mangeons une tartine.
+        translation: "'s Ochtends eten we een boterham."
+        source: book
   - id: assiette
     term: l’assiette
     forms: { gender: v }
@@ -24,60 +28,80 @@ entries:
       - het bord
     examples:
       - text: Tu mets les assiettes sur la table ?
+        translation: Zet jij de borden op tafel?
+        source: book
   - id: pomme
     term: la pomme
     translation:
       - de appel
     examples:
       - text: Elle prend une pomme tous les jours !
+        translation: Ze neemt elke dag een appel!
+        source: book
   - id: morceau
     term: le morceau
     translation:
       - het stukje
     examples:
       - text: Je voudrais un morceau de la quiche.
+        translation: Ik wil graag een stukje van de quiche.
+        source: book
   - id: lait
     term: le lait
     translation:
       - de melk
     examples:
       - text: Ma sœur n’aime pas le lait.
+        translation: Mijn zus houdt niet van melk.
+        source: book
   - id: the
     term: le thé
     translation:
       - de thee
     examples:
       - text: Léonie boit une grande tasse de thé.
+        translation: Léonie drinkt een grote kop thee.
+        source: book
   - id: cafe
     term: le café
     translation:
       - de koffie
     examples:
       - text: Mes parents boivent leur café sans lait.
+        translation: Mijn ouders drinken hun koffie zonder melk.
+        source: book
   - id: chocolat-chaud
     term: le chocolat chaud
     translation:
       - de warme chocolademelk
     examples:
       - text: En hiver, j’adore le chocolat chaud.
+        translation: In de winter ben ik dol op warme chocolademelk.
+        source: book
   - id: jus-d-orange
     term: le jus d’orange
     translation:
       - het sinaasappelsap
     examples:
       - text: Ma boisson préférée c’est le jus d’orange frais.
+        translation: Mijn lievelingsdrankje is verse sinaasappelsap.
+        source: book
   - id: verre-d-eau
     term: le verre d’eau
     translation:
       - het glas water
     examples:
       - text: J’ai soif, je voudrais un verre d’eau.
+        translation: Ik heb dorst, ik wil graag een glas water.
+        source: book
   - id: tarte
     term: la tarte
     translation:
       - de taart
     examples:
       - text: La tarte est vraiment délicieuse.
+        translation: De taart is echt heerlijk.
+        source: book
   - id: entree
     term: l’entrée
     forms: { gender: v }
@@ -85,45 +109,61 @@ entries:
       - het voorgerecht
     examples:
       - text: Comme entrée, je prends une soupe.
+        translation: Als voorgerecht neem ik soep.
+        source: book
   - id: plat-principal
     term: le plat principal
     translation:
       - het hoofdgerecht
     examples:
       - text: Nous préparons le plat principal ce soir.
+        translation: We maken vanavond het hoofdgerecht klaar.
+        source: book
   - id: dessert
     term: le dessert
     translation:
       - het nagerecht / het toetje
     examples:
       - text: Quel est ton dessert préféré ?
+        translation: Wat is jouw lievelingstoetje?
+        source: book
   - id: couteau
     term: le couteau
     translation:
       - het mes
     examples:
       - text: Je coupe la viande avec mon couteau.
+        translation: Ik snijd het vlees met mijn mes.
+        source: book
   - id: fourchette
     term: la fourchette
     translation:
       - de vork
     examples:
       - text: Je n’ai pas de fourchette.
+        translation: Ik heb geen vork.
+        source: book
   - id: cuillere
     term: la cuillère
     translation:
       - de lepel
     examples:
       - text: Elle ajoute une cuillère d’huile d’olive.
+        translation: Ze voegt een lepel olijfolie toe.
+        source: book
   - id: ajouter
     term: ajouter
     translation:
       - toevoegen
     examples:
       - text: Tu peux ajouter un peu de sucre.
+        translation: Je kunt een beetje suiker toevoegen.
+        source: book
   - id: prendre
     term: prendre
     translation:
       - nemen
     examples:
       - text: "Qu’est-ce qu’on va prendre : pizza ou quiche ?"
+        translation: "Wat gaan we nemen: pizza of quiche?"
+        source: book

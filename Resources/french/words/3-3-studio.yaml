@@ -11,36 +11,48 @@ entries:
       - de acteur / de actrice
     examples:
       - text: Tu connais cet acteur belge ?
+        translation: Ken jij deze Belgische acteur?
+        source: book
   - id: si
     term: si
     translation:
       - jawel
     examples:
       - text: Si, je connais l’acteur de la série !
+        translation: Jawel, ik ken de acteur uit de serie!
+        source: book
   - id: surprise
     term: la surprise
     translation:
       - de verrassing
     examples:
       - text: Nous avons une surprise pour vous.
+        translation: We hebben een verrassing voor jullie.
+        source: book
   - id: premiere
     term: la première
     translation:
       - de première
     examples:
       - text: La première du film, c’est quand ?
+        translation: Wanneer is de première van de film?
+        source: book
   - id: festival
     term: le festival
     translation:
       - het festival
     examples:
       - text: Yada veut aller au festival de cerf-volant.
+        translation: Yada wil naar het vliegerfestival.
+        source: book
   - id: signature
     term: la signature
     translation:
       - de handtekening
     examples:
       - text: Je vais demander une signature à l’actrice.
+        translation: Ik ga de actrice om een handtekening vragen.
+        source: book
   - id: impression
     term: l’impression
     forms: { gender: v }
@@ -48,72 +60,96 @@ entries:
       - de indruk
     examples:
       - text: Il fait toujours bonne impression.
+        translation: Hij maakt altijd een goede indruk.
+        source: book
   - id: rentrer
     term: rentrer
     translation:
       - naar huis gaan, thuiskomen
     examples:
       - text: On rentre tard ce soir.
+        translation: We komen vanavond laat thuis.
+        source: book
   - id: regarder
     term: regarder
     translation:
       - kijken
     examples:
       - text: Tu veux regarder encore une fois ce film ?
+        translation: Wil je deze film nog een keer kijken?
+        source: book
   - id: influencer
     term: influencer
     translation:
       - beïnvloeden
     examples:
       - text: Elle influence beaucoup ses camarades de classe.
+        translation: Ze beïnvloedt haar klasgenoten sterk.
+        source: book
   - id: possible
     term: possible
     translation:
       - mogelijk
     examples:
       - text: C’est vrai ? Non, ce n’est pas possible !
+        translation: Is dat waar? Nee, dat kan niet!
+        source: book
   - id: dernier
     term: dernier / dernière
     translation:
       - laatste
     examples:
       - text: Je peux vous poser une dernière question ?
+        translation: Mag ik u nog een laatste vraag stellen?
+        source: book
   - id: terrible
     term: terrible
     translation:
       - vreselijk
     examples:
       - text: L’organisation de ce festival est terrible !
+        translation: De organisatie van dit festival is vreselijk!
+        source: book
   - id: mettre
     term: mettre
     translation:
       - zetten, leggen, aantrekken
     examples:
       - text: Jonathan va mettre sa signature sur la carte.
+        translation: Jonathan gaat zijn handtekening op de kaart zetten.
+        source: book
   - id: autres
     term: autre(s)
     translation:
       - andere
     examples:
       - text: Vous avez vu les autres ?
+        translation: Hebben jullie de anderen gezien?
+        source: book
   - id: repondre
     term: répondre (à)
     translation:
       - antwoorden (op)
     examples:
       - text: Je ne peux pas répondre à cette question.
+        translation: Ik kan deze vraag niet beantwoorden.
+        source: book
   - id: entendre
     term: entendre
     translation:
       - horen
     examples:
       - text: Je ne t’entends plus !
+        translation: Ik hoor je niet meer!
+        source: book
   - id: attendre
     term: attendre
     translation:
       - wachten (op)
     examples:
       - text: Tu veux m’attendre ?
+        translation: Wil je op me wachten?
+        source: book
   - id: invitation
     term: l’invitation
     forms: { gender: v }
@@ -121,9 +157,13 @@ entries:
       - een uitnodiging
     examples:
       - text: Tu as une invitation pour le dîner ?
+        translation: Heb jij een uitnodiging voor het diner?
+        source: book
   - id: chaque-annee
     term: chaque année
     translation:
       - ieder jaar
     examples:
       - text: Chaque année, elles vont à Cannes.
+        translation: Ieder jaar gaan ze naar Cannes.
+        source: book

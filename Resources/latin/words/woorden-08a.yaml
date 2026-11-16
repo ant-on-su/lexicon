@@ -7,209 +7,419 @@ meta:
 entries:
   - id: ante
     term: ante + acc.
+    speak: ante
     translation:
       - voor
+    examples:
+      - text: Servus ante portam stat.
+        translation: De slaaf staat voor de poort.
+        speak: Serwus ante portam stat.
+        source: generated
 
   - id: bellum
     term: bellum
+    speak: bellum
     translation:
       - oorlog
+    examples:
+      - text: Bellum longum et crudele est.
+        translation: De oorlog is lang en wreed.
+        speak: Bellum longum et crudele est.
+        source: generated
 
   - id: cura
     term: cura
+    speak: cura
     translation:
       - zorg
+    examples:
+      - text: Mater liberos magna cura custodit.
+        translation: De moeder bewaakt de kinderen met grote zorg.
+        speak: Mater lìberos mangna cura custodit.
+        source: generated
 
   - id: dedi
     term: dedi
+    speak: dedi
     translation:
       - perf. van do (dare)
     form_of: do
+    examples:
+      - text: Amico donum dedi.
+        translation: Ik heb mijn vriend een geschenk gegeven.
+        speak: Amico donum dedi.
+        source: generated
 
   - id: dux
     term: dux
+    speak: ducs
     forms: { genitive: ducis, gender: m }
     translation:
       - leider
+    examples:
+      - text: Dux milites in castra ducit.
+        translation: De leider brengt de soldaten naar het legerkamp.
+        speak: Ducs mìlites in castra duchit.
+        source: generated
 
   - id: ea
     term: ea
+    speak: ea
     translation:
       - zij
       - deze, die (nom. enk. van is)   # CHECK
     card_per_sense: true
+    examples:
+      - text: Ea in villa habitat.
+        translation: Zij woont in het landhuis.
+        speak: Ea in willa hàbitat.
+        source: generated
 
   - id: egi
     term: egi
+    speak: eghi
     translation:
       - perf. van ago (agĕre)
     form_of: ago
+    examples:
+      - text: Multa egi.
+        translation: Ik heb veel gedaan.
+        speak: Multa eghi.
+        source: generated
 
   - id: exerceo
     term: exerceo (exercēre)
+    speak: ecsèrcheo
     translation:
       - (uit)oefenen
+    examples:
+      - text: Milites arma exercent.
+        translation: De soldaten oefenen met de wapens.
+        speak: Mìlites arma ecserchent.
+        source: generated
 
   - id: hic_haec_hoc
     term: hic, haec, hoc (huius)
+    speak: hic, haic, hoc
     translation:
       - deze, dit
+    examples:
+      - text: Hic gladius meus est.
+        translation: Dit zwaard is van mij.
+        speak: Hic glàdius meus est.
+        source: generated
 
   - id: hostis
     term: hostis
+    speak: hostis
     forms: { genitive: hostis, gender: m }
     translation:
       - vijand
+    examples:
+      - text: Hostes urbem petunt.
+        translation: De vijanden vallen de stad aan.
+        speak: Hostes urbem petunt.
+        source: generated
 
   - id: id
     term: id
+    speak: id
     translation:
       - het
       - dit, dat (nom./acc. onz. van is)
     card_per_sense: true
+    examples:
+      - text: Id non video.
+        translation: Dat zie ik niet.
+        speak: Id non wìdeo.
+        source: generated
 
   - id: inter
     term: inter + acc.
+    speak: inter
     translation:
       - tussen, te midden van
+    examples:
+      - text: Dux inter hostes stat.
+        translation: De leider staat te midden van de vijanden.
+        speak: Ducs inter hostes stat.
+        source: generated
 
   - id: is_ea_id
     term: is, ea, id (eius)
+    speak: is, ea, id
     translation:
       - hij/zij/het
       - deze/dit, die/dat
     card_per_sense: true
+    examples:
+      - text: Is dux fortis est.
+        translation: Die leider is dapper.
+        speak: Is ducs fortis est.
+        source: generated
 
   - id: ius
     term: ius
+    speak: ius
     forms: { genitive: iuris, gender: o }
     translation:
       - recht
+    examples:
+      - text: Populus ius suum petit.
+        translation: Het volk vraagt om zijn recht.
+        speak: Pòpulus ius suum petit.
+        source: generated
 
   - id: mos
     term: mos
+    speak: mos
     forms: { genitive: moris, gender: m }
     translation:
       - gewoonte, gebruik
+    examples:
+      - text: Mos Romanorum est.
+        translation: Het is een gewoonte van de Romeinen.
+        speak: Mos Romanorum est.
+        source: generated
 
   - id: munus
     term: munus
+    speak: munus
     forms: { genitive: muneris, gender: o }
     translation:
       - geschenk
       - taak
     card_per_sense: true
+    examples:
+      - text: Imperator populo munera dat.
+        translation: De keizer geeft het volk geschenken.
+        speak: Imperator pòpulo mùnera dat.
+        source: generated
 
   - id: novus_a_um
     term: novus, -a, -um
+    speak: nowus, nowa, nowum
     translation:
       - nieuw
+    examples:
+      - text: Villa nova pulchra est.
+        translation: Het nieuwe landhuis is mooi.
+        speak: Willa nowa pulchra est.
+        source: generated
 
   - id: pax
     term: pax
+    speak: pacs
     forms: { genitive: pacis, gender: v }
     translation:
       - vrede
+    examples:
+      - text: Post bellum pax venit.
+        translation: Na de oorlog komt de vrede.
+        speak: Post bellum pacs wenit.
+        source: generated
 
   - id: populus
     term: populus
+    speak: pòpulus
     translation:
       - volk
+    examples:
+      - text: Populus Romanus imperatorem amat.
+        translation: Het Romeinse volk houdt van de keizer.
+        speak: Pòpulus Romanus imperatorem amat.
+        source: generated
 
   - id: post
     term: post + acc.
+    speak: post
     translation:
       - achter
       - na
     card_per_sense: true
+    examples:
+      - text: Post cenam dormio.
+        translation: Na het avondeten slaap ik.
+        speak: Post chenam dòrmio.
+        source: generated
 
   - id: princeps
     term: princeps
+    speak: princheps
     forms: { genitive: principis, gender: m }
     translation:
       - de eerste, leider
       - keizer
     card_per_sense: true
+    examples:
+      - text: Princeps urbem regit.
+        translation: De keizer bestuurt de stad.
+        speak: Princheps urbem reghit.
+        source: generated
 
   - id: scelus
     term: scelus
+    speak: schelus
     forms: { genitive: sceleris, gender: o }
     translation:
       - misdaad
+    examples:
+      - text: Scelus grave est.
+        translation: De misdaad is ernstig.
+        speak: Schelus grawe est.
+        source: generated
 
   - id: sicut
     term: sicut
+    speak: sicut
     translation:
       - zoals
+    examples:
+      - text: Sicut pater, filius fortis est.
+        translation: Net zoals zijn vader is de zoon dapper.
+        speak: Sicut pater, fìlius fortis est.
+        source: generated
 
   - id: trado
     term: trado (tradĕre)
+    speak: trado
     forms: { perfect: tradidi }
     translation:
       - overhandigen, uitleveren, overleveren
+    examples:
+      - text: Servus domino epistulam tradit.
+        translation: De slaaf overhandigt zijn heer een brief.
+        speak: Serwus dòmino epìstulam tradit.
+        source: generated
 
   - id: urbs
     term: urbs
+    speak: urbs
     forms: { genitive: urbis, gender: v }
     translation:
       - stad
       - dé stad, Rome
     card_per_sense: true
+    examples:
+      - text: Urbs magna et pulchra est.
+        translation: De stad is groot en mooi.
+        speak: Urbs mangna et pulchra est.
+        source: generated
 
   - id: vinco
     term: vinco (vincĕre)
+    speak: winco
     forms: { perfect: vici }
     translation:
       - overwinnen, overtreffen
+    examples:
+      - text: Romani hostes vincunt.
+        translation: De Romeinen overwinnen de vijanden.
+        speak: Romani hostes wincunt.
+        source: generated
 
   - id: virtus
     term: virtus
+    speak: wirtus
     forms: { genitive: virtutis, gender: v }
     translation:
       - deugd, goede eigenschap
       - moed, dapperheid
     card_per_sense: true
+    examples:
+      - text: Virtus ducis magna est.
+        translation: De moed van de leider is groot.
+        speak: Wirtus duchis mangna est.
+        source: generated
 
   - id: eam
     term: eam
+    speak: eam
     translation:
       - acc. enk. van ea   # CHECK
+    examples:
+      - text: Pater eam vocat.
+        translation: Vader roept haar.
+        speak: Pater eam wocat.
+        source: generated
 
   - id: eum
     term: eum
+    speak: eum
     translation:
       - acc. enk. van is   # CHECK
+    examples:
+      - text: Rex eum laudat.
+        translation: De koning prijst hem.
+        speak: Recs eum laudat.
+        source: generated
 
   - id: me
     term: me (acc./abl.)
+    speak: me
     translation:
       - mij
+    examples:
+      - text: Dux me ad castra mittit.
+        translation: De leider stuurt mij naar het legerkamp.
+        speak: Ducs me ad castra mittit.
+        source: generated
 
   - id: nobis
     term: nobis (dat./abl.)
+    speak: nobis
     translation:
       - (aan/voor) ons (dat.)
       - ons (abl.)
     card_per_sense: true
+    examples:
+      - text: Pater nobis fabulam narrat.
+        translation: Vader vertelt ons een verhaal.
+        speak: Pater nobis fàbulam narrat.
+        source: generated
 
   - id: nostrum
     term: nostrum
+    speak: nostrum
     translation:
       - van ons
+    examples:
+      - text: Nemo nostrum timet.
+        translation: Niemand van ons is bang.
+        speak: Nemo nostrum timet.
+        source: generated
 
   - id: te
     term: te (acc./abl.)
+    speak: te
     translation:
       - jou, je
+    examples:
+      - text: Te video!
+        translation: Ik zie je!
+        speak: Te wìdeo!
+        source: generated
 
   - id: vestrum
     term: vestrum
+    speak: westrum
     translation:
       - van jullie
+    examples:
+      - text: Quis vestrum venit?
+        translation: Wie van jullie komt?
+        speak: Quis westrum wenit?
+        source: generated
 
   - id: vobis
     term: vobis (dat./abl.)
+    speak: wobis
     translation:
       - (aan/voor) jullie (dat.)
       - jullie (abl.)
     card_per_sense: true   # CHECK
+    examples:
+      - text: Vobis gratias ago.
+        translation: Ik dank jullie.
+        speak: Wobis gràtias ago.
+        source: generated

@@ -7,32 +7,68 @@ meta:
 entries:
   - id: alla
     term: ἀλλά, ἀλλ'
+    speak: allá
     translation:
       - maar
+    examples:
+      - text: οὐ φεύγω, ἀλλὰ μένω.
+        translation: Ik vlucht niet, maar ik blijf.
+        speak: oe pheugoo, allá ménoo.
+        source: generated
 
   - id: therion
     term: θηρίον, τό
+    speak: thèríon
     translation:
       - wild dier, beest
+    examples:
+      - text: τὸ θηρίον ἐν τῇ χώρᾳ οἰκεῖ.
+        translation: Het wilde dier woont in het land.
+        speak: to thèríon en tè chóóra oikéí.
+        source: generated
 
   - id: outos
     term: οὕτως, οὕτω
+    speak: hoetoos, hoetoo
     translation:
       - zo, op die manier
+    examples:
+      - text: οὕτως οἰκοῦσιν οἱ ἄνθρωποι.
+        translation: Zo wonen de mensen.
+        speak: hoetoos oikóésin hoi ánthroopoi.
+        source: generated
 
   - id: baino
     term: βαίνω
+    speak: báínoo
     translation:
       - gaan
+    examples:
+      - text: ὁ δοῦλος πρὸς τὴν οἰκίαν βαίνει.
+        translation: De slaaf gaat naar het huis.
+        speak: ho doelos pros tèn oikían báínei.
+        source: generated
 
   - id: pros
     term: πρός + acc.
+    speak: pros
     translation:
       - naar(toe), tot
+    examples:
+      - text: πρὸς τὸν δεσπότην βαίνω.
+        translation: Ik ga naar de meester.
+        speak: pros ton despótèn báínoo.
+        source: generated
 
   - id: phero
     term: φέρω, aor. ἤνεγκον
+    speak: phéroo
     translation:
       - dragen
       - brengen
     card_per_sense: true
+    examples:
+      - text: ὁ δοῦλος τὸ θηρίον φέρει.
+        translation: De slaaf draagt het dier.
+        speak: ho doelos to thèríon phérei.
+        source: generated

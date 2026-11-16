@@ -7,99 +7,207 @@ meta:
 entries:
   - id: amphi
     term: ἀμφί + acc.
+    speak: amphí
     translation:
       - rondom
+    examples:
+      - text: οἱ στρατιῶται ἀμφὶ τὸ πῦρ καθίζουσιν.
+        translation: De soldaten gaan rond het vuur zitten.
+        speak: hoi stratióótai amphí to pur kathídzoesin.
+        source: generated
 
   - id: axios
     term: ἄξιος + gen.
+    speak: aksios
     translation:
       - waard, waardig
+    examples:
+      - text: ὁ στρατηγὸς ἄξιος δόξης ἐστίν.
+        translation: De legeraanvoerder is roem waardig.
+        speak: ho stratègós aksios doksès estín.
+        source: generated
 
   - id: apobaino
     term: ἀποβαίνω
+    speak: apobáínoo
     translation:
       - weggaan
+    examples:
+      - text: ὁ ξένος ἀποβαίνει.
+        translation: De vreemdeling gaat weg.
+        speak: ho ksenos apobáínei.
+        source: generated
 
   - id: komizo
     term: κομίζω
+    speak: komídzoo
     translation:
       - brengen, halen
+    examples:
+      - text: ὁ δοῦλος σῖτον κομίζει.
+        translation: De slaaf haalt eten.
+        speak: ho doelos siton komídzei.
+        source: generated
 
   - id: melei_moi
     term: μέλει μοι
+    speak: melei moi
     translation:
       - (het) interesseert me
+    examples:
+      - text: οὐ μέλει μοι ὁ πόλεμος.
+        translation: De oorlog interesseert me niet.
+        speak: oe melei moi ho pólemos.
+        source: generated
 
   - id: meter
     term: μήτηρ, ἡ
+    speak: mètèr
     forms: { genitive: μητρός }
     translation:
       - moeder
+    examples:
+      - text: ἡ μήτηρ τὸν παῖδα φιλεῖ.
+        translation: De moeder houdt van het kind.
+        speak: hè mètèr ton paida philéí.
+        source: generated
 
   - id: oikade
     term: οἴκαδε
+    speak: oikadè
     translation:
       - naar huis
+    examples:
+      - text: οἴκαδε βαίνομεν.
+        translation: We gaan naar huis.
+        speak: oikadè báínomèn.
+        source: generated
 
   - id: deipnon
     term: δεῖπνον, τό
+    speak: deipnon
     translation:
       - maaltijd
+    examples:
+      - text: ἡ μήτηρ τὸ δεῖπνον παρέχει.
+        translation: Moeder zet de maaltijd op tafel.
+        speak: hè mètèr to deipnon paréchei.
+        source: generated
 
   - id: deuro
     term: δεῦρο
+    speak: deuro
     translation:
       - hier(heen)
+    examples:
+      - text: δεῦρο βαῖνε!
+        translation: Kom hierheen!
+        speak: deuro báínè!
+        source: generated
 
   - id: doxa
     term: δόξα, ἡ
+    speak: doksa
     translation:
       - mening
       - roem
     card_per_sense: true
+    examples:
+      - text: ἡ δόξα τοῦ στρατηγοῦ μεγάλη ἐστίν.
+        translation: De roem van de legeraanvoerder is groot.
+        speak: hè doksa toe stratègóé megálè estín.
+        source: generated
 
   - id: pas
     term: πᾶς, πᾶσα, πᾶν
+    speak: pas, pasa, pan
     forms: { genitive: "παντός, πάσης, παντός" }
     translation:
       - geheel (mnl., vrl., onz.)
       - ieder
       - mv. alle(n)
     card_per_sense: true
+    examples:
+      - text: πᾶσα ἡ στρατιὰ φεύγει.
+        translation: Het hele leger vlucht.
+        speak: pasa hè stratiá pheugei.
+        source: generated
 
   - id: peitho
     term: πείθω
+    speak: peithoo
     translation:
       - overtuigen, overreden
+    examples:
+      - text: τὸν πατέρα πείθω.
+        translation: Ik overtuig mijn vader.
+        speak: ton patéra peithoo.
+        source: generated
 
   - id: polemeo
     term: πολεμέω
+    speak: poleméoo
     translation:
       - oorlog voeren
+    examples:
+      - text: οἱ Ἀχαιοὶ τοῖς Τρωσὶ πολεμοῦσιν.
+        translation: De Grieken voeren oorlog tegen de Trojanen.
+        speak: hoi Achaioí tois Troosí polemóésin.
+        source: generated
 
   - id: pur
     term: πῦρ, τό
+    speak: pur
     forms: { genitive: πυρός }
     translation:
       - vuur
+    examples:
+      - text: τὸ πῦρ μέγα ἐστίν.
+        translation: Het vuur is groot.
+        speak: to pur méga estín.
+        source: generated
 
   - id: sitos
     term: σῖτος, ὁ
+    speak: sitos
     translation:
       - eten, voedsel
+    examples:
+      - text: σῖτον οὐκ ἔχομεν.
+        translation: We hebben geen eten.
+        speak: siton oek échomèn.
+        source: generated
 
   - id: soi
     term: σοί, σοι
+    speak: soi
     translation:
       - (aan/voor) jou/je, u (dativus pers. vnw.)
+    examples:
+      - text: δῶρόν σοι φέρω.
+        translation: Ik breng je een geschenk.
+        speak: dooron soi phéroo.
+        source: generated
 
   - id: sophron
     term: σώφρων
+    speak: sóóphroon
     forms: { genitive: σώφρονος }
     translation:
       - verstandig
+    examples:
+      - text: ἡ γυνὴ σώφρων ἐστίν.
+        translation: De vrouw is verstandig.
+        speak: hè gunè sóóphroon estín.
+        source: generated
 
   - id: chaire
     term: χαῖρε, χαίρετε
+    speak: cháírè, cháíretè
     translation:
       - gegroet
+    examples:
+      - text: χαῖρε, ὦ φίλε.
+        translation: Gegroet, vriend.
+        speak: cháírè, oo philè.
+        source: generated

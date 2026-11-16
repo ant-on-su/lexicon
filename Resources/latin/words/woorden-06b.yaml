@@ -7,96 +7,204 @@ meta:
 entries:
   - id: a_ab
     term: a, ab + abl.
+    speak: a, ab
     translation:
       - van(af), weg van
+    examples:
+      - text: Servus a regia currit.
+        translation: De slaaf rent weg van het paleis.
+        speak: Serwus a règhia currit.
+        source: generated
 
   - id: alius_a_ud
     term: alius, -a, -ud (alterius)
+    speak: àlius, àlia, àliud
     translation:
       - (een) ander
+    examples:
+      - text: Alius servus aquam portat.
+        translation: Een andere slaaf draagt water.
+        speak: Àlius serwus aquam portat.
+        source: generated
 
   - id: amicus
     term: amicus
+    speak: amicus
     translation:
       - vriend
+    examples:
+      - text: Amicus meus Romanus est.
+        translation: Mijn vriend is een Romein.
+        speak: Amicus meus Romanus est.
+        source: generated
 
   - id: aut
     term: aut
+    speak: aut
     translation:
       - of
+    examples:
+      - text: Vinum aut aquam bibis?
+        translation: Drink je wijn of water?
+        speak: Winum aut aquam bibis?
+        source: generated
 
   - id: captivus
     term: captivus
+    speak: captiwus
     translation:
       - krijgsgevangene
+    examples:
+      - text: Romani captivos in castra ducunt.
+        translation: De Romeinen brengen de krijgsgevangenen naar het legerkamp.
+        speak: Romani captiwos in castra ducunt.
+        source: generated
 
   - id: de
     term: de + abl.
+    speak: de
     translation:
       - van (boven)...af
       - over, aangaande
     card_per_sense: true
+    examples:
+      - text: Pater de patria narrat.
+        translation: Vader vertelt over het vaderland.
+        speak: Pater de pàtria narrat.
+        source: generated
 
   - id: ei
     term: ei (dat.)
+    speak: ei
     translation:
       - (aan) hem/haar
+    examples:
+      - text: Puer ei donum dat.
+        translation: De jongen geeft hem een geschenk.
+        speak: Puer ei donum dat.
+        source: generated
 
   - id: femina
     term: femina
+    speak: fèmina
     translation:
       - vrouw
+    examples:
+      - text: Femina filiam suam vocat.
+        translation: De vrouw roept haar dochter.
+        speak: Fèmina fìliam suam wocat.
+        source: generated
 
   - id: gigno
     term: gigno (gignĕre)
+    speak: ghingno
     forms: { perfect: genui }
     translation:
       - voortbrengen, baren
+    examples:
+      - text: Terra multum frumentum gignit.
+        translation: De aarde brengt veel graan voort.
+        speak: Terra multum frumentum ghingnit.
+        source: generated
 
   - id: in
     term: in + abl.
+    speak: in
     translation:
       - in, op, bij
+    examples:
+      - text: Liberi in agro ludunt.
+        translation: De kinderen spelen op de akker.
+        speak: Lìberi in agro ludunt.
+        source: generated
 
   - id: libero
     term: libero (liberare) + abl.
+    speak: lìbero
     translation:
       - bevrijden van
+    examples:
+      - text: Rex captivos poena liberat.
+        translation: De koning bevrijdt de krijgsgevangenen van hun straf.
+        speak: Recs captiwos poina lìberat.
+        source: generated
 
   - id: movi
     term: movi
+    speak: mowi
     translation:
       - perf. van moveo (movēre)
     form_of: moveo
+    examples:
+      - text: Mensam movi.
+        translation: Ik heb de tafel verplaatst.
+        speak: Mensam mowi.
+        source: generated
 
   - id: qui_quae_quod
     term: qui, quae, quod (betr. vnw.)   # CHECK
+    speak: qui, quai, quod
     translation:
       - die/dat, wie/wat
+    examples:
+      - text: Puer, qui in agro ludit, filius meus est.
+        translation: De jongen die op de akker speelt, is mijn zoon.
+        speak: Puer, qui in agro ludit, fìlius meus est.
+        source: generated
 
   - id: roma
     term: Roma
+    speak: Roma
     translation:
       - Rome
+    examples:
+      - text: Roma magna et pulchra est.
+        translation: Rome is groot en mooi.
+        speak: Roma mangna et pulchra est.
+        source: generated
 
   - id: statuo
     term: statuo (statuĕre)
+    speak: stàtuo
     forms: { perfect: statui }
     translation:
       - besluiten
+    examples:
+      - text: Rex statuit pugnare.
+        translation: De koning besluit te vechten.
+        speak: Recs stàtuit pungnare.
+        source: generated
 
   - id: timeo
     term: timeo (timēre)
+    speak: tìmeo
     forms: { perfect: timui }
     translation:
       - vrezen, bang zijn (voor)
+    examples:
+      - text: Puer equum timet.
+        translation: De jongen is bang voor het paard.
+        speak: Puer equum timet.
+        source: generated
 
   - id: totus_a_um
     term: totus, -a, -um
+    speak: totus, tota, totum
     translation:
       - (ge)heel
+    examples:
+      - text: Totam silvam video.
+        translation: Ik zie het hele bos.
+        speak: Totam silwam wìdeo.
+        source: generated
 
   - id: tuus_a_um
     term: tuus, -a, -um
+    speak: tuus, tua, tuum
     translation:
       - jouw
+    examples:
+      - text: Ubi est pater tuus?
+        translation: Waar is jouw vader?
+        speak: Ubi est pater tuus?
+        source: generated

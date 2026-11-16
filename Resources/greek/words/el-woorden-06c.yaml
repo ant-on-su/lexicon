@@ -7,86 +7,188 @@ meta:
 entries:
   - id: airo
     term: αἴρω, aor. ἦρα
+    speak: áíroo
     translation:
       - optillen, oppakken
+    examples:
+      - text: ὁ δοῦλος τὴν πέτραν αἴρει.
+        translation: De slaaf tilt het rotsblok op.
+        speak: ho doelos tèn pétran áírei.
+        source: generated
 
   - id: andreia
     term: ἀνδρεία, ἡ
+    speak: andréía
     translation:
       - moed, dapperheid
+    examples:
+      - text: ἡ ἀνδρεία τοῦ φίλου μεγάλη ἐστίν.
+        translation: De moed van de vriend is groot.
+        speak: hè andréía toe philoe megálè estín.
+        source: generated
 
   - id: anemos
     term: ἄνεμος, ὁ
+    speak: ánemos
     translation:
       - wind
+    examples:
+      - text: ὁ ἄνεμος ἰσχυρός ἐστιν.
+        translation: De wind is sterk.
+        speak: ho ánemos ischurós estin.
+        source: generated
 
   - id: emin
     term: ἡμῖν
+    speak: hèmín
     translation:
       - (aan/voor) ons (dativus pers. vnw.)
+    examples:
+      - text: ἡ θεὸς ἡμῖν δῶρα παρέχει.
+        translation: De godin geeft ons geschenken.
+        speak: hè theós hèmín doora paréchei.
+        source: generated
 
   - id: theos
     term: θεός, ἡ
+    speak: theós
     translation:
       - godin
+    examples:
+      - text: ἡ θεὸς τὸ πλοῖον σῴζει.
+        translation: De godin redt het schip.
+        speak: hè theós to plóíon sóódzei.
+        source: generated
 
   - id: katheudo
     term: καθεύδω
+    speak: katheudoo
     translation:
       - slapen
+    examples:
+      - text: τὸ τέκνον καθεύδει.
+        translation: Het kind slaapt.
+        speak: to teknon katheudei.
+        source: generated
 
   - id: monos
     term: μόνος
+    speak: monos
     translation:
       - alleen
+    examples:
+      - text: μόνος ἐν τῇ νήσῳ μένω.
+        translation: Ik blijf alleen op het eiland.
+        speak: monos en tè nèsoo ménoo.
+        source: generated
 
   - id: nesos
     term: νῆσος, ἡ
+    speak: nèsos
     translation:
       - eiland
+    examples:
+      - text: ἡ νῆσος μικρά ἐστιν.
+        translation: Het eiland is klein.
+        speak: hè nèsos mikrá estin.
+        source: generated
 
   - id: bia
     term: βία, ἡ
+    speak: bía
     translation:
       - kracht, geweld
+    examples:
+      - text: βίᾳ εἰς τὴν οἰκίαν εἰσβαίνουσιν.
+        translation: Met geweld gaan ze het huis binnen.
+        speak: bía eis tèn oikían eisbáínoesin.
+        source: generated
 
   - id: eisbaino
     term: εἰσβαίνω
+    speak: eisbáínoo
     translation:
       - ingaan, komen in
+    examples:
+      - text: εἰς τὸ πλοῖον εἰσβαίνομεν.
+        translation: We gaan aan boord van het schip.
+        speak: eis to plóíon eisbáínomèn.
+        source: generated
 
   - id: ekbaino
     term: ἐκβαίνω
+    speak: ekbáínoo
     translation:
       - gaan uit
+    examples:
+      - text: ἐκ τοῦ πλοίου ἐκβαίνουσιν.
+        translation: Ze gaan van het schip af.
+        speak: ek toe plóíoe ekbáínoesin.
+        source: generated
 
   - id: exo
     term: ἔξω
+    speak: eksoo
     translation:
       - buiten
+    examples:
+      - text: ὁ ἵππος ἔξω μένει.
+        translation: Het paard blijft buiten.
+        speak: ho hippos eksoo ménei.
+        source: generated
 
   - id: emas
     term: ἡμᾶς
+    speak: hèmás
     translation:
       - ons (accusativus pers. vnw.)
+    examples:
+      - text: ὁ φίλος ἡμᾶς καλεῖ.
+        translation: De vriend roept ons.
+        speak: ho philos hèmás kaléí.
+        source: generated
 
   - id: parthenos
     term: παρθένος, ἡ
+    speak: parthénos
     translation:
       - (ongetrouwd) meisje, maagd
+    examples:
+      - text: ἡ παρθένος καλή ἐστιν.
+        translation: Het meisje is mooi.
+        speak: hè parthénos kalè estin.
+        source: generated
 
   - id: soteria
     term: σωτηρία, ἡ
+    speak: sootèría
     translation:
       - redding, behoud
+    examples:
+      - text: σωτηρίαν ζητοῦμεν.
+        translation: We zoeken redding.
+        speak: sootèrían dzètóémèn.
+        source: generated
 
   - id: telos
     term: τέλος
+    speak: telos
     translation:
       - ten slotte (bijwoord)
+    examples:
+      - text: τέλος ἐκ τῆς νήσου φεύγομεν.
+        translation: Ten slotte vluchten we van het eiland.
+        speak: telos ek tès nèsoe phéugomèn.
+        source: generated
 
   - id: era
     term: ἦρα (inf. ἆραι)
+    speak: èra
     translation:
       - ik tilde op, ik pakte op (aor. van αἴρω)  # CHECK
     form_of: airo
+    examples:
+      - text: τὴν πέτραν ἦρα.
+        translation: Ik tilde het rotsblok op.
+        speak: tèn pétran èra.
+        source: generated

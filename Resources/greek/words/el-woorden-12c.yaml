@@ -7,63 +7,129 @@ meta:
 entries:
   - id: etton
     term: ἥττων
+    speak: hèttoon
     forms: { genitive: ἥττονος }
     translation:
       - minder, zwakker
+    examples:
+      - text: ἡ στρατιὰ ἥττων ἐστὶ τῶν πολεμίων.
+        translation: Het leger is zwakker dan de vijanden.
+        speak: hè stratiá hèttoon esti toon polemíoon.
+        source: generated
 
   - id: kateschon
     term: κατέσχον (inf. κατασχεῖν)
+    speak: katéschon
     translation:
       - ik had in mijn macht, ik hield vast, ik beheerste (aor. van κατέχω)
     form_of: katecho
+    examples:
+      - text: τὴν νῆσον κατέσχον.
+        translation: Ik had het eiland in mijn macht.
+        speak: tèn nèson katéschon.
+        source: generated
 
   - id: ge
     term: γῆ, ἡ
+    speak: gè
     translation:
       - aarde
       - grond, land
     card_per_sense: true
+    examples:
+      - text: ἡ γῆ μεγάλη ἐστίν.
+        translation: De aarde is groot.
+        speak: hè gè megálè estín.
+        source: generated
 
   - id: eschon
     term: ἔσχον (inf. σχεῖν)
+    speak: eschon
     translation:
       - ik had, ik kreeg (aor. van ἔχω)
     form_of: echo
+    examples:
+      - text: πολὺν σῖτον ἔσχον.
+        translation: Ik kreeg veel eten.
+        speak: polún siton eschon.
+        source: generated
 
   - id: echo
     term: ἔχω, imperf. εἶχον, aor. ἔσχον
+    speak: échoo
     translation:
       - hebben
+    examples:
+      - text: ἀδελφὸν ἔχω.
+        translation: Ik heb een broer.
+        speak: adelphón échoo.
+        source: generated
 
   - id: pleion
     term: πλείων
+    speak: pléíoon
     forms: { genitive: πλείονος }
     translation:
       - meer
+    examples:
+      - text: πλείονες στρατιῶται ἥκουσιν.
+        translation: Er zijn meer soldaten gekomen.
+        speak: pléíonès stratióótai hèkoesin.
+        source: generated
 
   - id: seauton
     term: σεαυτόν, σεαυτήν
+    speak: seautón, seautèn
     translation:
       - jezelf (accusativus manl., vrl. enk.)
+    examples:
+      - text: γνῶθι σεαυτόν.
+        translation: Ken jezelf.
+        speak: gnoothi seautón.
+        source: generated
 
   - id: sch
     term: σχ-
+    speak: sch
     translation:
       - aoristusstam van ἔχω
+    examples:
+      - text: ἐθέλω ἵππον σχεῖν.
+        translation: Ik wil een paard krijgen.
+        speak: ethéloo hippon schéín.
+        source: generated
 
   - id: tachistos
     term: τάχιστος
+    speak: tachistos
     translation:
       - snelst
       - zeer/heel snel
     card_per_sense: true
+    examples:
+      - text: ὁ τάχιστος ἵππος νικᾷ.
+        translation: Het snelste paard wint.
+        speak: ho tachistos hippos niká.
+        source: generated
 
   - id: os_tachista
     term: ὡς τάχιστα (bijw.)
+    speak: hoos tachista
     translation:
       - zo snel mogelijk
+    examples:
+      - text: ὡς τάχιστα φεύγομεν.
+        translation: We vluchten zo snel mogelijk.
+        speak: hoos tachista phéugomèn.
+        source: generated
 
   - id: oti_tachista
     term: ὅτι τάχιστα (bijw.)
+    speak: hoti tachista
     translation:
       - zo snel mogelijk
+    examples:
+      - text: ὅτι τάχιστα οἴκαδε τρέχω.
+        translation: Ik ren zo snel mogelijk naar huis.
+        speak: hoti tachista oikadè tréchoo.
+        source: generated

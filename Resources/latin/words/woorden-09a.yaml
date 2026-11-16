@@ -7,140 +7,278 @@ meta:
 entries:
   - id: coepi
     term: coepi (perf.)
+    speak: coipi
     translation:
       - ik ben begonnen, ik begin
+    examples:
+      - text: Puer currere coepit.
+        translation: De jongen begon te rennen.
+        speak: Puer cùrrere coipit.
+        source: generated
 
   - id: corpus
     term: corpus
+    speak: corpus
     forms: { genitive: corporis, gender: o }
     translation:
       - lichaam
+    examples:
+      - text: Corpus regis in terra iacet.
+        translation: Het lichaam van de koning ligt op de grond.
+        speak: Corpus reghis in terra iachet.
+        source: generated
 
   - id: cum
     term: cum + conj.
+    speak: cum
     translation:
       - toen, nadat
       - omdat
       - hoewel
     card_per_sense: true
+    examples:
+      - text: Cum rex vocavisset, servus venit.
+        translation: Toen de koning had geroepen, kwam de slaaf.
+        speak: Cum recs wocawisset, serwus wenit.
+        source: generated
 
   - id: facilis_is_e
     term: facilis, -is, -e (facilis)
+    speak: fàchilis, fàchile
     translation:
       - gemakkelijk
+    examples:
+      - text: Hoc iter facile est.
+        translation: Deze weg is gemakkelijk.
+        speak: Hoc iter fàchile est.
+        source: generated
 
   - id: facio
     term: facio (facĕre)
+    speak: fàchio
     forms: { perfect: feci }
     translation:
       - maken
       - doen
     card_per_sense: true
+    examples:
+      - text: Mater cenam facit.
+        translation: Moeder maakt het avondeten.
+        speak: Mater chenam fachit.
+        source: generated
 
   - id: fingo
     term: fingo (fingĕre)
+    speak: fingo
     forms: { perfect: finxi }
     translation:
       - vormen
       - verzinnen
     card_per_sense: true
+    examples:
+      - text: Puer fabulam fingit.
+        translation: De jongen verzint een verhaal.
+        speak: Puer fàbulam fingit.
+        source: generated
 
   - id: fluvius
     term: fluvius
+    speak: flùwius
     translation:
       - rivier
+    examples:
+      - text: Fluvius altus est.
+        translation: De rivier is diep.
+        speak: Flùwius altus est.
+        source: generated
 
   - id: humus
     term: humus
+    speak: humus
     forms: { gender: v }
     translation:
       - grond
+    examples:
+      - text: Servus in humo sedet.
+        translation: De slaaf zit op de grond.
+        speak: Serwus in humo sedet.
+        source: generated
 
   - id: iudex
     term: iudex
+    speak: iudecs
     forms: { genitive: iudicis, gender: m }
     translation:
       - rechter
+    examples:
+      - text: Iudex servum liberat.
+        translation: De rechter laat de slaaf vrij.
+        speak: Iudecs serwum lìberat.
+        source: generated
 
   - id: iudico
     term: iudico (iudicare)
+    speak: iùdico
     translation:
       - oordelen
+    examples:
+      - text: Iudex bene iudicat.
+        translation: De rechter oordeelt goed.
+        speak: Iudecs bene iùdicat.
+        source: generated
 
   - id: possideo
     term: possideo (possidēre)
+    speak: possìdeo
     translation:
       - bezitten
+    examples:
+      - text: Dominus multas villas possidet.
+        translation: De heer bezit veel landhuizen.
+        speak: Dòminus multas willas pòssidet.
+        source: generated
 
   - id: praebeo
     term: praebeo (praebēre)
+    speak: pràibeo
     translation:
       - verschaffen, aanbieden
+    examples:
+      - text: Fluvius aquam praebet.
+        translation: De rivier verschaft water.
+        speak: Flùwius aquam praibet.
+        source: generated
 
   - id: primus_a_um
     term: primus, -a, -um
+    speak: primus, prima, primum
     translation:
       - eerste
+    examples:
+      - text: Primus in urbem venit.
+        translation: Hij komt als eerste de stad binnen.
+        speak: Primus in urbem wenit.
+        source: generated
 
   - id: prohibeo
     term: prohibeo (prohibēre)
+    speak: prohìbeo
     translation:
       - verhinderen
+    examples:
+      - text: Fluvius hostes prohibet.
+        translation: De rivier houdt de vijanden tegen.
+        speak: Flùwius hostes pròhibet.
+        source: generated
 
   - id: quoniam
     term: quoniam
+    speak: quòniam
     translation:
       - aangezien, omdat
+    examples:
+      - text: Quoniam nox est, dormimus.
+        translation: Omdat het nacht is, slapen we.
+        speak: Quòniam nocs est, dormimus.
+        source: generated
 
   - id: secum
     term: secum
+    speak: secum
     translation:
       - met/bij zichzelf (= cum se)
+    examples:
+      - text: Puer gladium secum portat.
+        translation: De jongen draagt een zwaard bij zich.
+        speak: Puer glàdium secum portat.
+        source: generated
 
   - id: spiritus
     term: spiritus
+    speak: spìritus
     forms: { genitive: spiritus }
     translation:
       - adem
       - geest
     card_per_sense: true
+    examples:
+      - text: Spiritum ducere non potest.
+        translation: Hij kan geen adem halen.
+        speak: Spìritum dùchere non potest.
+        source: generated
 
   - id: surgo
     term: surgo (surgĕre)
+    speak: surgo
     forms: { perfect: surrexi }
     translation:
       - zich oprichten, opstaan
+    examples:
+      - text: Sol surgit.
+        translation: De zon komt op.
+        speak: Sol surghit.
+        source: generated
 
   - id: tellus
     term: tellus
+    speak: tellus
     forms: { genitive: telluris, gender: v }
     translation:
       - aarde
+    examples:
+      - text: Tellus omnia gignit.
+        translation: De aarde brengt alles voort.
+        speak: Tellus òmnia ghingnit.
+        source: generated
 
   - id: tollo
     term: tollo (tollĕre)
+    speak: tollo
     forms: { perfect: sustuli }
     translation:
       - optillen, oppakken
       - wegnemen
     card_per_sense: true
+    examples:
+      - text: Puer lapidem tollit.
+        translation: De jongen pakt een steen op.
+        speak: Puer làpidem tollit.
+        source: generated
 
   - id: transeo
     term: transeo (transire)
+    speak: trànseo
     translation:
       - overgaan, oversteken
       - voorbijgaan (van tijd)
     card_per_sense: true
+    examples:
+      - text: Romani fluvium transeunt.
+        translation: De Romeinen steken de rivier over.
+        speak: Romani flùwium trànseunt.
+        source: generated
 
   - id: ut
     term: ut + conj.
+    speak: ut
     translation:
       - opdat, om te
       - zodat
       - dat
     card_per_sense: true
+    examples:
+      - text: Laboramus, ut vivamus.
+        translation: We werken om te leven.
+        speak: Laboramus, ut wiwamus.
+        source: generated
 
   - id: videtur
     term: videtur
+    speak: widetur
     translation:
       - hij/zij/het schijnt
+    examples:
+      - text: Rex iratus esse videtur.
+        translation: De koning schijnt boos te zijn.
+        speak: Recs iratus esse widetur.
+        source: generated

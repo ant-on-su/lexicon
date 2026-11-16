@@ -7,40 +7,88 @@ meta:
 entries:
   - id: alla
     term: ἀλλά, ἀλλ'
+    speak: allá
     translation:
       - maar (kom) (bij gebiedende wijs)  # CHECK
+    examples:
+      - text: ἀλλὰ μένε!
+        translation: Kom, blijf toch!
+        speak: allá ménè!
+        source: generated
 
   - id: mega
     term: μέγα
+    speak: méga
     translation:
       - erg, zeer (bijwoord)
+    examples:
+      - text: μέγα χαίρω.
+        translation: Ik ben erg blij.
+        speak: méga cháíroo.
+        source: generated
 
   - id: oligos
     term: ὀλίγος
+    speak: olígos
     translation:
       - weinig, gering
+    examples:
+      - text: ὀλίγον σῖτον ἔχομεν.
+        translation: We hebben weinig eten.
+        speak: olígon siton échomèn.
+        source: generated
 
   - id: dakruon
     term: δάκρυον, τό
+    speak: dakruon
     translation:
       - traan
+    examples:
+      - text: ἡ μήτηρ τὰ δάκρυα κρύπτει.
+        translation: De moeder verbergt haar tranen.
+        speak: hè mètèr ta dakrua kruptei.
+        source: generated
 
   - id: elpizo
     term: ἐλπίζω (+ inf.)
+    speak: elpídzoo
     translation:
       - hopen, verwachten (te)
+    examples:
+      - text: ἐλπίζω τὸν πατέρα ἥκειν.
+        translation: Ik hoop dat vader komt.
+        speak: elpídzoo ton patéra hèkein.
+        source: generated
 
   - id: tek
     term: τεκ-
+    speak: tek
     translation:
       - aoristusstam van τίκτω
+    examples:
+      - text: ἡ θεὰ υἱὸν ἔτεκεν.
+        translation: De godin baarde een zoon.
+        speak: hè theá huïón étekèn.
+        source: generated
 
   - id: tikto
     term: τίκτω, aor. ἔτεκον
+    speak: tiktoo
     translation:
       - baren, ter wereld brengen
+    examples:
+      - text: ἡ γυνὴ παῖδα τίκτει.
+        translation: De vrouw brengt een kind ter wereld.
+        speak: hè gunè paida tiktei.
+        source: generated
 
   - id: choreo
     term: χωρέω
+    speak: chooréoo
     translation:
       - gaan, komen
+    examples:
+      - text: πρὸς τὴν θάλατταν χωροῦμεν.
+        translation: We gaan naar de zee.
+        speak: pros tèn thálattan chooróémèn.
+        source: generated

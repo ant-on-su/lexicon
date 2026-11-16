@@ -11,6 +11,8 @@ entries:
       - ik zou willen
     examples:
       - text: Je voudrais deux croissants.
+        translation: Ik wil graag twee croissants.
+        source: book
   - id: appli
     term: l’appli
     forms: { gender: v }
@@ -18,54 +20,72 @@ entries:
       - de app
     examples:
       - text: J’ai beaucoup d’applis sur mon téléphone.
+        translation: Ik heb veel apps op mijn telefoon.
+        source: book
   - id: rapide
     term: rapide
     translation:
       - snel
     examples:
       - text: Le service au bistro est rapide.
+        translation: De bediening in de bistro is snel.
+        source: book
   - id: poubelle
     term: la poubelle
     translation:
       - de vuilnisbak
     examples:
       - text: On jette les restes dans la poubelle.
+        translation: De restjes gooien we in de vuilnisbak.
+        source: book
   - id: choix
     term: le choix
     translation:
       - de keuze
     examples:
       - text: Il y a beaucoup de choix dans ce restaurant.
+        translation: Er is veel keuze in dit restaurant.
+        source: book
   - id: pomme
     term: la pomme
     translation:
       - de appel
     examples:
       - text: Je coupe la pomme en quatre.
+        translation: Ik snijd de appel in vieren.
+        source: book
   - id: banane
     term: la banane
     translation:
       - de banaan
     examples:
       - text: La banane est jaune.
+        translation: De banaan is geel.
+        source: book
   - id: fraise
     term: la fraise
     translation:
       - de aardbei
     examples:
       - text: Juliette adore les fraises.
+        translation: Juliette is dol op aardbeien.
+        source: book
   - id: melon
     term: le melon
     translation:
       - de meloen
     examples:
       - text: Ce melon est très sucré.
+        translation: Deze meloen is heel zoet.
+        source: book
   - id: reserver
     term: réserver
     translation:
       - reserveren
     examples:
       - text: Je voudrais réserver une table pour quatre personnes.
+        translation: Ik wil graag een tafel voor vier personen reserveren.
+        source: book
   - id: entree
     term: l’entrée
     forms: { gender: v }
@@ -73,57 +93,77 @@ entries:
       - het voorgerecht
     examples:
       - text: Comme entrée, je prends une soupe.
+        translation: Als voorgerecht neem ik soep.
+        source: book
   - id: plat-principal
     term: le plat principal
     translation:
       - het hoofdgerecht
     examples:
       - text: Nous préparons le plat principal ce soir.
+        translation: We maken vanavond het hoofdgerecht klaar.
+        source: book
   - id: dessert
     term: le dessert
     translation:
       - het nagerecht / het toetje
     examples:
       - text: Quel est ton dessert préféré ?
+        translation: Wat is jouw lievelingstoetje?
+        source: book
   - id: local
     term: local
     translation:
       - plaatselijk / lokaal
     examples:
       - text: La pâtisserie locale fait de bons gâteaux.
+        translation: De plaatselijke banketbakker maakt lekkere taarten.
+        source: book
   - id: nourriture
     term: la nourriture
     translation:
       - het voedsel / het eten
     examples:
       - text: Comment est la nourriture dans votre cantine ?
+        translation: Hoe is het eten in jullie kantine?
+        source: book
   - id: jeter
     term: jeter
     translation:
       - (weg)gooien
     examples:
       - text: Jette ça à la poubelle, Léo !
+        translation: Gooi dat in de vuilnisbak, Léo!
+        source: book
   - id: choisir
     term: choisir
     translation:
       - kiezen
     examples:
       - text: Je choisis la salade aux tomates. Et toi ?
+        translation: Ik kies de tomatensalade. En jij?
+        source: book
   - id: noter-la-qualite
     term: noter la qualité
     translation:
       - beoordelen / een review geven
     examples:
       - text: On peut noter la qualité de ce restaurant.
+        translation: Je kunt dit restaurant beoordelen.
+        source: book
   - id: bio
     term: bio
     translation:
       - biologisch
     examples:
       - text: Je préfère la nourriture bio.
+        translation: Ik heb liever biologisch eten.
+        source: book
   - id: saucisse
     term: la saucisse
     translation:
       - de (warme) worst
     examples:
       - text: Ce soir, on mange des saucisses grillées avec une salade verte.
+        translation: Vanavond eten we gegrilde worstjes met een groene salade.
+        source: book

@@ -7,145 +7,295 @@ meta:
 entries:
   - id: accedo
     term: accedo (accedĕre)
+    speak: acchedo
     forms: { perfect: accessi }
     translation:
       - naderen, (erbij) komen, ernaar toe gaan   # CHECK
+    examples:
+      - text: Servus ad regem accedit.
+        translation: De slaaf gaat naar de koning toe.
+        speak: Serwus ad reghem acchedit.
+        source: generated
 
   - id: ait
     term: ait
+    speak: ait
     translation:
       - (hij/zij) zegt, beweert
       - (hij/zij) zei, beweerde
     card_per_sense: true
+    examples:
+      - text: Servus ait se laetum esse.
+        translation: De slaaf zegt dat hij blij is.
+        speak: Serwus ait se laitum esse.
+        source: generated
 
   - id: altus_a_um
     term: altus, -a, -um
+    speak: altus, alta, altum
     translation:
       - hoog
       - diep
     card_per_sense: true
+    examples:
+      - text: Regia alta est.
+        translation: Het paleis is hoog.
+        speak: Règhia alta est.
+        source: generated
 
   - id: argentum
     term: argentum
+    speak: arghentum
     translation:
       - zilver
+    examples:
+      - text: Rex aurum et argentum habet.
+        translation: De koning heeft goud en zilver.
+        speak: Recs aurum et arghentum habet.
+        source: generated
 
   - id: aureus_a_um
     term: aureus, -a, -um
+    speak: àureus, àurea, àureum
     translation:
       - gouden, van goud
+    examples:
+      - text: Rex gladium aureum habet.
+        translation: De koning heeft een gouden zwaard.
+        speak: Recs glàdium àureum habet.
+        source: generated
 
   - id: certus_a_um
     term: certus, -a, -um
+    speak: chertus, cherta, chertum
     translation:
       - zeker
+    examples:
+      - text: Victoria certa est.
+        translation: De overwinning is zeker.
+        speak: Wictòria cherta est.
+        source: generated
 
   - id: cingo
     term: cingo (cingĕre)
+    speak: chingo
     translation:
       - omringen
+    examples:
+      - text: Agri regiam cingunt.
+        translation: Akkers omringen het paleis.
+        speak: Agri règhiam chingunt.
+        source: generated
 
   - id: cognosco
     term: cognosco (cognoscĕre)
+    speak: congnosco
     forms: { perfect: cognovi }
     translation:
       - leren kennen, vernemen
+    examples:
+      - text: Puer verba regis cognoscit.
+        translation: De jongen verneemt de woorden van de koning.
+        speak: Puer werba reghis congnoschit.
+        source: generated
 
   - id: depono
     term: depono (deponĕre)
+    speak: depono
     forms: { perfect: deposui }
     translation:
       - neerleggen, afleggen
+    examples:
+      - text: Servus gladium deponit.
+        translation: De slaaf legt het zwaard neer.
+        speak: Serwus glàdium deponit.
+        source: generated
 
   - id: dixi
     term: dixi
+    speak: dicsi
     translation:
       - perf. van dico (dicĕre)
     form_of: dico
+    examples:
+      - text: Verbum non dixi.
+        translation: Ik heb geen woord gezegd.
+        speak: Werbum non dicsi.
+        source: generated
 
   - id: dubito
     term: dubito (dubitare)
+    speak: dùbito
     translation:
       - twijfelen
       - aarzelen
     card_per_sense: true
+    examples:
+      - text: Puer timidus dubitat.
+        translation: De bange jongen aarzelt.
+        speak: Puer tìmidus dùbitat.
+        source: generated
 
   - id: gaudeo
     term: gaudeo (gaudēre) (+ abl.)
+    speak: gàudeo
     translation:
       - blij zijn (met)
       - zich verheugen (over)
     card_per_sense: true
+    examples:
+      - text: Rex victoria gaudet.
+        translation: De koning is blij met de overwinning.
+        speak: Recs wictòria gaudet.
+        source: generated
 
   - id: intro
     term: intro (intrare)
+    speak: intro
     translation:
       - binnenkomen, binnengaan
+    examples:
+      - text: Nuntius regiam intrat.
+        translation: De bode gaat het paleis binnen.
+        speak: Nùntius règhiam intrat.
+        source: generated
 
   - id: iussi
     term: iussi
+    speak: iussi
     translation:
       - perf. van iubeo (iubēre)
     form_of: iubeo
+    examples:
+      - text: Servos laborare iussi.
+        translation: Ik heb de slaven bevolen te werken.
+        speak: Serwos laborare iussi.
+        source: generated
 
   - id: puer
     term: puer
+    speak: puer
     forms: { genitive: pueri }
     translation:
       - jongen
+    examples:
+      - text: Puer in agro ludit.
+        translation: De jongen speelt op de akker.
+        speak: Puer in agro ludit.
+        source: generated
 
   - id: quod
     term: quod
+    speak: quod
     translation:
       - omdat
+    examples:
+      - text: Laetus sum, quod sol lucet.
+        translation: Ik ben blij, omdat de zon schijnt.
+        speak: Laitus sum, quod sol luchet.
+        source: generated
 
   - id: respondi
     term: respondi
+    speak: respondi
     translation:
       - perf. van respondeo (respondēre)
     form_of: respondeo
+    examples:
+      - text: Regi statim respondi.
+        translation: Ik heb de koning meteen geantwoord.
+        speak: Reghi statim respondi.
+        source: generated
 
   - id: sic
     term: sic
+    speak: sic
     translation:
       - zo
+    examples:
+      - text: Sic rex dixit.
+        translation: Zo sprak de koning.
+        speak: Sic recs dicsit.
+        source: generated
 
   - id: sol
     term: sol
+    speak: sol
     forms: { genitive: solis, gender: m }
     translation:
       - zon
+    examples:
+      - text: Sol altus est.
+        translation: De zon staat hoog.
+        speak: Sol altus est.
+        source: generated
 
   - id: tibi
     term: tibi (dat.)
+    speak: tibi
     translation:
       - (aan/voor) jou
+    examples:
+      - text: Tibi donum do.
+        translation: Ik geef jou een geschenk.
+        speak: Tibi donum do.
+        source: generated
 
   - id: tum
     term: tum (bijw.)
+    speak: tum
     translation:
       - dan, toen
+    examples:
+      - text: Tum puer currere incipit.
+        translation: Toen begon de jongen te rennen.
+        speak: Tum puer cùrrere ìnchipit.
+        source: generated
 
   - id: veni
     term: veni
+    speak: weni
     translation:
       - perf. van venio (venire)
     form_of: venio
+    examples:
+      - text: Heri ad regiam veni.
+        translation: Gisteren ben ik naar het paleis gekomen.
+        speak: Heri ad règhiam weni.
+        source: generated
 
   - id: eram
     term: eram
+    speak: eram
     translation:
       - ik was imperf. van sum (esse)
     form_of: sum
+    examples:
+      - text: Heri in agro eram.
+        translation: Gisteren was ik op de akker.
+        speak: Heri in agro eram.
+        source: generated
 
   - id: misi
     term: misi
+    speak: misi
     translation:
       - perf. van mitto (mittĕre)
     form_of: mitto
+    examples:
+      - text: Nuntium ad regem misi.
+        translation: Ik heb een bode naar de koning gestuurd.
+        speak: Nùntium ad reghem misi.
+        source: generated
 
   - id: poteram
     term: poteram
+    speak: pòteram
     translation:
       - ik kon
     form_of: possum
+    examples:
+      - text: Currere non poteram.
+        translation: Ik kon niet rennen.
+        speak: Cùrrere non pòteram.
+        source: generated

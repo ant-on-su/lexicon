@@ -7,94 +7,196 @@ meta:
 entries:
   - id: ad
     term: ad + acc.
+    speak: ad
     translation:
       - naar, bij, tot
+    examples:
+      - text: Puer ad patrem currit.
+        translation: De jongen rent naar zijn vader.
+        speak: Puer ad patrem currit.
+        source: generated
 
   - id: aperio
     term: aperio (aperire)
+    speak: apèrio
     forms: { perfect: aperui }
     translation:
       - openen
+    examples:
+      - text: Servus portam aperit.
+        translation: De slaaf opent de poort.
+        speak: Serwus portam àperit.
+        source: generated
 
   - id: cepi
     term: cepi
+    speak: chepi
     translation:
       - perf. van capio (capĕre)
     form_of: capio
+    examples:
+      - text: Gladium cepi.
+        translation: Ik heb het zwaard gepakt.
+        speak: Glàdium chepi.
+        source: generated
 
   - id: cito
     term: cito (bijw.)
+    speak: chito
     translation:
       - snel
+    examples:
+      - text: Equus cito currit.
+        translation: Het paard rent snel.
+        speak: Equus chito currit.
+        source: generated
 
   - id: denique
     term: denique
+    speak: dènique
     translation:
       - ten slotte
+    examples:
+      - text: Denique rex venit.
+        translation: Ten slotte komt de koning.
+        speak: Dènique recs wenit.
+        source: generated
 
   - id: duco
     term: duco (ducĕre)
+    speak: duco
     forms: { perfect: duxi }
     translation:
       - leiden, brengen
+    examples:
+      - text: Puer equum ad aquam ducit.
+        translation: De jongen brengt het paard naar het water.
+        speak: Puer equum ad aquam duchit.
+        source: generated
 
   - id: equus
     term: equus
+    speak: equus
     translation:
       - paard
+    examples:
+      - text: Equus regis pulcher est.
+        translation: Het paard van de koning is mooi.
+        speak: Equus reghis pulcher est.
+        source: generated
 
   - id: flecto
     term: flecto (flectĕre)
+    speak: flecto
     translation:
       - buigen, veranderen
+    examples:
+      - text: Verba tua animum meum non flectunt.
+        translation: Jouw woorden veranderen mijn mening niet.
+        speak: Werba tua ànimum meum non flectunt.
+        source: generated
 
   - id: fui
     term: fui
+    speak: fui
     translation:
       - perf. van sum (esse)
     form_of: sum
+    examples:
+      - text: Heri in silva fui.
+        translation: Gisteren ben ik in het bos geweest.
+        speak: Heri in silwa fui.
+        source: generated
 
   - id: iam
     term: iam
+    speak: iam
     translation:
       - al, reeds
+    examples:
+      - text: Nuntius iam adest.
+        translation: De bode is er al.
+        speak: Nùntius iam adest.
+        source: generated
 
   - id: ideo
     term: ideo (bijw.)
+    speak: ìdeo
     translation:
       - daarom
+    examples:
+      - text: Sol lucet, ideo laeti sumus.
+        translation: De zon schijnt, daarom zijn we blij.
+        speak: Sol luchet, ìdeo laiti sumus.
+        source: generated
 
   - id: impono
     term: impono (imponĕre) (+ dat.)
+    speak: impono
     forms: { perfect: imposui }
     translation:
       - leggen op, plaatsen op
+    examples:
+      - text: Servus cibum mensae imponit.
+        translation: De slaaf zet het eten op tafel.
+        speak: Serwus chibum mensai imponit.
+        source: generated
 
   - id: iungo
     term: iungo (iungĕre)
+    speak: iungo
     forms: { perfect: iunxi }
     translation:
       - verbinden
+    examples:
+      - text: Agricola duos equos iungit.
+        translation: De boer spant twee paarden samen in.
+        speak: Agrìcola duos equos iungit.
+        source: generated
 
   - id: potui
     term: potui
+    speak: pòtui
     translation:
       - perf. van possum (posse)
     form_of: possum
+    examples:
+      - text: Regem videre non potui.
+        translation: Ik kon de koning niet zien.
+        speak: Reghem widere non pòtui.
+        source: generated
 
   - id: quattuor
     term: quattuor
+    speak: quàttuor
     translation:
       - vier
+    examples:
+      - text: Rex quattuor equos habet.
+        translation: De koning heeft vier paarden.
+        speak: Recs quàttuor equos habet.
+        source: generated
 
   - id: sufficio
     term: sufficio (sufficĕre)
+    speak: suffìchio
     translation:
       - voldoende zijn
+    examples:
+      - text: Aqua non sufficit.
+        translation: Het water is niet voldoende.
+        speak: Aqua non sùffichit.
+        source: generated
 
   - id: ut
     term: ut + ind.
+    speak: ut
     translation:
       - zoals
       - zodra
     card_per_sense: true   # CHECK
+    examples:
+      - text: Ut rex venit, servi tacent.
+        translation: Zodra de koning komt, zwijgen de slaven.
+        speak: Ut recs wenit, serwi tachent.
+        source: generated

@@ -7,114 +7,240 @@ meta:
 entries:
   - id: ambulo
     term: ambulo (ambulare)
+    speak: àmbulo
     translation:
       - wandelen
+    examples:
+      - text: Pater cum filio in silva ambulat.
+        translation: Vader wandelt met zijn zoon in het bos.
+        speak: Pater cum fìlio in silwa àmbulat.
+        source: generated
 
   - id: circumdo
     term: circumdo (circumdare)
+    speak: chircumdo
     translation:
       - omgeven
+    examples:
+      - text: Silva regiam circumdat.
+        translation: Een bos omgeeft het paleis.
+        speak: Silwa règhiam chircumdat.
+        source: generated
 
   - id: cupidus_a_um
     term: cupidus, -a, -um + gen.
+    speak: cùpidus, cùpida, cùpidum
     translation:
       - begerig naar
+    examples:
+      - text: Rex auri cupidus est.
+        translation: De koning is begerig naar goud.
+        speak: Recs auri cùpidus est.
+        source: generated
 
   - id: cupio
     term: cupio (cupĕre)
+    speak: cùpio
     translation:
       - begeren, willen, verlangen
+    examples:
+      - text: Servus vinum bibere cupit.
+        translation: De slaaf wil wijn drinken.
+        speak: Serwus winum bìbere cupit.
+        source: generated
 
   - id: descendo
     term: descendo (descendĕre)
+    speak: deschendo
     translation:
       - afdalen
+    examples:
+      - text: Iuppiter e caelo descendit.
+        translation: Jupiter daalt af uit de hemel.
+        speak: Iùppiter e cailo deschendit.
+        source: generated
 
   - id: dolus
     term: dolus
+    speak: dolus
     translation:
       - list
+    examples:
+      - text: Servus dolo aurum capit.
+        translation: De slaaf pakt het goud met een list.
+        speak: Serwus dolo aurum capit.
+        source: generated
 
   - id: forma
     term: forma
+    speak: forma
     translation:
       - gestalte
       - schoonheid
     card_per_sense: true
+    examples:
+      - text: Forma deae pulchra est.
+        translation: De gestalte van de godin is mooi.
+        speak: Forma deai pulchra est.
+        source: generated
 
   - id: ingenium
     term: ingenium
+    speak: inghènium
     translation:
       - karakter
       - talent
     card_per_sense: true
+    examples:
+      - text: Filius ingenium magnum habet.
+        translation: De zoon heeft groot talent.
+        speak: Fìlius inghènium mangnum habet.
+        source: generated
 
   - id: ira
     term: ira
+    speak: ira
     translation:
       - woede
+    examples:
+      - text: Ira regis magna est.
+        translation: De woede van de koning is groot.
+        speak: Ira reghis mangna est.
+        source: generated
 
   - id: iuppiter
     term: Iuppiter
+    speak: Iùppiter
     forms: { genitive: Iovis }
     translation:
       - Jupiter
+    examples:
+      - text: Iuppiter pater deorum est.
+        translation: Jupiter is de vader van de goden.
+        speak: Iùppiter pater deorum est.
+        source: generated
 
   - id: metuo
     term: metuo (metuĕre)
+    speak: mètuo
     translation:
       - vrezen, bang zijn
+    examples:
+      - text: Servi iram regis metuunt.
+        translation: De slaven vrezen de woede van de koning.
+        speak: Serwi iram reghis mètuunt.
+        source: generated
 
   - id: pater
     term: pater
+    speak: pater
     forms: { genitive: patris, gender: m }
     translation:
       - vader
+    examples:
+      - text: Pater meus agricola est.
+        translation: Mijn vader is boer.
+        speak: Pater meus agrìcola est.
+        source: generated
 
   - id: placeo
     term: placeo (placēre) + dat.
+    speak: plàcheo
     translation:
       - in de smaak vallen bij
+    examples:
+      - text: Vinum regi placet.
+        translation: De wijn valt in de smaak bij de koning.
+        speak: Winum reghi plachet.
+        source: generated
 
   - id: pulcher_chra_chrum
     term: pulcher, -chra, -chrum
+    speak: pulcher, pulchra, pulchrum
     translation:
       - mooi
+    examples:
+      - text: Dea pulchra in silva ambulat.
+        translation: Een mooie godin wandelt in het bos.
+        speak: Dea pulchra in silwa àmbulat.
+        source: generated
 
   - id: quaero
     term: quaero (quaerĕre)
+    speak: quairo
     forms: { perfect: quaesivi }
     translation:
       - zoeken
       - vragen
     card_per_sense: true
+    examples:
+      - text: Mater filium quaerit.
+        translation: De moeder zoekt haar zoon.
+        speak: Mater fìlium quairit.
+        source: generated
 
   - id: se
     term: se (acc./abl.)
+    speak: se
     translation:
       - zich(zelf)
+    examples:
+      - text: Rex se in aqua spectat.
+        translation: De koning bekijkt zichzelf in het water.
+        speak: Recs se in aqua spectat.
+        source: generated
 
   - id: specto
     term: specto (spectare)
+    speak: specto
     translation:
       - kijken naar, zien
+    examples:
+      - text: Liberi deam spectant.
+        translation: De kinderen kijken naar de godin.
+        speak: Lìberi deam spectant.
+        source: generated
 
   - id: suus_a_um
     term: suus, -a, -um (bez. vnw.)   # CHECK
+    speak: suus, sua, suum
     translation:
       - zijn, haar, hun
+    examples:
+      - text: Agricola filiam suam vocat.
+        translation: De boer roept zijn dochter.
+        speak: Agrìcola fìliam suam wocat.
+        source: generated
 
   - id: terra
     term: terra
+    speak: terra
     translation:
       - aarde, grond, land
+    examples:
+      - text: Agricola terram suam amat.
+        translation: De boer houdt van zijn land.
+        speak: Agrìcola terram suam amat.
+        source: generated
 
   - id: timidus_a_um
     term: timidus, -a, -um (+ gen.)
+    speak: tìmidus, tìmida, tìmidum
     translation:
       - bang, angstig (voor)
+    examples:
+      - text: Filia timida est.
+        translation: De dochter is bang.
+        speak: Fìlia tìmida est.
+        source: generated
 
   - id: tunc
     term: tunc (bijw.)
+    speak: tunc
     translation:
       - dan, toen
+    examples:
+      - text: Tunc Iuppiter iratus erat.
+        translation: Toen was Jupiter boos.
+        speak: Tunc Iùppiter iratus erat.
+        source: generated

@@ -7,53 +7,113 @@ meta:
 entries:
   - id: apud
     term: apud + acc.
+    speak: apud
     translation:
       - bij
+    examples:
+      - text: Apud amicum ceno.
+        translation: Ik eet bij een vriend.
+        speak: Apud amicum cheno.
+        source: generated
 
   - id: at
     term: at
+    speak: at
     translation:
       - maar
+    examples:
+      - text: Rex vocat, at servus non venit.
+        translation: De koning roept, maar de slaaf komt niet.
+        speak: Recs wocat, at serwus non wenit.
+        source: generated
 
   - id: cogito
     term: cogito (cogitare)
+    speak: còghito
     translation:
       - denken (aan), overwegen
+    examples:
+      - text: De patria cogito.
+        translation: Ik denk aan het vaderland.
+        speak: De pàtria còghito.
+        source: generated
 
   - id: dens
     term: dens
+    speak: dens
     forms: { genitive: dentis, gender: m }
     translation:
       - tand
+    examples:
+      - text: Dens mihi dolet.
+        translation: Mijn tand doet pijn.
+        speak: Dens mihi dolet.
+        source: generated
 
   - id: dic
     term: dic
+    speak: dic
     translation:
       - imperatief van dico (dicĕre)
     form_of: dico
+    examples:
+      - text: Dic mihi verum!
+        translation: Zeg mij de waarheid!
+        speak: Dic mihi werum!
+        source: generated
 
   - id: magis
     term: magis (bijw.)
+    speak: maghis
     translation:
       - meer
+    examples:
+      - text: Vinum magis quam aquam amo.
+        translation: Ik houd meer van wijn dan van water.
+        speak: Winum maghis quam aquam amo.
+        source: generated
 
   - id: malus_a_um
     term: malus, -a, -um
+    speak: malus, mala, malum
     translation:
       - slecht
+    examples:
+      - text: Servus malus dominum fallit.
+        translation: De slechte slaaf bedriegt zijn heer.
+        speak: Serwus malus dòminum fallit.
+        source: generated
 
   - id: vere
     term: vere (bijw.)
+    speak: were
     translation:
       - echt, waar
+    examples:
+      - text: Vere laetus sum.
+        translation: Ik ben echt blij.
+        speak: Were laitus sum.
+        source: generated
 
   - id: veritas
     term: veritas
+    speak: wèritas
     forms: { genitive: veritatis, gender: v }
     translation:
       - waarheid
+    examples:
+      - text: Veritas semper vincit.
+        translation: De waarheid wint altijd.
+        speak: Wèritas semper wincit.
+        source: generated
 
   - id: verus_a_um
     term: verus, -a, -um
+    speak: werus, wera, werum
     translation:
       - echt, waar
+    examples:
+      - text: Amicus verus te iuvat.
+        translation: Een echte vriend helpt je.
+        speak: Amicus werus te iuwat.
+        source: generated

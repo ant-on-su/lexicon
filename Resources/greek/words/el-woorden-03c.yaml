@@ -7,55 +7,115 @@ meta:
 entries:
   - id: kai
     term: καί
+    speak: kai
     translation:
       - en
       - ook
       - zelfs
     card_per_sense: true
+    examples:
+      - text: ὁ δεσπότης καὶ ὁ δοῦλος φεύγουσιν.
+        translation: De meester en de slaaf vluchten.
+        speak: ho despótès kai ho doelos phéugoesin.
+        source: generated
 
   - id: lambano
     term: λαμβάνω, aor. ἔλαβον
+    speak: lambánoo
     translation:
       - nemen, (vast)pakken
+    examples:
+      - text: ὁ δοῦλος τὸ θηρίον λαμβάνει.
+        translation: De slaaf pakt het dier vast.
+        speak: ho doelos to thèríon lambánei.
+        source: generated
 
   - id: mache
     term: μάχη, ἡ
+    speak: machè
     translation:
       - gevecht, strijd
+    examples:
+      - text: ἡ μάχη μακρά ἐστιν.
+        translation: Het gevecht is lang.
+        speak: hè machè makrá estin.
+        source: generated
 
   - id: nun
     term: νῦν
+    speak: nun
     translation:
       - nu
+    examples:
+      - text: νῦν φεύγομεν.
+        translation: Nu vluchten we.
+        speak: nun phéugomèn.
+        source: generated
 
   - id: gar
     term: γάρ
+    speak: gar
     translation:
       - want (γάρ staat op de 2de plaats van de zin)
+    examples:
+      - text: φεύγω· φόβον γὰρ ἔχω.
+        translation: Ik vlucht, want ik ben bang.
+        speak: pheugoo, phobon gar échoo.
+        source: generated
 
   - id: despotes
     term: δεσπότης, ὁ
+    speak: despótès
     translation:
       - heerser, meester
+    examples:
+      - text: ὁ δεσπότης δούλους ἔχει.
+        translation: De meester heeft slaven.
+        speak: ho despótès doeloes échei.
+        source: generated
 
   - id: eis
     term: εἰς + acc.
+    speak: eis
     translation:
       - naar, naar binnen, tot
+    examples:
+      - text: ὁ δοῦλος εἰς τὴν οἰκίαν βαίνει.
+        translation: De slaaf gaat het huis binnen.
+        speak: ho doelos eis tèn oikían báínei.
+        source: generated
 
   - id: poieo
     term: ποιέω
+    speak: poiéoo
     translation:
       - doen
       - maken
     card_per_sense: true
+    examples:
+      - text: τί ποιεῖς;
+        translation: Wat doe je?
+        speak: ti poiéís?
+        source: generated
 
   - id: touto
     term: τοῦτο
+    speak: toeto
     translation:
       - dit, dat (nom. + acc. onz.)
+    examples:
+      - text: τοῦτο οὐ ποιῶ.
+        translation: Dat doe ik niet.
+        speak: toeto oe poióó.
+        source: generated
 
   - id: pheugo
     term: φεύγω, aor. ἔφυγον (+ acc.)
+    speak: pheugoo
     translation:
       - vluchten (voor)
+    examples:
+      - text: οἱ δοῦλοι τὴν μάχην φεύγουσιν.
+        translation: De slaven vluchten voor het gevecht.
+        speak: hoi doeloi tèn machèn phéugoesin.
+        source: generated

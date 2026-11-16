@@ -7,104 +7,218 @@ meta:
 entries:
   - id: adhuc
     term: adhuc
+    speak: adhuc
     translation:
       - tot nu toe, nog
+    examples:
+      - text: Hostes adhuc in urbe sunt.
+        translation: De vijanden zijn nog in de stad.
+        speak: Hostes adhuc in urbe sunt.
+        source: generated
 
   - id: clamor
     term: clamor
+    speak: clamor
     forms: { genitive: clamoris, gender: m }
     translation:
       - geschreeuw, lawaai
+    examples:
+      - text: Clamor hostium magnus est.
+        translation: Het geschreeuw van de vijanden is luid.
+        speak: Clamor hòstium mangnus est.
+        source: generated
 
   - id: dimitto
     term: dimitto (dimittĕre)
+    speak: dimitto
     translation:
       - wegsturen, laten gaan
+    examples:
+      - text: Dominus servum dimittit.
+        translation: De heer laat de slaaf gaan.
+        speak: Dòminus serwum dimittit.
+        source: generated
 
   - id: etiam
     term: etiam
+    speak: ètiam
     translation:
       - ook, zelfs
+    examples:
+      - text: Etiam puer pugnat.
+        translation: Zelfs de jongen vecht.
+        speak: Ètiam puer pungnat.
+        source: generated
 
   - id: invisus_a_um
     term: invisus, -a, -um (+ dat.)
+    speak: inwisus, inwisa, inwisum
     translation:
       - gehaat (aan/bij)
+    examples:
+      - text: Rex crudelis populo invisus est.
+        translation: De wrede koning is gehaat bij het volk.
+        speak: Recs crudelis pòpulo inwisus est.
+        source: generated
 
   - id: levis_is_e
     term: levis, -is, -e (levis)
+    speak: lewis, lewe
     translation:
       - licht
+    examples:
+      - text: Gladius levis est.
+        translation: Het zwaard is licht.
+        speak: Glàdius lewis est.
+        source: generated
 
   - id: ludus
     term: ludus
+    speak: ludus
     translation:
       - spel
       - school
     card_per_sense: true
+    examples:
+      - text: Liberi in ludum eunt.
+        translation: De kinderen gaan naar school.
+        speak: Lìberi in ludum eunt.
+        source: generated
 
   - id: nobiscum
     term: nobiscum
+    speak: nobiscum
     translation:
       - met ons (= cum nobis)
+    examples:
+      - text: Veni nobiscum!
+        translation: Kom met ons mee!
+        speak: Weni nobiscum!
+        source: generated
 
   - id: nondum
     term: nondum
+    speak: nondum
     translation:
       - nog niet
+    examples:
+      - text: Nuntius nondum venit.
+        translation: De bode is nog niet gekomen.
+        speak: Nùntius nondum wenit.
+        source: generated
 
   - id: nox
     term: nox
+    speak: nocs
     forms: { genitive: noctis, gender: v }
     translation:
       - nacht
+    examples:
+      - text: Nox longa et obscura est.
+        translation: De nacht is lang en donker.
+        speak: Nocs longa et obscura est.
+        source: generated
 
   - id: pecunia
     term: pecunia
+    speak: pecùnia
     translation:
       - geld
+    examples:
+      - text: Dominus multam pecuniam habet.
+        translation: De heer heeft veel geld.
+        speak: Dòminus multam pecùniam habet.
+        source: generated
 
   - id: quid
     term: quid?
+    speak: quid
     translation:
       - wat?
       - waarom?
     card_per_sense: true
+    examples:
+      - text: Quid facis?
+        translation: Wat doe je?
+        speak: Quid fachis?
+        source: generated
 
   - id: rumpo
     term: rumpo (rumpĕre)
+    speak: rumpo
     forms: { perfect: rupi }
     translation:
       - breken, doorbreken
+    examples:
+      - text: Hostes portam rumpunt.
+        translation: De vijanden breken de poort open.
+        speak: Hostes portam rumpunt.
+        source: generated
 
   - id: saevus_a_um
     term: saevus, -a, -um
+    speak: saiwus, saiwa, saiwum
     translation:
       - woest, wreed
+    examples:
+      - text: Hostis saevus est.
+        translation: De vijand is woest.
+        speak: Hostis saiwus est.
+        source: generated
 
   - id: somnus
     term: somnus
+    speak: somnus
     translation:
       - slaap
+    examples:
+      - text: Post laborem somnus dulcis est.
+        translation: Na het werk is de slaap zoet.
+        speak: Post laborem somnus dulchis est.
+        source: generated
 
   - id: taceo
     term: taceo (tacēre)
+    speak: tàcheo
     translation:
       - zwijgen
+    examples:
+      - text: Servi tacent.
+        translation: De slaven zwijgen.
+        speak: Serwi tachent.
+        source: generated
 
   - id: tam
     term: tam
+    speak: tam
     translation:
       - zo (zeer)
+    examples:
+      - text: Cur tam iratus es?
+        translation: Waarom ben je zo boos?
+        speak: Cur tam iratus es?
+        source: generated
 
   - id: virgo
     term: virgo
+    speak: wirgo
     forms: { genitive: virginis, gender: v }
     translation:
       - meisje, maagd
+    examples:
+      - text: Virgo pulchra in silva canit.
+        translation: Een mooi meisje zingt in het bos.
+        speak: Wirgo pulchra in silwa canit.
+        source: generated
 
   - id: vox
     term: vox
+    speak: wocs
     forms: { genitive: vocis, gender: v }
     translation:
       - stem, woord
+    examples:
+      - text: Vocem patris audio.
+        translation: Ik hoor de stem van mijn vader.
+        speak: Wochem patris àudio.
+        source: generated

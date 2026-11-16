@@ -7,136 +7,280 @@ meta:
 entries:
   - id: ac
     term: ac
+    speak: ac
     translation:
       - en
+    examples:
+      - text: Pater ac mater laeti sunt.
+        translation: Vader en moeder zijn blij.
+        speak: Pater ac mater laiti sunt.
+        source: generated
 
   - id: adsum
     term: adsum (adesse) + dat.
+    speak: adsum
     translation:
       - aanwezig zijn (bij)
       - helpen
     card_per_sense: true
+    examples:
+      - text: Amicus mihi adest.
+        translation: Mijn vriend helpt mij.
+        speak: Amicus mihi adest.
+        source: generated
 
   - id: aegre
     term: aegre (bijw.)
+    speak: aigre
     translation:
       - met moeite
+    examples:
+      - text: Servus aegre ambulat.
+        translation: De slaaf loopt met moeite.
+        speak: Serwus aigre àmbulat.
+        source: generated
 
   - id: amicitia
     term: amicitia
+    speak: amichìtia
     translation:
       - vriendschap
+    examples:
+      - text: Amicitia nostra longa est.
+        translation: Onze vriendschap duurt al lang.
+        speak: Amichìtia nostra longa est.
+        source: generated
 
   - id: consequor
     term: consequor (consequi)
+    speak: cònsequor
     forms: { perfect: consecutus sum }
     translation:
       - volgen, bereiken
+    examples:
+      - text: Canis dominum consequitur.
+        translation: De hond volgt zijn baas.
+        speak: Canis dòminum consèquitur.
+        source: generated
 
   - id: consido
     term: consido (considĕre)
+    speak: consido
     forms: { perfect: consedi }
     translation:
       - gaan zitten
+    examples:
+      - text: Puer in ripa considit.
+        translation: De jongen gaat op de oever zitten.
+        speak: Puer in ripa cònsidit.
+        source: generated
 
   - id: exclamo
     term: exclamo (exclamare)
+    speak: ecsclamo
     translation:
       - uitschreeuwen, uitroepen
+    examples:
+      - text: Puer laetus exclamat.
+        translation: De jongen roept blij uit.
+        speak: Puer laitus ecsclamat.
+        source: generated
 
   - id: factum
     term: factum
+    speak: factum
     translation:
       - feit
       - daad
       - ppp van facio (facĕre)
     card_per_sense: true   # CHECK
+    examples:
+      - text: Hoc factum notum est.
+        translation: Dit feit is bekend.
+        speak: Hoc factum notum est.
+        source: generated
 
   - id: fleo
     term: fleo (flēre)
+    speak: fleo
     translation:
       - huilen (om), (be)wenen
+    examples:
+      - text: Mater filium mortuum flet.
+        translation: De moeder huilt om haar dode zoon.
+        speak: Mater fìlium mòrtuum flet.
+        source: generated
 
   - id: flumen
     term: flumen
+    speak: flumen
     forms: { genitive: fluminis, gender: o }
     translation:
       - rivier
+    examples:
+      - text: Flumen latum est.
+        translation: De rivier is breed.
+        speak: Flumen latum est.
+        source: generated
 
   - id: hora
     term: hora
+    speak: hora
     translation:
       - uur
+    examples:
+      - text: Una hora sufficit.
+        translation: Eén uur is voldoende.
+        speak: Una hora sùffichit.
+        source: generated
 
   - id: ita
     term: ita
+    speak: ita
     translation:
       - zo
+    examples:
+      - text: Ita est.
+        translation: Zo is het.
+        speak: Ita est.
+        source: generated
 
   - id: longe
     term: longe (bijw.)
+    speak: longhe
     translation:
       - ver, van verre   # CHECK
+    examples:
+      - text: Urbs longe abest.
+        translation: De stad is ver weg.
+        speak: Urbs longhe abest.
+        source: generated
 
   - id: nec
     term: nec
+    speak: nec
     translation:
       - en niet, ook niet, noch
+    examples:
+      - text: Servus non laborat nec dormit.
+        translation: De slaaf werkt niet en slaapt ook niet.
+        speak: Serwus non laborat nec dormit.
+        source: generated
 
   - id: nuntio
     term: nuntio (nuntiare)
+    speak: nùntio
     translation:
       - berichten
+    examples:
+      - text: Nuntius victoriam nuntiat.
+        translation: De bode bericht de overwinning.
+        speak: Nùntius wictòriam nùntiat.
+        source: generated
 
   - id: orior
     term: orior (oriri)
+    speak: òrior
     forms: { perfect: ortus sum }
     translation:
       - ontstaan, beginnen
       - opkomen (van de zon)
     card_per_sense: true
+    examples:
+      - text: Sol oritur.
+        translation: De zon komt op.
+        speak: Sol òritur.
+        source: generated
 
   - id: pereo
     term: pereo (perire)
+    speak: pèreo
     forms: { perfect: perii }
     translation:
       - omkomen, te gronde gaan
+    examples:
+      - text: Multi in tempestate pereunt.
+        translation: Velen komen om in de storm.
+        speak: Multi in tempestate pèreunt.
+        source: generated
 
   - id: quod
     term: quod
+    speak: quod
     translation:
       - omdat
+    examples:
+      - text: Flet, quod amicus abest.
+        translation: Hij huilt, omdat zijn vriend weg is.
+        speak: Flet, quod amicus abest.
+        source: generated
 
   - id: repente
     term: repente (bijw.)
+    speak: repente
     translation:
       - plotseling
+    examples:
+      - text: Repente tempestas oritur.
+        translation: Plotseling steekt er een storm op.
+        speak: Repente tempestas òritur.
+        source: generated
 
   - id: revertor
     term: revertor (reverti)
+    speak: rewertor
     forms: { perfect: reversus sum }
     translation:
       - terugkeren
+    examples:
+      - text: Nuntius ad regem revertitur.
+        translation: De bode keert terug naar de koning.
+        speak: Nùntius ad reghem rewèrtitur.
+        source: generated
 
   - id: tandem
     term: tandem (bijw.)
+    speak: tandem
     translation:
       - ten slotte, (uit)eindelijk
+    examples:
+      - text: Tandem domum venimus.
+        translation: Eindelijk komen we thuis.
+        speak: Tandem domum wenimus.
+        source: generated
 
   - id: tempestas
     term: tempestas
+    speak: tempestas
     forms: { genitive: tempestatis, gender: v }
     translation:
       - tijd
       - weer, storm
     card_per_sense: true
+    examples:
+      - text: Tempestas navem frangit.
+        translation: De storm breekt het schip.
+        speak: Tempestas nawem frangit.
+        source: generated
 
   - id: vita
     term: vita
+    speak: wita
     translation:
       - leven
+    examples:
+      - text: Vita brevis est.
+        translation: Het leven is kort.
+        speak: Wita brewis est.
+        source: generated
 
   - id: vix
     term: vix
+    speak: wics
     translation:
       - met moeite, nauwelijks
+    examples:
+      - text: Vix currere possum.
+        translation: Ik kan nauwelijks rennen.
+        speak: Wics cùrrere possum.
+        source: generated

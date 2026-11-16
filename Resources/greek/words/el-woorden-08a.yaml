@@ -7,87 +7,183 @@ meta:
 entries:
   - id: ama
     term: ἅμα
+    speak: hama
     translation:
       - tegelijk, tegelijkertijd
+    examples:
+      - text: ἅμα πάντες ἥκουσιν.
+        translation: Iedereen komt tegelijk.
+        speak: hama pantes hèkoesin.
+        source: generated
 
   - id: koluo
     term: κωλύω (+ inf.)
+    speak: koolúoo
     translation:
       - verhinderen, beletten (om)
+    examples:
+      - text: ὁ ἄνεμος ἡμᾶς κωλύει πλεῖν.
+        translation: De wind verhindert ons te varen.
+        speak: ho ánemos hèmás koolúei pléín.
+        source: generated
 
   - id: nautes
     term: ναύτης, ὁ
+    speak: nautès
     translation:
       - zeeman, matroos
+    examples:
+      - text: ὁ ναύτης τὸ πλοῖον σῴζει.
+        translation: De matroos redt het schip.
+        speak: ho nautès to plóíon sóódzei.
+        source: generated
 
   - id: oude
     term: οὐδέ
+    speak: oedè
     translation:
       - en niet, maar niet
       - ook niet, zelfs niet
     card_per_sense: true
+    examples:
+      - text: οὐδὲ ὁ στρατηγὸς μένει.
+        translation: Zelfs de legeraanvoerder blijft niet.
+        speak: oedè ho stratègós ménei.
+        source: generated
 
   - id: achaioi
     term: Ἀχαιοί, οἱ
+    speak: Achaioí
     translation:
       - Grieken
+    examples:
+      - text: οἱ Ἀχαιοὶ πρὸς τὸ Ἴλιον πλέουσιν.
+        translation: De Grieken varen naar Troje.
+        speak: hoi Achaioí pros to Ilion pléoesin.
+        source: generated
 
   - id: boetheo
     term: βοηθέω + dat.
+    speak: boèthéoo
     translation:
       - te hulp komen, helpen
+    examples:
+      - text: τοῖς φίλοις βοηθοῦμεν.
+        translation: We helpen de vrienden.
+        speak: tois philois boèthóémèn.
+        source: generated
 
   - id: eisphero
     term: εἰσφέρω
+    speak: eisphéroo
     translation:
       - (naar) binnen brengen
       - (naar) binnen dragen
     card_per_sense: true
+    examples:
+      - text: οἱ δοῦλοι τὸν οἶνον εἰσφέρουσιν.
+        translation: De slaven dragen de wijn naar binnen.
+        speak: hoi doeloi ton oinon eisphéroesin.
+        source: generated
 
   - id: echthros
     term: ἐχθρός (+ dat.)
+    speak: echthrós
     translation:
       - gehaat (bij), vijandig (aan)
+    examples:
+      - text: ὁ στρατηγὸς τοῖς στρατιώταις ἐχθρός ἐστιν.
+        translation: De legeraanvoerder is gehaat bij de soldaten.
+        speak: ho stratègós tois stratióótais echthrós estin.
+        source: generated
 
   - id: pantes
     term: πάντες
+    speak: pantes
     forms: { genitive: πάντων }
     translation:
       - alle(n)
+    examples:
+      - text: πάντες πάρεισιν.
+        translation: Iedereen is aanwezig.
+        speak: pantes páreisin.
+        source: generated
 
   - id: pareimi
     term: πάρειμι
+    speak: pareimi
     translation:
       - aanwezig zijn
+    examples:
+      - text: ὁ στρατηγὸς πάρεστιν.
+        translation: De legeraanvoerder is aanwezig.
+        speak: ho stratègós párestin.
+        source: generated
 
   - id: pauo
     term: παύω
+    speak: pauoo
     translation:
       - (doen/laten) stoppen, (doen/laten) ophouden
+    examples:
+      - text: ὁ στρατηγὸς τὴν μάχην παύει.
+        translation: De legeraanvoerder laat het gevecht stoppen.
+        speak: ho stratègós tèn machèn pauei.
+        source: generated
 
   - id: strategos
     term: στρατηγός, ὁ
+    speak: stratègós
     translation:
       - legeraanvoerder
+    examples:
+      - text: ὁ στρατηγὸς τοὺς στρατιώτας καλεῖ.
+        translation: De legeraanvoerder roept de soldaten.
+        speak: ho stratègós toes stratióótas kaléí.
+        source: generated
 
   - id: stratiotes
     term: στρατιώτης, ὁ
+    speak: stratióótès
     translation:
       - soldaat
+    examples:
+      - text: ὁ στρατιώτης ἀνδρεῖός ἐστιν.
+        translation: De soldaat is dapper.
+        speak: ho stratióótès andréíos estin.
+        source: generated
 
   - id: tade
     term: τάδε
+    speak: tadè
     translation:
       - dit, het volgende (onz. meervoud nom. + acc.)
+    examples:
+      - text: τάδε λέγει ὁ στρατηγός.
+        translation: De legeraanvoerder zegt het volgende.
+        speak: tadè légei ho stratègós.
+        source: generated
 
   - id: tode
     term: τόδε, mv. τάδε
+    speak: todè
     translation:
       - dit
       - het volgende
     card_per_sense: true
+    examples:
+      - text: τόδε οὐκ ἐθέλω.
+        translation: Dit wil ik niet.
+        speak: todè oek ethéloo.
+        source: generated
 
   - id: chalepaino
     term: χαλεπαίνω, aor. ἐχαλέπηνα + dat.
+    speak: chalepáínoo
     translation:
       - boos zijn op
+    examples:
+      - text: ὁ δεσπότης τῷ δούλῳ χαλεπαίνει.
+        translation: De meester is boos op de slaaf.
+        speak: ho despótès too doeloo chalepáínei.
+        source: generated

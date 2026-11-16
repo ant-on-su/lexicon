@@ -7,153 +7,315 @@ meta:
 entries:
   - id: aner
     term: ἀνήρ, ὁ
+    speak: anèr
     forms: { genitive: ἀνδρός }
     translation:
       - man
+    examples:
+      - text: ὁ ἀνὴρ ἀνδρεῖός ἐστιν.
+        translation: De man is dapper.
+        speak: ho anèr andréíos estin.
+        source: generated
 
   - id: apopempo
     term: ἀποπέμπω
+    speak: apopémpoo
     translation:
       - terugsturen, wegsturen
+    examples:
+      - text: ὁ στρατηγὸς τὸν ἄγγελον ἀποπέμπει.
+        translation: De legeraanvoerder stuurt de bode terug.
+        speak: ho stratègós ton angelon apopémpei.
+        source: generated
 
   - id: aristos
     term: ἄριστος
+    speak: áristos
     translation:
       - beste
       - zeer goed
     card_per_sense: true
+    examples:
+      - text: ὁ ἄριστος στρατιώτης ἐνθάδε μένει.
+        translation: De beste soldaat blijft hier.
+        speak: ho áristos stratióótès enthádè ménei.
+        source: generated
 
   - id: emin
     term: ἡμῖν
+    speak: hèmín
     translation:
       - (aan/voor) ons (dativus pers. vnw.)
+    examples:
+      - text: ὁ πατὴρ ἡμῖν σῖτον παρέχει.
+        translation: Vader geeft ons eten.
+        speak: ho patèr hèmín siton paréchei.
+        source: generated
 
   - id: isos
     term: ἴσως
+    speak: isoos
     translation:
       - misschien, waarschijnlijk
+    examples:
+      - text: ἴσως ὁ πατὴρ ἥκει.
+        translation: Misschien is vader gekomen.
+        speak: isoos ho patèr hèkei.
+        source: generated
 
   - id: kathizo
     term: καθίζω
+    speak: kathídzoo
     translation:
       - (gaan) zitten
+    examples:
+      - text: ὁ παῖς ἐπὶ τῆς πέτρας καθίζει.
+        translation: Het kind gaat op het rotsblok zitten.
+        speak: ho pais epí tès pétras kathídzei.
+        source: generated
 
   - id: kaka
     term: κακά, τά
+    speak: kaká
     translation:
       - rampen, ongeluk, ellende
+    examples:
+      - text: πολλὰ κακὰ πάσχομεν.
+        translation: We lijden veel ellende.
+        speak: pollá kaká paschomèn.
+        source: generated
 
   - id: leon
     term: λέων, ὁ
+    speak: léoon
     forms: { genitive: λέοντος }
     translation:
       - leeuw
+    examples:
+      - text: ὁ λέων ἰσχυρός ἐστιν.
+        translation: De leeuw is sterk.
+        speak: ho léoon ischurós estin.
+        source: generated
 
   - id: meketi
     term: μηκέτι
+    speak: mèkéti
     translation:
       - niet meer (bij gebiedende wijs)
+    examples:
+      - text: μηκέτι δάκρυε.
+        translation: Huil niet meer.
+        speak: mèkéti dakruè.
+        source: generated
 
   - id: nosos
     term: νόσος, ἡ
+    speak: nosos
     translation:
       - ziekte
+    examples:
+      - text: ἡ νόσος δεινή ἐστιν.
+        translation: De ziekte is verschrikkelijk.
+        speak: hè nosos deinè estin.
+        source: generated
 
   - id: oios_te_eimi
     term: οἷός τέ εἰμι + inf.
+    speak: hoios te eimi
     translation:
       - in staat zijn om, kunnen
+    examples:
+      - text: οὐχ οἷός τέ εἰμι πλεῖν.
+        translation: Ik ben niet in staat te varen.
+        speak: oech hoios te eimi pléín.
+        source: generated
 
   - id: pais
     term: παῖς, ὁ/ἡ
+    speak: pais
     forms: { genitive: παιδός }
     translation:
       - kind (jongen, meisje)
       - slaaf
     card_per_sense: true
+    examples:
+      - text: ὁ παῖς ἐν τῇ οἰκίᾳ καθεύδει.
+        translation: Het kind slaapt in het huis.
+        speak: ho pais en tè oikía katheudei.
+        source: generated
 
   - id: aphron
     term: ἄφρων
+    speak: aphroon
     forms: { genitive: ἄφρονος }
     translation:
       - onverstandig, dwaas
+    examples:
+      - text: ὁ ἄφρων ἀνὴρ τῷ ἀγγέλῳ πιστεύει.
+        translation: De dwaze man vertrouwt de bode.
+        speak: ho aphroon anèr too angéloo pisteuei.
+        source: generated
 
   - id: gune
     term: γυνή, ἡ
+    speak: gunè
     forms: { genitive: γυναικός }
     translation:
       - vrouw
+    examples:
+      - text: ἡ γυνὴ τὸν παῖδα καλεῖ.
+        translation: De vrouw roept het kind.
+        speak: hè gunè ton paida kaléí.
+        source: generated
 
   - id: eggus
     term: ἐγγύς + gen.
+    speak: engús
     translation:
       - dichtbij
+    examples:
+      - text: ἐγγὺς τῆς θαλάττης οἰκοῦμεν.
+        translation: We wonen dicht bij de zee.
+        speak: engús tès thaláttès oikóémèn.
+        source: generated
 
   - id: eris
     term: ἔρις, ἡ
+    speak: eris
     forms: { genitive: ἔριδος }
     translation:
       - strijd, ruzie, twist
+    examples:
+      - text: ἡ ἔρις μεγάλη ἐστίν.
+        translation: De ruzie is groot.
+        speak: hè eris megálè estín.
+        source: generated
 
   - id: etoimos
     term: ἕτοιμος (+ inf.)
+    speak: hétoimos
     translation:
       - bereid, gereed, klaar (om te)
+    examples:
+      - text: ἕτοιμός εἰμι πλεῖν.
+        translation: Ik ben klaar om te varen.
+        speak: hétoimos eimi pléín.
+        source: generated
 
   - id: eudaimon
     term: εὐδαίμων
+    speak: eudáímoon
     forms: { genitive: εὐδαίμονος }
     translation:
       - gelukkig
+    examples:
+      - text: ὁ ἀνὴρ εὐδαίμων ἐστίν.
+        translation: De man is gelukkig.
+        speak: ho anèr eudáímoon estín.
+        source: generated
 
   - id: egemon
     term: ἡγεμών, ὁ
+    speak: hègemóón
     forms: { genitive: ἡγεμόνος }
     translation:
       - leider, aanvoerder
+    examples:
+      - text: ὁ ἡγεμὼν τοὺς στρατιώτας ἄγει.
+        translation: De aanvoerder leidt de soldaten.
+        speak: ho hègemóón toes stratióótas agei.
+        source: generated
 
   - id: emas
     term: ἡμᾶς
+    speak: hèmás
     translation:
       - ons (accusativus pers. vnw.)
+    examples:
+      - text: ὁ πατὴρ ἡμᾶς σῴζει.
+        translation: Vader redt ons.
+        speak: ho patèr hèmás sóódzei.
+        source: generated
 
   - id: palaios
     term: παλαιός
+    speak: palaiós
     translation:
       - oud, van vroeger
+    examples:
+      - text: ἡ οἰκία παλαιά ἐστιν.
+        translation: Het huis is oud.
+        speak: hè oikía palaiá estin.
+        source: generated
 
   - id: pater
     term: πατήρ, ὁ
+    speak: patèr
     forms: { genitive: πατρός }
     translation:
       - vader
+    examples:
+      - text: ὁ πατὴρ τὸν υἱὸν φιλεῖ.
+        translation: De vader houdt van zijn zoon.
+        speak: ho patèr ton huïón philéí.
+        source: generated
 
   - id: sophos
     term: σοφός
+    speak: sophós
     translation:
       - verstandig, wijs
       - slim
     card_per_sense: true
+    examples:
+      - text: ὁ ἡγεμὼν σοφός ἐστιν.
+        translation: De leider is wijs.
+        speak: ho hègemóón sophós estin.
+        source: generated
 
   - id: stratopedon
     term: στρατόπεδον, τό
+    speak: stratópedon
     translation:
       - (leger)kamp
+    examples:
+      - text: οἱ στρατιῶται ἐν τῷ στρατοπέδῳ μένουσιν.
+        translation: De soldaten blijven in het legerkamp.
+        speak: hoi stratióótai en too stratopédoo ménoesin.
+        source: generated
 
   - id: soma
     term: σῶμα, τό
+    speak: sooma
     forms: { genitive: σώματος }
     translation:
       - lichaam
+    examples:
+      - text: τὸ σῶμα ἰσχυρόν ἐστιν.
+        translation: Het lichaam is sterk.
+        speak: to sooma ischurón estin.
+        source: generated
 
   - id: soter
     term: σωτήρ, ὁ
+    speak: sootèr
     forms: { genitive: σωτῆρος }
     translation:
       - redder
+    examples:
+      - text: ὁ θεὸς σωτὴρ ἡμῶν ἐστιν.
+        translation: De god is onze redder.
+        speak: ho theós sootèr hèmóón estin.
+        source: generated
 
   - id: troes
     term: Τρῶες, οἱ
+    speak: Trooes
     forms: { genitive: Τρῴων }
     translation:
       - Trojanen
+    examples:
+      - text: οἱ Τρῶες ἐν τῷ Ἰλίῳ οἰκοῦσιν.
+        translation: De Trojanen wonen in Troje.
+        speak: hoi Trooes en too Ilíoo oikóésin.
+        source: generated

@@ -7,37 +7,79 @@ meta:
 entries:
   - id: athanatos
     term: ἀθάνατος (2)
+    speak: athánatos
     translation:
       - onsterfelijk
+    examples:
+      - text: οἱ θεοὶ ἀθάνατοί εἰσιν.
+        translation: De goden zijn onsterfelijk.
+        speak: hoi theói athánatoi eisin.
+        source: generated
 
   - id: allos
     term: ἄλλος, ἄλλη, ἄλλο
+    speak: allos, allè, allo
     translation:
       - ander
+    examples:
+      - text: ἄλλον φίλον ζητῶ.
+        translation: Ik zoek een andere vriend.
+        speak: allon philon dzètóó.
+        source: generated
 
   - id: krupto
     term: κρύπτω
+    speak: kruptoo
     translation:
       - verbergen
+    examples:
+      - text: τὸν φίλον ἐν τῇ οἰκίᾳ κρύπτω.
+        translation: Ik verberg de vriend in het huis.
+        speak: ton philon en tè oikía kruptoo.
+        source: generated
 
   - id: neos
     term: νέος, νέα, νέον
+    speak: néos, néa, néon
     translation:
       - nieuw
       - jong
     card_per_sense: true
+    examples:
+      - text: ὁ δεσπότης νέος ἐστίν.
+        translation: De meester is jong.
+        speak: ho despótès néos estín.
+        source: generated
 
   - id: autika
     term: αὐτίκα
+    speak: autíka
     translation:
       - meteen, onmiddellijk
+    examples:
+      - text: ὁ δοῦλος αὐτίκα φεύγει.
+        translation: De slaaf vlucht meteen.
+        speak: ho doelos autíka pheugei.
+        source: generated
 
   - id: ekastos
     term: ἕκαστος, ἑκάστη, ἕκαστον
+    speak: hékastos, hekástè, hékaston
     translation:
       - ieder
+    examples:
+      - text: ἕκαστος δοῦλος φόβον ἔχει.
+        translation: Iedere slaaf is bang.
+        speak: hékastos doelos phobon échei.
+        source: generated
 
   - id: petra
     term: πέτρα, ἡ
+    speak: pétra
     translation:
       - rots, rotsblok
+    examples:
+      - text: ἡ πέτρα μεγάλη ἐστίν.
+        translation: Het rotsblok is groot.
+        speak: hè pétra megálè estín.
+        source: generated

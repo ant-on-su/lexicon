@@ -7,125 +7,251 @@ meta:
 entries:
   - id: abeo
     term: abeo (abire)
+    speak: àbeo
     forms: { perfect: abii }
     translation:
       - weggaan
+    examples:
+      - text: Nuntius statim abit.
+        translation: De bode gaat meteen weg.
+        speak: Nùntius statim abit.
+        source: generated
 
   - id: annus
     term: annus
+    speak: annus
     translation:
       - jaar
+    examples:
+      - text: Annus longus est.
+        translation: Het jaar is lang.
+        speak: Annus longus est.
+        source: generated
 
   - id: arx
     term: arx
+    speak: arcs
     forms: { genitive: arcis, gender: v }
     translation:
       - burcht
+    examples:
+      - text: Rex in arce habitat.
+        translation: De koning woont in de burcht.
+        speak: Recs in arche hàbitat.
+        source: generated
 
   - id: atque
     term: atque
+    speak: atque
     translation:
       - en
+    examples:
+      - text: Pater atque mater laborant.
+        translation: Vader en moeder werken.
+        speak: Pater atque mater laborant.
+        source: generated
 
   - id: collectus
     term: collectus
+    speak: collectus
     translation:
       - ppp van colligo (colligĕre)
     form_of: colligo
+    examples:
+      - text: Frumentum collectum est.
+        translation: Het graan is verzameld.
+        speak: Frumentum collectum est.
+        source: generated
 
   - id: constat
     term: constat + AcI
+    speak: constat
     translation:
       - het staat vast dat
+    examples:
+      - text: Constat Romanos fortes esse.
+        translation: Het staat vast dat de Romeinen dapper zijn.
+        speak: Constat Romanos fortes esse.
+        source: generated
 
   - id: custos
     term: custos
+    speak: custos
     forms: { genitive: custodis, gender: m }
     translation:
       - bewaker
+    examples:
+      - text: Custos portam custodit.
+        translation: De bewaker bewaakt de poort.
+        speak: Custos portam custodit.
+        source: generated
 
   - id: decem
     term: decem (onverbuigbaar)
+    speak: dechem
     translation:
       - tien
+    examples:
+      - text: Decem equi in agro sunt.
+        translation: Er zijn tien paarden op de akker.
+        speak: Dechem equi in agro sunt.
+        source: generated
 
   - id: deleo
     term: deleo (delēre)
+    speak: dèleo
     translation:
       - verwoesten
+    examples:
+      - text: Hostes urbem delent.
+        translation: De vijanden verwoesten de stad.
+        speak: Hostes urbem delent.
+        source: generated
 
   - id: exeo
     term: exeo (exire)
+    speak: ècseo
     forms: { perfect: exii }
     translation:
       - gaan uit, weggaan
+    examples:
+      - text: Servus e villa exit.
+        translation: De slaaf gaat het landhuis uit.
+        speak: Serwus e willa ecsit.
+        source: generated
 
   - id: fama
     term: fama
+    speak: fama
     translation:
       - gerucht, verhaal
       - reputatie
     card_per_sense: true
+    examples:
+      - text: Fama de bello per urbem currit.
+        translation: Een gerucht over de oorlog gaat door de stad.
+        speak: Fama de bello per urbem currit.
+        source: generated
 
   - id: magnitudo
     term: magnitudo
+    speak: mangnitudo
     forms: { genitive: magnitudinis, gender: v }
     translation:
       - grootte, omvang
+    examples:
+      - text: Magnitudo urbis mira est.
+        translation: De grootte van de stad is wonderbaarlijk.
+        speak: Mangnitudo urbis mira est.
+        source: generated
 
   - id: nocte
     term: nocte (abl.)
+    speak: nocte
     translation:
       - "'s nachts, in de nacht"
+    examples:
+      - text: Nocte hostes veniunt.
+        translation: "'s Nachts komen de vijanden."
+        speak: Nocte hostes wèniunt.
+        source: generated
 
   - id: occido
     term: occido (occidĕre)
+    speak: occhido
     forms: { perfect: occidi }
     translation:
       - doden
+    examples:
+      - text: Hostis regem occidit.
+        translation: De vijand doodt de koning.
+        speak: Hostis reghem occhidit.
+        source: generated
 
   - id: porta
     term: porta
+    speak: porta
     translation:
       - poort
+    examples:
+      - text: Porta urbis aperta est.
+        translation: De poort van de stad is open.
+        speak: Porta urbis aperta est.
+        source: generated
 
   - id: recipio
     term: recipio (recipĕre)
+    speak: rechìpio
     forms: { perfect: recepi }
     translation:
       - terugkrijgen
       - ontvangen
     card_per_sense: true
+    examples:
+      - text: Rex aurum suum recipit.
+        translation: De koning krijgt zijn goud terug.
+        speak: Recs aurum suum rèchipit.
+        source: generated
 
   - id: scribo
     term: scribo (scribĕre)
+    speak: scribo
     forms: { perfect: scripsi }
     translation:
       - schrijven
+    examples:
+      - text: Puer epistulam scribit.
+        translation: De jongen schrijft een brief.
+        speak: Puer epìstulam scribit.
+        source: generated
 
   - id: socius
     term: socius
+    speak: sòchius
     translation:
       - bondgenoot
       - maker
     card_per_sense: true
+    examples:
+      - text: Romani socios vocant.
+        translation: De Romeinen roepen hun bondgenoten.
+        speak: Romani sòchios wocant.
+        source: generated
 
   - id: statuo
     term: statuo (statuĕre)
+    speak: stàtuo
     forms: { perfect: statui }
     translation:
       - plaatsen
+    examples:
+      - text: Romani statuam in foro statuunt.
+        translation: De Romeinen plaatsen een standbeeld op het forum.
+        speak: Romani stàtuam in foro stàtuunt.
+        source: generated
 
   - id: transfero
     term: transfero (transferre)
+    speak: trànsfero
     forms: { perfect: transtuli }
     translation:
       - overbrengen, overdragen
+    examples:
+      - text: Servi mensam in villam transferunt.
+        translation: De slaven brengen de tafel over naar het landhuis.
+        speak: Serwi mensam in willam trànsferunt.
+        source: generated
 
   - id: vates
     term: vates
+    speak: wates
     forms: { genitive: vatis, gender: m/v }
     translation:
       - waarzegger
       - dichter
     card_per_sense: true
+    examples:
+      - text: Vates futura videt.
+        translation: De waarzegger ziet de toekomst.
+        speak: Wates futura widet.
+        source: generated

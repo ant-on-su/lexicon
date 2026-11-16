@@ -7,56 +7,122 @@ meta:
 entries:
   - id: adikos
     term: ἄδικος (2)
+    speak: adikos
     translation:
       - onrechtvaardig
+    examples:
+      - text: ὁ δεσπότης ἄδικός ἐστιν.
+        translation: De meester is onrechtvaardig.
+        speak: ho despótès adikos estin.
+        source: generated
 
   - id: amphoteroi
     term: ἀμφότεροι
+    speak: amphóteroi
     translation:
       - beide(n)
+    examples:
+      - text: ἀμφότεροι φεύγουσιν.
+        translation: Beiden vluchten.
+        speak: amphóteroi phéugoesin.
+        source: generated
 
   - id: thermos
     term: θερμός
+    speak: thermós
     translation:
       - warm
+    examples:
+      - text: τὸ ὕδωρ θερμόν ἐστιν.
+        translation: Het water is warm.
+        speak: to hudoor thermón estin.
+        source: generated
 
   - id: kalupto
     term: καλύπτω
+    speak: kalúptoo
     translation:
       - bedekken
+    examples:
+      - text: ἡ γυνὴ τὸ πρόσωπον καλύπτει.
+        translation: De vrouw bedekt haar gezicht.
+        speak: hè gunè to prósoopon kalúptei.
+        source: generated
 
   - id: kata
     term: κατά + gen.
+    speak: katá
     translation:
       - vanaf...naar beneden
+    examples:
+      - text: κατὰ τῆς πέτρας πίπτει.
+        translation: Hij valt van het rotsblok naar beneden.
+        speak: katá tès pétras piptei.
+        source: generated
 
   - id: klao
     term: κλα(ί)ω  # CHECK
+    speak: kláíoo
     translation:
       - huilen, wenen (om)
+    examples:
+      - text: ἡ δούλη κλαίει.
+        translation: De slavin huilt.
+        speak: hè doelè kláíei.
+        source: generated
 
   - id: krino
     term: κρίνω
+    speak: krinoo
     translation:
       - oordelen, beoordelen
+    examples:
+      - text: ὁ δεσπότης τὸ ἔργον κρίνει.
+        translation: De meester beoordeelt het werk.
+        speak: ho despótès to ergon krinei.
+        source: generated
 
   - id: manthano
     term: μανθάνω
+    speak: manthánoo
     translation:
       - leren kennen, begrijpen, vernemen
+    examples:
+      - text: τὴν ἀλήθειαν μανθάνομεν.
+        translation: We komen de waarheid te weten.
+        speak: tèn alètheian manthánomèn.
+        source: generated
 
   - id: doule
     term: δούλη, ἡ
+    speak: doelè
     translation:
       - slavin
+    examples:
+      - text: ἡ δούλη τὸ δεῖπνον φέρει.
+        translation: De slavin brengt de maaltijd.
+        speak: hè doelè to deipnon phérei.
+        source: generated
 
   - id: prosopon
     term: πρόσωπον, τό
+    speak: prósoopon
     translation:
       - gezicht
+    examples:
+      - text: τὸ πρόσωπον τῆς κόρης καλόν ἐστιν.
+        translation: Het gezicht van het meisje is mooi.
+        speak: to prósoopon tès korès kalón estin.
+        source: generated
 
   - id: cheir
     term: χείρ, ἡ, dat. mv. χερσί(ν)
+    speak: cheir
     forms: { genitive: χειρός }
     translation:
       - hand, arm
+    examples:
+      - text: τὸν παῖδα τῇ χειρὶ ἄγει.
+        translation: Hij leidt het kind aan de hand.
+        speak: ton paida tè cheirí agei.
+        source: generated

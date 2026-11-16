@@ -11,18 +11,24 @@ entries:
       - de maaltijd
     examples:
       - text: Vous prenez aussi trois repas par jour ?
+        translation: Eten jullie ook drie maaltijden per dag?
+        source: book
   - id: vegetarien
     term: végétarien / végétarienne
     translation:
       - vegetarier
     examples:
       - text: Elle ne mange pas de viande, elle est végétarienne.
+        translation: Ze eet geen vlees, ze is vegetariër.
+        source: book
   - id: etre-amoureux
     term: être amoureux / amoureuse
     translation:
       - verliefd zijn
     examples:
       - text: Il est amoureux d’Amélie.
+        translation: Hij is verliefd op Amélie.
+        source: book
   - id: pommes-de-terre
     term: les pommes de terre
     forms: { gender: v }   # printed as "(v. mv.)"
@@ -30,6 +36,8 @@ entries:
       - de aardappels
     examples:
       - text: On fait des frites avec les pommes de terre.
+        translation: Van aardappels maak je patat.
+        source: book
   - id: oignon
     term: l’oignon
     forms: { gender: m }
@@ -37,93 +45,125 @@ entries:
       - de ui
     examples:
       - text: Yannick coupe l’oignon en petit morceaux.
+        translation: Yannick snijdt de ui in kleine stukjes.
+        source: book
   - id: recette
     term: la recette
     translation:
       - het recept
     examples:
       - text: J’ai la recette pour faire une tarte aux légumes.
+        translation: Ik heb het recept om een groentetaart te maken.
+        source: book
   - id: liste-des-courses
     term: la liste des courses
     translation:
       - de boodschappenlijst
     examples:
       - text: Je fais une liste des courses avant d’aller au supermarché.
+        translation: Ik maak een boodschappenlijst voordat ik naar de supermarkt ga.
+        source: book
   - id: soupe
     term: la soupe
     translation:
       - de soep
     examples:
       - text: Lisa mange souvent de la soupe aux légumes.
+        translation: Lisa eet vaak groentesoep.
+        source: book
   - id: beurre
     term: le beurre
     translation:
       - de boter
     examples:
       - text: Je mets du beurre sur ma tartine.
+        translation: Ik doe boter op mijn boterham.
+        source: book
   - id: farine
     term: la farine
     translation:
       - het meel
     examples:
       - text: Le pain est fait de farine et d’eau.
+        translation: Brood wordt gemaakt van meel en water.
+        source: book
   - id: frigo
     term: le frigo
     translation:
       - de koelkast
     examples:
       - text: Le beurre et le lait sont dans le frigo.
+        translation: De boter en de melk staan in de koelkast.
+        source: book
   - id: apprendre
     term: apprendre
     translation:
       - leren
     examples:
       - text: Elle veut apprendre à faire une tarte aux pommes.
+        translation: Ze wil leren een appeltaart te maken.
+        source: book
   - id: patisserie
     term: la pâtisserie
     translation:
       - de banketbakkerij
     examples:
       - text: J’achète un gâteau au chocolat à la pâtisserie.
+        translation: Ik koop een chocoladetaart bij de banketbakker.
+        source: book
   - id: gateau
     term: le gâteau
     translation:
       - het gebak, de taart
     examples:
       - text: Il a fait un gâteau super bon.
+        translation: Hij heeft een superlekkere taart gemaakt.
+        source: book
   - id: caissiere
     term: la caissière
     translation:
       - de kassière
     examples:
       - text: Cette caissière ne travaille pas le lundi.
+        translation: Deze kassière werkt niet op maandag.
+        source: book
   - id: incroyable
     term: incroyable
     translation:
       - ongelofelijk
     examples:
       - text: C’est incroyable !
+        translation: Dat is ongelofelijk!
+        source: book
   - id: souvent
     term: souvent
     translation:
       - vaak
     examples:
       - text: Frédérique mange souvent des frites.
+        translation: Frédérique eet vaak patat.
+        source: book
   - id: poivron
     term: le poivron
     translation:
       - de paprika
     examples:
       - text: Le poivron est rouge, jaune ou vert.
+        translation: De paprika is rood, geel of groen.
+        source: book
   - id: oeuf
     term: un oeuf
     translation:
       - een ei
     examples:
       - text: Un oeuf, c’est assez pour faire une omelette.
+        translation: Eén ei is genoeg om een omelet te maken.
+        source: book
   - id: pate
     term: la pâte (toute prête)
     translation:
       - het (kant-en-klaar) deeg
     examples:
       - text: La pâte toute prête est très pratique.
+        translation: Kant-en-klaar deeg is heel handig.
+        source: book

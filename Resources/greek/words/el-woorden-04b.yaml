@@ -7,25 +7,55 @@ meta:
 entries:
   - id: apokteino
     term: ἀποκτείνω
+    speak: apoktéínoo
     translation:
       - doden
+    examples:
+      - text: ὁ δεσπότης τὸ θηρίον ἀποκτείνει.
+        translation: De meester doodt het beest.
+        speak: ho despótès to thèríon apoktéínei.
+        source: generated
 
   - id: kaleo
     term: καλέω
+    speak: kaléoo
     translation:
       - roepen
+    examples:
+      - text: ὁ δεσπότης τὸν δοῦλον καλεῖ.
+        translation: De meester roept de slaaf.
+        speak: ho despótès ton doelon kaléí.
+        source: generated
 
   - id: ethelo
     term: ἐθέλω
+    speak: ethéloo
     translation:
       - willen, bereid zijn
+    examples:
+      - text: οὐκ ἐθέλω φεύγειν.
+        translation: Ik wil niet vluchten.
+        speak: oek ethéloo pheugein.
+        source: generated
 
   - id: proton_men
     term: πρῶτον μέν..., ἔπειτα δέ
+    speak: próóton men, épeita dè
     translation:
       - eerst..., daarna
+    examples:
+      - text: πρῶτον μὲν φεύγομεν, ἔπειτα δὲ μένομεν.
+        translation: Eerst vluchten we, daarna blijven we.
+        speak: próóton men phéugomèn, épeita dè ménomèn.
+        source: generated
 
   - id: ti
     term: "τί...: (met accent!)"
+    speak: ti
     translation:
       - wat?
+    examples:
+      - text: τί ἔχεις;
+        translation: Wat heb je?
+        speak: ti écheis?
+        source: generated

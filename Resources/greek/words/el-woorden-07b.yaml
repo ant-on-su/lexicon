@@ -7,60 +7,132 @@ meta:
 entries:
   - id: aneu
     term: ἄνευ + gen.
+    speak: aneu
     translation:
       - zonder
+    examples:
+      - text: ἄνευ οἴνου οὐ χαίρει.
+        translation: Zonder wijn is hij niet blij.
+        speak: aneu oinoe oe cháírei.
+        source: generated
 
   - id: emeteros
     term: ἡμέτερος
+    speak: hèméteros
     translation:
       - ons, onze (bezittelijk voornaamwoord)
+    examples:
+      - text: ἡ ἡμετέρα οἰκία καλή ἐστιν.
+        translation: Ons huis is mooi.
+        speak: hè hèmetéra oikía kalè estin.
+        source: generated
 
   - id: authis
     term: αὖθις
+    speak: authis
     translation:
       - opnieuw, weer (bijwoord)
+    examples:
+      - text: ὁ ξένος αὖθις ἥκει.
+        translation: De vreemdeling is opnieuw gekomen.
+        speak: ho ksenos authis hèkei.
+        source: generated
 
   - id: egeiro
     term: ἐγείρω
+    speak: egéíroo
     translation:
       - (op)wekken, wakker maken
+    examples:
+      - text: ὁ δοῦλος τὸν δεσπότην ἐγείρει.
+        translation: De slaaf maakt de meester wakker.
+        speak: ho doelos ton despótèn egéírei.
+        source: generated
 
   - id: elios
     term: ἥλιος, ὁ
+    speak: hèlios
     translation:
       - zon
+    examples:
+      - text: ὁ ἥλιος μέγας ἐστίν.
+        translation: De zon is groot.
+        speak: ho hèlios mégas estín.
+        source: generated
 
   - id: emeis
     term: ἡμεῖς, ἡμῶν, ἡμῖν, ἡμᾶς
+    speak: hèméís, hèmóón, hèmín, hèmás
     translation:
       - wij (nom., gen., dat., acc. pers. vnw.)
+    examples:
+      - text: ἡμεῖς οὐ φεύγομεν.
+        translation: Wij vluchten niet.
+        speak: hèméís oe phéugomèn.
+        source: generated
 
   - id: plen
     term: πλήν + gen.
+    speak: plèn
     translation:
       - behalve
+    examples:
+      - text: πάντες φεύγουσι πλὴν τοῦ δεσπότου.
+        translation: Iedereen vlucht behalve de meester.
+        speak: pantes phéugoesi plèn toe despótoe.
+        source: generated
 
   - id: umeis
     term: ὑμεῖς, ὑμῶν, ὑμῖν, ὑμᾶς
+    speak: huméís, humóón, humín, humás
     translation:
       - jullie, u (nom., gen., dat., acc. pers. vnw.)
+    examples:
+      - text: ὑμεῖς ἐνθάδε μένετε.
+        translation: Jullie blijven hier.
+        speak: huméís enthádè ménetè.
+        source: generated
 
   - id: umeteros
     term: ὑμέτερος
+    speak: huméteros
     translation:
       - (van) jullie/u (bezittelijk voornaamwoord)
+    examples:
+      - text: ὁ ὑμέτερος ἵππος ἰσχυρός ἐστιν.
+        translation: Jullie paard is sterk.
+        speak: ho huméteros hippos ischurós estin.
+        source: generated
 
   - id: upnos
     term: ὕπνος, ὁ
+    speak: hupnos
     translation:
       - slaap
+    examples:
+      - text: ὁ ὕπνος καλός ἐστιν.
+        translation: Slaap is goed.
+        speak: ho hupnos kalós estin.
+        source: generated
 
   - id: phone
     term: φωνή, ἡ
+    speak: phoonè
     translation:
       - stem
+    examples:
+      - text: τὴν φωνὴν τοῦ φίλου ἀκούω.
+        translation: Ik hoor de stem van de vriend.
+        speak: tèn phoonèn toe philoe akóéoo.
+        source: generated
 
   - id: osper
     term: ὥσπερ
+    speak: hoosper
     translation:
       - (zo)als
+    examples:
+      - text: μάχεται ὥσπερ θηρίον.
+        translation: Hij vecht als een wild dier.
+        speak: máchetai hoosper thèríon.
+        source: generated

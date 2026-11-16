@@ -7,118 +7,250 @@ meta:
 entries:
   - id: apethanon
     term: ἀπέθανον (inf. ἀποθανεῖν)
+    speak: apéthanon
     translation:
       - ik stierf (aor. van ἀποθνήσκω)
     form_of: apothnesko
+    examples:
+      - text: ὁ πατὴρ ἐν τῷ πολέμῳ ἀπέθανεν.
+        translation: Vader stierf in de oorlog.
+        speak: ho patèr en too polémoo apéthanèn.
+        source: generated
 
   - id: apothan
     term: ἀποθαν-
+    speak: apothan
     translation:
       - aoristusstam van ἀποθνήσκω
+    examples:
+      - text: πολλοὶ ἐν τῇ μάχῃ ἀπέθανον.
+        translation: Velen stierven in het gevecht.
+        speak: polloí en tè machè apéthanon.
+        source: generated
 
   - id: apothnesko
     term: ἀποθνήσκω, aor. ἀπέθανον
+    speak: apothnèskoo
     translation:
       - sterven
+    examples:
+      - text: ὁ λέων ἀποθνήσκει.
+        translation: De leeuw sterft.
+        speak: ho léoon apothnèskei.
+        source: generated
 
   - id: thapto
     term: θάπτω
+    speak: thaptoo
     translation:
       - begraven
+    examples:
+      - text: οἱ ἑταῖροι τὸν νεκρὸν θάπτουσιν.
+        translation: De makkers begraven de dode.
+        speak: hoi hetáíroi ton nekrón tháptoesin.
+        source: generated
 
   - id: id
     term: ἰδ-
+    speak: id
     translation:
       - aoristusstam bij ὁράω (zien)
+    examples:
+      - text: τὸν λέοντα ἰδεῖν ἐθέλω.
+        translation: Ik wil de leeuw zien.
+        speak: ton léonta idéín ethéloo.
+        source: generated
 
   - id: katelthon
     term: κατῆλθον
+    speak: katèlthon
     translation:
       - ik ging naar beneden, ik daalde af (aor.)
+    examples:
+      - text: πρὸς τὴν θάλατταν κατῆλθον.
+        translation: Ik daalde af naar de zee.
+        speak: pros tèn thálattan katèlthon.
+        source: generated
 
   - id: lab
     term: λαβ-
+    speak: lab
     translation:
       - aoristusstam van λαμβάνω
+    examples:
+      - text: ἐθέλω τὸ δῶρον λαβεῖν.
+        translation: Ik wil het geschenk aannemen.
+        speak: ethéloo to dooron labéín.
+        source: generated
 
   - id: lambano
     term: λαμβάνω, aor. ἔλαβον
+    speak: lambánoo
     translation:
       - nemen, (vast)pakken
+    examples:
+      - text: ὁ παῖς τὸν σῖτον λαμβάνει.
+        translation: Het kind pakt het eten.
+        speak: ho pais ton siton lambánei.
+        source: generated
 
   - id: lego
     term: λέγω, aor. εἶπον
+    speak: légoo
     translation:
       - zeggen
+    examples:
+      - text: ὁ ἄγγελος τὴν ἀλήθειαν λέγει.
+        translation: De bode spreekt de waarheid.
+        speak: ho angelos tèn alètheian légei.
+        source: generated
 
   - id: leipo
     term: λείπω, aor. ἔλιπον
+    speak: leipoo
     translation:
       - (ver)laten
+    examples:
+      - text: οἱ ναῦται τὸ πλοῖον λείπουσιν.
+        translation: De matrozen verlaten het schip.
+        speak: hoi nautai to plóíon leipoesin.
+        source: generated
 
   - id: eidon
     term: εἶδον (inf. ἰδεῖν)
+    speak: eidon
     translation:
       - ik zag (aor. bij ὁράω zien)
+    examples:
+      - text: τὸν λέοντα εἶδον.
+        translation: Ik zag de leeuw.
+        speak: ton léonta eidon.
+        source: generated
 
   - id: eipon
     term: εἶπον (inf. εἰπεῖν)
+    speak: eipon
     translation:
       - ik zei, ik sprak (aor. bij λέγω zeggen)
     form_of: lego
+    examples:
+      - text: ταῦτα εἶπον.
+        translation: Dat zei ik.
+        speak: táúta eipon.
+        source: generated
 
   - id: elabon
     term: ἔλαβον (inf. λαβεῖν)
+    speak: élabon
     translation:
       - ik nam, ik pakte (aor. van λαμβάνω)
     form_of: lambano
+    examples:
+      - text: τὸ δῶρον ἔλαβον.
+        translation: Ik nam het geschenk aan.
+        speak: to dooron élabon.
+        source: generated
 
   - id: elth
     term: ἐλθ-
+    speak: elth
     translation:
       - aoristusstam (komen, gaan)
+    examples:
+      - text: ἐθέλω οἴκαδε ἐλθεῖν.
+        translation: Ik wil naar huis gaan.
+        speak: ethéloo oikadè elthéín.
+        source: generated
 
   - id: elthon
     term: ἦλθον (inf. ἐλθεῖν)
+    speak: èlthon
     translation:
       - ik kwam, ik ging (aor.)
+    examples:
+      - text: εἰς τὴν πόλιν ἦλθον.
+        translation: Ik ging naar de stad.
+        speak: eis tèn polin èlthon.
+        source: generated
 
   - id: suneimi
     term: σύνειμι (+ dat.)
+    speak: suneimi
     translation:
       - samenzijn (met), omgaan met
+    examples:
+      - text: τοῖς φίλοις σύνειμι.
+        translation: Ik ga om met mijn vrienden.
+        speak: tois philois suneimi.
+        source: generated
 
   - id: tauta
     term: ταῦτα
+    speak: táúta
     translation:
       - dit, dat (onz. meervoud nom. + acc.)
+    examples:
+      - text: ταῦτα λέγει ὁ πατήρ.
+        translation: Dat zegt vader.
+        speak: táúta légei ho patèr.
+        source: generated
 
   - id: tacha
     term: τάχα
+    speak: tacha
     translation:
       - snel, spoedig (bijwoord)
+    examples:
+      - text: ὁ ἄγγελος τάχα ἥκει.
+        translation: De bode is er spoedig.
+        speak: ho angelos tacha hèkei.
+        source: generated
 
   - id: trepho
     term: τρέφω, aor. ἔθρεψα
+    speak: tréphoo
     translation:
       - voeden
       - opvoeden
     card_per_sense: true
+    examples:
+      - text: ἡ μήτηρ τὸν παῖδα τρέφει.
+        translation: De moeder voedt het kind.
+        speak: hè mètèr ton paida tréphei.
+        source: generated
 
   - id: tugchano
     term: τυγχάνω + gen.
+    speak: tunchánoo
     translation:
       - treffen
+    examples:
+      - text: ὁ στρατιώτης τοῦ λέοντος τυγχάνει.
+        translation: De soldaat treft de leeuw.
+        speak: ho stratióótès toe léontos tunchánei.
+        source: generated
 
   - id: chthon
     term: χθών, ἡ
+    speak: chthoon
     forms: { genitive: χθονός }
     translation:
       - aarde, grond
+    examples:
+      - text: ἡ χθὼν μεγάλη ἐστίν.
+        translation: De aarde is groot.
+        speak: hè chthoon megálè estín.
+        source: generated
 
   - id: psuche
     term: ψυχή, ἡ
+    speak: psuchè
     translation:
       - ziel, geest, schim
       - leven
     card_per_sense: true
+    examples:
+      - text: ἡ ψυχὴ ἀθάνατός ἐστιν.
+        translation: De ziel is onsterfelijk.
+        speak: hè psuchè athánatos estin.
+        source: generated

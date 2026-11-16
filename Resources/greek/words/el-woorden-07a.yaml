@@ -7,89 +7,191 @@ meta:
 entries:
   - id: aitios
     term: αἴτιος + gen.
+    speak: áítios
     translation:
       - verantwoordelijk voor, schuldig aan
+    examples:
+      - text: ὁ δοῦλος αἴτιος τοῦ κινδύνου ἐστίν.
+        translation: De slaaf is verantwoordelijk voor het gevaar.
+        speak: ho doelos áítios toe kindúnoe estín.
+        source: generated
 
   - id: apophero
     term: ἀποφέρω
+    speak: apophéroo
     translation:
       - wegbrengen, wegvoeren
+    examples:
+      - text: ὁ ἄνεμος τὸ πλοῖον ἀποφέρει.
+        translation: De wind voert het schip weg.
+        speak: ho ánemos to plóíon apophérei.
+        source: generated
 
   - id: ieros
     term: ἱερός + gen.  # CHECK
+    speak: hierós
     translation:
       - heilig
       - gewijd aan
     card_per_sense: true
+    examples:
+      - text: ἡ νῆσος ἱερὰ τοῦ θεοῦ ἐστιν.
+        translation: Het eiland is gewijd aan de god.
+        speak: hè nèsos hierá toe theóé estin.
+        source: generated
 
   - id: kindunos
     term: κίνδυνος, ὁ
+    speak: kindunos
     translation:
       - gevaar
+    examples:
+      - text: ὁ κίνδυνος μέγας ἐστίν.
+        translation: Het gevaar is groot.
+        speak: ho kindunos mégas estín.
+        source: generated
 
   - id: metecho
     term: μετέχω + gen.
+    speak: metéchoo
     translation:
       - deelhebben aan, deelnemen aan
+    examples:
+      - text: τῆς μάχης μετέχομεν.
+        translation: We nemen deel aan het gevecht.
+        speak: tès machès metéchomèn.
+        source: generated
 
   - id: nomizo
     term: νομίζω + 2 acc.
+    speak: nomídzoo
     translation:
       - menen
       - beschouwen als, vinden
     card_per_sense: true
+    examples:
+      - text: τὸν ξένον φίλον νομίζω.
+        translation: Ik beschouw de vreemdeling als een vriend.
+        speak: ton ksenon philon nomídzoo.
+        source: generated
 
   - id: nous
     term: νοῦς, ὁ
+    speak: noes
     translation:
       - geest, verstand
+    examples:
+      - text: ὁ δεσπότης νοῦν ἔχει.
+        translation: De meester heeft verstand.
+        speak: ho despótès noen échei.
+        source: generated
 
   - id: en_no_echo
     term: ἐν νῷ ἔχω
+    speak: en noo échoo
     translation:
       - van plan zijn (lett. in de geest hebben)
+    examples:
+      - text: ἐν νῷ ἔχω πλεῖν.
+        translation: Ik ben van plan te varen.
+        speak: en noo échoo pléín.
+        source: generated
 
   - id: oinos
     term: οἶνος, ὁ
+    speak: oinos
     translation:
       - wijn
+    examples:
+      - text: ὁ οἶνος καλός ἐστιν.
+        translation: De wijn is goed.
+        speak: ho oinos kalós estin.
+        source: generated
 
   - id: oudeis
     term: οὐδείς
+    speak: oedéís
     translation:
       - niemand (lett. zelfs niet één)
+    examples:
+      - text: οὐδεὶς ἐνθάδε μένει.
+        translation: Niemand blijft hier.
+        speak: oedéís enthádè ménei.
+        source: generated
 
   - id: auton
     term: αὐτῶν
+    speak: autóón
     translation:
       - (van) hen (genitivus pers. vnw.)
+    examples:
+      - text: ἡ οἰκία αὐτῶν μεγάλη ἐστίν.
+        translation: Hun huis is groot.
+        speak: hè oikía autóón megálè estín.
+        source: generated
 
   - id: eauto
     term: ἑαυτῷ
+    speak: heautóó
     translation:
       - (voor, tot, bij) zichzelf (dativus)
+    examples:
+      - text: ὁ δοῦλος ἑαυτῷ οἶνον φέρει.
+        translation: De slaaf brengt wijn voor zichzelf.
+        speak: ho doelos heautóó oinon phérei.
+        source: generated
 
   - id: eleutheria
     term: ἐλευθερία, ἡ
+    speak: eleuthería
     translation:
       - vrijheid
+    examples:
+      - text: οἱ δοῦλοι τῆς ἐλευθερίας ἐπιθυμοῦσιν.
+        translation: De slaven verlangen naar vrijheid.
+        speak: hoi doeloi tès eleutherías epithumóésin.
+        source: generated
 
   - id: epi
     term: ἐπί + gen.
+    speak: epí
     translation:
       - op
+    examples:
+      - text: ἐπὶ τῆς πέτρας καθεύδει.
+        translation: Hij slaapt op het rotsblok.
+        speak: epí tès pétras katheudei.
+        source: generated
 
   - id: polus
     term: πολύς, πολλή, πολύ
+    speak: polús, pollè, polú
     translation:
       - veel
+    examples:
+      - text: πολὺν οἶνον ἔχομεν.
+        translation: We hebben veel wijn.
+        speak: polún oinon échomèn.
+        source: generated
 
   - id: tugchano
     term: τυγχάνω + gen.
+    speak: tunchánoo
     translation:
       - krijgen
+    examples:
+      - text: ὁ δοῦλος τῆς ἐλευθερίας τυγχάνει.
+        translation: De slaaf krijgt de vrijheid.
+        speak: ho doelos tès eleutherías tunchánei.
+        source: generated
 
   - id: phuge
     term: φυγή, ἡ
+    speak: phugè
     translation:
       - vlucht
+    examples:
+      - text: ἡ φυγὴ μακρά ἐστιν.
+        translation: De vlucht duurt lang.
+        speak: hè phugè makrá estin.
+        source: generated

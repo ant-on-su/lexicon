@@ -11,42 +11,56 @@ entries:
       - heel, erg
     examples:
       - text: J’ai toujours très faim après le cours d’EPS.
+        translation: Ik heb na de gymles altijd erge honger.
+        source: book
   - id: alors
     term: alors
     translation:
       - dus
     examples:
       - text: Alors tu es en quatrième ?
+        translation: Dus jij zit in de tweede klas?
+        source: book
   - id: ou
     term: ou
     translation:
       - of
     examples:
       - text: Tu choisis le cours de musique ou de théâtre ?
+        translation: Kies jij muziekles of toneelles?
+        source: book
   - id: trop-de
     term: trop (de)
     translation:
       - te, te veel
     examples:
       - text: Nous avons trop de devoirs.
+        translation: We hebben te veel huiswerk.
+        source: book
   - id: theatre
     term: le théâtre
     translation:
       - drama, toneel
     examples:
       - text: On rigole toujours pendant le cours de théâtre.
+        translation: We lachen altijd tijdens de dramales.
+        source: book
   - id: svt
     term: SVT (sciences de la vie et de la terre)
     translation:
       - biologie
     examples:
       - text: J’aime les cours de SVT car j’aime les animaux.
+        translation: Ik vind biologie leuk, want ik houd van dieren.
+        source: book
   - id: neerlandais
     term: le néerlandais
     translation:
       - Nederlands
     examples:
       - text: La prof de néerlandais est sympathique.
+        translation: De lerares Nederlands is aardig.
+        source: book
   - id: espagnol
     term: l’espagnol
     forms: { gender: m }
@@ -54,42 +68,56 @@ entries:
       - Spaans
     examples:
       - text: Je vais choisir l’espagnol.
+        translation: Ik ga Spaans kiezen.
+        source: book
   - id: physique
     term: la physique
     translation:
       - natuurkunde
     examples:
       - text: La physique est difficile.
+        translation: Natuurkunde is moeilijk.
+        source: book
   - id: technologie
     term: la technologie
     translation:
       - techniek
     examples:
       - text: La technologie est une matière pratique.
+        translation: Techniek is een praktisch vak.
+        source: book
   - id: utile
     term: utile
     translation:
       - nuttig
     examples:
       - text: Parler trois langues, c’est utile.
+        translation: Drie talen spreken is nuttig.
+        source: book
   - id: amusant
     term: amusant
     translation:
       - leuk
     examples:
       - text: Chanter ensemble, c’est amusant.
+        translation: Samen zingen is leuk.
+        source: book
   - id: interessant
     term: intéressant
     translation:
       - interessant
     examples:
       - text: C’est un livre intéressant.
+        translation: Het is een interessant boek.
+        source: book
   - id: interdit
     term: interdit
     translation:
       - verboden
     examples:
       - text: Les portables sont interdits dans la classe.
+        translation: Mobieltjes zijn verboden in de klas.
+        source: book
   - id: emploi-du-temps
     term: l’emploi du temps
     forms: { gender: m }
@@ -97,33 +125,45 @@ entries:
       - het rooster
     examples:
       - text: Mon emploi du temps est génial ce semestre.
+        translation: Mijn rooster is dit semester geweldig.
+        source: book
   - id: matiere
     term: la matière
     translation:
       - het schoolvak
     examples:
       - text: Quelle est ta matière préférée ?
+        translation: Wat is jouw lievelingsvak?
+        source: book
   - id: casier
     term: le casier
     translation:
       - het kluisje
     examples:
       - text: Mes livres sont dans mon casier.
+        translation: Mijn boeken liggen in mijn kluisje.
+        source: book
   - id: couloir
     term: le couloir
     translation:
       - de gang
     examples:
       - text: Il faut être calme dans les couloirs.
+        translation: Je moet rustig zijn in de gangen.
+        source: book
   - id: gymnase
     term: le gymnase
     translation:
       - de gymzaal
     examples:
       - text: Notre collège a deux gymnases.
+        translation: Onze school heeft twee gymzalen.
+        source: book
   - id: salle-de-classe
     term: la salle (de classe)
     translation:
       - het lokaal
     examples:
       - text: J’ai cours de français dans la salle 8.
+        translation: Ik heb Franse les in lokaal 8.
+        source: book

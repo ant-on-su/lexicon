@@ -7,125 +7,275 @@ meta:
 entries:
   - id: thalatta
     term: θάλαττα, ἡ
+    speak: thálatta
     translation:
       - zee
+    examples:
+      - text: ἡ θάλαττα μεγάλη ἐστίν.
+        translation: De zee is groot.
+        speak: hè thálatta megálè estín.
+        source: generated
 
   - id: thea
     term: θεά, ἡ
+    speak: theá
     translation:
       - godin
+    examples:
+      - text: ἡ θεὰ καλή ἐστιν.
+        translation: De godin is mooi.
+        speak: hè theá kalè estin.
+        source: generated
 
   - id: ippos
     term: ἵππος, ὁ
+    speak: hippos
     translation:
       - paard
+    examples:
+      - text: ὁ ξένος ἵππον ἔχει.
+        translation: De vreemdeling heeft een paard.
+        speak: ho ksenos hippon échei.
+        source: generated
 
   - id: kakos
     term: κακός
+    speak: kakós
     translation:
       - slecht
+    examples:
+      - text: ὁ δοῦλος κακός ἐστιν.
+        translation: De slaaf is slecht.
+        speak: ho doelos kakós estin.
+        source: generated
 
   - id: kore
     term: κόρη, ἡ
+    speak: korè
     translation:
       - meisje, dochter
+    examples:
+      - text: ἡ κόρη ἐν τῇ οἰκίᾳ μένει.
+        translation: Het meisje blijft in het huis.
+        speak: hè korè en tè oikía ménei.
+        source: generated
 
   - id: luo
     term: λύω
+    speak: luoo
     translation:
       - losmaken
+    examples:
+      - text: ὁ δοῦλος τὸν ἵππον λύει.
+        translation: De slaaf maakt het paard los.
+        speak: ho doelos ton hippon luei.
+        source: generated
 
   - id: mello
     term: μέλλω + inf.
+    speak: melloo
     translation:
       - op het punt staan om, van plan zijn om, zullen
+    examples:
+      - text: μέλλομεν πλεῖν.
+        translation: We staan op het punt te varen.
+        speak: méllomèn pléín.
+        source: generated
 
   - id: meta_met_meth
     term: μετά/μετ'/μεθ' + gen.
+    speak: metá, met, meth
     translation:
       - (samen) met
+    examples:
+      - text: μετὰ τοῦ φίλου βαίνω.
+        translation: Ik ga met de vriend mee.
+        speak: metá toe philoe báínoo.
+        source: generated
 
   - id: moi
     term: μοί, μοι
+    speak: moi
     translation:
       - (aan/voor) mij/me (dativus pers. vnw.)
+    examples:
+      - text: δῶρόν μοι πέμπει.
+        translation: Hij stuurt mij een geschenk.
+        speak: dooron moi pempei.
+        source: generated
 
   - id: xenos
     term: ξένος, ὁ
+    speak: ksenos
     translation:
       - vreemdeling
+    examples:
+      - text: ὁ ξένος ἐνθάδε ἥκει.
+        translation: De vreemdeling is hierheen gekomen.
+        speak: ho ksenos enthádè hèkei.
+        source: generated
 
   - id: oikia
     term: οἰκία, ἡ
+    speak: oikía
     translation:
       - huis
+    examples:
+      - text: ἡ οἰκία μεγάλη ἐστίν.
+        translation: Het huis is groot.
+        speak: hè oikía megálè estín.
+        source: generated
 
   - id: omoios
     term: ὅμοιος + dat.
+    speak: hómoios
     translation:
       - gelijk aan, gelijkend op
+    examples:
+      - text: ἡ κόρη θεᾷ ὁμοία ἐστίν.
+        translation: Het meisje lijkt op een godin.
+        speak: hè korè theá homoía estín.
+        source: generated
 
   - id: opla
     term: ὅπλα, τά
+    speak: hopla
     translation:
       - wapens
+    examples:
+      - text: οἱ ἄνθρωποι τὰ ὅπλα φέρουσιν.
+        translation: De mannen dragen de wapens.
+        speak: hoi ánthroopoi ta hopla phéroesin.
+        source: generated
 
   - id: aute
     term: αὐτῇ
+    speak: autè
     translation:
       - (aan/voor) haar (dativus pers. vnw.)
+    examples:
+      - text: δῶρον αὐτῇ πέμπω.
+        translation: Ik stuur haar een geschenk.
+        speak: dooron autè pempoo.
+        source: generated
 
   - id: auten
     term: αὐτήν
+    speak: autèn
     translation:
       - haar (accusativus pers. vnw.)
+    examples:
+      - text: φιλῶ αὐτήν.
+        translation: Ik houd van haar.
+        speak: philóó autèn.
+        source: generated
 
   - id: autes
     term: αὐτῆς
+    speak: autès
     translation:
       - (van) haar (genitivus pers. vnw.)
+    examples:
+      - text: ἡ οἰκία αὐτῆς καλή ἐστιν.
+        translation: Haar huis is mooi.
+        speak: hè oikía autès kalè estin.
+        source: generated
 
   - id: auton
     term: αὐτόν
+    speak: autón
     translation:
       - hem (accusativus pers. vnw.)
+    examples:
+      - text: καλοῦμεν αὐτόν.
+        translation: We roepen hem.
+        speak: kalóémèn autón.
+        source: generated
 
   - id: auto
     term: αὐτῷ
+    speak: autóó
     translation:
       - (aan/voor) hem (dativus pers. vnw.)
+    examples:
+      - text: τὸν ἵππον αὐτῷ παρέχω.
+        translation: Ik geef hem het paard.
+        speak: ton hippon autóó paréchoo.
+        source: generated
 
   - id: en
     term: ἐν + dat.
+    speak: en
     translation:
       - in, op, bij
+    examples:
+      - text: ἐν τῇ θαλάττῃ πλέομεν.
+        translation: We varen op de zee.
+        speak: en tè thaláttè pléomèn.
+        source: generated
 
   - id: enthade
     term: ἐνθάδε
+    speak: enthádè
     translation:
       - hier(heen)
+    examples:
+      - text: ἐνθάδε μένω.
+        translation: Ik blijf hier.
+        speak: enthádè ménoo.
+        source: generated
 
   - id: ergon
     term: ἔργον, τό
+    speak: ergon
     translation:
       - werk, daad
+    examples:
+      - text: τὸ ἔργον μακρόν ἐστιν.
+        translation: Het werk duurt lang.
+        speak: to ergon makrón estin.
+        source: generated
 
   - id: eko
     term: ἥκω
+    speak: hèkoo
     translation:
       - komen, gekomen zijn
+    examples:
+      - text: ὁ φίλος ἥκει.
+        translation: De vriend is gekomen.
+        speak: ho philos hèkei.
+        source: generated
 
   - id: parecho
     term: παρέχω
+    speak: paréchoo
     translation:
       - verschaffen, geven
+    examples:
+      - text: ἡ θεὰ τοῖς ἀνθρώποις δῶρα παρέχει.
+        translation: De godin geeft de mensen geschenken.
+        speak: hè theá tois anthróópois doora paréchei.
+        source: generated
 
   - id: sun
     term: σύν + dat.
+    speak: sun
     translation:
       - met, in gezelschap van
+    examples:
+      - text: σὺν τοῖς ἑταίροις πλέω.
+        translation: Ik vaar met mijn makkers.
+        speak: sun tois hetáírois pléoo.
+        source: generated
 
   - id: te_kai
     term: "...τε καί..."
+    speak: te kai
     translation:
       - en (verbindt twee woord(groep)en)
+    examples:
+      - text: ἵππους τε καὶ ὅπλα ἔχομεν.
+        translation: We hebben paarden en wapens.
+        speak: hippoes te kai hopla échomèn.
+        source: generated

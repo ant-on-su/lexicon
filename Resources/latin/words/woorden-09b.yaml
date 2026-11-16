@@ -7,105 +7,207 @@ meta:
 entries:
   - id: cum
     term: cum + ind.
+    speak: cum
     translation:
       - toen
       - wanneer
     card_per_sense: true   # CHECK
+    examples:
+      - text: Cum pluit, domi manemus.
+        translation: Wanneer het regent, blijven we thuis.
+        speak: Cum pluit, domi manemus.
+        source: generated
 
   - id: fugio
     term: fugio (fugĕre)
+    speak: fùghio
     forms: { perfect: fugi }
     translation:
       - vluchten
+    examples:
+      - text: Hostes fugiunt.
+        translation: De vijanden vluchten.
+        speak: Hostes fùghiunt.
+        source: generated
 
   - id: genus
     term: genus
+    speak: ghenus
     forms: { genitive: generis, gender: o }
     translation:
       - afkomst, geslacht
       - soort
     card_per_sense: true
+    examples:
+      - text: Puer nobili genere natus est.
+        translation: De jongen is van adellijke afkomst.
+        speak: Puer nòbili ghènere natus est.
+        source: generated
 
   - id: humanus_a_um
     term: humanus, -a, -um
+    speak: humanus, humana, humanum
     translation:
       - menselijk
+    examples:
+      - text: Errare humanum est.
+        translation: Vergissen is menselijk.
+        speak: Errare humanum est.
+        source: generated
 
   - id: iacto
     term: iacto (iactare)
+    speak: iacto
     translation:
       - werpen, slingeren
       - opschepen (over), pochen
     card_per_sense: true
+    examples:
+      - text: Puer lapides in fluvium iactat.
+        translation: De jongen werpt stenen in de rivier.
+        speak: Puer làpides in flùwium iactat.
+        source: generated
 
   - id: intereo
     term: intereo (interire)
+    speak: intèreo
     forms: { perfect: interii }
     translation:
       - sterven
+    examples:
+      - text: Multi in bello intereunt.
+        translation: Velen sterven in de oorlog.
+        speak: Multi in bello intèreunt.
+        source: generated
 
   - id: lapis
     term: lapis
+    speak: lapis
     forms: { genitive: lapidis, gender: m }
     translation:
       - steen
+    examples:
+      - text: Lapis gravis est.
+        translation: De steen is zwaar.
+        speak: Lapis grawis est.
+        source: generated
 
   - id: mulier
     term: mulier
+    speak: mùlier
     forms: { genitive: mulieris, gender: v }
     translation:
       - vrouw
       - echtgenote, getrouwde vrouw
     card_per_sense: true   # CHECK
+    examples:
+      - text: Mulier liberos suos vocat.
+        translation: De vrouw roept haar kinderen.
+        speak: Mùlier lìberos suos wocat.
+        source: generated
 
   - id: ob
     term: ob + acc.
+    speak: ob
     translation:
       - wegens
+    examples:
+      - text: Ob iram regis servi timent.
+        translation: Wegens de woede van de koning zijn de slaven bang.
+        speak: Ob iram reghis serwi timent.
+        source: generated
 
   - id: ob_eam_rem
     term: ob eam rem
+    speak: ob eam rem
     translation:
       - daarom
+    examples:
+      - text: Pluit; ob eam rem domi manemus.
+        translation: Het regent; daarom blijven we thuis.
+        speak: Pluit; ob eam rem domi manemus.
+        source: generated
 
   - id: par
     term: par (+ dat.)
+    speak: par
     forms: { genitive: paris }
     translation:
       - gelijk (aan), opgewassen (tegen)
+    examples:
+      - text: Romani hostibus pares non sunt.
+        translation: De Romeinen zijn niet opgewassen tegen de vijanden.
+        speak: Romani hòstibus pares non sunt.
+        source: generated
 
   - id: praeter
     term: praeter + acc.
+    speak: praiter
     translation:
       - behalve
       - voorbij
     card_per_sense: true
+    examples:
+      - text: Omnes praeter me venerunt.
+        translation: Iedereen is gekomen behalve ik.
+        speak: Omnes praiter me wenerunt.
+        source: generated
 
   - id: propter
     term: propter + acc.
+    speak: propter
     translation:
       - vanwege, door
+    examples:
+      - text: Propter bellum timemus.
+        translation: Vanwege de oorlog zijn we bang.
+        speak: Propter bellum timemus.
+        source: generated
 
   - id: solitudo
     term: solitudo
+    speak: solitudo
     forms: { genitive: solitudinis, gender: v }
     translation:
       - eenzaamheid
+    examples:
+      - text: Solitudo mihi non placet.
+        translation: Eenzaamheid bevalt mij niet.
+        speak: Solitudo mihi non plachet.
+        source: generated
 
   - id: ut
     term: ut + ind.
+    speak: ut
     translation:
       - zoals
       - zodra
     card_per_sense: true   # CHECK
+    examples:
+      - text: Ut dixi, rex iratus est.
+        translation: Zoals ik zei, is de koning boos.
+        speak: Ut dicsi, recs iratus est.
+        source: generated
 
   - id: vel
     term: vel
+    speak: wel
     translation:
       - of
+    examples:
+      - text: Vinum vel aquam bibe!
+        translation: Drink wijn of water!
+        speak: Winum wel aquam bibe!
+        source: generated
 
   - id: vir
     term: vir
+    speak: wir
     forms: { genitive: viri }
     translation:
       - man
+    examples:
+      - text: Vir fortis pro patria pugnat.
+        translation: De dappere man vecht voor het vaderland.
+        speak: Wir fortis pro pàtria pungnat.
+        source: generated

@@ -7,110 +7,242 @@ meta:
 entries:
   - id: athenai
     term: Ἀθῆναι, αἱ
+    speak: Athènai
     translation:
       - Athene (de stad)
+    examples:
+      - text: ἐν ταῖς Ἀθήναις οἰκοῦμεν.
+        translation: We wonen in Athene.
+        speak: en tais Athènais oikóémèn.
+        source: generated
 
   - id: athenaios
     term: Ἀθηναῖος
+    speak: Athènáíos
     translation:
       - Atheens
+    examples:
+      - text: τὸ πλοῖον Ἀθηναῖόν ἐστιν.
+        translation: Het schip is Atheens.
+        speak: to plóíon Athènáíon estin.
+        source: generated
 
   - id: athenaios_2
     term: Ἀθηναῖος, ὁ
+    speak: Athènáíos
     translation:
       - Athener
+    examples:
+      - text: ὁ Ἀθηναῖος πρὸς τὴν θάλατταν βαίνει.
+        translation: De Athener gaat naar de zee.
+        speak: ho Athènáíos pros tèn thálattan báínei.
+        source: generated
 
   - id: leipo
     term: λείπω, aor. ἔλιπον
+    speak: leipoo
     translation:
       - (ver)laten
+    examples:
+      - text: τὴν οἰκίαν λείπω.
+        translation: Ik verlaat het huis.
+        speak: tèn oikían leipoo.
+        source: generated
 
   - id: lupe
     term: λύπη, ἡ
+    speak: lupè
     translation:
       - verdriet
+    examples:
+      - text: ἡ κόρη λύπην ἔχει.
+        translation: Het meisje heeft verdriet.
+        speak: hè korè lupèn échei.
+        source: generated
 
   - id: me
     term: με, ἐμέ
+    speak: me, emé
     translation:
       - me, mij (accusativus pers. vnw.)
+    examples:
+      - text: ὁ φίλος με καλεῖ.
+        translation: De vriend roept mij.
+        speak: ho philos me kaléí.
+        source: generated
 
   - id: meta_met_meth
     term: μετά/μετ'/μεθ' + acc.
+    speak: metá, met, meth
     translation:
       - na
+    examples:
+      - text: μετὰ τὴν μάχην φεύγουσιν.
+        translation: Na het gevecht vluchten ze.
+        speak: metá tèn machèn phéugoesin.
+        source: generated
 
   - id: gameo
     term: γαμέω (+ acc.)
+    speak: gaméoo
     translation:
       - trouwen (met)
+    examples:
+      - text: ὁ υἱὸς τὴν κόρην γαμεῖ.
+        translation: De zoon trouwt met het meisje.
+        speak: ho huïós tèn korèn gaméí.
+        source: generated
 
   - id: gamos
     term: γάμος, ὁ
+    speak: gamos
     translation:
       - huwelijk
+    examples:
+      - text: ὁ γάμος καλός ἐστιν.
+        translation: Het huwelijk is mooi.
+        speak: ho gamos kalós estin.
+        source: generated
 
   - id: dia
     term: διά + acc.
+    speak: diá
     translation:
       - door, wegens
+    examples:
+      - text: διὰ τὸν φόβον φεύγει.
+        translation: Hij vlucht wegens zijn angst.
+        speak: diá ton phobon pheugei.
+        source: generated
 
   - id: ego
     term: ἐγώ
+    speak: egóó
     translation:
       - ik (pers. vnw.)
+    examples:
+      - text: ἐγὼ ἐνθάδε μένω.
+        translation: Ik blijf hier.
+        speak: egóó enthádè ménoo.
+        source: generated
 
   - id: ei
     term: εἰ
+    speak: ei
     translation:
       - als, indien
+    examples:
+      - text: εἰ μένεις, χαίρω.
+        translation: Als jij blijft, ben ik blij.
+        speak: ei méneis, cháíroo.
+        source: generated
 
   - id: eimi
     term: εἰμί (inf. εἶναι)
+    speak: eimí
     translation:
       - zijn
+    examples:
+      - text: δοῦλός εἰμι.
+        translation: Ik ben een slaaf.
+        speak: doelos eimi.
+        source: generated
 
   - id: eme
     term: ἐμέ, με
+    speak: emé, me
     translation:
       - mij, me (accusativus pers. vnw.)
+    examples:
+      - text: ἐμὲ καλεῖ, οὐ σέ.
+        translation: Hij roept mij, niet jou.
+        speak: emé kaléí, oe sé.
+        source: generated
 
   - id: ploion
     term: πλοῖον, τό
+    speak: plóíon
     translation:
       - schip
+    examples:
+      - text: τὸ πλοῖον ἐν τῇ θαλάττῃ ἐστίν.
+        translation: Het schip is op zee.
+        speak: to plóíon en tè thaláttè estín.
+        source: generated
 
   - id: se
     term: σέ, σε
+    speak: se
     translation:
       - jou, je, u (accusativus pers. vnw.)
+    examples:
+      - text: φιλῶ σε.
+        translation: Ik houd van jou.
+        speak: philóó se.
+        source: generated
 
   - id: su
     term: σύ
+    speak: su
     translation:
       - jij, u (pers. vnw.)
+    examples:
+      - text: σὺ δοῦλος εἶ.
+        translation: Jij bent een slaaf.
+        speak: su doelos éí.
+        source: generated
 
   - id: sozo
     term: σῴζω
+    speak: sóódzoo
     translation:
       - redden
+    examples:
+      - text: ὁ θεὸς τὸ πλοῖον σῴζει.
+        translation: De god redt het schip.
+        speak: ho theós to plóíon sóódzei.
+        source: generated
 
   - id: teknon
     term: τέκνον, τό
+    speak: teknon
     translation:
       - kind
+    examples:
+      - text: τὸ τέκνον ἐν τῇ οἰκίᾳ μένει.
+        translation: Het kind blijft in het huis.
+        speak: to teknon en tè oikía ménei.
+        source: generated
 
   - id: uios
     term: υἱός, ὁ
+    speak: huïós
     translation:
       - zoon
+    examples:
+      - text: ὁ υἱὸς ἐν τῷ πλοίῳ ἐστίν.
+        translation: De zoon is op het schip.
+        speak: ho huïós en too plóíoo estín.
+        source: generated
 
   - id: chairo
     term: χαίρω (+ dat.)
+    speak: cháíroo
     translation:
       - blij zijn (met), zich verheugen (over)
+    examples:
+      - text: τῷ δώρῳ χαίρω.
+        translation: Ik ben blij met het geschenk.
+        speak: too dóóroo cháíroo.
+        source: generated
 
   - id: chronos
     term: χρόνος, ὁ
+    speak: chronos
     translation:
       - tijd
+    examples:
+      - text: ὁ χρόνος μακρός ἐστιν.
+        translation: De tijd is lang.
+        speak: ho chronos makrós estin.
+        source: generated

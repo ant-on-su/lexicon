@@ -7,158 +7,326 @@ meta:
 entries:
   - id: agag
     term: ἀγαγ-
+    speak: agag
     translation:
       - aoristusstam van ἄγω
+    examples:
+      - text: ἐθέλω τὸν ἵππον ἀγαγεῖν.
+        translation: Ik wil het paard leiden.
+        speak: ethéloo ton hippon agagéín.
+        source: generated
 
   - id: ago
     term: ἄγω, aor. ἤγαγον
+    speak: agoo
     translation:
       - brengen, leiden
+    examples:
+      - text: ὁ ἡγεμὼν τὴν στρατιὰν ἄγει.
+        translation: De aanvoerder leidt het leger.
+        speak: ho hègemóón tèn stratián agei.
+        source: generated
 
   - id: adelphos
     term: ἀδελφός, ὁ
+    speak: adelphós
     translation:
       - broer
+    examples:
+      - text: ὁ ἀδελφός μου ἐν τῇ πόλει οἰκεῖ.
+        translation: Mijn broer woont in de stad.
+        speak: ho adelphós moe en tè polei oikéí.
+        source: generated
 
   - id: enegkon
     term: ἤνεγκον (inf. ἐνεγκεῖν)
+    speak: ènenkon
     translation:
       - ik droeg, ik bracht (aor. bij φέρω)
     form_of: phero
+    examples:
+      - text: τὸν σῖτον ἤνεγκον.
+        translation: Ik bracht het eten.
+        speak: ton siton ènenkon.
+        source: generated
 
   - id: kataleipo
     term: καταλείπω, aor. κατέλιπον
+    speak: kataleipoo
     translation:
       - achterlaten
+    examples:
+      - text: τὸν ἵππον ἐν τῷ ἀγρῷ καταλείπω.
+        translation: Ik laat het paard op het veld achter.
+        speak: ton hippon en too agróó kataleipoo.
+        source: generated
 
   - id: lip
     term: λιπ-
+    speak: lip
     translation:
       - aoristusstam van λείπω
+    examples:
+      - text: οὐκ ἐθέλω σε λιπεῖν.
+        translation: Ik wil je niet verlaten.
+        speak: oek ethéloo se lipéín.
+        source: generated
 
   - id: lupeo
     term: λυπέω
+    speak: lupéoo
     translation:
       - kwellen, verdriet doen
+    examples:
+      - text: ὁ παῖς τὴν μητέρα λυπεῖ.
+        translation: Het kind doet zijn moeder verdriet.
+        speak: ho pais tèn mètéra lupéí.
+        source: generated
 
   - id: onoma
     term: ὄνομα, τό
+    speak: onoma
     forms: { genitive: ὀνόματος }
     translation:
       - naam
+    examples:
+      - text: τί τὸ ὄνομά σου;
+        translation: Wat is jouw naam?
+        speak: ti to onoma soe?
+        source: generated
 
   - id: archo
     term: ἄρχω + gen.
+    speak: archoo
     translation:
       - beginnen met
+    examples:
+      - text: τοῦ ἔργου ἄρχομεν.
+        translation: We beginnen met het werk.
+        speak: toe ergoe archomèn.
+        source: generated
 
   - id: diaphtheiro
     term: διαφθείρω
+    speak: diaphthéíroo
     translation:
       - te gronde richten, vernietigen
+    examples:
+      - text: οἱ πολέμιοι τὴν πόλιν διαφθείρουσιν.
+        translation: De vijanden vernietigen de stad.
+        speak: hoi polémioi tèn polin diaphthéíroesin.
+        source: generated
 
   - id: elipon
     term: ἔλιπον (inf. λιπεῖν)
+    speak: élipon
     translation:
       - ik liet, ik verliet (aor. van λείπω)
     form_of: leipo
+    examples:
+      - text: τὴν οἰκίαν ἔλιπον.
+        translation: Ik verliet het huis.
+        speak: tèn oikían élipon.
+        source: generated
 
   - id: enegk
     term: ἐνεγκ-
+    speak: enenk
     translation:
       - aoristusstam bij φέρω
+    examples:
+      - text: ἐθέλω τὸν σῖτον ἐνεγκεῖν.
+        translation: Ik wil het eten brengen.
+        speak: ethéloo ton siton enenkéín.
+        source: generated
 
   - id: epeson
     term: ἔπεσον (inf. πεσεῖν)
+    speak: épeson
     translation:
       - ik viel (aor. bij πίπτω)
     form_of: pipto
+    examples:
+      - text: ἐκ τοῦ ἵππου ἔπεσον.
+        translation: Ik viel van het paard.
+        speak: ek toe hippoe épeson.
+        source: generated
 
   - id: etekon
     term: ἔτεκον (inf. τεκεῖν)
+    speak: étekon
     translation:
       - ik baarde, ik bracht ter wereld (aor. van τίκτω)
     form_of: tikto
+    examples:
+      - text: ἡ γυνὴ δύο παῖδας ἔτεκεν.
+        translation: De vrouw baarde twee kinderen.
+        speak: hè gunè duo paidas étekèn.
+        source: generated
 
   - id: e
     term: ἤ
+    speak: è
     translation:
       - of
+    examples:
+      - text: μένεις ἢ φεύγεις;
+        translation: Blijf je of vlucht je?
+        speak: méneis è pheugeis?
+        source: generated
 
   - id: egagon
     term: ἤγαγον (inf. ἀγαγεῖν)
+    speak: ègagon
     translation:
       - ik bracht, ik leidde (aor. van ἄγω)
     form_of: ago
+    examples:
+      - text: τὸν ἵππον οἴκαδε ἤγαγον.
+        translation: Ik bracht het paard naar huis.
+        speak: ton hippon oikadè ègagon.
+        source: generated
 
   - id: pes
     term: πεσ-
+    speak: pes
     translation:
       - aoristusstam van πίπτω
+    examples:
+      - text: ὁ παῖς οὐκ ἐθέλει πεσεῖν.
+        translation: Het kind wil niet vallen.
+        speak: ho pais oek ethélei peséín.
+        source: generated
 
   - id: pipto
     term: πίπτω, aor. ἔπεσον
+    speak: piptoo
     translation:
       - vallen
+    examples:
+      - text: ἡ πέτρα εἰς τὴν θάλατταν πίπτει.
+        translation: Het rotsblok valt in de zee.
+        speak: hè pétra eis tèn thálattan piptei.
+        source: generated
 
   - id: pisteuo
     term: πιστεύω + dat.
+    speak: pisteuoo
     translation:
       - vertrouwen
+    examples:
+      - text: τῷ ἀδελφῷ πιστεύω.
+        translation: Ik vertrouw mijn broer.
+        speak: too adelphóó pisteuoo.
+        source: generated
 
   - id: protos
     term: πρῶτος
+    speak: próótos
     translation:
       - eerste
+    examples:
+      - text: ὁ πρῶτος στρατιώτης πίπτει.
+        translation: De eerste soldaat valt.
+        speak: ho próótos stratióótès piptei.
+        source: generated
 
   - id: ti
     term: τι (zonder accent!)
+    speak: ti
     forms: { genitive: τινος }
     translation:
       - iets (zelfstandig gebruikt)
       - enig(e) (bijvoeglijk gebruikt)
     card_per_sense: true
+    examples:
+      - text: ἀκούω τι.
+        translation: Ik hoor iets.
+        speak: akóéoo ti.
+        source: generated
 
   - id: ti_2
     term: "τί...: (met accent!)"
+    speak: ti
     translation:
       - welk(e)
+    examples:
+      - text: τί ὄνομα ἔχεις;
+        translation: Welke naam heb je?
+        speak: ti onoma écheis?
+        source: generated
 
   - id: tikto
     term: τίκτω, aor. ἔτεκον
+    speak: tiktoo
     translation:
       - baren, ter wereld brengen
+    examples:
+      - text: ἡ θεὰ υἱὸν τίκτει.
+        translation: De godin brengt een zoon ter wereld.
+        speak: hè theá huïón tiktei.
+        source: generated
 
   - id: tis
     term: τις (zonder accent!)
+    speak: tis
     forms: { genitive: τινος }
     translation:
       - iemand (zelfstandig gebruikt)
       - een of ander(e) (bijvoeglijk gebruikt)
       - enkele(n), sommige(n) (meervoud)
     card_per_sense: true
+    examples:
+      - text: ξένος τις ἥκει.
+        translation: Er is een of andere vreemdeling gekomen.
+        speak: ksenos tis hèkei.
+        source: generated
 
   - id: tis_2
     term: "τίς (τί), τίνος...: (met accent!)"
+    speak: tis, ti
     translation:
       - wie, wat?
       - welk(e)?
     card_per_sense: true
+    examples:
+      - text: τίς ἐστιν ὁ ξένος;
+        translation: Wie is de vreemdeling?
+        speak: tis estin ho ksenos?
+        source: generated
 
   - id: trecho
     term: τρέχω
+    speak: tréchoo
     translation:
       - rennen
+    examples:
+      - text: ὁ παῖς πρὸς τὴν μητέρα τρέχει.
+        translation: Het kind rent naar zijn moeder.
+        speak: ho pais pros tèn mètéra tréchei.
+        source: generated
 
   - id: phero
     term: φέρω, aor. ἤνεγκον
+    speak: phéroo
     translation:
       - dragen
       - brengen
     card_per_sense: true
+    examples:
+      - text: ἡ δούλη ὕδωρ φέρει.
+        translation: De slavin brengt water.
+        speak: hè doelè hudoor phérei.
+        source: generated
 
   - id: phulax
     term: φύλαξ, ὁ
+    speak: phulaks
     forms: { genitive: φύλακος }
     translation:
       - wachter, bewaker
+    examples:
+      - text: ὁ φύλαξ τὰς πύλας φυλάττει.
+        translation: De wachter bewaakt de poort.
+        speak: ho phulaks tas pulas phuláttei.
+        source: generated

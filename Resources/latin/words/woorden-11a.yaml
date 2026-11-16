@@ -7,169 +7,343 @@ meta:
 entries:
   - id: a_ab
     term: a, ab + abl.
+    speak: a, ab
     translation:
       - door (bij pass. werkwoorden)
+    examples:
+      - text: Servus a domino vocatur.
+        translation: De slaaf wordt door zijn heer geroepen.
+        speak: Serwus a dòmino wocatur.
+        source: generated
 
   - id: ablatus
     term: ablatus
+    speak: ablatus
     translation:
       - ppp van aufero (auferre)
     form_of: aufero
+    examples:
+      - text: Aurum a servo ablatum est.
+        translation: Het goud is door de slaaf weggenomen.
+        speak: Aurum a serwo ablatum est.
+        source: generated
 
   - id: animal
     term: animal
+    speak: ànimal
     forms: { genitive: animalis, gender: o }
     translation:
       - levend wezen, dier
+    examples:
+      - text: Equus animal pulchrum est.
+        translation: Het paard is een mooi dier.
+        speak: Equus ànimal pulchrum est.
+        source: generated
 
   - id: aufero
     term: aufero (auferre) (+ abl.)
+    speak: àufero
     forms: { perfect: abstuli }
     translation:
       - wegnemen, ontnemen (aan)
+    examples:
+      - text: Hostes frumentum auferunt.
+        translation: De vijanden nemen het graan weg.
+        speak: Hostes frumentum àuferunt.
+        source: generated
 
   - id: avus
     term: avus
+    speak: awus
     translation:
       - grootvader
+    examples:
+      - text: Avus meus agricola erat.
+        translation: Mijn grootvader was boer.
+        speak: Awus meus agrìcola erat.
+        source: generated
 
   - id: bos
     term: bos
+    speak: bos
     forms: { genitive: bovis, gender: m/v }
     translation:
       - rund
       - koe
     card_per_sense: true
+    examples:
+      - text: Bos in agro stat.
+        translation: Het rund staat op de akker.
+        speak: Bos in agro stat.
+        source: generated
 
   - id: dictus
     term: dictus
+    speak: dictus
     translation:
       - ppp van dico (dicĕre)
     form_of: dico
+    examples:
+      - text: Verbum a rege dictum est.
+        translation: Het woord is door de koning gezegd.
+        speak: Werbum a reghe dictum est.
+        source: generated
 
   - id: diu
     term: diu (bijw.)
+    speak: diu
     translation:
       - lange tijd
+    examples:
+      - text: Diu in silva erravimus.
+        translation: We hebben lange tijd in het bos rondgezworven.
+        speak: Diu in silwa errawimus.
+        source: generated
 
   - id: expello
     term: expello (expellĕre)
+    speak: ecspello
     translation:
       - verdrijven
+    examples:
+      - text: Romani regem expellunt.
+        translation: De Romeinen verdrijven de koning.
+        speak: Romani reghem ecspellunt.
+        source: generated
 
   - id: fero
     term: fero (ferre)
+    speak: fero
     forms: { perfect: tuli }
     translation:
       - brengen, dragen
       - verdragen
     card_per_sense: true
+    examples:
+      - text: Servus aquam fert.
+        translation: De slaaf brengt water.
+        speak: Serwus aquam fert.
+        source: generated
 
   - id: illic
     term: illic
+    speak: illic
     translation:
       - daar
+    examples:
+      - text: Illic avus meus habitat.
+        translation: Daar woont mijn grootvader.
+        speak: Illic awus meus hàbitat.
+        source: generated
 
   - id: invenio
     term: invenio (invenire)
+    speak: inwènio
     forms: { perfect: inveni }
     translation:
       - vinden, aantreffen
+    examples:
+      - text: Puer aurum in agro invenit.
+        translation: De jongen vindt goud op de akker.
+        speak: Puer aurum in agro ìnwenit.
+        source: generated
 
   - id: latus
     term: latus
+    speak: latus
     translation:
       - ppp van fero (ferre)
     form_of: fero
+    examples:
+      - text: Cibus a servis latus est.
+        translation: Het eten is door de slaven gebracht.
+        speak: Chibus a serwis latus est.
+        source: generated
 
   - id: locus
     term: locus
+    speak: locus
     translation:
       - plaats, streek (mv. loca of loci)
+    examples:
+      - text: Hic locus pulcher est.
+        translation: Deze plaats is mooi.
+        speak: Hic locus pulcher est.
+        source: generated
 
   - id: ne
     term: ne + conj.
+    speak: ne
     translation:
       - opdat niet, om niet te
+    examples:
+      - text: Servus fugit, ne capiatur.
+        translation: De slaaf vlucht om niet gevangen te worden.
+        speak: Serwus fughit, ne capiatur.
+        source: generated
 
   - id: nepos
     term: nepos
+    speak: nepos
     forms: { genitive: nepotis, gender: m }
     translation:
       - kleinzoon
+    examples:
+      - text: Avus nepotem suum amat.
+        translation: Grootvader houdt van zijn kleinzoon.
+        speak: Awus nepotem suum amat.
+        source: generated
 
   - id: occupo
     term: occupo (occupare)
+    speak: òccupo
     translation:
       - bezetten, in bezit nemen
+    examples:
+      - text: Hostes oppidum occupant.
+        translation: De vijanden bezetten de stad.
+        speak: Hostes òppidum òccupant.
+        source: generated
 
   - id: oppidum
     term: oppidum
+    speak: òppidum
     translation:
       - (vesting)stad
+    examples:
+      - text: Oppidum muris cingitur.
+        translation: De stad wordt door muren omringd.
+        speak: Òppidum muris chìnghitur.
+        source: generated
 
   - id: pauci
     term: pauci
+    speak: pauchi
     forms: { genitive: paucorum }
     translation:
       - weinige(n), enkele(n)
+    examples:
+      - text: Pauci milites fugiunt.
+        translation: Enkele soldaten vluchten.
+        speak: Pauchi mìlites fùghiunt.
+        source: generated
 
   - id: pervenio
     term: pervenio (pervenire)
+    speak: perwènio
     forms: { perfect: perveni }
     translation:
       - (aan)komen, bereiken
+    examples:
+      - text: Nuntius ad urbem pervenit.
+        translation: De bode bereikt de stad.
+        speak: Nùntius ad urbem pèrwenit.
+        source: generated
 
   - id: quaesitus
     term: quaesitus
+    speak: quaisitus
     translation:
       - ppp van quaero (quaerĕre)
     form_of: quaero
+    examples:
+      - text: Aurum diu quaesitum non inveni.
+        translation: Ik heb het lang gezochte goud niet gevonden.
+        speak: Aurum diu quaisitum non inweni.
+        source: generated
 
   - id: quaesivi
     term: quaesivi
+    speak: quaisiwi
     translation:
       - perf. van quaero (quaerĕre)
     form_of: quaero
+    examples:
+      - text: Te ubique quaesivi.
+        translation: Ik heb je overal gezocht.
+        speak: Te ubique quaisiwi.
+        source: generated
 
   - id: tractus
     term: tractus
+    speak: tractus
     translation:
       - ppp van traho (trahĕre)
     form_of: traho
+    examples:
+      - text: Navis ad litus tracta est.
+        translation: Het schip is naar de kust getrokken.
+        speak: Nawis ad litus tracta est.
+        source: generated
 
   - id: traho
     term: traho (trahĕre)
+    speak: traho
     forms: { perfect: traxi }
     translation:
       - trekken
+    examples:
+      - text: Boves plaustrum trahunt.
+        translation: De runderen trekken de wagen.
+        speak: Bowes plaustrum trahunt.
+        source: generated
 
   - id: ut
     term: ut + conj.
+    speak: ut
     translation:
       - opdat, om te
       - zodat
     card_per_sense: true   # CHECK
+    examples:
+      - text: Pater laborat, ut liberi cibum habeant.
+        translation: Vader werkt opdat de kinderen eten hebben.
+        speak: Pater laborat, ut lìberi chibum hàbeant.
+        source: generated
 
   - id: vestigium
     term: vestigium
+    speak: westìghium
     translation:
       - (voet)spoor
+    examples:
+      - text: In terra vestigia equi video.
+        translation: Ik zie sporen van een paard op de grond.
+        speak: In terra westìghia equi wìdeo.
+        source: generated
 
   - id: captus
     term: captus
+    speak: captus
     translation:
       - ppp van capio (capĕre)
     form_of: capio
+    examples:
+      - text: Oppidum a Romanis captum est.
+        translation: De stad is door de Romeinen ingenomen.
+        speak: Òppidum a Romanis captum est.
+        source: generated
 
   - id: locutus_sum
     term: locutus sum
+    speak: locutus sum
     translation:
       - perf. van loquor (loqui)
     form_of: loquor
+    examples:
+      - text: Cum rege locutus sum.
+        translation: Ik heb met de koning gesproken.
+        speak: Cum reghe locutus sum.
+        source: generated
 
   - id: tentus
     term: tentus
+    speak: tentus
     translation:
       - ppp van teneo (tenēre)
     form_of: teneo
+    examples:
+      - text: Captivus in castris tentus est.
+        translation: De krijgsgevangene is in het legerkamp vastgehouden.
+        speak: Captiwus in castris tentus est.
+        source: generated

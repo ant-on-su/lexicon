@@ -7,78 +7,162 @@ meta:
 entries:
   - id: audio
     term: audio (audire)
+    speak: àudio
     translation:
       - horen, luisteren
+    examples:
+      - text: Servus regem vocare audit.
+        translation: De slaaf hoort de koning roepen.
+        speak: Serwus reghem wocare audit.
+        source: generated
 
   - id: autem
     term: autem
+    speak: autem
     translation:
       - echter, maar
+    examples:
+      - text: Rex laetus est, servus autem stultus.
+        translation: De koning is blij, de slaaf echter dom.
+        speak: Recs laitus est, serwus autem stultus.
+        source: generated
 
   - id: cano
     term: cano (canĕre)
+    speak: cano
     translation:
       - zingen
       - spelen
     card_per_sense: true
+    examples:
+      - text: Servus in silva canit.
+        translation: De slaaf zingt in het bos.
+        speak: Serwus in silwa canit.
+        source: generated
 
   - id: certo
     term: certo (certare)
+    speak: cherto
     translation:
       - strijden
+    examples:
+      - text: Servi de victoria certant.
+        translation: De slaven strijden om de overwinning.
+        speak: Serwi de wictòria chertant.
+        source: generated
 
   - id: clamo
     term: clamo (clamare)
+    speak: clamo
     translation:
       - roepen
+    examples:
+      - text: Victor laetus clamat.
+        translation: De winnaar roept blij.
+        speak: Wictor laitus clamat.
+        source: generated
 
   - id: deus
     term: deus
+    speak: deus
     translation:
       - god
+    examples:
+      - text: Deus regi aurum dat.
+        translation: De god geeft de koning goud.
+        speak: Deus reghi aurum dat.
+        source: generated
 
   - id: do
     term: do (dare)
+    speak: do
     forms: { perfect: dedi }
     translation:
       - geven
+    examples:
+      - text: Rex servo donum dat.
+        translation: De koning geeft de slaaf een geschenk.
+        speak: Recs serwo donum dat.
+        source: generated
 
   - id: erro
     term: erro (errare)
+    speak: erro
     translation:
       - rondzwerven, dwalen
       - zich vergissen
     card_per_sense: true
+    examples:
+      - text: Servus stultus in silva errat.
+        translation: De domme slaaf dwaalt rond in het bos.
+        speak: Serwus stultus in silwa errat.
+        source: generated
 
   - id: habeo
     term: habeo (habēre)
+    speak: hàbeo
     forms: { perfect: habui }
     translation:
       - hebben, houden
+    examples:
+      - text: Rex multum aurum habet.
+        translation: De koning heeft veel goud.
+        speak: Recs multum aurum habet.
+        source: generated
 
   - id: silva
     term: silva
+    speak: silwa
     translation:
       - bos
+    examples:
+      - text: Silva magna et obscura est.
+        translation: Het bos is groot en donker.
+        speak: Silwa mangna et obscura est.
+        source: generated
 
   - id: stultus_a_um
     term: stultus, -a, -um
+    speak: stultus, stulta, stultum
     translation:
       - dom, stom, dwaas
+    examples:
+      - text: Servus stultus vinum in mensa non videt.
+        translation: De domme slaaf ziet de wijn op tafel niet.
+        speak: Serwus stultus winum in mensa non widet.
+        source: generated
 
   - id: victor
     term: victor
+    speak: wictor
     forms: { genitive: victoris, gender: m }
     translation:
       - (over)winnaar
+    examples:
+      - text: Rex victori donum dat.
+        translation: De koning geeft de winnaar een geschenk.
+        speak: Recs wictori donum dat.
+        source: generated
 
   - id: victoria
     term: victoria
+    speak: wictòria
     translation:
       - overwinning
+    examples:
+      - text: Victoria regem laetum facit.
+        translation: De overwinning maakt de koning blij.
+        speak: Wictòria reghem laitum fàchit.
+        source: generated
 
   - id: video
     term: video (vidēre)
+    speak: wìdeo
     forms: { perfect: vidi }
     translation:
       - zien
+    examples:
+      - text: In silva deum video.
+        translation: In het bos zie ik een god.
+        speak: In silwa deum wìdeo.
+        source: generated

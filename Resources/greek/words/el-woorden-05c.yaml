@@ -7,60 +7,132 @@ meta:
 entries:
   - id: ago
     term: ἄγω, aor. ἤγαγον
+    speak: agoo
     translation:
       - brengen, leiden
+    examples:
+      - text: ὁ δοῦλος τὸν ἵππον εἰς τὴν οἰκίαν ἄγει.
+        translation: De slaaf brengt het paard naar het huis.
+        speak: ho doelos ton hippon eis tèn oikían agei.
+        source: generated
 
   - id: ischuros
     term: ἰσχυρός
+    speak: ischurós
     translation:
       - sterk, krachtig
+    examples:
+      - text: ὁ ἵππος ἰσχυρός ἐστιν.
+        translation: Het paard is sterk.
+        speak: ho hippos ischurós estin.
+        source: generated
 
   - id: keleuo
     term: κελεύω + acc. + inf.
+    speak: keleuoo
     translation:
       - bevelen, verzoeken, vragen om
+    examples:
+      - text: ὁ δεσπότης τὸν δοῦλον κελεύει μένειν.
+        translation: De meester beveelt de slaaf te blijven.
+        speak: ho despótès ton doelon keleuei ménein.
+        source: generated
 
   - id: krateo
     term: κρατέω + gen.
+    speak: kratéoo
     translation:
       - macht hebben over, zich meester maken van, overwinnen
+    examples:
+      - text: οἱ θεοὶ τῆς θαλάττης κρατοῦσιν.
+        translation: De goden hebben macht over de zee.
+        speak: hoi theói tès thaláttès kratóésin.
+        source: generated
 
   - id: logos
     term: λόγος, ὁ
+    speak: logos
     translation:
       - woord
+    examples:
+      - text: τοὺς λόγους τοῦ φίλου θαυμάζω.
+        translation: Ik bewonder de woorden van de vriend.
+        speak: toes logoes toe philoe thaumádzoo.
+        source: generated
 
   - id: nekros
     term: νεκρός, ὁ
+    speak: nekrós
     translation:
       - lijk, dode
+    examples:
+      - text: οἱ ἑταῖροι τὸν νεκρὸν φέρουσιν.
+        translation: De makkers dragen de dode.
+        speak: hoi hetáíroi ton nekrón phéroesin.
+        source: generated
 
   - id: autou
     term: αὐτοῦ
+    speak: autóé
     translation:
       - (van) hem (genitivus pers. vnw.)
+    examples:
+      - text: ὁ ἵππος αὐτοῦ καλός ἐστιν.
+        translation: Zijn paard is mooi.
+        speak: ho hippos autóé kalós estin.
+        source: generated
 
   - id: ek
     term: ἐκ + gen.
+    speak: ek
     translation:
       - uit
+    examples:
+      - text: ἐκ τῆς οἰκίας φεύγει.
+        translation: Hij vlucht het huis uit.
+        speak: ek tès oikías pheugei.
+        source: generated
 
   - id: exesti
     term: ἔξεστι(ν) + dat. + inf.
+    speak: éksesti
     translation:
       - het is (voor iemand) mogelijk/ geoorloofd om
+    examples:
+      - text: ἔξεστί σοι μένειν.
+        translation: Je mag blijven.
+        speak: éksesti soi ménein.
+        source: generated
 
   - id: epi
     term: ἐπί + dat.
+    speak: epí
     translation:
       - bij, op, aan
+    examples:
+      - text: ὁ νεκρὸς ἐπὶ τῇ πέτρᾳ κεῖται.
+        translation: De dode ligt op het rotsblok.
+        speak: ho nekrós epí tè pétra kéítai.
+        source: generated
 
   - id: pulai
     term: πύλαι, αἱ
+    speak: pulai
     translation:
       - poort, ingang
+    examples:
+      - text: αἱ πύλαι μεγάλαι εἰσίν.
+        translation: De poort is groot.
+        speak: hai pulai megálai eisín.
+        source: generated
 
   - id: tote
     term: τότε
+    speak: totè
     translation:
       - dan, toen
+    examples:
+      - text: τότε οἱ ξένοι ἥκουσιν.
+        translation: Dan komen de vreemdelingen.
+        speak: totè hoi ksenoi hèkoesin.
+        source: generated

@@ -7,109 +7,235 @@ meta:
 entries:
   - id: akouo
     term: ἀκούω
+    speak: akóéoo
     translation:
       - horen
+    examples:
+      - text: τὸν λόγον ἀκούω.
+        translation: Ik hoor het woord.
+        speak: ton logon akóéoo.
+        source: generated
 
   - id: akouo_2
     term: ἀκούω + gen.
+    speak: akóéoo
     translation:
       - (bij personen) horen, luisteren (naar)
+    examples:
+      - text: τοῦ δεσπότου ἀκούομεν.
+        translation: We luisteren naar de meester.
+        speak: toe despótoe akóéomèn.
+        source: generated
 
   - id: emera
     term: ἡμέρα, ἡ
+    speak: hèméra
     translation:
       - dag
+    examples:
+      - text: ἡ ἡμέρα καλή ἐστιν.
+        translation: Het is een mooie dag.
+        speak: hè hèméra kalè estin.
+        source: generated
 
   - id: thaumazo_oti
     term: θαυμάζω ὅτι
+    speak: thaumádzoo hoti
     translation:
       - zich erover verwonderen dat
+    examples:
+      - text: θαυμάζω ὅτι οὐκ ἥκεις.
+        translation: Ik verwonder me erover dat je niet komt.
+        speak: thaumádzoo hoti oek hèkeis.
+        source: generated
 
   - id: thura
     term: θύρα, ἡ
+    speak: thura
     translation:
       - deur
+    examples:
+      - text: ἡ θύρα μεγάλη ἐστίν.
+        translation: De deur is groot.
+        speak: hè thura megálè estín.
+        source: generated
 
   - id: meno
     term: μένω, aor. ἔμεινα
+    speak: ménoo
     translation:
       - blijven  # CHECK
       - wachten (op)
     card_per_sense: true
+    examples:
+      - text: ἐν τῇ οἰκίᾳ μένομεν.
+        translation: We blijven in het huis.
+        speak: en tè oikía ménomèn.
+        source: generated
 
   - id: me
     term: μή
+    speak: mè
     translation:
       - niet (bij gebiedende wijs)
+    examples:
+      - text: μὴ φεῦγε!
+        translation: Vlucht niet!
+        speak: mè pheugè!
+        source: generated
 
   - id: mou
     term: μου, ἐμοῦ
+    speak: moe, emóé
     translation:
       - (van) mij, mijn (genitivus pers. vnw.)
+    examples:
+      - text: ὁ ἵππος μου καλός ἐστιν.
+        translation: Mijn paard is mooi.
+        speak: ho hippos moe kalós estin.
+        source: generated
 
   - id: autois
     term: αὐτοῖς
+    speak: autóís
     translation:
       - (aan/voor) hen (dativus pers. vnw.)
+    examples:
+      - text: δῶρα αὐτοῖς πέμπω.
+        translation: Ik stuur hun geschenken.
+        speak: doora autóís pempoo.
+        source: generated
 
   - id: dakruo
     term: δακρύω
+    speak: dakrúoo
     translation:
       - huilen
+    examples:
+      - text: ἡ κόρη δακρύει.
+        translation: Het meisje huilt.
+        speak: hè korè dakrúei.
+        source: generated
 
   - id: de
     term: δή
+    speak: dè
     translation:
       - (geeft nadruk) dan, dus (vaak moeilijk te vertalen)
+    examples:
+      - text: τί δὴ φεύγεις;
+        translation: Waarom vlucht je dan?
+        speak: ti dè pheugeis?
+        source: generated
 
   - id: einai
     term: εἶναι
+    speak: éínai
     translation:
       - (te) zijn (infinitivus)
+    examples:
+      - text: ἐθέλω ἀνδρεῖος εἶναι.
+        translation: Ik wil dapper zijn.
+        speak: ethéloo andréíos éínai.
+        source: generated
 
   - id: emos
     term: ἐμός, ἐμή, ἐμόν
+    speak: emós, emè, emón
     translation:
       - mijn (bezittelijk vnw.)
+    examples:
+      - text: ὁ ἐμὸς φίλος ἐνθάδε ἐστίν.
+        translation: Mijn vriend is hier.
+        speak: ho emós philos enthádè estín.
+        source: generated
 
   - id: emou
     term: ἐμοῦ, μου
+    speak: emóé, moe
     translation:
       - (van) mij, mijn (genitivus pers. vnw.)
+    examples:
+      - text: ἀκούει ἐμοῦ.
+        translation: Hij luistert naar mij.
+        speak: akóéei emóé.
+        source: generated
 
   - id: emeis
     term: ἡμεῖς, ἡμῶν, ἡμῖν, ἡμᾶς
+    speak: hèméís, hèmóón, hèmín, hèmás
     translation:
       - wij (nom., gen., dat., acc. pers. vnw.)
+    examples:
+      - text: ἡμεῖς ἐνθάδε μένομεν.
+        translation: Wij blijven hier.
+        speak: hèméís enthádè ménomèn.
+        source: generated
 
   - id: palin
     term: πάλιν
+    speak: palin
     translation:
       - weer, opnieuw
       - terug
     card_per_sense: true
+    examples:
+      - text: πάλιν ἥκει.
+        translation: Hij is weer gekomen.
+        speak: palin hèkei.
+        source: generated
 
   - id: pros
     term: πρός + dat.
+    speak: pros
     translation:
       - bij
+    examples:
+      - text: πρὸς τῇ θύρᾳ μένει.
+        translation: Hij wacht bij de deur.
+        speak: pros tè thura ménei.
+        source: generated
 
   - id: sos
     term: σός, σή, σόν
+    speak: sos, sè, son
     translation:
       - jouw, uw (bezittelijk vnw.)
+    examples:
+      - text: ὁ σὸς ἵππος ἰσχυρός ἐστιν.
+        translation: Jouw paard is sterk.
+        speak: ho sos hippos ischurós estin.
+        source: generated
 
   - id: sou
     term: σοῦ, σου
+    speak: soe
     translation:
       - (van) jou/u, jouw/uw (genitivus pers. vnw.)
+    examples:
+      - text: ἀκούω σου.
+        translation: Ik luister naar je.
+        speak: akóéoo soe.
+        source: generated
 
   - id: umeis
     term: ὑμεῖς, ὑμῶν, ὑμῖν, ὑμᾶς
+    speak: huméís, humóón, humín, humás
     translation:
       - jullie, u (nom., gen., dat., acc. pers. vnw.)
+    examples:
+      - text: ὑμεῖς ἀνδρεῖοί ἐστε.
+        translation: Jullie zijn dapper.
+        speak: huméís andréíoi este.
+        source: generated
 
   - id: ode
     term: ὧδε
+    speak: hoodè
     translation:
       - zo, als volgt
+    examples:
+      - text: ὧδε λέγει.
+        translation: Hij zegt het volgende.
+        speak: hoodè légei.
+        source: generated

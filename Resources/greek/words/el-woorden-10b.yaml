@@ -7,60 +7,126 @@ meta:
 entries:
   - id: lampros
     term: λαμπρός
+    speak: lamprós
     translation:
       - schitterend
+    examples:
+      - text: ὁ ἥλιος λαμπρός ἐστιν.
+        translation: De zon is schitterend.
+        speak: ho hèlios lamprós estin.
+        source: generated
 
   - id: archo
     term: ἄρχω + gen.
+    speak: archoo
     translation:
       - voorgaan, leiden
       - heersen over
     card_per_sense: true
+    examples:
+      - text: ὁ ἡγεμὼν τῆς στρατιᾶς ἄρχει.
+        translation: De aanvoerder leidt het leger.
+        speak: ho hègemóón tès stratiás archei.
+        source: generated
 
   - id: dioko
     term: διώκω
+    speak: dióókoo
     translation:
       - achtervolgen
+    examples:
+      - text: ὁ λέων τὸν ἵππον διώκει.
+        translation: De leeuw achtervolgt het paard.
+        speak: ho léoon ton hippon dióókei.
+        source: generated
 
   - id: elauno
     term: ἐλαύνω
+    speak: eláúnoo
     translation:
       - (voort)drijven
       - optrekken, marcheren
     card_per_sense: true
+    examples:
+      - text: ὁ στρατηγὸς ἐπὶ τὴν πόλιν ἐλαύνει.
+        translation: De legeraanvoerder trekt op naar de stad.
+        speak: ho stratègós epí tèn polin eláúnei.
+        source: generated
 
   - id: eu
     term: εὖ
+    speak: eu
     translation:
       - goed (bijwoord)
+    examples:
+      - text: εὖ λέγεις.
+        translation: Je spreekt goed.
+        speak: eu légeis.
+        source: generated
 
   - id: pistos
     term: πιστός
+    speak: pistós
     translation:
       - trouw, betrouwbaar
+    examples:
+      - text: ὁ δοῦλος πιστός ἐστιν.
+        translation: De slaaf is trouw.
+        speak: ho doelos pistós estin.
+        source: generated
 
   - id: polis
     term: πόλις, ἡ
+    speak: polis
     forms: { accusative: πόλιν }
     translation:
       - stad
+    examples:
+      - text: ἡ πόλις μεγάλη ἐστίν.
+        translation: De stad is groot.
+        speak: hè polis megálè estín.
+        source: generated
 
   - id: proteron
     term: πρότερον
+    speak: próteron
     translation:
       - eerder (bijwoord)
+    examples:
+      - text: ὁ ἄγγελος πρότερον ἥκει.
+        translation: De bode is eerder gekomen.
+        speak: ho angelos próteron hèkei.
+        source: generated
 
   - id: proteros
     term: πρότερος
+    speak: próteros
     translation:
       - eerder, vroeger
+    examples:
+      - text: ὁ πρότερος δεσπότης κακὸς ἦν.
+        translation: De vorige meester was slecht.
+        speak: ho próteros despótès kakós èn.
+        source: generated
 
   - id: teleute
     term: τελευτή, ἡ
+    speak: teleutè
     translation:
       - einde
+    examples:
+      - text: ἡ τελευτὴ τοῦ πολέμου καλή ἐστιν.
+        translation: Het einde van de oorlog is mooi.
+        speak: hè teleutè toe polémoe kalè estin.
+        source: generated
 
   - id: phulatto
     term: φυλάττω
+    speak: phulattoo
     translation:
       - bewaken
+    examples:
+      - text: οἱ στρατιῶται τὰς πύλας φυλάττουσιν.
+        translation: De soldaten bewaken de poort.
+        speak: hoi stratióótai tas pulas phuláttoesin.
+        source: generated

@@ -10,31 +10,55 @@ entries:
     term: außerdem
     translation:
       - bovendien
+    examples:
+      - text: Das Haus ist groß und außerdem billig.
+        translation: Het huis is groot en bovendien goedkoop.
+        source: generated
 
   - id: bild
     term: das Bild
     translation:
       - de foto
+    examples:
+      - text: Das Bild hängt über dem Sofa.
+        translation: De foto hangt boven de bank.
+        source: generated
 
   - id: foto
     term: das Foto
     translation:
       - de foto
+    examples:
+      - text: Ich mache ein Foto von meinem Zimmer.
+        translation: Ik maak een foto van mijn kamer.
+        source: generated
 
   - id: daneben
     term: daneben
     translation:
       - ernaast
+    examples:
+      - text: Da ist der Tisch und daneben steht ein Stuhl.
+        translation: Daar is de tafel en ernaast staat een stoel.
+        source: generated
 
   - id: deshalb
     term: deshalb
     translation:
       - daarom
+    examples:
+      - text: Ich bin müde, deshalb gehe ich ins Bett.
+        translation: Ik ben moe, daarom ga ik naar bed.
+        source: generated
 
   - id: darum
     term: darum
     translation:
       - daarom
+    examples:
+      - text: Es regnet, darum bleiben wir zu Hause.
+        translation: Het regent, daarom blijven we thuis.
+        source: generated
 
   - id: dorf
     term: das Dorf
@@ -42,26 +66,46 @@ entries:
     translation:
       - het dorp
     translation_forms: { plural: de dorpen }
+    examples:
+      - text: Das Dorf ist klein, aber schön.
+        translation: Het dorp is klein, maar mooi.
+        source: generated
 
   - id: im_dorf
     term: im Dorf
     translation:
       - in het dorp
+    examples:
+      - text: Meine Oma wohnt im Dorf.
+        translation: Mijn oma woont in het dorp.
+        source: generated
 
   - id: fertig
     term: fertig
     translation:
       - klaar
+    examples:
+      - text: Das Essen ist fertig!
+        translation: Het eten is klaar!
+        source: generated
 
   - id: gern
     term: gern
     translation:
       - graag
+    examples:
+      - text: Ich sitze gern auf dem Sofa.
+        translation: Ik zit graag op de bank.
+        source: generated
 
   - id: gleich
     term: gleich
     translation:
       - zo
+    examples:
+      - text: Warte, ich komme gleich!
+        translation: Wacht, ik kom zo!
+        source: generated
 
   - id: haus
     term: das Haus
@@ -69,41 +113,73 @@ entries:
     translation:
       - het huis
     translation_forms: { plural: de huizen }
+    examples:
+      - text: Unser Haus hat einen großen Garten.
+        translation: Ons huis heeft een grote tuin.
+        source: generated
 
   - id: herd
     term: der Herd
     translation:
       - het fornuis
+    examples:
+      - text: Die Suppe steht auf dem Herd.
+        translation: De soep staat op het fornuis.
+        source: generated
 
   - id: kueche
     term: die Küche
     translation:
       - de keuken
+    examples:
+      - text: Mama kocht in der Küche.
+        translation: Mama kookt in de keuken.
+        source: generated
 
   - id: kuehlschrank
     term: der Kühlschrank
     translation:
       - de koelkast
+    examples:
+      - text: Die Milch steht im Kühlschrank.
+        translation: De melk staat in de koelkast.
+        source: generated
 
   - id: mitte
     term: die Mitte
     translation:
       - het midden
+    examples:
+      - text: Die Mitte des Zimmers ist leer.
+        translation: Het midden van de kamer is leeg.
+        source: generated
 
   - id: in_der_mitte
     term: in der Mitte
     translation:
       - in het midden
+    examples:
+      - text: In der Mitte steht ein großer Tisch.
+        translation: In het midden staat een grote tafel.
+        source: generated
 
   - id: moebel
     term: die Möbel
     translation:
       - het meubilair
+    examples:
+      - text: Die Möbel in meinem Zimmer sind neu.
+        translation: De meubels in mijn kamer zijn nieuw.
+        source: generated
 
   - id: schrank
     term: der Schrank
     translation:
       - de kast
+    examples:
+      - text: Meine Kleider sind im Schrank.
+        translation: Mijn kleren liggen in de kast.
+        source: generated
 
   - id: stadt
     term: die Stadt
@@ -111,31 +187,55 @@ entries:
     translation:
       - de stad
     translation_forms: { plural: de steden }
+    examples:
+      - text: Hamburg ist eine große Stadt.
+        translation: Hamburg is een grote stad.
+        source: generated
 
   - id: in_der_stadt
     term: in der Stadt
     translation:
       - in de stad
+    examples:
+      - text: In der Stadt gibt es viele Geschäfte.
+        translation: In de stad zijn veel winkels.
+        source: generated
 
   - id: tisch
     term: der Tisch
     translation:
       - de tafel
+    examples:
+      - text: Das Buch liegt auf dem Tisch.
+        translation: Het boek ligt op tafel.
+        source: generated
 
   - id: schon
     term: schon
     translation:
       - al
+    examples:
+      - text: Bist du schon fertig?
+        translation: Ben je al klaar?
+        source: generated
 
   - id: sitzen
     term: sitzen
     translation:
       - zitten
+    examples:
+      - text: Wir sitzen in der Küche.
+        translation: We zitten in de keuken.
+        source: generated
 
   - id: sofa
     term: das Sofa
     translation:
       - de bank
+    examples:
+      - text: Der Hund schläft auf dem Sofa.
+        translation: De hond slaapt op de bank.
+        source: generated
 
   - id: stuhl
     term: der Stuhl
@@ -143,6 +243,10 @@ entries:
     translation:
       - de stoel
     translation_forms: { plural: de stoelen }
+    examples:
+      - text: Am Tisch stehen vier Stühle.
+        translation: Aan de tafel staan vier stoelen.
+        source: generated
 
   - id: tuer
     term: die Tür
@@ -150,16 +254,28 @@ entries:
     translation:
       - de deur
     translation_forms: { plural: de deuren }
+    examples:
+      - text: Mach bitte die Tür zu!
+        translation: Doe alsjeblieft de deur dicht!
+        source: generated
 
   - id: weil
     term: weil
     translation:
       - omdat
+    examples:
+      - text: Ich bleibe zu Hause, weil ich krank bin.
+        translation: Ik blijf thuis, omdat ik ziek ben.
+        source: generated
 
   - id: wohnen
     term: wohnen
     translation:
       - wonen
+    examples:
+      - text: Wir wohnen in einem kleinen Dorf.
+        translation: We wonen in een klein dorp.
+        source: generated
 
   - id: zimmer
     term: das Zimmer
@@ -167,3 +283,7 @@ entries:
     translation:
       - de kamer
     translation_forms: { plural: de kamers }
+    examples:
+      - text: Mein Zimmer ist klein, aber gemütlich.
+        translation: Mijn kamer is klein, maar gezellig.
+        source: generated

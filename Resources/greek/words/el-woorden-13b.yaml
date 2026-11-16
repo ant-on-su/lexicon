@@ -7,53 +7,113 @@ meta:
 entries:
   - id: kallistos
     term: κάλλιστος
+    speak: kallistos
     translation:
       - mooist, zeer mooi
+    examples:
+      - text: ἡ Ἑλένη καλλίστη πασῶν ἐστιν.
+        translation: Helena is de mooiste van allemaal.
+        speak: hè Helénè kallístè pasóón estin.
+        source: generated
 
   - id: lanthano
     term: λανθάνω + acc.
+    speak: lanthánoo
     translation:
       - verborgen zijn voor, ontgaan aan
+    examples:
+      - text: ὁ δόλος τοὺς Τρῶας λανθάνει.
+        translation: De list ontgaat de Trojanen.
+        speak: ho dolos toes Trooas lanthánei.
+        source: generated
 
   - id: ode
     term: ὅδε, ἥδε, τόδε
+    speak: hodè, hèdè, todè
     translation:
       - deze, dit (mnl., vrl., onz.)
+    examples:
+      - text: ὅδε ὁ ἀνὴρ ἀδελφός μού ἐστιν.
+        translation: Deze man is mijn broer.
+        speak: hodè ho anèr adelphós moe estín.
+        source: generated
 
   - id: ote
     term: ὅτε
+    speak: hotè
     translation:
       - toen, wanneer (voegwoord)
+    examples:
+      - text: ὅτε ὁ πατὴρ ἥκει, χαίρομεν.
+        translation: Wanneer vader komt, zijn we blij.
+        speak: hotè ho patèr hèkei, cháíromèn.
+        source: generated
 
   - id: outos
     term: οὗτος, αὕτη, τοῦτο
+    speak: hoetos, hautè, toeto
     translation:
       - deze/dit, die/dat
       - hij, zij, het
     card_per_sense: true
+    examples:
+      - text: οὗτος ὁ ἵππος ταχύς ἐστιν.
+        translation: Dit paard is snel.
+        speak: hoetos ho hippos tachús estin.
+        source: generated
 
   - id: autos_kai
     term: αὐτὸς καί, ὁ  # CHECK
+    speak: ho autós kai
     translation:
       - dezelfde als
+    examples:
+      - text: τὸν αὐτὸν ἵππον ἔχω καὶ σύ.
+        translation: Ik heb hetzelfde paard als jij.
+        speak: ton autón hippon échoo kai su.
+        source: generated
 
   - id: gonu
     term: γόνυ, τό
+    speak: gonu
     forms: { genitive: γόνατος }
     translation:
       - knie
+    examples:
+      - text: ἐπὶ τὰ γόνατα πίπτει.
+        translation: Hij valt op zijn knieën.
+        speak: epí ta gonata piptei.
+        source: generated
 
   - id: dokeo
     term: δοκέω, aor. ἔδοξα + dat.
+    speak: dokéoo
     translation:
       - (toe)schijnen (aan)
+    examples:
+      - text: ὁ ξένος σοφὸς δοκεῖ.
+        translation: De vreemdeling lijkt wijs.
+        speak: ho ksenos sophós dokéí.
+        source: generated
 
   - id: eti
     term: ἔτι
+    speak: eti
     translation:
       - nog
+    examples:
+      - text: ὁ παῖς ἔτι καθεύδει.
+        translation: Het kind slaapt nog.
+        speak: ho pais eti katheudei.
+        source: generated
 
   - id: poteron_e
     term: πότερον...ἤ
+    speak: póteron, è
     translation:
       - (of)...of (in een vraagzin)
+    examples:
+      - text: πότερον ὁ πατὴρ ἢ ὁ ἀδελφὸς ἥκει;
+        translation: Is vader gekomen of mijn broer?
+        speak: póteron ho patèr è ho adelphós hèkei?
+        source: generated

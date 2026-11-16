@@ -10,11 +10,19 @@ entries:
     term: zum Beispiel
     translation:
       - bijvoorbeeld
+    examples:
+      - text: Ich mag Sport, zum Beispiel Fußball.
+        translation: Ik hou van sport, bijvoorbeeld voetbal.
+        source: generated
 
   - id: benutzen
     term: benutzen
     translation:
       - gebruiken
+    examples:
+      - text: Ich benutze mein Handy jeden Tag.
+        translation: Ik gebruik mijn mobiel elke dag.
+        source: generated
 
   - id: bruder
     term: der Bruder
@@ -22,16 +30,28 @@ entries:
     translation:
       - de broer
     translation_forms: { plural: de broers }
+    examples:
+      - text: Mein Bruder ist zwölf Jahre alt.
+        translation: Mijn broer is twaalf jaar oud.
+        source: generated
 
   - id: draussen
     term: draußen
     translation:
       - buiten
+    examples:
+      - text: Die Kinder spielen draußen.
+        translation: De kinderen spelen buiten.
+        source: generated
 
   - id: eltern
     term: die Eltern
     translation:
       - de ouders
+    examples:
+      - text: Meine Eltern arbeiten in Amsterdam.
+        translation: Mijn ouders werken in Amsterdam.
+        source: generated
 
   - id: fahrrad
     term: das Fahrrad
@@ -39,16 +59,28 @@ entries:
     translation:
       - de fiets
     translation_forms: { plural: de fietsen }
+    examples:
+      - text: Ich fahre mit dem Fahrrad zur Schule.
+        translation: Ik ga met de fiets naar school.
+        source: generated
 
   - id: fernsehen
     term: fernsehen
     translation:
       - tv kijken
+    examples:
+      - text: Am Abend sehe ich gern fern.
+        translation: "'s Avonds kijk ik graag tv."
+        source: generated
 
   - id: im_fernsehen
     term: im Fernsehen
     translation:
       - op tv
+    examples:
+      - text: Was kommt heute im Fernsehen?
+        translation: Wat is er vandaag op tv?
+        source: generated
 
   - id: film
     term: der Film
@@ -56,41 +88,73 @@ entries:
     translation:
       - de film
     translation_forms: { plural: de films }
+    examples:
+      - text: Der Film ist sehr spannend.
+        translation: De film is heel spannend.
+        source: generated
 
   - id: freizeit
     term: die Freizeit
     translation:
       - de vrije tijd
+    examples:
+      - text: Was machst du in deiner Freizeit?
+        translation: Wat doe jij in je vrije tijd?
+        source: generated
 
   - id: fussball
     term: der Fußball
     translation:
       - de voetbal
+    examples:
+      - text: Mein Bruder spielt jeden Samstag Fußball.
+        translation: Mijn broer voetbalt elke zaterdag.
+        source: generated
 
   - id: geschwister
     term: die Geschwister
     translation:
       - de broers en zussen
+    examples:
+      - text: Hast du Geschwister?
+        translation: Heb jij broers of zussen?
+        source: generated
 
   - id: gut
     term: gut
     translation:
       - goed
+    examples:
+      - text: Das Wetter ist heute gut.
+        translation: Het weer is vandaag goed.
+        source: generated
 
   - id: immer
     term: immer
     translation:
       - altijd
+    examples:
+      - text: Am Freitag essen wir immer Pizza.
+        translation: Op vrijdag eten we altijd pizza.
+        source: generated
 
   - id: internet
     term: das Internet
     translation:
       - het internet
+    examples:
+      - text: Das Internet ist heute sehr langsam.
+        translation: Het internet is vandaag heel traag.
+        source: generated
 
   - id: im_internet
     term: im Internet
     translation:
       - op internet
+    examples:
+      - text: Ich suche die Adresse im Internet.
+        translation: Ik zoek het adres op internet.
+        source: generated
 
   - id: junge
     term: der Junge
@@ -98,6 +162,10 @@ entries:
     translation:
       - de jongen
     translation_forms: { plural: de jongens }
+    examples:
+      - text: Der Junge heißt Lukas.
+        translation: De jongen heet Lukas.
+        source: generated
 
   - id: maedchen
     term: das Mädchen
@@ -105,21 +173,37 @@ entries:
     translation:
       - het meisje
     translation_forms: { plural: de meisjes }
+    examples:
+      - text: Das Mädchen wohnt in Berlin.
+        translation: Het meisje woont in Berlijn.
+        source: generated
 
   - id: nie
     term: nie
     translation:
       - nooit
+    examples:
+      - text: Mein Vater sieht nie fern.
+        translation: Mijn vader kijkt nooit tv.
+        source: generated
 
   - id: oft
     term: oft
     translation:
       - vaak
+    examples:
+      - text: Wir spielen oft draußen.
+        translation: We spelen vaak buiten.
+        source: generated
 
   - id: schlecht
     term: schlecht
     translation:
       - slecht
+    examples:
+      - text: Der Film ist leider schlecht.
+        translation: De film is helaas slecht.
+        source: generated
 
   - id: schwester
     term: die Schwester
@@ -127,53 +211,97 @@ entries:
     translation:
       - de zus
     translation_forms: { plural: de zussen }
+    examples:
+      - text: Meine Schwester spielt gern Gitarre.
+        translation: Mijn zus speelt graag gitaar.
+        source: generated
 
   - id: wochenende
     term: das Wochenende
     translation:
       - het weekend
+    examples:
+      - text: Das Wochenende ist immer zu kurz.
+        translation: Het weekend is altijd te kort.
+        source: generated
 
   - id: am_wochenende
     term: am Wochenende
     translation:
       - in het weekend
+    examples:
+      - text: Am Wochenende besuche ich meine Oma.
+        translation: In het weekend ga ik bij mijn oma op bezoek.
+        source: generated
 
   - id: montag
     term: der Montag
     translation:
       - de maandag
+    examples:
+      - text: Der Montag ist mein Lieblingstag.
+        translation: Maandag is mijn lievelingsdag.
+        source: generated
 
   - id: am_montag
     term: am Montag
     translation:
       - op maandag
+    examples:
+      - text: Am Montag habe ich Deutsch.
+        translation: Op maandag heb ik Duits.
+        source: generated
 
   - id: dienstag
     term: der Dienstag
     translation:
       - de dinsdag
+    examples:
+      - text: Am Dienstag spiele ich Tennis.
+        translation: Op dinsdag tennis ik.
+        source: generated
 
   - id: mittwoch
     term: der Mittwoch
     translation:
       - de woensdag
+    examples:
+      - text: Am Mittwoch habe ich nachmittags frei.
+        translation: Op woensdagmiddag ben ik vrij.
+        source: generated
 
   - id: donnerstag
     term: der Donnerstag
     translation:
       - de donderdag
+    examples:
+      - text: Am Donnerstag kommt meine Tante.
+        translation: Op donderdag komt mijn tante.
+        source: generated
 
   - id: freitag
     term: der Freitag
     translation:
       - de vrijdag
+    examples:
+      - text: Am Freitag gehen wir ins Kino.
+        translation: Op vrijdag gaan we naar de bioscoop.
+        source: generated
 
   - id: samstag
     term: der Samstag
     translation:
       - de zaterdag
+    examples:
+      - text: Am Samstag schlafe ich lange.
+        translation: Op zaterdag slaap ik lang uit.
+        source: generated
 
   - id: sonntag
     term: der Sonntag
     translation:
       - de zondag
+    examples:
+      - text: Am Sonntag frühstücken wir zusammen.
+        translation: Op zondag ontbijten we samen.
+        source: generated

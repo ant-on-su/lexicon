@@ -7,99 +7,213 @@ meta:
 entries:
   - id: aiteo
     term: αἰτέω (+ 2 acc.)
+    speak: aitéoo
     translation:
       - (iemand) vragen (om)
+    examples:
+      - text: τὸν δεσπότην δῶρον αἰτῶ.
+        translation: Ik vraag de meester om een geschenk.
+        speak: ton despótèn dooron aitóó.
+        source: generated
 
   - id: andreios
     term: ἀνδρεῖος
+    speak: andréíos
     translation:
       - dapper
+    examples:
+      - text: ὁ φίλος ἀνδρεῖός ἐστιν.
+        translation: De vriend is dapper.
+        speak: ho philos andréíos estin.
+        source: generated
 
   - id: thaumazo
     term: θαυμάζω
+    speak: thaumádzoo
     translation:
       - bewonderen, zich verwonderen
+    examples:
+      - text: τὴν βασίλειαν θαυμάζομεν.
+        translation: We bewonderen de koningin.
+        speak: tèn basíleian thaumádzomèn.
+        source: generated
 
   - id: kalos
     term: καλός
+    speak: kalós
     translation:
       - mooi
+    examples:
+      - text: τὸ δῶρον καλόν ἐστιν.
+        translation: Het geschenk is mooi.
+        speak: to dooron kalón estin.
+        source: generated
 
   - id: lego
     term: λέγω, aor. εἶπον
+    speak: légoo
     translation:
       - zeggen
+    examples:
+      - text: τί λέγεις;
+        translation: Wat zeg je?
+        speak: ti légeis?
+        source: generated
 
   - id: mala
     term: μάλα
+    speak: mala
     translation:
       - erg, zeer (bijwoord)
+    examples:
+      - text: ἡ βασίλεια μάλα καλή ἐστιν.
+        translation: De koningin is erg mooi.
+        speak: hè basíleia mala kalè estin.
+        source: generated
 
   - id: oti
     term: ὅτι
+    speak: hoti
     translation:
       - dat (voegwoord)
       - omdat
     card_per_sense: true
+    examples:
+      - text: λέγει ὅτι ὁ πόλεμος δεινός ἐστιν.
+        translation: Hij zegt dat de oorlog verschrikkelijk is.
+        speak: légei hoti ho pólemos deinós estin.
+        source: generated
 
   - id: oun
     term: οὖν
+    speak: oen
     translation:
       - dan, nu (als een verhaal verder gaat)
       - dus (in een conclusie)
     card_per_sense: true
+    examples:
+      - text: φόβον οὖν ἔχομεν.
+        translation: We zijn dus bang.
+        speak: phobon oen échomèn.
+        source: generated
 
   - id: basileia
     term: βασίλεια, ἡ
+    speak: basíleia
     translation:
       - koningin
+    examples:
+      - text: ἡ βασίλεια δῶρα πέμπει.
+        translation: De koningin stuurt geschenken.
+        speak: hè basíleia doora pempei.
+        source: generated
 
   - id: doron
     term: δῶρον, τό
+    speak: dooron
     translation:
       - geschenk, cadeau
+    examples:
+      - text: τῷ φίλῳ δῶρον πέμπω.
+        translation: Ik stuur de vriend een geschenk.
+        speak: too philoo dooron pempoo.
+        source: generated
 
   - id: epi
     term: ἐπί + acc.
+    speak: epí
     translation:
       - op...af, naar
+    examples:
+      - text: ἐπὶ τὴν οἰκίαν βαίνομεν.
+        translation: We gaan naar het huis.
+        speak: epí tèn oikían báínomèn.
+        source: generated
 
   - id: epithumeo
     term: ἐπιθυμέω + gen.
+    speak: epithuméoo
     translation:
       - verlangen (naar), begeren
+    examples:
+      - text: ὁ δοῦλος τῆς οἰκίας ἐπιθυμεῖ.
+        translation: De slaaf verlangt naar het huis.
+        speak: ho doelos tès oikías epithuméí.
+        source: generated
 
   - id: etairos
     term: ἑταῖρος, ὁ
+    speak: hetáíros
     translation:
       - vriend, makker
+    examples:
+      - text: τὸν ἑταῖρον καλῶ.
+        translation: Ik roep mijn makker.
+        speak: ton hetáíron kalóó.
+        source: generated
 
   - id: pempo
     term: πέμπω
+    speak: pempoo
     translation:
       - sturen, zenden
+    examples:
+      - text: ὁ δεσπότης τὸν δοῦλον πρὸς τὴν βασίλειαν πέμπει.
+        translation: De meester stuurt de slaaf naar de koningin.
+        speak: ho despótès ton doelon pros tèn basíleian pempei.
+        source: generated
 
   - id: pleo
     term: πλέω (+ acc.)
+    speak: pléoo
     translation:
       - varen (over)
+    examples:
+      - text: τὴν θάλατταν πλέομεν.
+        translation: We varen over de zee.
+        speak: tèn thálattan pléomèn.
+        source: generated
 
   - id: polemos
     term: πόλεμος, ὁ
+    speak: pólemos
     translation:
       - oorlog
+    examples:
+      - text: ὁ πόλεμος μακρός ἐστιν.
+        translation: De oorlog is lang.
+        speak: ho pólemos makrós estin.
+        source: generated
 
   - id: polloi
     term: πολλοί
+    speak: polloí
     translation:
       - veel, velen
+    examples:
+      - text: πολλοὶ φεύγουσιν.
+        translation: Velen vluchten.
+        speak: polloí phéugoesin.
+        source: generated
 
   - id: phileo
     term: φιλέω
+    speak: philéoo
     translation:
       - houden van, beminnen
+    examples:
+      - text: ἡ κόρη τὸν ἵππον φιλεῖ.
+        translation: Het meisje houdt van het paard.
+        speak: hè korè ton hippon philéí.
+        source: generated
 
   - id: philos
     term: φίλος
+    speak: philos
     translation:
       - geliefd, dierbaar
+    examples:
+      - text: ὁ ἵππος φίλος μοί ἐστιν.
+        translation: Het paard is mij dierbaar.
+        speak: ho hippos philos moi estin.
+        source: generated

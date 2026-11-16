@@ -10,16 +10,28 @@ entries:
     term: ab
     translation:
       - vanaf
+    examples:
+      - text: Der Zug fährt ab acht Uhr jede Stunde.
+        translation: De trein rijdt vanaf acht uur elk uur.
+        source: generated
 
   - id: ampel
     term: die Ampel
     translation:
       - het verkeerslicht
+    examples:
+      - text: Die Ampel ist rot.
+        translation: Het verkeerslicht staat op rood.
+        source: generated
 
   - id: an_der_ampel
     term: an der Ampel
     translation:
       - bij het verkeerslicht
+    examples:
+      - text: An der Ampel musst du links fahren.
+        translation: Bij het verkeerslicht moet je naar links.
+        source: generated
 
   - id: bahnhof
     term: der Bahnhof
@@ -27,26 +39,46 @@ entries:
     translation:
       - het station
     translation_forms: { plural: de stations }
+    examples:
+      - text: Wo ist der Bahnhof, bitte?
+        translation: Waar is het station, alstublieft?
+        source: generated
 
   - id: bus
     term: der Bus
     translation:
       - de bus
+    examples:
+      - text: Der Bus kommt zu spät.
+        translation: De bus komt te laat.
+        source: generated
 
   - id: mit_dem_bus
     term: mit dem Bus
     translation:
       - met de bus
+    examples:
+      - text: Ich fahre mit dem Bus zur Schule.
+        translation: Ik ga met de bus naar school.
+        source: generated
 
   - id: dauern
     term: dauern
     translation:
       - duren
+    examples:
+      - text: Die Fahrt dauert zwei Stunden.
+        translation: De reis duurt twee uur.
+        source: generated
 
   - id: denn
     term: denn
     translation:
       - want
+    examples:
+      - text: Ich nehme den Zug, denn er ist schneller.
+        translation: Ik neem de trein, want die is sneller.
+        source: generated
 
   - id: fahrgast
     term: der Fahrgast
@@ -54,106 +86,190 @@ entries:
     translation:
       - de passagier
     translation_forms: { plural: de passagiers }
+    examples:
+      - text: Die Fahrgäste steigen in den Bus ein.
+        translation: De passagiers stappen in de bus.
+        source: generated
 
   - id: hinten
     term: hinten
     translation:
       - achterin
+    examples:
+      - text: Wir sitzen hinten im Bus.
+        translation: We zitten achterin de bus.
+        source: generated
 
   - id: lkw
     term: der Lkw
     translation:
       - de vrachtwagen
+    examples:
+      - text: Der Lkw ist sehr laut.
+        translation: De vrachtwagen is heel lawaaierig.
+        source: generated
 
   - id: lastkraftwagen
     term: der Lastkraftwagen
     translation:
       - de vrachtwagen
+    examples:
+      - text: Ein Lastkraftwagen steht vor dem Haus.
+        translation: Er staat een vrachtwagen voor het huis.
+        source: generated
 
   - id: lkws
     term: die Lkws
     translation:
       - de vrachtwagens
+    examples:
+      - text: Auf der Autobahn fahren viele Lkws.
+        translation: Op de snelweg rijden veel vrachtwagens.
+        source: generated
 
   - id: pkw
     term: der Pkw
     translation:
       - de auto
+    examples:
+      - text: Hier dürfen nur Pkws parken.
+        translation: Hier mogen alleen auto's parkeren.
+        source: generated
 
   - id: personenkraftwagen
     term: der Personenkraftwagen
     translation:
       - de auto
+    examples:
+      - text: Ein Personenkraftwagen hat meistens vier Türen.
+        translation: Een auto heeft meestal vier deuren.
+        source: generated
 
   - id: auto
     term: das Auto
     translation:
       - de auto
+    examples:
+      - text: Unser Auto ist rot.
+        translation: Onze auto is rood.
+        source: generated
 
   - id: planen
     term: planen
     translation:
       - plannen
+    examples:
+      - text: Wir planen eine Reise nach Wien.
+        translation: We plannen een reis naar Wenen.
+        source: generated
 
   - id: reisenden
     term: die Reisenden
     translation:
       - de reizigers
+    examples:
+      - text: Die Reisenden warten auf den Zug.
+        translation: De reizigers wachten op de trein.
+        source: generated
 
   - id: schiff
     term: das Schiff
     translation:
       - het schip
+    examples:
+      - text: Das Schiff fährt auf dem Rhein.
+        translation: Het schip vaart op de Rijn.
+        source: generated
 
   - id: mit_dem_schiff
     term: mit dem Schiff
     translation:
       - met het schip
+    examples:
+      - text: Wir fahren mit dem Schiff nach England.
+        translation: We gaan met het schip naar Engeland.
+        source: generated
 
   - id: strassenbahn
     term: die Straßenbahn
     translation:
       - de tram
+    examples:
+      - text: Die Straßenbahn hält vor dem Bahnhof.
+        translation: De tram stopt voor het station.
+        source: generated
 
   - id: mit_der_strassenbahn
     term: mit der Straßenbahn
     translation:
       - met de tram
+    examples:
+      - text: Mit der Straßenbahn bist du schnell in der Stadt.
+        translation: Met de tram ben je snel in de stad.
+        source: generated
 
   - id: u_bahn
     term: die U-Bahn
     translation:
       - de metro
+    examples:
+      - text: In Berlin fahre ich oft mit der U-Bahn.
+        translation: In Berlijn ga ik vaak met de metro.
+        source: generated
 
   - id: verkehr
     term: der Verkehr
     translation:
       - het verkeer
+    examples:
+      - text: Am Morgen ist viel Verkehr.
+        translation: "'s Ochtends is er veel verkeer."
+        source: generated
 
   - id: vermieten
     term: vermieten
     translation:
       - verhuren
+    examples:
+      - text: Der Laden vermietet Fahrräder.
+        translation: De winkel verhuurt fietsen.
+        source: generated
 
   - id: vorn
     term: vorn(e)
     translation:
       - voorin
+    examples:
+      - text: Ich sitze gern vorn im Auto.
+        translation: Ik zit graag voorin de auto.
+        source: generated
 
   - id: umsteigen
     term: umsteigen
     translation:
       - overstappen
+    examples:
+      - text: In Köln musst du umsteigen.
+        translation: In Keulen moet je overstappen.
+        source: generated
 
   - id: oeffentlichen_verkehrsmittel
     term: die öffentlichen Verkehrsmittel
     translation:
       - het openbaar vervoer
+    examples:
+      - text: Die öffentlichen Verkehrsmittel sind hier sehr gut.
+        translation: Het openbaar vervoer is hier heel goed.
+        source: generated
 
   - id: verpassen
     term: verpassen
     translation:
       - missen
+    examples:
+      - text: Schnell, sonst verpassen wir den Zug!
+        translation: Snel, anders missen we de trein!
+        source: generated
 
   - id: zug
     term: der Zug
@@ -161,8 +277,16 @@ entries:
     translation:
       - de trein
     translation_forms: { plural: de treinen }
+    examples:
+      - text: Der Zug nach München hat Verspätung.
+        translation: De trein naar München heeft vertraging.
+        source: generated
 
   - id: zwischen
     term: zwischen
     translation:
       - tussen
+    examples:
+      - text: Die Haltestelle liegt zwischen der Schule und dem Park.
+        translation: De halte ligt tussen de school en het park.
+        source: generated

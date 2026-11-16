@@ -7,45 +7,99 @@ meta:
 entries:
   - id: athlios
     term: ἄθλιος
+    speak: athlios
     translation:
       - ongelukkig
+    examples:
+      - text: ὁ ἄθλιος δοῦλος δακρύει.
+        translation: De ongelukkige slaaf huilt.
+        speak: ho athlios doelos dakrúei.
+        source: generated
 
   - id: anti
     term: ἀντί + gen.
+    speak: antí
     translation:
       - in plaats van
+    examples:
+      - text: ἀντὶ οἴνου ὕδωρ πίνομεν.
+        translation: In plaats van wijn drinken we water.
+        speak: antí oinoe hudoor pínomèn.
+        source: generated
 
   - id: aresko
     term: ἀρέσκω + dat.
+    speak: areskoo
     translation:
       - bevallen aan, in de smaak vallen bij
+    examples:
+      - text: ὁ οἶνος τῷ δεσπότῃ ἀρέσκει.
+        translation: De wijn valt in de smaak bij de meester.
+        speak: ho oinos too despótè areskei.
+        source: generated
 
   - id: ilion
     term: Ἴλιον, τό
+    speak: Ilion
     translation:
       - Troje
+    examples:
+      - text: οἱ Ἀχαιοὶ τὸ Ἴλιον λαμβάνουσιν.
+        translation: De Grieken nemen Troje in.
+        speak: hoi Achaioí to Ilion lambánoesin.
+        source: generated
 
   - id: ouden
     term: οὐδέν
+    speak: oedén
     translation:
       - helemaal niet
+    examples:
+      - text: οὐδὲν χαίρει.
+        translation: Hij is helemaal niet blij.
+        speak: oedén cháírei.
+        source: generated
 
   - id: ouketi
     term: οὐκέτι
+    speak: oekéti
     translation:
       - niet meer
+    examples:
+      - text: ὁ ἄγγελος οὐκέτι πάρεστιν.
+        translation: De bode is er niet meer.
+        speak: ho angelos oekéti párestin.
+        source: generated
 
   - id: bomos
     term: βωμός, ὁ
+    speak: boomós
     translation:
       - altaar
+    examples:
+      - text: ὁ βωμὸς ἱερός ἐστιν.
+        translation: Het altaar is heilig.
+        speak: ho boomós hierós estin.
+        source: generated
 
   - id: eunous
     term: εὔνους (2) (+ dat.)
+    speak: eunoes
     translation:
       - goedgezind (aan)
+    examples:
+      - text: ὁ στρατηγὸς τοῖς στρατιώταις εὔνους ἐστίν.
+        translation: De legeraanvoerder is de soldaten goedgezind.
+        speak: ho stratègós tois stratióótais eunoes estín.
+        source: generated
 
   - id: ede
     term: ἤδη
+    speak: èdè
     translation:
       - al, reeds
+    examples:
+      - text: ὁ ἄγγελος ἤδη ἥκει.
+        translation: De bode is al gekomen.
+        speak: ho angelos èdè hèkei.
+        source: generated

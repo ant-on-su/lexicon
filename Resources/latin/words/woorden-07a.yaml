@@ -7,141 +7,291 @@ meta:
 entries:
   - id: bonus_a_um
     term: bonus, -a, -um
+    speak: bonus, bona, bonum
     translation:
       - goed
+    examples:
+      - text: Dominus bonus servis parcit.
+        translation: De goede heer spaart zijn slaven.
+        speak: Dòminus bonus serwis parchit.
+        source: generated
 
   - id: compleo
     term: compleo (complēre)
+    speak: còmpleo
     translation:
       - vullen
+    examples:
+      - text: Servus pocula vino complet.
+        translation: De slaaf vult de bekers met wijn.
+        speak: Serwus pòcula wino complet.
+        source: generated
 
   - id: crudelis_is_e
     term: crudelis, -is, -e (crudelis)
+    speak: crudelis, crudele
     translation:
       - wreed
+    examples:
+      - text: Dominus crudelis servos necat.
+        translation: De wrede heer doodt de slaven.
+        speak: Dòminus crudelis serwos necat.
+        source: generated
 
   - id: crudelitas
     term: crudelitas
+    speak: crudèlitas
     forms: { genitive: crudelitatis, gender: v }
     translation:
       - wreedheid
+    examples:
+      - text: Crudelitas regis nota est.
+        translation: De wreedheid van de koning is bekend.
+        speak: Crudèlitas reghis nota est.
+        source: generated
 
   - id: dives_es_es
     term: dives, -es, -es (divitis)
+    speak: diwes
     translation:
       - rijk
+    examples:
+      - text: Dominus dives multas villas habet.
+        translation: De rijke heer heeft veel landhuizen.
+        speak: Dòminus diwes multas willas habet.
+        source: generated
 
   - id: dominus
     term: dominus
+    speak: dòminus
     translation:
       - heer, heerser
+    examples:
+      - text: Dominus servos vocat.
+        translation: De heer roept de slaven.
+        speak: Dòminus serwos wocat.
+        source: generated
 
   - id: dum
     term: dum
+    speak: dum
     translation:
       - terwijl
       - zolang als
     card_per_sense: true
+    examples:
+      - text: Dum pater laborat, liberi ludunt.
+        translation: Terwijl vader werkt, spelen de kinderen.
+        speak: Dum pater laborat, lìberi ludunt.
+        source: generated
 
   - id: ex
     term: e(x) + abl.
+    speak: e, ecs
     translation:
       - uit, weg van, van
+    examples:
+      - text: Puer ex villa currit.
+        translation: De jongen rent het landhuis uit.
+        speak: Puer ecs willa currit.
+        source: generated
 
   - id: ex_2
     term: ex
+    speak: ecs
     translation:
       - zie e(x)   # CHECK
+    examples:
+      - text: Servus ex agro venit.
+        translation: De slaaf komt van de akker.
+        speak: Serwus ecs agro wenit.
+        source: generated
 
   - id: frango
     term: frango (frangĕre)
+    speak: frango
     forms: { perfect: fregi }
     translation:
       - breken
+    examples:
+      - text: Puer gladium frangit.
+        translation: De jongen breekt het zwaard.
+        speak: Puer glàdium frangit.
+        source: generated
 
   - id: gravis_is_e
     term: gravis, -is, -e (gravis)
+    speak: grawis, grawe
     translation:
       - zwaar
       - gewichtig
       - ernstig
     card_per_sense: true
+    examples:
+      - text: Poena gravis est.
+        translation: De straf is zwaar.
+        speak: Poina grawis est.
+        source: generated
 
   - id: habui
     term: habui
+    speak: hàbui
     translation:
       - perf. van habeo (habēre)
     form_of: habeo
+    examples:
+      - text: Multum aurum habui.
+        translation: Ik heb veel goud gehad.
+        speak: Multum aurum hàbui.
+        source: generated
 
   - id: imperator
     term: imperator
+    speak: imperator
     forms: { genitive: imperatoris, gender: m }
     translation:
       - opperbevelhebber
       - keizer
     card_per_sense: true
+    examples:
+      - text: Imperator Romam intrat.
+        translation: De keizer trekt Rome binnen.
+        speak: Imperator Romam intrat.
+        source: generated
 
   - id: invito
     term: invito (invitare)
+    speak: inwito
     translation:
       - uitnodigen
+    examples:
+      - text: Dominus amicos in villam invitat.
+        translation: De heer nodigt zijn vrienden uit in zijn landhuis.
+        speak: Dòminus amicos in willam inwitat.
+        source: generated
 
   - id: mors
     term: mors
+    speak: mors
     forms: { genitive: mortis, gender: v }
     translation:
       - dood
+    examples:
+      - text: Romani mortem non timent.
+        translation: De Romeinen zijn niet bang voor de dood.
+        speak: Romani mortem non timent.
+        source: generated
 
   - id: necesse
     term: necesse
+    speak: nechesse
     translation:
       - noodzakelijk
+    examples:
+      - text: Necesse est laborare.
+        translation: Het is noodzakelijk te werken.
+        speak: Nechesse est laborare.
+        source: generated
 
   - id: neco
     term: neco (necare)
+    speak: neco
     translation:
       - doden
+    examples:
+      - text: Imperator crudelis captivos necat.
+        translation: De wrede keizer doodt de krijgsgevangenen.
+        speak: Imperator crudelis captiwos necat.
+        source: generated
 
   - id: omnis_is_e
     term: omnis, -is, -e (omnis)
+    speak: omnis, omne
     translation:
       - ieder, elk
       - gehele
       - (mv.) alle(n)
     card_per_sense: true
+    examples:
+      - text: Omnes servi laborant.
+        translation: Alle slaven werken.
+        speak: Omnes serwi laborant.
+        source: generated
 
   - id: parco
     term: parco (parcĕre) + dat.
+    speak: parco
     translation:
       - sparen
+    examples:
+      - text: Imperator captivis parcit.
+        translation: De keizer spaart de krijgsgevangenen.
+        speak: Imperator captiwis parchit.
+        source: generated
 
   - id: praeterea
     term: praeterea
+    speak: praitèrea
     translation:
       - bovendien
+    examples:
+      - text: Villa magna est, praeterea pulchra.
+        translation: Het landhuis is groot, en bovendien mooi.
+        speak: Willa mangna est, praitèrea pulchra.
+        source: generated
 
   - id: sanguis
     term: sanguis
+    speak: sanguis
     forms: { genitive: sanguinis, gender: m }
     translation:
       - bloed
+    examples:
+      - text: In terra sanguis est.
+        translation: Er ligt bloed op de grond.
+        speak: In terra sanguis est.
+        source: generated
 
   - id: servo
     term: servo (servare)
+    speak: serwo
     translation:
       - redden, beschermen
+    examples:
+      - text: Amicus me servat.
+        translation: Mijn vriend redt mij.
+        speak: Amicus me serwat.
+        source: generated
 
   - id: si
     term: si
+    speak: si
     translation:
       - als
+    examples:
+      - text: Si pluit, domi maneo.
+        translation: Als het regent, blijf ik thuis.
+        speak: Si pluit, domi màneo.
+        source: generated
 
   - id: soleo
     term: soleo (solēre)
+    speak: sòleo
     translation:
       - de gewoonte hebben, gewoonlijk doen
+    examples:
+      - text: Pater in villa cenare solet.
+        translation: Vader eet gewoonlijk in het landhuis.
+        speak: Pater in willa chenare solet.
+        source: generated
 
   - id: villa
     term: villa
+    speak: willa
     translation:
       - landhuis
+    examples:
+      - text: Villa domini magna est.
+        translation: Het landhuis van de heer is groot.
+        speak: Willa dòmini mangna est.
+        source: generated

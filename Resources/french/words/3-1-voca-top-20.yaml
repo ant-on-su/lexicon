@@ -11,24 +11,32 @@ entries:
       - de bioscoop
     examples:
       - text: Nous allons au cinéma ce soir, il y a un bon film.
+        translation: We gaan vanavond naar de bioscoop, er draait een goede film.
+        source: book
   - id: concert
     term: le concert
     translation:
       - het concert
     examples:
       - text: Je suis allé au concert de Stromae, c’était super !
+        translation: Ik ben naar het concert van Stromae geweest, het was super!
+        source: book
   - id: chanson
     term: la chanson
     translation:
       - het lied
     examples:
       - text: Louana a chanté une belle chanson.
+        translation: Louana heeft een mooi lied gezongen.
+        source: book
   - id: artiste
     term: l’artiste
     translation:
       - de artiest
     examples:
       - text: L’artiste joue de la guitare.
+        translation: De artiest speelt gitaar.
+        source: book
   - id: affiche
     term: l’affiche
     forms: { gender: v }
@@ -36,48 +44,64 @@ entries:
       - het affiche
     examples:
       - text: L’affiche du film est très belle.
+        translation: Het affiche van de film is heel mooi.
+        source: book
   - id: organiser
     term: organiser
     translation:
       - organiseren
     examples:
       - text: J’organise une fête pour mon anniversaire.
+        translation: Ik organiseer een feest voor mijn verjaardag.
+        source: book
   - id: entrer
     term: entrer
     translation:
       - naar binnen gaan
     examples:
       - text: Il veut entrer, mais la porte est fermée.
+        translation: Hij wil naar binnen, maar de deur is dicht.
+        source: book
   - id: rire
     term: rire
     translation:
       - lachen
     examples:
       - text: Cet acteur me fait toujours rire.
+        translation: Deze acteur laat me altijd lachen.
+        source: book
   - id: pleurer
     term: pleurer
     translation:
       - huilen
     examples:
       - text: C’est un film triste, j’ai pleuré.
+        translation: Het is een droevige film, ik heb gehuild.
+        source: book
   - id: sortir
     term: sortir
     translation:
       - uitgaan / naar buiten gaan
     examples:
       - text: Tu veux sortir ce soir ?
+        translation: Wil je vanavond uitgaan?
+        source: book
   - id: spectacle
     term: le spectacle
     translation:
       - de voorstelling
     examples:
       - text: Le spectacle commence à 20 heures.
+        translation: De voorstelling begint om 20 uur.
+        source: book
   - id: vente
     term: la vente
     translation:
       - de verkoop
     examples:
       - text: La vente des billets se fait par Internet.
+        translation: De kaartverkoop gaat via internet.
+        source: book
   - id: ambiance
     term: l’ambiance
     forms: { gender: v }
@@ -85,78 +109,104 @@ entries:
       - de sfeer
     examples:
       - text: Il y a une bonne ambiance dans notre classe.
+        translation: Er is een goede sfeer in onze klas.
+        source: book
   - id: favori
     term: favori(te)
     translation:
       - lievelings-
     examples:
       - text: C’est ma chanson favorite.
+        translation: Het is mijn lievelingslied.
+        source: book
   - id: derriere
     term: derrière
     translation:
       - achter
     examples:
       - text: Le parking est derrière le théâtre.
+        translation: De parkeerplaats is achter het theater.
+        source: book
   - id: pres-de
     term: près de
     translation:
       - dichtbij
     examples:
       - text: Il y a un arrêt de bus près d’ici.
+        translation: Er is een bushalte hier dichtbij.
+        source: book
   - id: avant
     term: avant
     translation:
       - voor (tijd)
     examples:
       - text: Il faut partir avant 8 heures pour arriver à temps.
+        translation: Je moet voor 8 uur vertrekken om op tijd te komen.
+        source: book
   - id: apres
     term: après
     translation:
       - na
     examples:
       - text: Après l’école, je fais du sport.
+        translation: Na school sport ik.
+        source: book
   - id: sur
     term: sur
     translation:
       - op
     examples:
       - text: Les fans sont allés sur la scène.
+        translation: De fans zijn het podium op gegaan.
+        source: book
   - id: devant
     term: devant
     translation:
       - voor (plaats)
     examples:
       - text: Il y a beaucoup de fans devant la salle de concert.
+        translation: Er staan veel fans voor de concertzaal.
+        source: book
   - id: gratuit
     term: gratuit
     translation:
       - gratis
     examples:
       - text: Le festival est gratuit. Super !
+        translation: Het festival is gratis. Super!
+        source: book
   - id: pratique
     term: pratique
     translation:
       - praktisch
     examples:
       - text: Je vais à vélo, c’est plus pratique.
+        translation: Ik ga op de fiets, dat is praktischer.
+        source: book
   - id: terrain
     term: le terrain
     translation:
       - het terrein
     examples:
       - text: Il est interdit de fumer sur le terrain du festival.
+        translation: Het is verboden te roken op het festivalterrein.
+        source: book
   - id: scene
     term: la scène
     translation:
       - het podium
     examples:
       - text: Les artistes sont déjà sur la scène.
+        translation: De artiesten staan al op het podium.
+        source: book
   - id: performance
     term: la performance
     translation:
       - de voorstelling / het optreden
     examples:
       - text: La performance n’est pas très bonne.
+        translation: Het optreden is niet zo goed.
+        source: book
   - id: arret-de-bus-metro
     term: l’arrêt de bus / métro
     forms: { gender: m }
@@ -164,18 +214,24 @@ entries:
       - de bushalte / de metrohalte
     examples:
       - text: Il y a un arrêt de bus tout près du musée.
+        translation: Er is een bushalte vlak bij het museum.
+        source: book
   - id: garer
     term: garer
     translation:
       - parkeren
     examples:
       - text: On ne peut pas garer la voiture là-bas.
+        translation: Je kunt de auto daar niet parkeren.
+        source: book
   - id: a-pied
     term: à pied
     translation:
       - te voet
     examples:
       - text: Je vais à pied, j’adore marcher.
+        translation: Ik ga te voet, ik ben dol op wandelen.
+        source: book
   - id: a-bicyclette
     term: à bicyclette
     translation:
@@ -186,54 +242,72 @@ entries:
       - met de fiets
     examples:
       - text: Nous allons à vélo, c’est plus rapide.
+        translation: We gaan met de fiets, dat is sneller.
+        source: book
   - id: en-metro
     term: en métro
     translation:
       - met de metro
     examples:
       - text: On peut aller au musée en métro ?
+        translation: Kun je met de metro naar het museum?
+        source: book
   - id: toute-la-journee
     term: toute la journée
     translation:
       - de hele dag
     examples:
       - text: La fête dure toute la journée.
+        translation: Het feest duurt de hele dag.
+        source: book
   - id: bienvenue
     term: bienvenue
     translation:
       - welkom
     examples:
       - text: Bienvenue à tous !
+        translation: Welkom allemaal!
+        source: book
   - id: partout
     term: partout
     translation:
       - overal
     examples:
       - text: Il y a des bouteilles en plastique partout.
+        translation: Er liggen overal plastic flessen.
+        source: book
   - id: avoir-lieu
     term: avoir lieu
     translation:
       - plaatsvinden
     examples:
       - text: Le festival a lieu dans le parc.
+        translation: Het festival vindt plaats in het park.
+        source: book
   - id: trouver
     term: trouver
     translation:
       - vinden
     examples:
       - text: Tu ne trouves pas tes chaussures ?
+        translation: Vind je je schoenen niet?
+        source: book
   - id: disponible
     term: disponible
     translation:
       - beschikbaar
     examples:
       - text: Les billets sont disponibles à partir du 11 juin.
+        translation: De kaartjes zijn vanaf 11 juni verkrijgbaar.
+        source: book
   - id: emporter
     term: emporter
     translation:
       - meenemen
     examples:
       - text: Il pleut, j’emporte un parapluie.
+        translation: Het regent, ik neem een paraplu mee.
+        source: book
   - id: eau-potable
     term: l’eau potable
     forms: { gender: v }
@@ -241,15 +315,21 @@ entries:
       - drinkwater
     examples:
       - text: Attention, ce n’est pas de l’eau potable.
+        translation: Let op, dit is geen drinkwater.
+        source: book
   - id: a-l-occasion-de
     term: à l’occasion de
     translation:
       - ter gelegenheid van
     examples:
       - text: Il y a une fête à l’occasion de son anniversaire.
+        translation: Er is een feest ter gelegenheid van zijn verjaardag.
+        source: book
   - id: rater
     term: rater
     translation:
       - missen
     examples:
       - text: Viens vite, je ne veux pas rater le bus !
+        translation: Kom snel, ik wil de bus niet missen!
+        source: book

@@ -7,135 +7,279 @@ meta:
 entries:
   - id: arma
     term: arma (mv.)
+    speak: arma
     forms: { gender: o }
     translation:
       - wapens
+    examples:
+      - text: Romani arma capiunt.
+        translation: De Romeinen grijpen de wapens.
+        speak: Romani arma càpiunt.
+        source: generated
 
   - id: cado
     term: cado (cadĕre)
+    speak: cado
     forms: { perfect: cecidi }
     translation:
       - vallen, sneuvelen
+    examples:
+      - text: Multi in pugna cadunt.
+        translation: Velen sneuvelen in het gevecht.
+        speak: Multi in pungna cadunt.
+        source: generated
 
   - id: castra
     term: castra (mv.)
+    speak: castra
     forms: { gender: o }
     translation:
       - legerkamp
+    examples:
+      - text: Romani in castris sunt.
+        translation: De Romeinen zijn in het legerkamp.
+        speak: Romani in castris sunt.
+        source: generated
 
   - id: cum
     term: cum + abl.
+    speak: cum
     translation:
       - met
+    examples:
+      - text: Puer cum patre ambulat.
+        translation: De jongen wandelt met zijn vader.
+        speak: Puer cum patre àmbulat.
+        source: generated
 
   - id: cum_2
     term: cum + ind.
+    speak: cum
     translation:
       - toen
       - wanneer
     card_per_sense: true   # CHECK
+    examples:
+      - text: Cum rex venit, servi tacent.
+        translation: Wanneer de koning komt, zwijgen de slaven.
+        speak: Cum recs wenit, serwi tachent.
+        source: generated
 
   - id: dignus_a_um
     term: dignus, -a, -um + abl.
+    speak: dingnus, dingna, dingnum
     translation:
       - waard, waardig
+    examples:
+      - text: Victor praemio dignus est.
+        translation: De winnaar is een beloning waard.
+        speak: Wictor pràimio dingnus est.
+        source: generated
 
   - id: dubium
     term: dubium
+    speak: dùbium
     translation:
       - twijfel
+    examples:
+      - text: Sine dubio rex iratus est.
+        translation: Zonder twijfel is de koning boos.
+        speak: Sine dùbio recs iratus est.
+        source: generated
 
   - id: interfeci
     term: interfeci
+    speak: interfechi
     translation:
       - perf. van interficio (interficĕre)
     form_of: interficio
+    examples:
+      - text: Hostem gladio interfeci.
+        translation: Ik heb de vijand met een zwaard gedood.
+        speak: Hostem glàdio interfechi.
+        source: generated
 
   - id: notus_a_um
     term: notus, -a, -um
+    speak: notus, nota, notum
     translation:
       - bekend
+    examples:
+      - text: Nomen regis notum est.
+        translation: De naam van de koning is bekend.
+        speak: Nomen reghis notum est.
+        source: generated
 
   - id: pareo
     term: pareo (parēre) + dat.
+    speak: pàreo
     translation:
       - gehoorzamen
+    examples:
+      - text: Servi regi parent.
+        translation: De slaven gehoorzamen de koning.
+        speak: Serwi reghi parent.
+        source: generated
 
   - id: patria
     term: patria
+    speak: pàtria
     translation:
       - vaderland
+    examples:
+      - text: Romani pro patria pugnant.
+        translation: De Romeinen vechten voor het vaderland.
+        speak: Romani pro pàtria pungnant.
+        source: generated
 
   - id: peto
     term: peto (petĕre)
+    speak: peto
     forms: { perfect: petivi }
     translation:
       - streven naar, proberen te bereiken
       - vragen
       - gaan naar, afgaan op
     card_per_sense: true
+    examples:
+      - text: Romani castra petunt.
+        translation: De Romeinen gaan naar het legerkamp.
+        speak: Romani castra petunt.
+        source: generated
 
   - id: poena
     term: poena
+    speak: poina
     translation:
       - straf, boete
+    examples:
+      - text: Poena servi magna est.
+        translation: De straf van de slaaf is groot.
+        speak: Poina serwi mangna est.
+        source: generated
 
   - id: pro
     term: pro + abl.
+    speak: pro
     translation:
       - voor, ten behoeve van
       - in plaats van
     card_per_sense: true
+    examples:
+      - text: Pater pro filio laborat.
+        translation: Vader werkt voor zijn zoon.
+        speak: Pater pro fìlio laborat.
+        source: generated
 
   - id: pugna
     term: pugna
+    speak: pungna
     translation:
       - gevecht
+    examples:
+      - text: Pugna longa est.
+        translation: Het gevecht is lang.
+        speak: Pungna longa est.
+        source: generated
 
   - id: pugno
     term: pugno (pugnare)
+    speak: pungno
     translation:
       - vechten
+    examples:
+      - text: Romani fortiter pugnant.
+        translation: De Romeinen vechten dapper.
+        speak: Romani fòrtiter pungnant.
+        source: generated
 
   - id: quia
     term: quia
+    speak: quia
     translation:
       - omdat, aangezien
+    examples:
+      - text: Servus currit, quia timet.
+        translation: De slaaf rent, omdat hij bang is.
+        speak: Serwus currit, quia timet.
+        source: generated
 
   - id: romanus
     term: Romanus
+    speak: Romanus
     translation:
       - Romein
       - Romeins
     card_per_sense: true
+    examples:
+      - text: Romanus patriam amat.
+        translation: De Romein houdt van zijn vaderland.
+        speak: Romanus pàtriam amat.
+        source: generated
 
   - id: sine
     term: sine + abl.
+    speak: sine
     translation:
       - zonder
+    examples:
+      - text: Sine aqua vivere non possumus.
+        translation: Zonder water kunnen we niet leven.
+        speak: Sine aqua wìwere non pòssumus.
+        source: generated
 
   - id: subito
     term: subito (bijw.)
+    speak: sùbito
     translation:
       - plotseling
+    examples:
+      - text: Subito equus cadit.
+        translation: Plotseling valt het paard.
+        speak: Sùbito equus cadit.
+        source: generated
 
   - id: superbus_a_um
     term: superbus, -a, -um
+    speak: superbus, superba, superbum
     translation:
       - trots, hoogmoedig
+    examples:
+      - text: Rex superbus servos non audit.
+        translation: De hoogmoedige koning luistert niet naar de slaven.
+        speak: Recs superbus serwos non audit.
+        source: generated
 
   - id: tamen
     term: tamen
+    speak: tamen
     translation:
       - toch
+    examples:
+      - text: Puer timidus est, tamen pugnat.
+        translation: De jongen is bang, toch vecht hij.
+        speak: Puer tìmidus est, tamen pungnat.
+        source: generated
 
   - id: ubi
     term: ubi?
+    speak: ubi
     translation:
       - waar?
+    examples:
+      - text: Ubi est gladius meus?
+        translation: Waar is mijn zwaard?
+        speak: Ubi est glàdius meus?
+        source: generated
 
   - id: vidi
     term: vidi
+    speak: widi
     translation:
       - perf. van video (vidēre)
     form_of: video
+    examples:
+      - text: Regem in castris vidi.
+        translation: Ik heb de koning in het legerkamp gezien.
+        speak: Reghem in castris widi.
+        source: generated

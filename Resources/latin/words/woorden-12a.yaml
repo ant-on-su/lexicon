@@ -7,67 +7,139 @@ meta:
 entries:
   - id: armatus_a_um
     term: armatus, -a, -um
+    speak: armatus, armata, armatum
     translation:
       - gewapend
+    examples:
+      - text: Milites armati ad portam stant.
+        translation: Gewapende soldaten staan bij de poort.
+        speak: Mìlites armati ad portam stant.
+        source: generated
 
   - id: carus_a_um
     term: carus, -a, -um
+    speak: carus, cara, carum
     translation:
       - dierbaar, geliefd
+    examples:
+      - text: Filia patri cara est.
+        translation: De dochter is haar vader dierbaar.
+        speak: Fìlia patri cara est.
+        source: generated
 
   - id: civis
     term: civis
+    speak: chiwis
     forms: { genitive: civis, gender: m/v }
     translation:
       - burger
+    examples:
+      - text: Cives tyrannum timent.
+        translation: De burgers zijn bang voor de tiran.
+        speak: Chiwes tirannum timent.
+        source: generated
 
   - id: deprehendo
     term: deprehendo (deprehendĕre)
+    speak: deprehendo
     forms: { perfect: deprehendi }
     translation:
       - grijpen, betrappen
+    examples:
+      - text: Custos furem deprehendit.
+        translation: De bewaker betrapt de dief.
+        speak: Custos furem deprehendit.
+        source: generated
 
   - id: nisi
     term: nisi
+    speak: nisi
     translation:
       - als niet, tenzij
       - behalve
     card_per_sense: true
+    examples:
+      - text: Nisi laboras, cibum non habes.
+        translation: Als je niet werkt, heb je geen eten.
+        speak: Nisi laboras, chibum non habes.
+        source: generated
 
   - id: perduco
     term: perduco (perducĕre)
+    speak: perduco
     forms: { perfect: perduxi }
     translation:
       - brengen, leiden (tot)
+    examples:
+      - text: Dux milites ad flumen perducit.
+        translation: De leider brengt de soldaten naar de rivier.
+        speak: Ducs mìlites ad flumen perduchit.
+        source: generated
 
   - id: qui_quae_quod
     term: qui, quae, quod (betr. vnw.)   # CHECK
+    speak: qui, quai, quod
     translation:
       - die/dat, wie/wat
+    examples:
+      - text: Femina, quam vides, soror mea est.
+        translation: De vrouw die je ziet, is mijn zus.
+        speak: Fèmina, quam wides, soror mea est.
+        source: generated
 
   - id: soror
     term: soror
+    speak: soror
     forms: { genitive: sororis, gender: v }
     translation:
       - zus
+    examples:
+      - text: Soror mea in urbe habitat.
+        translation: Mijn zus woont in de stad.
+        speak: Soror mea in urbe hàbitat.
+        source: generated
 
   - id: tertius_a_um
     term: tertius, -a, -um
+    speak: tèrtius, tèrtia, tèrtium
     translation:
       - derde
+    examples:
+      - text: Tertius filius regis fortis est.
+        translation: De derde zoon van de koning is dapper.
+        speak: Tèrtius fìlius reghis fortis est.
+        source: generated
 
   - id: tyrannus
     term: tyrannus
+    speak: tirannus
     translation:
       - alleenheerser, tiran
+    examples:
+      - text: Tyrannus crudelis cives necat.
+        translation: De wrede tiran doodt de burgers.
+        speak: Tirannus crudelis chiwes necat.
+        source: generated
 
   - id: nec_nec
     term: nec ... nec
+    speak: nec, nec
     translation:
       - noch ... noch, en niet ... en ook niet
+    examples:
+      - text: Nec aurum nec argentum habeo.
+        translation: Ik heb goud noch zilver.
+        speak: Nec aurum nec arghentum hàbeo.
+        source: generated
 
   - id: reversus_sum
     term: reversus sum
+    speak: rewersus sum
     translation:
       - perf. van revertor (reverti)
     form_of: revertor
+    examples:
+      - text: Heri Romam reversus sum.
+        translation: Gisteren ben ik naar Rome teruggekeerd.
+        speak: Heri Romam rewersus sum.
+        source: generated

@@ -7,70 +7,154 @@ meta:
 entries:
   - id: thnetos
     term: θνητός
+    speak: thnètós
     translation:
       - sterfelijk
+    examples:
+      - text: ὁ ἄνθρωπος θνητός ἐστιν.
+        translation: De mens is sterfelijk.
+        speak: ho ánthroopos thnètós estin.
+        source: generated
 
   - id: kephale
     term: κεφαλή, ἡ
+    speak: kephalè
     translation:
       - hoofd, kop
+    examples:
+      - text: τὸ θηρίον μεγάλην κεφαλὴν ἔχει.
+        translation: Het beest heeft een grote kop.
+        speak: to thèríon megálèn kephalèn échei.
+        source: generated
 
   - id: makros
     term: μακρός, μακρά, μακρόν
+    speak: makrós, makrá, makrón
     translation:
       - lang
+    examples:
+      - text: μακρὰν ὁδὸν βαίνομεν.
+        translation: We gaan een lange weg.
+        speak: makrán hodon báínomèn.
+        source: generated
 
   - id: megas
     term: μέγας, μεγάλη, μέγα
+    speak: mégas, megálè, méga
     translation:
       - groot
+    examples:
+      - text: ὁ θεὸς μέγας ἐστίν.
+        translation: De god is groot.
+        speak: ho theós mégas estín.
+        source: generated
 
   - id: men
     term: μέν
+    speak: men
     translation:
       - geeft aan dat er nóg een zin komt; die tweede zin begint met δέ; μέν blijft onvertaald
+    examples:
+      - text: ὁ μὲν δοῦλος φεύγει, ὁ δὲ δεσπότης μένει.
+        translation: De slaaf vlucht, de meester blijft.
+        speak: ho men doelos pheugei, ho dè despótès ménei.
+        source: generated
 
   - id: mia
     term: μία
+    speak: mía
     translation:
       - één (vrouwelijk)
+    examples:
+      - text: μίαν κεφαλὴν ἔχω.
+        translation: Ik heb één hoofd.
+        speak: mían kephalèn échoo.
+        source: generated
 
   - id: ouden
     term: οὐδέν
+    speak: oedén
     translation:
       - niets
+    examples:
+      - text: οὐδὲν ἔχω.
+        translation: Ik heb niets.
+        speak: oedén échoo.
+        source: generated
 
   - id: deinos
     term: δεινός, δεινή, δεινόν
+    speak: deinós, deinè, deinón
     translation:
       - verschrikkelijk, geducht
+    examples:
+      - text: τὸ θηρίον δεινόν ἐστιν.
+        translation: Het beest is verschrikkelijk.
+        speak: to thèríon deinón estin.
+        source: generated
 
   - id: entautha
     term: ἐνταῦθα
+    speak: entáútha
     translation:
       - daar
+    examples:
+      - text: ἐνταῦθα οἰκεῖ ὁ φίλος.
+        translation: Daar woont de vriend.
+        speak: entáútha oikéí ho philos.
+        source: generated
 
   - id: epeita
     term: ἔπειτα
+    speak: épeita
     translation:
       - daarna, vervolgens
+    examples:
+      - text: ἔπειτα φεύγομεν.
+        translation: Daarna vluchten we.
+        speak: épeita phéugomèn.
+        source: generated
 
   - id: eurisko
     term: εὑρίσκω
+    speak: heurískoo
     translation:
       - vinden, ontdekken, aantreffen
+    examples:
+      - text: τὸν φίλον ἐν τῇ οἰκίᾳ εὑρίσκω.
+        translation: Ik vind de vriend in het huis.
+        speak: ton philon en tè oikía heurískoo.
+        source: generated
 
   - id: zeteo
     term: ζητέω
+    speak: dzètéoo
     translation:
       - zoeken
+    examples:
+      - text: τί ζητεῖς;
+        translation: Wat zoek je?
+        speak: ti dzètéís?
+        source: generated
 
   - id: philos
     term: φίλος, ὁ
+    speak: philos
     translation:
       - vriend
+    examples:
+      - text: ὁ φίλος τὸν δοῦλον καλεῖ.
+        translation: De vriend roept de slaaf.
+        speak: ho philos ton doelon kaléí.
+        source: generated
 
   - id: phoberos
     term: φοβερός, φοβερά, φοβερόν
+    speak: phoberós, phoberá, phoberón
     translation:
       - angstaanjagend
+    examples:
+      - text: τὸ θηρίον φοβερόν ἐστιν.
+        translation: Het beest is angstaanjagend.
+        speak: to thèríon phoberón estin.
+        source: generated

@@ -7,86 +7,176 @@ meta:
 entries:
   - id: ameinon
     term: ἀμείνων
+    speak: améínoon
     forms: { genitive: ἀμείνονος }
     translation:
       - beter
+    examples:
+      - text: ὁ σὸς ἵππος ἀμείνων ἐστὶ τοῦ ἐμοῦ.
+        translation: Jouw paard is beter dan het mijne.
+        speak: ho sos hippos améínoon esti toe emóé.
+        source: generated
 
   - id: kakion
     term: κακίων
+    speak: kakíoon
     forms: { genitive: κακίονος }
     translation:
       - slechter
+    examples:
+      - text: ὁ οἶνος κακίων ἐστὶν ἢ τὸ ὕδωρ.
+        translation: De wijn is slechter dan het water.
+        speak: ho oinos kakíoon estin è to hudoor.
+        source: generated
 
   - id: kreitton
     term: κρείττων
+    speak: kréíttoon
     forms: { genitive: κρείττονος }
     translation:
       - beter, sterker
+    examples:
+      - text: ὁ λέων κρείττων ἐστὶ τοῦ ἀνθρώπου.
+        translation: De leeuw is sterker dan de mens.
+        speak: ho léoon kréíttoon esti toe anthróópoe.
+        source: generated
 
   - id: malista
     term: μάλιστα
+    speak: malista
     translation:
       - het meest, vooral (bijwoord)
+    examples:
+      - text: τὸν ἀδελφὸν μάλιστα φιλῶ.
+        translation: Ik houd het meest van mijn broer.
+        speak: ton adelphón malista philóó.
+        source: generated
 
   - id: megistos
     term: μέγιστος
+    speak: mégistos
     translation:
       - grootst
       - zeer groot
     card_per_sense: true
+    examples:
+      - text: ὁ Ζεὺς μέγιστος τῶν θεῶν ἐστιν.
+        translation: Zeus is de grootste van de goden.
+        speak: ho Dzeus mégistos toon theóón estin.
+        source: generated
 
   - id: beltion
     term: βελτίων
+    speak: beltíoon
     forms: { genitive: βελτίονος }
     translation:
       - beter, bekwamer
+    examples:
+      - text: ὁ υἱὸς βελτίων ἐστὶ τοῦ πατρός.
+        translation: De zoon is bekwamer dan zijn vader.
+        speak: ho huïós beltíoon esti toe patros.
+        source: generated
 
   - id: deilos
     term: δειλός
+    speak: deilós
     translation:
       - laf
       - ongelukkig
     card_per_sense: true
+    examples:
+      - text: ὁ δειλὸς στρατιώτης φεύγει.
+        translation: De laffe soldaat vlucht.
+        speak: ho deilós stratióótès pheugei.
+        source: generated
 
   - id: diaphero
     term: διαφέρω
+    speak: diaphéroo
     translation:
       - verschillen
+    examples:
+      - text: οἱ ἀδελφοὶ πολὺ διαφέρουσιν.
+        translation: De broers verschillen veel.
+        speak: hoi adelphói polú diaphéroesin.
+        source: generated
 
   - id: ephugon
     term: ἔφυγον (inf. φυγεῖν) (+ acc.)
+    speak: éphugon
     translation:
       - ik vluchtte (voor) (aor. van φεύγω)
     form_of: pheugo
+    examples:
+      - text: τὸν λέοντα ἔφυγον.
+        translation: Ik vluchtte voor de leeuw.
+        speak: ton léonta éphugon.
+        source: generated
 
   - id: e
     term: ἤ
+    speak: è
     translation:
       - of
       - dan (na comparatius)
     card_per_sense: true
+    examples:
+      - text: ὁ ἀδελφὸς μείζων ἐστὶν ἢ ἐγώ.
+        translation: Mijn broer is groter dan ik.
+        speak: ho adelphós méídzoon estin è egóó.
+        source: generated
 
   - id: polemios
     term: πολέμιος, ὁ
+    speak: polémios
     translation:
       - vijand
+    examples:
+      - text: οἱ πολέμιοι τὴν πόλιν λαμβάνουσιν.
+        translation: De vijanden nemen de stad in.
+        speak: hoi polémioi tèn polin lambánoesin.
+        source: generated
 
   - id: skopeo
     term: σκοπέω
+    speak: skopéoo
     translation:
       - bekijken, letten op
+    examples:
+      - text: τὴν θάλατταν σκοποῦμεν.
+        translation: We bekijken de zee.
+        speak: tèn thálattan skopóémèn.
+        source: generated
 
   - id: time
     term: τιμή, ἡ
+    speak: timè
     translation:
       - eer, eerbewijs
+    examples:
+      - text: ὁ στρατηγὸς πολλὴν τιμὴν ἔχει.
+        translation: De legeraanvoerder geniet veel eer.
+        speak: ho stratègós pollèn timèn échei.
+        source: generated
 
   - id: pheugo
     term: φεύγω, aor. ἔφυγον (+ acc.)
+    speak: pheugoo
     translation:
       - vluchten (voor)
+    examples:
+      - text: οἱ πολέμιοι φεύγουσιν.
+        translation: De vijanden vluchten.
+        speak: hoi polémioi phéugoesin.
+        source: generated
 
   - id: phug
     term: φυγ-
+    speak: phug
     translation:
       - aoristusstam van φεύγω
+    examples:
+      - text: ἐθέλω φυγεῖν.
+        translation: Ik wil vluchten.
+        speak: ethéloo phugéín.
+        source: generated

@@ -11,90 +11,120 @@ entries:
       - terugkeren
     examples:
       - text: Il retourne à l’école à dix heures et quart.
+        translation: Hij gaat om kwart over tien terug naar school.
+        source: book
   - id: ennuyeux
     term: ennuyeux
     translation:
       - vervelend, saai
     examples:
       - text: Il n’y a pas beaucoup d’activités, c’est ennuyeux.
+        translation: Er zijn niet veel activiteiten, het is saai.
+        source: book
   - id: j-en-ai-marre
     term: j’en ai marre
     translation:
       - ik heb er genoeg van
     examples:
       - text: Les mauvaises notes, j’en ai marre.
+        translation: Ik heb genoeg van die slechte cijfers.
+        source: book
   - id: cour
     term: la cour
     translation:
       - het schoolplein
     examples:
       - text: Les élèves jouent au foot dans la cour.
+        translation: De leerlingen voetballen op het schoolplein.
+        source: book
   - id: recre
     term: la récré(ation)
     translation:
       - de pauze
     examples:
       - text: Pendant la récréation, je mange une pomme.
+        translation: In de pauze eet ik een appel.
+        source: book
   - id: hier
     term: hier
     translation:
       - gisteren
     examples:
       - text: Hier, j’ai regardé une série américaine.
+        translation: Gisteren heb ik een Amerikaanse serie gekeken.
+        source: book
   - id: maintenant
     term: maintenant
     translation:
       - nu
     examples:
       - text: Vous retournez maintenant !
+        translation: Jullie gaan nu terug!
+        source: book
   - id: meilleur
     term: meilleur / meilleure
     translation:
       - beter
     examples:
       - text: J’ai une meilleure idée.
+        translation: Ik heb een beter idee.
+        source: book
   - id: fier
     term: fier / fière
     translation:
       - trots
     examples:
       - text: Elle est fière de sa fille.
+        translation: Ze is trots op haar dochter.
+        source: book
   - id: marche-aux-puces
     term: le marché aux puces
     translation:
       - de vlooienmarkt
     examples:
       - text: On trouve des accessoires vintage au marché aux puces.
+        translation: Op de vlooienmarkt vind je vintage accessoires.
+        source: book
   - id: punition
     term: la punition
     translation:
       - de straf
     examples:
       - text: La punition, c’est de faire une présentation.
+        translation: De straf is een presentatie houden.
+        source: book
   - id: gagner-de-l-argent
     term: gagner de l’argent
     translation:
       - geld verdienen
     examples:
       - text: Je gagne de l’argent avec mon job.
+        translation: Ik verdien geld met mijn baantje.
+        source: book
   - id: assez
     term: assez
     translation:
       - genoeg
     examples:
       - text: Nous avons assez d’argent pour acheter des accessoires.
+        translation: We hebben genoeg geld om accessoires te kopen.
+        source: book
   - id: jaloux
     term: jaloux / jalouse
     translation:
       - jaloers
     examples:
       - text: Il est jaloux de son frère.
+        translation: Hij is jaloers op zijn broer.
+        source: book
   - id: pourquoi-pas
     term: pourquoi pas
     translation:
       - waarom niet
     examples:
       - text: On part ? Pourquoi pas !
+        translation: Gaan we? Waarom niet!
+        source: book
   - id: allemand
     term: l’allemand
     forms: { gender: m }
@@ -102,27 +132,37 @@ entries:
       - Duits
     examples:
       - text: Tu vas répondre en allemand ?
+        translation: Ga jij in het Duits antwoorden?
+        source: book
   - id: job
     term: un job
     translation:
       - een baan(tje)
     examples:
       - text: Le week-end, j’ai un petit job.
+        translation: In het weekend heb ik een bijbaantje.
+        source: book
   - id: ravi-de
     term: ravi(e) de
     translation:
       - heel blij zijn met / om
     examples:
       - text: Je suis ravi de te voir !
+        translation: Ik ben heel blij je te zien!
+        source: book
   - id: cet-apres-midi
     term: cet après-midi
     translation:
       - vanmiddag
     examples:
       - text: Cet après-midi, on choisit le thème de la fête scolaire.
+        translation: Vanmiddag kiezen we het thema van het schoolfeest.
+        source: book
   - id: deux-heures-de-colle
     term: deux heures de colle
     translation:
       - twee uur nablijven
     examples:
       - text: La prof nous a donné deux heures de colle.
+        translation: De lerares heeft ons twee uur laten nablijven.
+        source: book

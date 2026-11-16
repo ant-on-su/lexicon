@@ -7,122 +7,254 @@ meta:
 entries:
   - id: capio
     term: capio (capĕre)
+    speak: càpio
     forms: { perfect: cepi }
     translation:
       - pakken, nemen, innemen
+    examples:
+      - text: Servus aurum capit.
+        translation: De slaaf pakt het goud.
+        speak: Serwus aurum capit.
+        source: generated
 
   - id: debeo
     term: debeo (debēre)
+    speak: dèbeo
     translation:
       - moeten, verschuldigd zijn
+    examples:
+      - text: Servi laborare debent.
+        translation: De slaven moeten werken.
+        speak: Serwi laborare debent.
+        source: generated
 
   - id: ecce
     term: ecce
+    speak: ecche
     translation:
       - kijk!
+    examples:
+      - text: Ecce, rex venit!
+        translation: Kijk, de koning komt!
+        speak: Ecche, recs wenit!
+        source: generated
 
   - id: ego
     term: ego
+    speak: ego
     forms: { accusative: me }
     translation:
       - ik, mij
+    examples:
+      - text: Ego filius regis sum.
+        translation: Ik ben de zoon van de koning.
+        speak: Ego fìlius reghis sum.
+        source: generated
 
   - id: filia
     term: filia
+    speak: fìlia
     translation:
       - dochter
+    examples:
+      - text: Filia agricolae aquam portat.
+        translation: De dochter van de boer draagt water.
+        speak: Fìlia agrìcolai aquam portat.
+        source: generated
 
   - id: filius
     term: filius
+    speak: fìlius
     translation:
       - zoon
+    examples:
+      - text: Filius regis in silva errat.
+        translation: De zoon van de koning dwaalt rond in het bos.
+        speak: Fìlius reghis in silwa errat.
+        source: generated
 
   - id: homo
     term: homo
+    speak: homo
     forms: { genitive: hominis, gender: m }
     translation:
       - mens
       - man
     card_per_sense: true
+    examples:
+      - text: Homo in agro laborat.
+        translation: Een man zwoegt op de akker.
+        speak: Homo in agro laborat.
+        source: generated
 
   - id: igitur
     term: igitur
+    speak: ìghitur
     translation:
       - dus
+    examples:
+      - text: Rex iratus est; servus igitur currit.
+        translation: De koning is boos; de slaaf rent dus.
+        speak: Recs iratus est; serwus ìghitur currit.
+        source: generated
 
   - id: iuvo
     term: iuvo (iuvare)
+    speak: iuwo
     translation:
       - helpen
+    examples:
+      - text: Filia matrem iuvat.
+        translation: De dochter helpt haar moeder.
+        speak: Fìlia matrem iuwat.
+        source: generated
 
   - id: magnus_a_um
     term: magnus, -a, -um
+    speak: mangnus, mangna, mangnum
     translation:
       - groot
+    examples:
+      - text: Regia magna est.
+        translation: Het paleis is groot.
+        speak: Règhia mangna est.
+        source: generated
 
   - id: mater
     term: mater
+    speak: mater
     forms: { genitive: matris, gender: v }
     translation:
       - moeder
+    examples:
+      - text: Mater liberos vocat.
+        translation: De moeder roept de kinderen.
+        speak: Mater lìberos wocat.
+        source: generated
 
   - id: me
     term: me (acc./abl.)
+    speak: me
     translation:
       - mij
+    examples:
+      - text: Cur me non iuvas?
+        translation: Waarom help je mij niet?
+        speak: Cur me non iuwas?
+        source: generated
 
   - id: multus_a_um
     term: multus, -a, -um
+    speak: multus, multa, multum
     translation:
       - veel
+    examples:
+      - text: Agricola multos agros habet.
+        translation: De boer heeft veel akkers.
+        speak: Agrìcola multos agros habet.
+        source: generated
 
   - id: omnia
     term: omnia (mv.)
+    speak: òmnia
     forms: { gender: o }
     translation:
       - alles
+    examples:
+      - text: Omnia video.
+        translation: Ik zie alles.
+        speak: Òmnia wìdeo.
+        source: generated
 
   - id: possum
     term: possum (posse)
+    speak: possum
     forms: { perfect: potui }
     translation:
       - kunnen
+    examples:
+      - text: Non possum currere.
+        translation: Ik kan niet rennen.
+        speak: Non possum cùrrere.
+        source: generated
 
   - id: sedeo
     term: sedeo (sedēre)
+    speak: sèdeo
     translation:
       - zitten
+    examples:
+      - text: Rex ad mensam sedet.
+        translation: De koning zit aan tafel.
+        speak: Recs ad mensam sedet.
+        source: generated
 
   - id: sum
     term: sum (esse)
+    speak: sum
     forms: { perfect: fui }
     translation:
       - zijn
+    examples:
+      - text: Ego servus sum.
+        translation: Ik ben een slaaf.
+        speak: Ego serwus sum.
+        source: generated
 
   - id: unus_a_um
     term: unus, -a, -um
+    speak: unus, una, unum
     translation:
       - één
       - (als) enige, alleen
     card_per_sense: true
+    examples:
+      - text: Unus servus in regia est.
+        translation: Er is één slaaf in het paleis.
+        speak: Unus serwus in règhia est.
+        source: generated
 
   - id: valde
     term: valde (bijw.)
+    speak: walde
     translation:
       - erg, zeer
+    examples:
+      - text: Mater valde irata est.
+        translation: Moeder is erg boos.
+        speak: Mater walde irata est.
+        source: generated
 
   - id: venio
     term: venio (venire)
+    speak: wènio
     forms: { perfect: veni }
     translation:
       - komen
+    examples:
+      - text: Filius ad matrem venit.
+        translation: De zoon komt naar zijn moeder.
+        speak: Fìlius ad matrem wenit.
+        source: generated
 
   - id: vester_tra_trum
     term: vester, -tra, -trum (bez. vnw.)   # CHECK
+    speak: wester, westra, westrum
     translation:
       - (van) jullie
+    examples:
+      - text: Ager vester magnus est.
+        translation: Jullie akker is groot.
+        speak: Agher wester mangnus est.
+        source: generated
 
   - id: vos
     term: vos (nom./acc.)
+    speak: wos
     translation:
       - jullie
+    examples:
+      - text: Vos laeti estis.
+        translation: Jullie zijn blij.
+        speak: Wos laiti estis.
+        source: generated

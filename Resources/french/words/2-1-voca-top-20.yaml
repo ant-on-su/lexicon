@@ -11,60 +11,80 @@ entries:
       - haten, een hekel hebben aan
     examples:
       - text: Ma grand-mère déteste les réseaux sociaux.
+        translation: Mijn oma heeft een hekel aan sociale media.
+        source: book
   - id: envoyer
     term: envoyer
     translation:
       - versturen
     examples:
       - text: Ali envoie un message à son prof.
+        translation: Ali stuurt een bericht naar zijn leraar.
+        source: book
   - id: expliquer
     term: expliquer
     translation:
       - uitleggen
     examples:
       - text: Je t’explique comment ça fonctionne.
+        translation: Ik leg je uit hoe het werkt.
+        source: book
   - id: etre-fort-en
     term: être fort(e) en
     translation:
       - goed / sterk zijn in
     examples:
       - text: Mara est forte en anglais.
+        translation: Mara is goed in Engels.
+        source: book
   - id: etre-nul-en
     term: être nul(le) en
     translation:
       - slecht / zwak zijn in
     examples:
       - text: Je suis nul en maths, quel désastre.
+        translation: Ik ben slecht in wiskunde, wat een ramp.
+        source: book
   - id: courageux
     term: courageux / courageuse
     translation:
       - moedig
     examples:
       - text: C’est courageux de participer au match.
+        translation: Het is moedig om mee te doen aan de wedstrijd.
+        source: book
   - id: content
     term: content
     translation:
       - tevreden
     examples:
       - text: Je suis content parce que j’ai une bonne note.
+        translation: Ik ben tevreden omdat ik een goed cijfer heb.
+        source: book
   - id: libre
     term: libre
     translation:
       - vrij
     examples:
       - text: C’est les vacances, donc nous sommes libres.
+        translation: Het is vakantie, dus we zijn vrij.
+        source: book
   - id: en-quatrieme
     term: en quatrième
     translation:
       - in de tweede klas
     examples:
       - text: En quatrième, on a aussi des cours d’allemand.
+        translation: In de tweede klas hebben we ook Duitse les.
+        source: book
   - id: reseaux-sociaux
     term: les réseaux sociaux
     translation:
       - de sociale media(netwerken)
     examples:
       - text: Les réseaux sociaux sont très populaires aux Pays-Bas.
+        translation: Sociale media zijn heel populair in Nederland.
+        source: book
   - id: ordinateur-portable
     term: l’ordinateur (portable)
     forms: { gender: m }
@@ -72,18 +92,24 @@ entries:
       - de computer / de laptop
     examples:
       - text: On utilise des ordinateurs portables en classe.
+        translation: In de klas gebruiken we laptops.
+        source: book
   - id: portable
     term: le portable
     translation:
       - de mobiele telefoon
     examples:
       - text: Je ne peux pas vivre sans portable.
+        translation: Ik kan niet leven zonder mobiel.
+        source: book
   - id: ecouteurs
     term: les écouteurs
     translation:
       - de oortjes, de koptelefoon
     examples:
       - text: Je mets mes écouteurs pour me concentrer.
+        translation: Ik doe mijn oortjes in om me te concentreren.
+        source: book
   - id: appareil
     term: l’appareil
     forms: { gender: m }
@@ -91,18 +117,24 @@ entries:
       - het apparaat
     examples:
       - text: Ce nouvel appareil est trop cher.
+        translation: Dit nieuwe apparaat is te duur.
+        source: book
   - id: mot-de-passe
     term: le mot de passe
     translation:
       - het wachtwoord
     examples:
       - text: Je ne partage pas mon mot de passe.
+        translation: Ik deel mijn wachtwoord niet.
+        source: book
   - id: charger
     term: charger
     translation:
       - opladen
     examples:
       - text: Chaque nuit, je charge mon portable.
+        translation: Elke nacht laad ik mijn mobiel op.
+        source: book
   - id: interro
     term: l’interro(gation)
     forms: { gender: v }
@@ -110,30 +142,40 @@ entries:
       - de toets
     examples:
       - text: L’interrogation d’allemand est facile !
+        translation: De toets Duits is makkelijk!
+        source: book
   - id: note
     term: la note
     translation:
       - het cijfer
     examples:
       - text: La note ne dit pas tout.
+        translation: Het cijfer zegt niet alles.
+        source: book
   - id: se-connecter
     term: se connecter
     translation:
       - contact maken / inloggen
     examples:
       - text: En ligne on peut se connecter avec d’autres jeunes.
+        translation: Online kun je contact maken met andere jongeren.
+        source: book
   - id: langue
     term: la langue
     translation:
       - de taal
     examples:
       - text: La langue française est utile dans beaucoup de pays.
+        translation: De Franse taal is in veel landen nuttig.
+        source: book
   - id: site-web
     term: le site web
     translation:
       - de website
     examples:
       - text: Ce site web donne de bonnes informations.
+        translation: Deze website geeft goede informatie.
+        source: book
   - id: site-internet
     term: le site Internet
     translation:
@@ -144,36 +186,48 @@ entries:
       - dol zijn op
     examples:
       - text: Elle est passionnée d’histoire.
+        translation: Ze is dol op geschiedenis.
+        source: book
   - id: cliquer
     term: cliquer
     translation:
       - klikken
     examples:
       - text: Il ne faut pas cliquer sur l’annonce.
+        translation: Je moet niet op de advertentie klikken.
+        source: book
   - id: surtout
     term: surtout
     translation:
       - vooral
     examples:
       - text: Ce sont surtout les jeunes qui utilisent Snapchat.
+        translation: Het zijn vooral jongeren die Snapchat gebruiken.
+        source: book
   - id: librairie
     term: la librairie
     translation:
       - de boekwinkel
     examples:
       - text: J’achète deux magazines dans la librairie.
+        translation: Ik koop twee tijdschriften in de boekwinkel.
+        source: book
   - id: en-ligne
     term: en ligne
     translation:
       - online
     examples:
       - text: Presque tout le monde est en ligne.
+        translation: Bijna iedereen is online.
+        source: book
   - id: cours
     term: le cours
     translation:
       - de les
     examples:
       - text: Les cours sont en ligne.
+        translation: De lessen zijn online.
+        source: book
   - id: journal
     term: le journal
     forms: { plural: les journaux }
@@ -182,6 +236,8 @@ entries:
     translation_forms: { plural: de kranten }
     examples:
       - text: Les journaux sont publiés chaque jour.
+        translation: De kranten verschijnen elke dag.
+        source: book
   - id: interview
     term: l’interview
     forms: { gender: v }
@@ -189,6 +245,8 @@ entries:
       - het interview
     examples:
       - text: L’interview avec la star est intéressante.
+        translation: Het interview met de ster is interessant.
+        source: book
   - id: article
     term: l’article
     forms: { gender: m }
@@ -196,6 +254,8 @@ entries:
       - het artikel
     examples:
       - text: L’article parle du présent et du passé.
+        translation: Het artikel gaat over het heden en het verleden.
+        source: book
   - id: prix
     term: le prix
     forms: { plural: les prix }
@@ -204,57 +264,77 @@ entries:
     translation_forms: { plural: de prijzen }
     examples:
       - text: Les prix sont à partir de 150 euros.
+        translation: De prijzen beginnen bij 150 euro.
+        source: book
   - id: conseil
     term: le conseil
     translation:
       - het advies
     examples:
       - text: J’ai demandé un conseil à la dame.
+        translation: Ik heb de mevrouw om advies gevraagd.
+        source: book
   - id: lieu
     term: le lieu
     translation:
       - de plaats
     examples:
       - text: Ce lieu est mystérieux.
+        translation: Deze plek is geheimzinnig.
+        source: book
   - id: batiment
     term: le bâtiment
     translation:
       - het gebouw
     examples:
       - text: Le bâtiment date de 1895.
+        translation: Het gebouw dateert uit 1895.
+        source: book
   - id: bureau
     term: le bureau
     translation:
       - het bureau
     examples:
       - text: Elle fait ses devoirs à son bureau.
+        translation: Ze maakt haar huiswerk aan haar bureau.
+        source: book
   - id: il-faut
     term: Il faut
     translation:
       - Je moet
     examples:
       - text: Il faut être à l’heure.
+        translation: Je moet op tijd zijn.
+        source: book
   - id: partager
     term: partager
     translation:
       - delen
     examples:
       - text: Sur Internet, on peut partager ses idées.
+        translation: Op internet kun je je ideeën delen.
+        source: book
   - id: fete-scolaire
     term: la fête scolaire
     translation:
       - het schoolfeest
     examples:
       - text: La fête scolaire est le 31 octobre.
+        translation: Het schoolfeest is op 31 oktober.
+        source: book
   - id: obligatoire
     term: obligatoire
     translation:
       - verplicht
     examples:
       - text: L’anglais est une matière obligatoire.
+        translation: Engels is een verplicht vak.
+        source: book
   - id: se-concentrer
     term: se concentrer
     translation:
       - zich concentreren
     examples:
       - text: Elle se concentre pour écrire l’article.
+        translation: Ze concentreert zich om het artikel te schrijven.
+        source: book

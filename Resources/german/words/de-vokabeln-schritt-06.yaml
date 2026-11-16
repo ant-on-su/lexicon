@@ -10,111 +10,199 @@ entries:
     term: aber
     translation:
       - maar
+    examples:
+      - text: Ich möchte mitkommen, aber ich habe keine Zeit.
+        translation: Ik wil graag mee, maar ik heb geen tijd.
+        source: generated
 
   - id: achtung
     term: Achtung!
     translation:
       - Pas op!
+    examples:
+      - text: Achtung, da kommt ein Auto!
+        translation: Pas op, daar komt een auto!
+        source: generated
 
   - id: also
     term: also
     translation:
       - dus
+    examples:
+      - text: Es regnet, also nehme ich den Bus.
+        translation: Het regent, dus ik neem de bus.
+        source: generated
 
   - id: aufpassen_auf
     term: aufpassen auf
     translation:
       - letten op
+    examples:
+      - text: Pass bitte auf deinen kleinen Bruder auf!
+        translation: Let alsjeblieft op je kleine broertje!
+        source: generated
 
   - id: ausweis
     term: der Ausweis
     translation:
       - het legitimatiebewijs
+    examples:
+      - text: Haben Sie Ihren Ausweis dabei?
+        translation: Hebt u uw legitimatiebewijs bij u?
+        source: generated
 
   - id: autofahrer
     term: der Autofahrer
     translation:
       - de automobilist
+    examples:
+      - text: Der Autofahrer fährt viel zu schnell.
+        translation: De automobilist rijdt veel te snel.
+        source: generated
 
   - id: boese
     term: böse
     translation:
       - boos
+    examples:
+      - text: Mein Vater ist böse, weil ich zu spät bin.
+        translation: Mijn vader is boos omdat ik te laat ben.
+        source: generated
 
   - id: das_ist_egal
     term: Das ist egal.
     translation:
       - Dat maakt niet uit.
+    examples:
+      - text: Bus oder Zug? Das ist egal.
+        translation: Bus of trein? Dat maakt niet uit.
+        source: generated
 
   - id: sich_entschuldigen
     term: sich entschuldigen
     translation:
       - zich verontschuldigen
+    examples:
+      - text: Der Radfahrer entschuldigt sich bei der Frau.
+        translation: De fietser verontschuldigt zich bij de vrouw.
+        source: generated
 
   - id: ich_entschuldige_mich_dafuer
     term: Ich entschuldige mich dafür.
     translation:
       - Ik bied daarvoor mijn excuses aan.
+    examples:
+      - text: Ich war unfreundlich. Ich entschuldige mich dafür.
+        translation: Ik was onvriendelijk. Ik bied daarvoor mijn excuses aan.
+        source: generated
 
   - id: fuehrerschein
     term: der Führerschein
     translation:
       - het rijbewijs
+    examples:
+      - text: Meine Schwester macht jetzt den Führerschein.
+        translation: Mijn zus haalt nu haar rijbewijs.
+        source: generated
 
   - id: fast
     term: fast
     translation:
       - bijna
+    examples:
+      - text: Es ist fast acht Uhr.
+        translation: Het is bijna acht uur.
+        source: generated
 
   - id: fehlen
     term: fehlen
     translation:
       - ontbreken
+    examples:
+      - text: Am Fahrrad fehlt das Licht.
+        translation: Aan de fiets ontbreekt het licht.
+        source: generated
 
   - id: gueltig
     term: gültig
     translation:
       - geldig
+    examples:
+      - text: Dein Ausweis ist nicht mehr gültig.
+        translation: Jouw legitimatiebewijs is niet meer geldig.
+        source: generated
 
   - id: jetzt
     term: jetzt
     translation:
       - nu
+    examples:
+      - text: Ich muss jetzt nach Hause.
+        translation: Ik moet nu naar huis.
+        source: generated
 
   - id: kaputt
     term: kaputt
     translation:
       - kapot
+    examples:
+      - text: Mein Fahrrad ist kaputt.
+        translation: Mijn fiets is kapot.
+        source: generated
 
   - id: das_tut_mir_leid
     term: Das tut mir leid.
     translation:
       - Het spijt me.
+    examples:
+      - text: Oh, dein Handy ist kaputt? Das tut mir leid.
+        translation: O, is je mobiel kapot? Het spijt me.
+        source: generated
 
   - id: nett_von_ihnen
     term: Nett von Ihnen!
     translation:
       - Aardig van u!
+    examples:
+      - text: Sie helfen mir? Nett von Ihnen!
+        translation: Helpt u mij? Aardig van u!
+        source: generated
 
   - id: passieren
     term: passieren
     translation:
       - gebeuren
+    examples:
+      - text: Hier passiert immer etwas.
+        translation: Hier gebeurt altijd iets.
+        source: generated
 
   - id: was_ist_passiert
     term: Was ist passiert?
     translation:
       - Wat is er gebeurd?
+    examples:
+      - text: Die Polizei ist da. Was ist passiert?
+        translation: De politie is er. Wat is er gebeurd?
+        source: generated
 
   - id: ploetzlich
     term: plötzlich
     translation:
       - plotseling
+    examples:
+      - text: Plötzlich kommt ein Hund auf die Straße.
+        translation: Plotseling komt er een hond de straat op.
+        source: generated
 
   - id: polizei
     term: die Polizei
     translation:
       - de politie
+    examples:
+      - text: Wir rufen die Polizei.
+        translation: We bellen de politie.
+        source: generated
 
   - id: polizist
     term: der Polizist
@@ -122,11 +210,19 @@ entries:
     translation:
       - de politieagent
     translation_forms: { plural: de politieagenten }
+    examples:
+      - text: Der Polizist fragt nach meinem Ausweis.
+        translation: De politieagent vraagt naar mijn legitimatiebewijs.
+        source: generated
 
   - id: radfahrer
     term: der Radfahrer
     translation:
       - de fietser
+    examples:
+      - text: Der Radfahrer hat kein Licht.
+        translation: De fietser heeft geen licht.
+        source: generated
 
   - id: schild
     term: das Schild
@@ -134,6 +230,10 @@ entries:
     translation:
       - het verkeersbord
     translation_forms: { plural: de verkeersborden }
+    examples:
+      - text: Hast du das Schild nicht gesehen?
+        translation: Heb je het verkeersbord niet gezien?
+        source: generated
 
   - id: strasse
     term: die Straße
@@ -141,8 +241,16 @@ entries:
     translation:
       - de straat
     translation_forms: { plural: de straten }
+    examples:
+      - text: In welcher Straße wohnst du?
+        translation: In welke straat woon jij?
+        source: generated
 
   - id: zurueck
     term: zurück
     translation:
       - terug
+    examples:
+      - text: Wann kommst du zurück?
+        translation: Wanneer kom je terug?
+        source: generated

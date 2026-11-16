@@ -7,101 +7,209 @@ meta:
 entries:
   - id: aeque
     term: aeque (bijw.)
+    speak: aique
     translation:
       - net zo, even(zeer)
+    examples:
+      - text: Puer aeque fortis est ac pater.
+        translation: De jongen is net zo dapper als zijn vader.
+        speak: Puer aique fortis est ac pater.
+        source: generated
 
   - id: aestimo
     term: aestimo (aestimare)
+    speak: àistimo
     translation:
       - schatten, waard achten
       - beoordelen
     card_per_sense: true
+    examples:
+      - text: Dominus servum magni aestimat.
+        translation: De heer acht de slaaf hoog.
+        speak: Dòminus serwum mangni àistimat.
+        source: generated
 
   - id: alii_alii
     term: alii ... alii
+    speak: àlii, àlii
     translation:
       - sommige(n) ... andere(n)
+    examples:
+      - text: Alii laborant, alii ludunt.
+        translation: Sommigen werken, anderen spelen.
+        speak: Àlii laborant, àlii ludunt.
+        source: generated
 
   - id: alius_alius
     term: alius ... alius
+    speak: àlius, àlius
     translation:
       - de een ... de ander
+    examples:
+      - text: Alius aquam, alius vinum bibit.
+        translation: De een drinkt water, de ander wijn.
+        speak: Àlius aquam, àlius winum bibit.
+        source: generated
 
   - id: colligo
     term: colligo (colligĕre)
+    speak: còlligo
     translation:
       - verzamelen   # CHECK
+    examples:
+      - text: Liberi in silva ligna colligunt.
+        translation: De kinderen verzamelen hout in het bos.
+        speak: Lìberi in silwa lingna còlligunt.
+        source: generated
 
   - id: enim
     term: enim
+    speak: enim
     translation:
       - want, immers
+    examples:
+      - text: Servus currit; rex enim vocat.
+        translation: De slaaf rent, want de koning roept.
+        speak: Serwus currit; recs enim wocat.
+        source: generated
 
   - id: exemplum
     term: exemplum
+    speak: ecsemplum
     translation:
       - voorbeeld
+    examples:
+      - text: Pater bonum exemplum est.
+        translation: Vader is een goed voorbeeld.
+        speak: Pater bonum ecsemplum est.
+        source: generated
 
   - id: fortis_is_e
     term: fortis, -is, -e (fortis)
+    speak: fortis, forte
     translation:
       - dapper, sterk
+    examples:
+      - text: Imperator fortis est.
+        translation: De keizer is dapper.
+        speak: Imperator fortis est.
+        source: generated
 
   - id: inferior_or_us
     term: inferior, -or, -us (inferioris)
+    speak: infèrior, infèrius
     translation:
       - lager
       - minder, zwakker
     card_per_sense: true
+    examples:
+      - text: Romani numero inferiores sunt.
+        translation: De Romeinen zijn in aantal minder.
+        speak: Romani nùmero inferiores sunt.
+        source: generated
 
   - id: ingens_ns_ns
     term: ingens, -ns, -ns (ingentis)
+    speak: inghens
     translation:
       - enorm
+    examples:
+      - text: Villa ingens est.
+        translation: Het landhuis is enorm.
+        speak: Willa inghens est.
+        source: generated
 
   - id: licet
     term: licet + dat.
+    speak: lichet
     translation:
       - het is toegestaan, het is mogelijk
+    examples:
+      - text: Servis vinum bibere non licet.
+        translation: Het is de slaven niet toegestaan wijn te drinken.
+        speak: Serwis winum bìbere non lichet.
+        source: generated
 
   - id: nomen
     term: nomen
+    speak: nomen
     forms: { genitive: nominis, gender: o }
     translation:
       - naam
+    examples:
+      - text: Quod est nomen tuum?
+        translation: Wat is jouw naam?
+        speak: Quod est nomen tuum?
+        source: generated
 
   - id: opinio
     term: opinio
+    speak: opìnio
     forms: { genitive: opinionis, gender: v }
     translation:
       - mening, opvatting
+    examples:
+      - text: Opinio mea alia est.
+        translation: Mijn mening is anders.
+        speak: Opìnio mea àlia est.
+        source: generated
 
   - id: puto
     term: puto (putare)
+    speak: puto
     translation:
       - menen
       - (+ 2 acc.) beschouwen als
     card_per_sense: true
+    examples:
+      - text: Puto te fortem esse.
+        translation: Ik meen dat jij dapper bent.
+        speak: Puto te fortem esse.
+        source: generated
 
   - id: quemadmodum
     term: quemadmodum
+    speak: quemàdmodum
     translation:
       - hoe?
       - (zo)als
     card_per_sense: true
+    examples:
+      - text: Quemadmodum vivis?
+        translation: Hoe leef je?
+        speak: Quemàdmodum wiwis?
+        source: generated
 
   - id: silentium
     term: silentium
+    speak: silèntium
     translation:
       - stilte
+    examples:
+      - text: In silva silentium est.
+        translation: In het bos is het stil.
+        speak: In silwa silèntium est.
+        source: generated
 
   - id: vestis
     term: vestis
+    speak: westis
     forms: { genitive: vestis, gender: v }
     translation:
       - kleding(stuk)
+    examples:
+      - text: Vestis dominae pulchra est.
+        translation: De kleding van de meesteres is mooi.
+        speak: Westis dòminai pulchra est.
+        source: generated
 
   - id: vivo
     term: vivo (vivĕre)
+    speak: wiwo
     translation:
       - leven
+    examples:
+      - text: Agricola in villa vivit.
+        translation: De boer leeft in een landhuis.
+        speak: Agrìcola in willa wiwit.
+        source: generated

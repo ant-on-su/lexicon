@@ -7,146 +7,290 @@ meta:
 entries:
   - id: alo
     term: alo (alĕre)
+    speak: alo
     forms: { perfect: alui }
     translation:
       - (op)voeden, grootbrengen
+    examples:
+      - text: Mater liberos alit.
+        translation: De moeder voedt de kinderen op.
+        speak: Mater lìberos alit.
+        source: generated
 
   - id: amnis
     term: amnis
+    speak: amnis
     forms: { genitive: amnis, gender: m }
     translation:
       - stroom, rivier
+    examples:
+      - text: Amnis per agros fluit.
+        translation: De rivier stroomt door de akkers.
+        speak: Amnis per agros fluit.
+        source: generated
 
   - id: appello
     term: appello (appellare)
+    speak: appello
     translation:
       - toespreken
       - noemen
     card_per_sense: true
+    examples:
+      - text: Romulus urbem Romam appellat.
+        translation: Romulus noemt de stad Rome.
+        speak: Ròmulus urbem Romam appellat.
+        source: generated
 
   - id: condo
     term: condo (condĕre)
+    speak: condo
     forms: { perfect: condidi }
     translation:
       - stichten
       - opbergen, verbergen
     card_per_sense: true
+    examples:
+      - text: Romulus Romam condidit.
+        translation: Romulus heeft Rome gesticht.
+        speak: Ròmulus Romam còndidit.
+        source: generated
 
   - id: facio
     term: facio (facĕre)
+    speak: fàchio
     forms: { perfect: feci }
     translation:
       - (+ 2 acc.) maken tot
+    examples:
+      - text: Populus eum regem facit.
+        translation: Het volk maakt hem tot koning.
+        speak: Pòpulus eum reghem fachit.
+        source: generated
 
   - id: frater
     term: frater
+    speak: frater
     forms: { genitive: fratris, gender: m }
     translation:
       - broer
+    examples:
+      - text: Frater meus in urbe habitat.
+        translation: Mijn broer woont in de stad.
+        speak: Frater meus in urbe hàbitat.
+        source: generated
 
   - id: imperium
     term: imperium
+    speak: impèrium
     translation:
       - macht, gezag
       - heerschappij, rijk
     card_per_sense: true
+    examples:
+      - text: Imperium Romanum magnum erat.
+        translation: Het Romeinse rijk was groot.
+        speak: Impèrium Romanum mangnum erat.
+        source: generated
 
   - id: loquor
     term: loquor (loqui)
+    speak: loquor
     forms: { perfect: locutus sum }
     translation:
       - spreken
+    examples:
+      - text: Cum amico loquor.
+        translation: Ik spreek met een vriend.
+        speak: Cum amico loquor.
+        source: generated
 
   - id: missus
     term: missus
+    speak: missus
     translation:
       - ppp van mitto (mittĕre)
     form_of: mitto
+    examples:
+      - text: Nuntius ad regem missus est.
+        translation: De bode is naar de koning gestuurd.
+        speak: Nùntius ad reghem missus est.
+        source: generated
 
   - id: morior
     term: morior (mori)
+    speak: mòrior
     forms: { perfect: mortuus sum }
     translation:
       - sterven
+    examples:
+      - text: Pro patria mori dulce est.
+        translation: Het is zoet om voor het vaderland te sterven.
+        speak: Pro pàtria mori dulche est.
+        source: generated
 
   - id: moror
     term: moror (morari)   # CHECK
+    speak: moror
     translation:
       - verblijven
       - ophouden, vertragen
     card_per_sense: true
+    examples:
+      - text: Diu in urbe moramur.
+        translation: We verblijven lang in de stad.
+        speak: Diu in urbe moramur.
+        source: generated
 
   - id: nascor
     term: nascor (nasci)
+    speak: nascor
     forms: { perfect: natus sum }
     translation:
       - geboren worden
+    examples:
+      - text: Puer Romae natus est.
+        translation: De jongen is in Rome geboren.
+        speak: Puer Romai natus est.
+        source: generated
 
   - id: nolo
     term: nolo (nolle)
+    speak: nolo
     forms: { perfect: nolui }
     translation:
       - niet willen
+    examples:
+      - text: Laborare nolo!
+        translation: Ik wil niet werken!
+        speak: Laborare nolo!
+        source: generated
 
   - id: nuper
     term: nuper
+    speak: nuper
     translation:
       - onlangs
+    examples:
+      - text: Nuper Romam veni.
+        translation: Onlangs ben ik naar Rome gekomen.
+        speak: Nuper Romam weni.
+        source: generated
 
   - id: occisus
     term: occisus
+    speak: occhisus
     translation:
       - ppp van occido (occidĕre)
     form_of: occido
+    examples:
+      - text: Rex ab hostibus occisus est.
+        translation: De koning is door de vijanden gedood.
+        speak: Recs ab hòstibus occhisus est.
+        source: generated
 
   - id: pello
     term: pello (pellĕre)
+    speak: pello
     forms: { perfect: pepuli }
     translation:
       - verdrijven (van)
+    examples:
+      - text: Romani hostes ex agris pellunt.
+        translation: De Romeinen verdrijven de vijanden van de akkers.
+        speak: Romani hostes ecs agris pellunt.
+        source: generated
 
   - id: postea
     term: posteā (bijw.)
+    speak: pòstea
     translation:
       - later
+    examples:
+      - text: Postea domum redii.
+        translation: Later ben ik naar huis teruggegaan.
+        speak: Pòstea domum rèdii.
+        source: generated
 
   - id: pulsus
     term: pulsus
+    speak: pulsus
     translation:
       - ppp van pello (pellĕre)
     form_of: pello
+    examples:
+      - text: Rex ex urbe pulsus est.
+        translation: De koning is uit de stad verdreven.
+        speak: Recs ecs urbe pulsus est.
+        source: generated
 
   - id: recedo
     term: recedo (recedĕre)
+    speak: rechedo
     forms: { perfect: recessi }
     translation:
       - teruggaan, weggaan
+    examples:
+      - text: Hostes a muris recedunt.
+        translation: De vijanden trekken terug van de muren.
+        speak: Hostes a muris rechedunt.
+        source: generated
 
   - id: reperio
     term: reperio (reperire)
+    speak: repèrio
     forms: { perfect: repperi }
     translation:
       - vinden, te weten komen
+    examples:
+      - text: Servus viam reperit.
+        translation: De slaaf vindt de weg.
+        speak: Serwus wiam rèperit.
+        source: generated
 
   - id: revoco
     term: revoco (revocare)
+    speak: rèwoco
     translation:
       - terugroepen
+    examples:
+      - text: Pater filium revocat.
+        translation: Vader roept zijn zoon terug.
+        speak: Pater fìlium rèwocat.
+        source: generated
 
   - id: ripa
     term: ripa
+    speak: ripa
     translation:
       - oever
+    examples:
+      - text: In ripa fluvii sedemus.
+        translation: We zitten op de oever van de rivier.
+        speak: In ripa flùwii sedemus.
+        source: generated
 
   - id: uxor
     term: uxor
+    speak: ucsor
     forms: { genitive: uxoris, gender: v }
     translation:
       - echtgenote, vrouw
+    examples:
+      - text: Uxor mea cenam parat.
+        translation: Mijn vrouw maakt het avondeten klaar.
+        speak: Ucsor mea chenam parat.
+        source: generated
 
   - id: vero
     term: vero (bijw.)
+    speak: wero
     translation:
       - echter
       - werkelijk, inderdaad
     card_per_sense: true
+    examples:
+      - text: Rex dives est, servus vero pauper.
+        translation: De koning is rijk, de slaaf echter arm.
+        speak: Recs diwes est, serwus wero pauper.
+        source: generated

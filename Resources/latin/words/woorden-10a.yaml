@@ -7,104 +7,212 @@ meta:
 entries:
   - id: adduco
     term: adduco (adducĕre)
+    speak: adduco
     translation:
       - brengen (naar/tot)
+    examples:
+      - text: Servus captivum ad regem adducit.
+        translation: De slaaf brengt de krijgsgevangene naar de koning.
+        speak: Serwus captiwum ad reghem adduchit.
+        source: generated
 
   - id: coniunx
     term: coniunx
+    speak: coniuncs
     forms: { genitive: coniugis, gender: m/v }
     translation:
       - echtgenote, vrouw
       - echtgenoot, man
     card_per_sense: true
+    examples:
+      - text: Coniunx regis pulchra est.
+        translation: De vrouw van de koning is mooi.
+        speak: Coniuncs reghis pulchra est.
+        source: generated
 
   - id: convivium
     term: convivium
+    speak: conwìwium
     translation:
       - (feest)maaltijd
+    examples:
+      - text: Rex amicos ad convivium invitat.
+        translation: De koning nodigt zijn vrienden uit voor een feestmaal.
+        speak: Recs amicos ad conwìwium inwitat.
+        source: generated
 
   - id: convoco
     term: convoco (convocare)
+    speak: conwoco
     translation:
       - bijeenroepen
+    examples:
+      - text: Imperator milites convocat.
+        translation: De opperbevelhebber roept de soldaten bijeen.
+        speak: Imperator mìlites conwocat.
+        source: generated
 
   - id: impero
     term: impero (imperare) (+ dat.)
+    speak: ìmpero
     translation:
       - bevelen (aan)
       - heersen (over)
     card_per_sense: true
+    examples:
+      - text: Dux militibus imperat.
+        translation: De leider geeft de soldaten bevel.
+        speak: Ducs milìtibus ìmperat.
+        source: generated
 
   - id: iudicium
     term: iudicium
+    speak: iudìchium
     translation:
       - oordeel
       - proces, vonnis
     card_per_sense: true
+    examples:
+      - text: Iudicium iudicis grave est.
+        translation: Het vonnis van de rechter is zwaar.
+        speak: Iudìchium iùdichis grawe est.
+        source: generated
 
   - id: mortalis_is_e
     term: mortalis, -is, -e (mortalis)
+    speak: mortalis, mortale
     translation:
       - (bijv. nw.) sterfelijk
       - (zelfst. nw.) sterveling
     card_per_sense: true
+    examples:
+      - text: Omnes homines mortales sunt.
+        translation: Alle mensen zijn sterfelijk.
+        speak: Omnes hòmines mortales sunt.
+        source: generated
 
   - id: natus
     term: natus
+    speak: natus
     translation:
       - zoon
+    examples:
+      - text: Mater natum suum amat.
+        translation: De moeder houdt van haar zoon.
+        speak: Mater natum suum amat.
+        source: generated
 
   - id: optimus_a_um
     term: optimus, -a, -um
+    speak: òptimus, òptima, òptimum
     translation:
       - beste, zeer goed
+    examples:
+      - text: Hic servus optimus est.
+        translation: Deze slaaf is de beste.
+        speak: Hic serwus òptimus est.
+        source: generated
 
   - id: opto
     term: opto (optare)
+    speak: opto
     translation:
       - wensen
+    examples:
+      - text: Tibi omnia bona opto.
+        translation: Ik wens je al het goede.
+        speak: Tibi òmnia bona opto.
+        source: generated
 
   - id: promitto
     term: promitto (promittĕre)
+    speak: promitto
     forms: { perfect: promisi }
     translation:
       - beloven
+    examples:
+      - text: Pater mihi equum promittit.
+        translation: Vader belooft mij een paard.
+        speak: Pater mihi equum promittit.
+        source: generated
 
   - id: regius_a_um
     term: regius, -a, -um
+    speak: règhius, règhia, règhium
     translation:
       - koninklijk
+    examples:
+      - text: Vestis regia pulchra est.
+        translation: Het koninklijke kleed is mooi.
+        speak: Westis règhia pulchra est.
+        source: generated
 
   - id: regnum
     term: regnum
+    speak: rengnum
     translation:
       - rijk
       - heerschappij
     card_per_sense: true
+    examples:
+      - text: Regnum magnum est.
+        translation: Het rijk is groot.
+        speak: Rengnum mangnum est.
+        source: generated
 
   - id: scio
     term: scio (scire)
+    speak: schio
     translation:
       - weten
+    examples:
+      - text: Nihil scio.
+        translation: Ik weet niets.
+        speak: Nihil schio.
+        source: generated
 
   - id: se
     term: se (acc./abl.)
+    speak: se
     translation:
       - (acc.) hij/zij (enk.), zij (mv.) (in AcI)   # CHECK
+    examples:
+      - text: Puer dicit se laetum esse.
+        translation: De jongen zegt dat hij blij is.
+        speak: Puer dichit se laitum esse.
+        source: generated
 
   - id: solus_a_um
     term: solus, -a, -um
+    speak: solus, sola, solum
     translation:
       - alleen, (als) enige
+    examples:
+      - text: Puer solus in silva errat.
+        translation: De jongen dwaalt alleen rond in het bos.
+        speak: Puer solus in silwa errat.
+        source: generated
 
   - id: venus
     term: Venus
+    speak: Wenus
     forms: { genitive: Veneris }
     translation:
       - Venus
+    examples:
+      - text: Venus dea pulchra est.
+        translation: Venus is een mooie godin.
+        speak: Wenus dea pulchra est.
+        source: generated
 
   - id: volo
     term: volo (velle)
+    speak: wolo
     forms: { perfect: volui }
     translation:
       - willen
+    examples:
+      - text: Domum ire volo.
+        translation: Ik wil naar huis gaan.
+        speak: Domum ire wolo.
+        source: generated

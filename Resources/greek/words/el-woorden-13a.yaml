@@ -7,91 +7,193 @@ meta:
 entries:
   - id: allelous
     term: ἀλλήλους
+    speak: allèloes
     translation:
       - elkaar (accusativus)
+    examples:
+      - text: οἱ ἀδελφοὶ ἀλλήλους φιλοῦσιν.
+        translation: De broers houden van elkaar.
+        speak: hoi adelphói allèloes philóésin.
+        source: generated
 
   - id: anagkaion_esti
     term: ἀναγκαῖόν ἐστι(ν) + A.c.I.
+    speak: anankáíon esti
     translation:
       - het is noodzakelijk/ onvermijdelijk (dat)  # CHECK
+    examples:
+      - text: ἀναγκαῖόν ἐστι τοὺς στρατιώτας μάχεσθαι.
+        translation: Het is noodzakelijk dat de soldaten vechten.
+        speak: anankáíon esti toes stratióótas máchesthai.
+        source: generated
 
   - id: anagkaios
     term: ἀναγκαῖος
+    speak: anankáíos
     translation:
       - noodzakelijk, onvermijdelijk
+    examples:
+      - text: ὁ σῖτος ἀναγκαῖός ἐστιν.
+        translation: Eten is noodzakelijk.
+        speak: ho sitos anankáíos estin.
+        source: generated
 
   - id: apistos
     term: ἄπιστος
+    speak: apistos
     translation:
       - ongelofelijk
       - onbetrouwbaar
     card_per_sense: true
+    examples:
+      - text: ὁ ἄγγελος ἄπιστός ἐστιν.
+        translation: De bode is onbetrouwbaar.
+        speak: ho angelos apistos estin.
+        source: generated
 
   - id: auto
     term: αὐτό, τό
+    speak: to autó
     translation:
       - hetzelfde
+    examples:
+      - text: τὸ αὐτὸ λέγομεν.
+        translation: We zeggen hetzelfde.
+        speak: to autó légomèn.
+        source: generated
 
   - id: bal
     term: βαλ-
+    speak: bal
     translation:
       - aoristusstam van βάλλω
+    examples:
+      - text: ἐθέλω λίθον βαλεῖν.
+        translation: Ik wil een steen gooien.
+        speak: ethéloo lithon baléín.
+        source: generated
 
   - id: ballo
     term: βάλλω, aor. ἔβαλον
+    speak: balloo
     translation:
       - gooien, werpen
+    examples:
+      - text: ὁ παῖς λίθους εἰς τὴν θάλατταν βάλλει.
+        translation: Het kind gooit stenen in de zee.
+        speak: ho pais lithoes eis tèn thálattan ballei.
+        source: generated
 
   - id: delon_esti
     term: δῆλόν ἐστι(ν) (+ A.c.I.)
+    speak: dèlon esti
     translation:
       - het is duidelijk (dat)
+    examples:
+      - text: δῆλόν ἐστι τοὺς πολεμίους φεύγειν.
+        translation: Het is duidelijk dat de vijanden vluchten.
+        speak: dèlon esti toes polemíoes pheugein.
+        source: generated
 
   - id: delos
     term: δῆλος
+    speak: dèlos
     translation:
       - duidelijk
+    examples:
+      - text: ὁ λόγος δῆλός ἐστιν.
+        translation: Het woord is duidelijk.
+        speak: ho logos dèlos estin.
+        source: generated
 
   - id: ebalon
     term: ἔβαλον (inf. βαλεῖν)
+    speak: ébalon
     translation:
       - ik gooide, ik wierp, ik trof (aor. van βάλλω)
     form_of: ballo
+    examples:
+      - text: τὸν λέοντα ἔβαλον.
+        translation: Ik trof de leeuw.
+        speak: ton léonta ébalon.
+        source: generated
 
   - id: ekeinos
     term: ἐκεῖνος, ἐκείνη, ἐκεῖνο
+    speak: ekéínos, ekéínè, ekéíno
     translation:
       - die, dat
       - hij, zij, het (daar)
     card_per_sense: true
+    examples:
+      - text: ἐκεῖνος ὁ ἀνὴρ σοφός ἐστιν.
+        translation: Die man is wijs.
+        speak: ekéínos ho anèr sophós estin.
+        source: generated
 
   - id: echren
     term: ἔχρην
+    speak: échrèn
     translation:
       - het was nodig om/dat, het moest (impf. van χρή)
     form_of: chre
+    examples:
+      - text: ἔχρην σε μένειν.
+        translation: Je had moeten blijven.
+        speak: échrèn se ménein.
+        source: generated
 
   - id: polites
     term: πολίτης, ὁ
+    speak: polítès
     translation:
       - burger
+    examples:
+      - text: οἱ πολῖται τὴν πόλιν φυλάττουσιν.
+        translation: De burgers bewaken de stad.
+        speak: hoi politai tèn polin phuláttoesin.
+        source: generated
 
   - id: pros_toutois
     term: πρὸς τούτοις
+    speak: pros toetois
     translation:
       - bovendien (lett. bij die dingen)
+    examples:
+      - text: πρὸς τούτοις σῖτον οὐκ ἔχομεν.
+        translation: Bovendien hebben we geen eten.
+        speak: pros toetois siton oek échomèn.
+        source: generated
 
   - id: semeion
     term: σημεῖον, τό
+    speak: sèméíon
     translation:
       - teken
+    examples:
+      - text: τοῦτο σημεῖόν ἐστι τῶν θεῶν.
+        translation: Dit is een teken van de goden.
+        speak: toeto sèméíon esti toon theóón.
+        source: generated
 
   - id: phroneo
     term: φρονέω
+    speak: phronéoo
     translation:
       - verstandig zijn
+    examples:
+      - text: ὁ ἡγεμὼν εὖ φρονεῖ.
+        translation: De leider is verstandig.
+        speak: ho hègemóón eu phronéí.
+        source: generated
 
   - id: chre
     term: χρή (+ inf./A.c.I.)
+    speak: chrè
     translation:
       - het is nodig om/dat, het moet
+    examples:
+      - text: χρὴ τοὺς θεοὺς τιμᾶν.
+        translation: Men moet de goden eren.
+        speak: chrè toes theóés timan.
+        source: generated

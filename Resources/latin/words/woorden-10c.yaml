@@ -7,93 +7,189 @@ meta:
 entries:
   - id: adeo
     term: adeo (adire)
+    speak: àdeo
     forms: { perfect: adii }
     translation:
       - gaan naar
+    examples:
+      - text: Servus ad dominum adit.
+        translation: De slaaf gaat naar zijn heer.
+        speak: Serwus ad dòminum adit.
+        source: generated
 
   - id: ara
     term: ara
+    speak: ara
     translation:
       - altaar
+    examples:
+      - text: Rex donum in ara ponit.
+        translation: De koning legt een geschenk op het altaar.
+        speak: Recs donum in ara ponit.
+        source: generated
 
   - id: aura
     term: aura
+    speak: aura
     translation:
       - wind, bries, lucht
+    examples:
+      - text: Aura levis per silvam it.
+        translation: Een lichte bries gaat door het bos.
+        speak: Aura lewis per silwam it.
+        source: generated
 
   - id: cresco
     term: cresco (crescĕre)
+    speak: cresco
     forms: { perfect: crevi }
     translation:
       - groeien
+    examples:
+      - text: Frumentum in agro crescit.
+        translation: Het graan groeit op de akker.
+        speak: Frumentum in agro creschit.
+        source: generated
 
   - id: divinus_a_um
     term: divinus, -a, -um
+    speak: diwinus, diwina, diwinum
     translation:
       - goddelijk
+    examples:
+      - text: Vox divina in templo auditur.
+        translation: Er wordt een goddelijke stem in de tempel gehoord.
+        speak: Wocs diwina in templo auditur.
+        source: generated
 
   - id: dulcis_is_e
     term: dulcis, -is, -e (dulcis)
+    speak: dulchis, dulche
     translation:
       - zoet
+    examples:
+      - text: Vinum dulce est.
+        translation: De wijn is zoet.
+        speak: Winum dulche est.
+        source: generated
 
   - id: durus_a_um
     term: durus, -a, -um
+    speak: durus, dura, durum
     translation:
       - hard
       - moeilijk
     card_per_sense: true
+    examples:
+      - text: Vita agricolae dura est.
+        translation: Het leven van een boer is zwaar.
+        speak: Wita agrìcolai dura est.
+        source: generated
 
   - id: litus
     term: litus
+    speak: litus
     forms: { genitive: litoris, gender: o }
     translation:
       - kust
+    examples:
+      - text: Navis ad litus venit.
+        translation: Het schip komt naar de kust.
+        speak: Nawis ad litus wenit.
+        source: generated
 
   - id: mitis_is_e
     term: mitis, -is, -e (mitis)
+    speak: mitis, mite
     translation:
       - zacht
       - vriendelijk
     card_per_sense: true
+    examples:
+      - text: Dominus mitis est.
+        translation: De heer is vriendelijk.
+        speak: Dòminus mitis est.
+        source: generated
 
   - id: pars
     term: pars
+    speak: pars
     forms: { genitive: partis, gender: v }
     translation:
       - deel
       - kant
     card_per_sense: true
+    examples:
+      - text: Pars militum fugit.
+        translation: Een deel van de soldaten vlucht.
+        speak: Pars mìlitum fughit.
+        source: generated
 
   - id: parvus_a_um
     term: parvus, -a, -um
+    speak: parwus, parwa, parwum
     translation:
       - klein
+    examples:
+      - text: Villa parva est.
+        translation: Het landhuis is klein.
+        speak: Willa parwa est.
+        source: generated
 
   - id: satis
     term: satis
+    speak: satis
     translation:
       - voldoende
+    examples:
+      - text: Satis aquae habemus.
+        translation: We hebben voldoende water.
+        speak: Satis aquai habemus.
+        source: generated
 
   - id: tacitus_a_um
     term: tacitus, -a, -um
+    speak: tàchitus, tàchita, tàchitum
     translation:
       - zwijgend
+    examples:
+      - text: Servi taciti stant.
+        translation: De slaven staan zwijgend.
+        speak: Serwi tàchiti stant.
+        source: generated
 
   - id: templum
     term: templum
+    speak: templum
     translation:
       - tempel
+    examples:
+      - text: Templum deae pulchrum est.
+        translation: De tempel van de godin is mooi.
+        speak: Templum deai pulchrum est.
+        source: generated
 
   - id: turba
     term: turba
+    speak: turba
     translation:
       - menigte, massa
       - verwarring
     card_per_sense: true
+    examples:
+      - text: Turba in foro est.
+        translation: Er is een menigte op het forum.
+        speak: Turba in foro est.
+        source: generated
 
   - id: vultus
     term: vultus
+    speak: wultus
     forms: { genitive: vultus }
     translation:
       - gezicht
+    examples:
+      - text: Vultus regis iratus est.
+        translation: Het gezicht van de koning staat boos.
+        speak: Wultus reghis iratus est.
+        source: generated

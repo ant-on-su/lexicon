@@ -7,152 +7,320 @@ meta:
 entries:
   - id: ager
     term: ager
+    speak: agher
     forms: { genitive: agri }
     translation:
       - akker, land
+    examples:
+      - text: Agricola in agro laborat.
+        translation: De boer zwoegt op de akker.
+        speak: Agrìcola in agro laborat.
+        source: generated
 
   - id: agricola
     term: agricola
+    speak: agrìcola
     translation:
       - boer
+    examples:
+      - text: Agricola aquam bibit.
+        translation: De boer drinkt water.
+        speak: Agrìcola aquam bibit.
+        source: generated
 
   - id: aqua
     term: aqua
+    speak: aqua
     translation:
       - water
+    examples:
+      - text: Aqua in agris non est.
+        translation: Er is geen water op de akkers.
+        speak: Aqua in agris non est.
+        source: generated
 
   - id: bibo
     term: bibo (bibĕre)
+    speak: bibo
     translation:
       - drinken
+    examples:
+      - text: Liberi aquam bibunt.
+        translation: De kinderen drinken water.
+        speak: Lìberi aquam bibunt.
+        source: generated
 
   - id: cur
     term: cur
+    speak: cur
     translation:
       - waarom
+    examples:
+      - text: Cur iratus es?
+        translation: Waarom ben je boos?
+        speak: Cur iratus es?
+        source: generated
 
   - id: dea
     term: dea
+    speak: dea
     translation:
       - godin
+    examples:
+      - text: Dea agricolam iuvat.
+        translation: De godin helpt de boer.
+        speak: Dea agrìcolam iuwat.
+        source: generated
 
   - id: dico
     term: dico (dicĕre)
+    speak: dico
     forms: { perfect: dixi }
     translation:
       - zeggen, spreken
       - noemen
     card_per_sense: true
+    examples:
+      - text: Servus verbum non dicit.
+        translation: De slaaf zegt geen woord.
+        speak: Serwus werbum non dichit.
+        source: generated
 
   - id: forte
     term: forte (bijw.)
+    speak: forte
     translation:
       - toevallig
+    examples:
+      - text: Forte deam in silva video.
+        translation: Toevallig zie ik een godin in het bos.
+        speak: Forte deam in silwa wìdeo.
+        source: generated
 
   - id: habito
     term: habito (habitare)
+    speak: hàbito
     translation:
       - wonen
+    examples:
+      - text: Agricola cum liberis in agro habitat.
+        translation: De boer woont met zijn kinderen op het land.
+        speak: Agrìcola cum lìberis in agro hàbitat.
+        source: generated
 
   - id: ibi
     term: ibi
+    speak: ibi
     translation:
       - daar
+    examples:
+      - text: Ibi agricola habitat.
+        translation: Daar woont de boer.
+        speak: Ibi agrìcola hàbitat.
+        source: generated
 
   - id: iratus_a_um
     term: iratus, -a, -um
+    speak: iratus, irata, iratum
     translation:
       - boos
+    examples:
+      - text: Rex iratus servum vocat.
+        translation: De boze koning roept de slaaf.
+        speak: Recs iratus serwum wocat.
+        source: generated
 
   - id: iter
     term: iter
+    speak: iter
     forms: { genitive: itineris, gender: o }
     translation:
       - weg
       - reis, mars
     card_per_sense: true
+    examples:
+      - text: Iter per silvam longum est.
+        translation: De weg door het bos is lang.
+        speak: Iter per silwam longum est.
+        source: generated
 
   - id: laboro
     term: laboro (laborare)
+    speak: laboro
     translation:
       - zich inspannen, zwoegen
       - lijden
     card_per_sense: true
+    examples:
+      - text: Servi in agris laborant.
+        translation: De slaven zwoegen op de akkers.
+        speak: Serwi in agris laborant.
+        source: generated
 
   - id: liberi
     term: liberi (mv.)
+    speak: lìberi
     translation:
       - kinderen
+    examples:
+      - text: Liberi in silva errant.
+        translation: De kinderen dwalen rond in het bos.
+        speak: Lìberi in silwa errant.
+        source: generated
 
   - id: meus_a_um
     term: meus, -a, -um
+    speak: meus, mea, meum
     translation:
       - mijn
+    examples:
+      - text: Ager meus magnus est.
+        translation: Mijn akker is groot.
+        speak: Agher meus mangnus est.
+        source: generated
 
   - id: moveo
     term: moveo (movēre)
+    speak: mòweo
     forms: { perfect: movi }
     translation:
       - bewegen, ontroeren
+    examples:
+      - text: Verba tua me movent.
+        translation: Jouw woorden ontroeren mij.
+        speak: Werba tua me mowent.
+        source: generated
 
   - id: ne
     term: "-ne"
+    speak: ne
     translation:
       - (leidt een vraag in; niet vertalen)
+    examples:
+      - text: Audisne deam?
+        translation: Hoor jij de godin?
+        speak: Audisne deam?
+        source: generated
 
   - id: non
     term: non
+    speak: non
     translation:
       - niet
+    examples:
+      - text: Servus vinum non habet.
+        translation: De slaaf heeft geen wijn.
+        speak: Serwus winum non habet.
+        source: generated
 
   - id: nos
     term: nos (nom./acc.)
+    speak: nos
     translation:
       - wij, ons
+    examples:
+      - text: Rex nos vocat.
+        translation: De koning roept ons.
+        speak: Recs nos wocat.
+        source: generated
 
   - id: noster_tra_trum
     term: noster, -tra, -trum (bez. vnw.)
+    speak: noster, nostra, nostrum
     translation:
       - (van) ons, onze
+    examples:
+      - text: Ager noster parvus est.
+        translation: Onze akker is klein.
+        speak: Agher noster parwus est.
+        source: generated
 
   - id: rogo
     term: rogo (rogare)
+    speak: rogo
     translation:
       - vragen
+    examples:
+      - text: Cur me rogas?
+        translation: Waarom vraag je het mij?
+        speak: Cur me rogas?
+        source: generated
 
   - id: sed
     term: sed
+    speak: sed
     translation:
       - maar
+    examples:
+      - text: Agricola laborat, sed liberi ludunt.
+        translation: De boer zwoegt, maar de kinderen spelen.
+        speak: Agrìcola laborat, sed lìberi ludunt.
+        source: generated
 
   - id: sino
     term: sino (sinĕre)
+    speak: sino
     translation:
       - toestaan, (toe)laten
+    examples:
+      - text: Rex servos vinum bibere non sinit.
+        translation: De koning staat de slaven niet toe wijn te drinken.
+        speak: Recs serwos winum bìbere non sinit.
+        source: generated
 
   - id: teneo
     term: teneo (tenēre)
+    speak: tèneo
     forms: { perfect: tenui }
     translation:
       - (vast)houden
+    examples:
+      - text: Servus donum in manu tenet.
+        translation: De slaaf houdt het geschenk in zijn hand.
+        speak: Serwus donum in manu tenet.
+        source: generated
 
   - id: verbum
     term: verbum
+    speak: werbum
     translation:
       - woord
+    examples:
+      - text: Verba regis audimus.
+        translation: We horen de woorden van de koning.
+        speak: Werba reghis audimus.
+        source: generated
 
   - id: veto
     term: veto (vetare)
+    speak: weto
     translation:
       - verbieden
+    examples:
+      - text: Rex servos clamare vetat.
+        translation: De koning verbiedt de slaven te roepen.
+        speak: Recs serwos clamare wetat.
+        source: generated
 
   - id: mitto
     term: mitto (mittĕre)
+    speak: mitto
     forms: { perfect: misi }
     translation:
       - zenden, sturen
+    examples:
+      - text: Rex servum in agros mittit.
+        translation: De koning stuurt de slaaf naar de akkers.
+        speak: Recs serwum in agros mittit.
+        source: generated
 
   - id: tu
     term: tu
+    speak: tu
     translation:
       - jij, u
+    examples:
+      - text: Tu laetus es, ego iratus sum.
+        translation: Jij bent blij, ik ben boos.
+        speak: Tu laitus es, ego iratus sum.
+        source: generated

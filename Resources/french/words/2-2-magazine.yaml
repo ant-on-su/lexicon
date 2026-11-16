@@ -11,42 +11,56 @@ entries:
       - de jongeren
     examples:
       - text: Les jeunes peuvent changer le monde.
+        translation: Jongeren kunnen de wereld veranderen.
+        source: book
   - id: greve
     term: la grève
     translation:
       - de staking
     examples:
       - text: Ils organisent une grève pour le climat.
+        translation: Ze organiseren een staking voor het klimaat.
+        source: book
   - id: secher-les-cours
     term: sécher les cours
     translation:
       - spijbelen
     examples:
       - text: Les élèves vont sécher les cours pour protester.
+        translation: De leerlingen gaan spijbelen om te protesteren.
+        source: book
   - id: lutter
     term: lutter (pour / contre)
     translation:
       - strijden (voor / tegen)
     examples:
       - text: Ils luttent pour un meilleur climat.
+        translation: Ze strijden voor een beter klimaat.
+        source: book
   - id: manifester
     term: manifester
     translation:
       - demonstreren (voor / tegen)
     examples:
       - text: Ils manifestent contre la pollution.
+        translation: Ze demonstreren tegen de vervuiling.
+        source: book
   - id: monde-entier
     term: le monde entier
     translation:
       - de hele wereld
     examples:
       - text: Il y a des manifestations dans le monde entier.
+        translation: Er zijn demonstraties over de hele wereld.
+        source: book
   - id: planete
     term: la planète
     translation:
       - de planeet
     examples:
       - text: Notre planète, la Terre, tourne autour du soleil.
+        translation: Onze planeet, de aarde, draait om de zon.
+        source: book
   - id: avenir
     term: l’avenir
     forms: { gender: m }
@@ -54,75 +68,101 @@ entries:
       - de toekomst
     examples:
       - text: Nous luttons pour notre avenir.
+        translation: We strijden voor onze toekomst.
+        source: book
   - id: en-colere
     term: en colère
     translation:
       - boos
     examples:
       - text: Je suis en colère contre les politiciens.
+        translation: Ik ben boos op de politici.
+        source: book
   - id: sauver
     term: sauver
     translation:
       - redden
     examples:
       - text: Qu’est-ce qu’on fait pour sauver la planète ?
+        translation: Wat doen we om de planeet te redden?
+        source: book
   - id: arreter
     term: arrêter
     translation:
       - stoppen (met)
     examples:
       - text: Nous n’allons pas arrêter nos actions.
+        translation: We gaan niet stoppen met onze acties.
+        source: book
   - id: reussir
     term: réussir (à)
     translation:
       - slagen (voor)
     examples:
       - text: Je vais réussir à tous mes examens !
+        translation: Ik ga voor al mijn examens slagen!
+        source: book
   - id: agir
     term: agir
     translation:
       - handelen, iets doen
     examples:
       - text: Il faut agir maintenant !
+        translation: We moeten nu iets doen!
+        source: book
   - id: grandir
     term: grandir
     translation:
       - opgroeien, groot worden
     examples:
       - text: Tu grandis vite !
+        translation: Jij wordt snel groot!
+        source: book
   - id: finir
     term: finir
     translation:
       - ophouden, (be)ëindigen, afmaken
     examples:
       - text: Les cours vont finir à quelle heure ?
+        translation: Hoe laat zijn de lessen afgelopen?
+        source: book
   - id: tous-les-vendredis
     term: tous les vendredis
     translation:
       - elke vrijdag
     examples:
       - text: Nous avons EPS tous les vendredis.
+        translation: We hebben elke vrijdag gym.
+        source: book
   - id: en-classe
     term: en classe
     translation:
       - in de klas
     examples:
       - text: Vous travaillez bien en classe ?
+        translation: Werken jullie goed in de klas?
+        source: book
   - id: seulement
     term: seulement
     translation:
       - (alleen) maar, slechts
     examples:
       - text: J’ai seulement cinq euros.
+        translation: Ik heb maar vijf euro.
+        source: book
   - id: car
     term: car
     translation:
       - want
     examples:
       - text: Elle ne vient pas, car elle n’a pas d’argent.
+        translation: Ze komt niet, want ze heeft geen geld.
+        source: book
   - id: copain
     term: le copain / la copine
     translation:
       - de vriend / de vriendin
     examples:
       - text: Tu invites tous tes copains ?
+        translation: Nodig jij al je vrienden uit?
+        source: book

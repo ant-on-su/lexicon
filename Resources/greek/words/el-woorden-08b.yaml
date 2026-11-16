@@ -7,62 +7,134 @@ meta:
 entries:
   - id: aggello
     term: ἀγγέλλω, aor. ἤγγειλα
+    speak: angelloo
     translation:
       - berichten, melden
+    examples:
+      - text: ὁ ἄγγελος τὴν νίκην ἀγγέλλει.
+        translation: De bode meldt de overwinning.
+        speak: ho angelos tèn nikèn angellei.
+        source: generated
 
   - id: aggelos
     term: ἄγγελος, ὁ
+    speak: angelos
     translation:
       - bode
+    examples:
+      - text: ὁ ἄγγελος πρὸς τὸν στρατηγὸν ἥκει.
+        translation: De bode is bij de legeraanvoerder gekomen.
+        speak: ho angelos pros ton stratègón hèkei.
+        source: generated
 
   - id: aletheia
     term: ἀλήθεια, ἡ
+    speak: alètheia
     translation:
       - waarheid
+    examples:
+      - text: τὴν ἀλήθειαν λέγω.
+        translation: Ik spreek de waarheid.
+        speak: tèn alètheian légoo.
+        source: generated
 
   - id: iketeuo
     term: ἱκετεύω
+    speak: hiketeuoo
     translation:
       - smeken
+    examples:
+      - text: ἡ κόρη τὸν θεὸν ἱκετεύει.
+        translation: Het meisje smeekt de god.
+        speak: hè korè ton theón hiketeuei.
+        source: generated
 
   - id: omologeo
     term: ὁμολογέω + dat.
+    speak: homologéoo
     translation:
       - instemmen met, akkoord gaan met
+    examples:
+      - text: τῷ φίλῳ ὁμολογῶ.
+        translation: Ik ben het eens met mijn vriend.
+        speak: too philoo homologóó.
+        source: generated
 
   - id: omos
     term: ὅμως
+    speak: homoos
     translation:
       - toch
+    examples:
+      - text: φόβον ἔχει, ὅμως δὲ μένει.
+        translation: Hij is bang, maar toch blijft hij.
+        speak: phobon échei, homoos dè ménei.
+        source: generated
 
   - id: echo
     term: ἔχω, imperf. εἶχον, aor. ἔσχον
+    speak: échoo
     translation:
       - hebben
+    examples:
+      - text: ὁ στρατηγὸς πολλοὺς στρατιώτας ἔχει.
+        translation: De legeraanvoerder heeft veel soldaten.
+        speak: ho stratègós polloés stratióótas échei.
+        source: generated
 
   - id: pisteuo
     term: πιστεύω + dat.
+    speak: pisteuoo
     translation:
       - vertrouwen
+    examples:
+      - text: τῷ ἀγγέλῳ οὐ πιστεύω.
+        translation: Ik vertrouw de bode niet.
+        speak: too angéloo oe pisteuoo.
+        source: generated
 
   - id: stratia
     term: στρατιά, ἡ
+    speak: stratiá
     translation:
       - leger
+    examples:
+      - text: ἡ στρατιὰ μεγάλη ἐστίν.
+        translation: Het leger is groot.
+        speak: hè stratiá megálè estín.
+        source: generated
 
   - id: toioutos
     term: τοιοῦτος, τοιαύτη, τοιοῦτο
+    speak: toióétos, toiautè, toióéto
     translation:
       - zodanig, dergelijk, zo'n (mnl., vrl., onz.)
+    examples:
+      - text: τοιοῦτον φίλον οὐκ ἔχω.
+        translation: Zo'n vriend heb ik niet.
+        speak: toióéton philon oek échoo.
+        source: generated
 
   - id: tuche
     term: τύχη, ἡ
+    speak: tuchè
     translation:
       - lot
+    examples:
+      - text: ἡ τύχη κακή ἐστιν.
+        translation: Het lot is slecht.
+        speak: hè tuchè kakè estin.
+        source: generated
 
   - id: philtatos
     term: φίλτατος
+    speak: philtatos
     translation:
       - liefst(e), dierbaarste
       - zeer/heel geliefd, zeer/heel dierbaar
     card_per_sense: true
+    examples:
+      - text: ὦ φίλτατε, ἐνθάδε μένε.
+        translation: Liefste, blijf hier.
+        speak: oo philtatè, enthádè ménè.
+        source: generated

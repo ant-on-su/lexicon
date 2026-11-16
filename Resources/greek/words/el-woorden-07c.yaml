@@ -7,114 +7,246 @@ meta:
 entries:
   - id: aei
     term: ἀεί
+    speak: aeí
     translation:
       - altijd
+    examples:
+      - text: ὁ δοῦλος ἀεὶ φόβον ἔχει.
+        translation: De slaaf is altijd bang.
+        speak: ho doelos aeí phobon échei.
+        source: generated
 
   - id: aitia
     term: αἰτία, ἡ
+    speak: aitía
     translation:
       - oorzaak
+    examples:
+      - text: τίς ἡ αἰτία τοῦ πολέμου;
+        translation: Wat is de oorzaak van de oorlog?
+        speak: tis hè aitía toe polémoe?
+        source: generated
 
   - id: anabaino
     term: ἀναβαίνω
+    speak: anabáínoo
     translation:
       - omhoog gaan, beklimmen
+    examples:
+      - text: ἐπὶ τὴν πέτραν ἀναβαίνομεν.
+        translation: We klimmen op het rotsblok.
+        speak: epí tèn pétran anabáínomèn.
+        source: generated
 
   - id: apo
     term: ἀπό + gen.
+    speak: apó
     translation:
       - vanaf
+    examples:
+      - text: ἀπὸ τῆς νήσου πλέομεν.
+        translation: We varen weg van het eiland.
+        speak: apó tès nèsoe pléomèn.
+        source: generated
 
   - id: apothnesko
     term: ἀποθνήσκω, aor. ἀπέθανον
+    speak: apothnèskoo
     translation:
       - sterven
+    examples:
+      - text: πολλοὶ ἐν τῷ πολέμῳ ἀποθνήσκουσιν.
+        translation: Velen sterven in de oorlog.
+        speak: polloí en too polémoo apothnèskoesin.
+        source: generated
 
   - id: thanatos
     term: θάνατος, ὁ
+    speak: thánatos
     translation:
       - de dood
+    examples:
+      - text: ὁ θάνατος δεινός ἐστιν.
+        translation: De dood is verschrikkelijk.
+        speak: ho thánatos deinós estin.
+        source: generated
 
   - id: katecho
     term: κατέχω
+    speak: katéchoo
     translation:
       - in zijn macht hebben, vasthouden, beheersen
+    examples:
+      - text: οἱ Ἀθηναῖοι τὴν νῆσον κατέχουσιν.
+        translation: De Atheners hebben het eiland in hun macht.
+        speak: hoi Athènáíoi tèn nèson katéchoesin.
+        source: generated
 
   - id: meta_tauta
     term: μετὰ ταῦτα
+    speak: metá táúta
     translation:
       - na dit, daarna
+    examples:
+      - text: μετὰ ταῦτα καθεύδομεν.
+        translation: Daarna slapen we.
+        speak: metá táúta katheudomèn.
+        source: generated
 
   - id: monon
     term: μόνον
+    speak: monon
     translation:
       - slechts, alleen maar (bijwoord)
+    examples:
+      - text: μόνον οἶνον ἔχομεν.
+        translation: We hebben alleen maar wijn.
+        speak: monon oinon échomèn.
+        source: generated
 
   - id: ou_monon
     term: οὐ μόνον..., ἀλλὰ καί
+    speak: oe monon, allá kai
     translation:
       - niet alleen..., maar ook
+    examples:
+      - text: οὐ μόνον ὁ δοῦλος, ἀλλὰ καὶ ὁ δεσπότης φεύγει.
+        translation: Niet alleen de slaaf, maar ook de meester vlucht.
+        speak: oe monon ho doelos, allá kai ho despótès pheugei.
+        source: generated
 
   - id: autos
     term: αὐτός, αὐτή, αὐτό
+    speak: autós, autè, autó
     translation:
       - zelf (bijvoeglijk gebruikt)
+    examples:
+      - text: ὁ δεσπότης αὐτὸς τὸν ἵππον ἄγει.
+        translation: De meester leidt zelf het paard.
+        speak: ho despótès autós ton hippon agei.
+        source: generated
 
   - id: autos_2
     term: αὐτός, ὁ  # CHECK
+    speak: ho autós
     translation:
       - dezelfde
+    examples:
+      - text: ὁ αὐτὸς ξένος πάλιν ἥκει.
+        translation: Dezelfde vreemdeling is weer gekomen.
+        speak: ho autós ksenos palin hèkei.
+        source: generated
 
   - id: bios
     term: βίος, ὁ
+    speak: bios
     translation:
       - leven
+    examples:
+      - text: ὁ βίος τοῦ δούλου χαλεπός ἐστιν.
+        translation: Het leven van de slaaf is zwaar.
+        speak: ho bios toe doeloe chalepós estin.
+        source: generated
 
   - id: blepo
     term: βλέπω
+    speak: blepoo
     translation:
       - kijken
+    examples:
+      - text: πρὸς τὴν θάλατταν βλέπομεν.
+        translation: We kijken naar de zee.
+        speak: pros tèn thálattan blépomèn.
+        source: generated
 
   - id: eauton
     term: ἑαυτόν
+    speak: heautón
     translation:
       - zichzelf (accusativus)
+    examples:
+      - text: ὁ δοῦλος ἑαυτὸν κρύπτει.
+        translation: De slaaf verbergt zichzelf.
+        speak: ho doelos heautón kruptei.
+        source: generated
 
   - id: edone
     term: ἡδονή, ἡ
+    speak: hèdonè
     translation:
       - genot, vreugde
+    examples:
+      - text: ὁ οἶνος ἡδονὴν παρέχει.
+        translation: De wijn geeft genot.
+        speak: ho oinos hèdonèn paréchei.
+        source: generated
 
   - id: peri
     term: περί + gen.
+    speak: perí
     translation:
       - om, over
+    examples:
+      - text: περὶ τοῦ πολέμου λέγει.
+        translation: Hij spreekt over de oorlog.
+        speak: perí toe polémoe légei.
+        source: generated
 
   - id: pipto
     term: πίπτω, aor. ἔπεσον
+    speak: piptoo
     translation:
       - vallen
+    examples:
+      - text: ὁ ἵππος πίπτει.
+        translation: Het paard valt.
+        speak: ho hippos piptei.
+        source: generated
 
   - id: ripto
     term: ῥίπτω
+    speak: riptoo
     translation:
       - werpen, gooien
+    examples:
+      - text: τὰ ὅπλα ῥίπτουσιν.
+        translation: Ze gooien de wapens weg.
+        speak: ta hopla ríptoesin.
+        source: generated
 
   - id: sumphora
     term: συμφορά, ἡ
+    speak: sumphorá
     translation:
       - gebeurtenis
       - ongeluk
     card_per_sense: true
+    examples:
+      - text: ἡ συμφορὰ μεγάλη ἐστίν.
+        translation: Het ongeluk is groot.
+        speak: hè sumphorá megálè estín.
+        source: generated
 
   - id: tis
     term: "τίς (τί), τίνος...: (met accent!)"
+    speak: tis, ti
     translation:
       - wie, wat?
       - welk(e)?
     card_per_sense: true
+    examples:
+      - text: τίς εἶ;
+        translation: Wie ben jij?
+        speak: tis éí?
+        source: generated
 
   - id: phrontizo
     term: φροντίζω + gen.
+    speak: phrontídzoo
     translation:
       - zich bekommeren om
+    examples:
+      - text: ἡ μήτηρ τῶν τέκνων φροντίζει.
+        translation: De moeder zorgt voor de kinderen.
+        speak: hè mètèr toon téknoon phrontídzei.
+        source: generated

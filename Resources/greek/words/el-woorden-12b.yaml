@@ -7,110 +7,224 @@ meta:
 entries:
   - id: adikeo
     term: ἀδικέω
+    speak: adikéoo
     translation:
       - onrecht doen
       - onrechtvaardig (be)handelen
     card_per_sense: true
+    examples:
+      - text: ὁ δεσπότης τοὺς δούλους ἀδικεῖ.
+        translation: De meester behandelt de slaven onrechtvaardig.
+        speak: ho despótès toes doeloes adikéí.
+        source: generated
 
   - id: ara
     term: ἄρα
+    speak: ara
     translation:
       - geeft aan dat er een vraagzin volgt
+    examples:
+      - text: ἆρα μένεις;
+        translation: Blijf je?
+        speak: ara méneis?
+        source: generated
 
   - id: kratistos
     term: κράτιστος
+    speak: kratistos
     translation:
       - sterkst, best
       - zeer sterk, zeer goed
     card_per_sense: true
+    examples:
+      - text: ὁ Ἀχιλλεὺς κράτιστος τῶν Ἀχαιῶν ἐστιν.
+        translation: Achilles is de sterkste van de Grieken.
+        speak: ho Achilleus kratistos toon Achaióón estin.
+        source: generated
 
   - id: mallon
     term: μᾶλλον
+    speak: mallon
     translation:
       - meer (bijwoord)
+    examples:
+      - text: τὸν οἶνον μᾶλλον φιλῶ.
+        translation: Ik houd meer van de wijn.
+        speak: ton oinon mallon philóó.
+        source: generated
 
   - id: meizon
     term: μείζων
+    speak: méídzoon
     forms: { genitive: μείζονος }
     translation:
       - groter
+    examples:
+      - text: ὁ λέων μείζων ἐστὶ τοῦ ἵππου.
+        translation: De leeuw is groter dan het paard.
+        speak: ho léoon méídzoon esti toe hippoe.
+        source: generated
 
   - id: nux
     term: νύξ, ἡ
+    speak: nuks
     forms: { genitive: νυκτός }
     translation:
       - nacht
+    examples:
+      - text: ἡ νὺξ μακρά ἐστιν.
+        translation: De nacht is lang.
+        speak: hè nuks makrá estin.
+        source: generated
 
   - id: nuktos
     term: νυκτός (τῆς)
+    speak: nuktos
     translation:
       - "'s nachts, in de nacht"
+    examples:
+      - text: νυκτὸς οἱ πολέμιοι ἥκουσιν.
+        translation: "'s Nachts komen de vijanden."
+        speak: nuktos hoi polémioi hèkoesin.
+        source: generated
 
   - id: beltistos
     term: βέλτιστος
+    speak: beltistos
     translation:
       - best
       - zeer goed
     card_per_sense: true
+    examples:
+      - text: ὦ βέλτιστε, ἐνθάδε μένε.
+        translation: Beste vriend, blijf hier.
+        speak: oo beltistè, enthádè ménè.
+        source: generated
 
   - id: blapto
     term: βλάπτω
+    speak: blaptoo
     translation:
       - schade toebrengen, benadelen
+    examples:
+      - text: ὁ πόλεμος τὴν χώραν βλάπτει.
+        translation: De oorlog brengt het land schade toe.
+        speak: ho pólemos tèn chóóran blaptei.
+        source: generated
 
   - id: boule
     term: βουλή, ἡ
+    speak: boelè
     translation:
       - plan, besluit
       - raad, advies
     card_per_sense: true
+    examples:
+      - text: ἡ βουλὴ τοῦ στρατηγοῦ σοφή ἐστιν.
+        translation: Het plan van de legeraanvoerder is wijs.
+        speak: hè boelè toe stratègóé sophè estin.
+        source: generated
 
   - id: gignosko
     term: γιγνώσκω
+    speak: gingnóóskoo
     translation:
       - (leren) kennen
       - inzien, begrijpen
     card_per_sense: true
+    examples:
+      - text: τὸν ξένον οὐ γιγνώσκω.
+        translation: Ik ken de vreemdeling niet.
+        speak: ton ksenon oe gingnóóskoo.
+        source: generated
 
   - id: dia_touto
     term: διὰ τοῦτο
+    speak: diá toeto
     translation:
       - "daarom (lett.: door dát)"
+    examples:
+      - text: διὰ τοῦτο φεύγομεν.
+        translation: Daarom vluchten we.
+        speak: diá toeto phéugomèn.
+        source: generated
 
   - id: dolos
     term: δόλος, ὁ
+    speak: dolos
     translation:
       - list
+    examples:
+      - text: δόλῳ τὴν πόλιν λαμβάνουσιν.
+        translation: Met een list nemen ze de stad in.
+        speak: doloo tèn polin lambánoesin.
+        source: generated
 
   - id: zeus
     term: Ζεύς, ὁ
+    speak: Dzeus
     forms: { genitive: Διός }
     translation:
       - Zeus
+    examples:
+      - text: ὁ Ζεὺς τῶν θεῶν ἄρχει.
+        translation: Zeus heerst over de goden.
+        speak: ho Dzeus toon theóón archei.
+        source: generated
 
   - id: pleistos
     term: πλεῖστος
+    speak: pleistos
     translation:
       - meeste(n)
       - zeer vele(n)
     card_per_sense: true
+    examples:
+      - text: οἱ πλεῖστοι φεύγουσιν.
+        translation: De meesten vluchten.
+        speak: hoi pleistoi phéugoesin.
+        source: generated
 
   - id: pleon
     term: πλέον
+    speak: pleon
     translation:
       - meer (bijwoord)
+    examples:
+      - text: πλέον σῖτον ἔχομεν.
+        translation: We hebben meer eten.
+        speak: pleon siton échomèn.
+        source: generated
 
   - id: poteros
     term: πότερος;
+    speak: póteros
     translation:
       - wie van beide(n)?
+    examples:
+      - text: πότερος ἀμείνων ἐστίν;
+        translation: Wie van beiden is beter?
+        speak: póteros améínoon estín?
+        source: generated
 
   - id: sophia
     term: σοφία, ἡ
+    speak: sophía
     translation:
       - wijsheid
+    examples:
+      - text: ἡ σοφία τοῦ ἡγεμόνος μεγάλη ἐστίν.
+        translation: De wijsheid van de leider is groot.
+        speak: hè sophía toe hègemónos megálè estín.
+        source: generated
 
   - id: os
     term: ὡς
+    speak: hoos
     translation:
       - (zo)als
+    examples:
+      - text: ὡς λέων μάχεται.
+        translation: Hij vecht als een leeuw.
+        speak: hoos léoon máchetai.
+        source: generated
