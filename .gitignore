@@ -17,6 +17,7 @@
 *.jks
 *.keystore
 keystore.properties
+/app/release/
 
 # Secrets
 .env
