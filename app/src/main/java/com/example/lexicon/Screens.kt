@@ -151,6 +151,7 @@ fun ModeScreen(
     onOptions: (RaceOptions) -> Unit,
     mistakes: Map<String, Int>,
     onLearn: () -> Unit,
+    onCheck: () -> Unit,
     onRace: () -> Unit,
     onCorrect: () -> Unit,
 ) {
@@ -161,7 +162,7 @@ fun ModeScreen(
         CenterColumn {
             Title(lang.name)
             ChunkyButton("Learn", color, onLearn)
-            ChunkyButton("Test", SoonGrey, {}, note = "soon", enabled = false)
+            ChunkyButton("Check", color, onCheck)
             val hasUnits = lang.activeUnits(options).isNotEmpty()
             ChunkyButton("Race!", color, onRace, note = if (!hasUnits) "no units selected" else null, enabled = hasUnits)
             val count = mistaken.size
@@ -420,6 +421,11 @@ private fun LanguageSettings(
             }
         }
 
+        SectionTitle("Check")
+        Stepper("Translations to choose from", options.choices, ChoicesRange) { onChange(options.copy(choices = it)) }
+        SwitchRow("Add mistakes to “Correct mistakes”", options.checkMistakes) { onChange(options.copy(checkMistakes = it)) }
+        SwitchRow("Repeat mistaken words at the end", options.checkRepeat) { onChange(options.copy(checkRepeat = it)) }
+
         SectionTitle("Race")
         Heading("Direction")
         Row(horizontalArrangement = Arrangement.spacedBy(12.dp)) {
@@ -533,7 +539,7 @@ fun CorrectedScreen(color: Color, mistakes: Int, cleared: Int, left: Int, onAgai
 }
 
 @Composable
-private fun Applause() {
+fun Applause() {
     val clap by rememberInfiniteTransition(label = "clap").animateFloat(
         initialValue = 1f,
         targetValue = 1.25f,

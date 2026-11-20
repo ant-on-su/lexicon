@@ -49,8 +49,6 @@ import com.example.lexicon.ui.theme.Ink
 import com.example.lexicon.ui.theme.Muted
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
-import kotlin.math.PI
-import kotlin.math.sin
 
 private enum class Look { Idle, Selected, Good, Bad }
 
@@ -239,8 +237,7 @@ private fun RaceCard(label: AnnotatedString, sub: String?, look: Look, accent: C
             val scale = appear.value * gone
             scaleX = scale
             scaleY = scale
-            val p = shake.value
-            translationX = sin(p * 6 * PI).toFloat() * 14.dp.toPx() * (1 - p)
+            translationX = shakeOffset(shake.value) * 14.dp.toPx()
         },
         shape = RoundedCornerShape(18.dp),
         depth = 4.dp,

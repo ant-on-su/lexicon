@@ -2,6 +2,7 @@ package com.example.lexicon
 
 import androidx.compose.animation.core.Animatable
 import androidx.compose.animation.core.LinearEasing
+import androidx.compose.animation.core.LinearOutSlowInEasing
 import androidx.compose.animation.core.Spring
 import androidx.compose.animation.core.animateDpAsState
 import androidx.compose.animation.core.spring
@@ -47,6 +48,8 @@ import androidx.compose.ui.unit.sp
 import com.example.lexicon.ui.theme.Ink
 import com.example.lexicon.ui.theme.Muted
 import com.example.lexicon.ui.theme.Pastels
+import kotlin.math.PI
+import kotlin.math.cos
 import kotlin.math.sin
 import kotlin.random.Random
 
@@ -160,6 +163,38 @@ fun Confetti(modifier: Modifier = Modifier, pieces: Int = 120) {
                     alpha = if (t < 0.8f) 1f else (1f - t) / 0.2f,
                 )
             }
+        }
+    }
+}
+
+/** A sideways shake as its progress [p] goes from 0 to 1: the offset, from -1 to 1, dying out. */
+fun shakeOffset(p: Float): Float = sin(p * 6 * PI).toFloat() * (1 - p)
+
+private class Grain(random: Random) {
+    val x = random.nextFloat()
+    val y = random.nextFloat()
+    val angle = random.nextFloat() * 2 * PI.toFloat()
+    val speed = 0.4f + random.nextFloat() * 0.8f
+    val radius = 1.5f + random.nextFloat() * 2.5f
+    val delay = random.nextFloat() * 0.3f
+}
+
+/** Grains flying apart and fading, once, from all over its area: put it over something that fades out to dissolve it. */
+@Composable
+fun Dissolve(color: Color, modifier: Modifier = Modifier, grains: Int = 80) {
+    val progress = remember { Animatable(0f) }
+    val bits = remember { List(grains) { Grain(Random) } }
+    LaunchedEffect(Unit) { progress.animateTo(1f, tween(900, easing = LinearOutSlowInEasing)) }
+    Canvas(modifier) {
+        val t = progress.value
+        if (t >= 1f) return@Canvas
+        val reach = 48.dp.toPx()
+        bits.forEach { bit ->
+            val p = ((t - bit.delay) / (1f - bit.delay)).coerceIn(0f, 1f)
+            val x = bit.x * size.width + cos(bit.angle) * reach * bit.speed * p
+            // They drift up a little as they go.
+            val y = bit.y * size.height + (sin(bit.angle) * bit.speed - 0.5f) * reach * p
+            drawCircle(color, radius = bit.radius.dp.toPx() * (1f - p / 2), center = Offset(x, y), alpha = 1f - p)
         }
     }
 }

@@ -1,0 +1,122 @@
+Attic Greek: every vowel, diphthong and consonant, long and short, breathings, clusters, geminates
+
+Original: Χαίρετε, ὦ, ἄνδρες, Ἀθηναῖοι, ἄγγελος, θάλαττα, φύσει, ζῷον, ψυχή, ξένος, οὐδέν, βασιλεύς, γνῶθι, σεαυτόν, ῥήτωρ, ἡμέρα, τιμή, σῦκον, υἱός, κτῆμα.
+
+== Dutch voice (Erasmian pronunciation), voices nl-* ==
+
+Spoken text: kairète, oo, andrès, ateenaioi, angèlos, tallatta, pussei, zdooön, psukee, ksènos, oedèn, bassilèoes, gnooti, sèauton, rheetoor, heemèraa, tiemee, suukon, huïos, kteema.
+
+Respelling conventions:
+  - vowels: η ee, ω oo, υ u, ου oe, ει ei (Erasmian; Classical is [eː]), οι oi, αι ai, αυ au, ευ eoe, υι uï; long ᾱ aa, ῑ ie, ῡ uu; an iota subscript is not spoken
+  - consonants: θ t, φ p, χ k (Dutch cannot aspirate), ζ zd, ξ ks, ψ ps, γγ ng, ῥ rh; rough breathing is h
+  - σ between vowels is ss (a single s would be read as z); a short vowel in a stressed open syllable is closed with a doubled consonant (tallatta, bassilèoes), because Dutch would lengthen it
+  - è for a short or unstressed ε, so that it is not reduced to a schwa; a trema (ö, ï) separates two vowels
+
+Pitfalls in general:
+  - Dutch g is a fricative [ɣ], not the stop [g] of γ; probably not fixable in the spelling.
+  - No aspirates and no geminates: φ θ χ sound like plain p t k, and ττ like a single t.
+  - Stress follows Dutch rules; the Attic pitch accent cannot be written.
+  - Dutch ui [œy], eu [ø] and ij/ei [ɛi] are not the Greek sounds, hence the respellings uï and eoe.
+  - Unusual clusters (ψ-, ξ-, κτ-, γν-) may get an inserted schwa.
+
+Word by word (original -> respelling, then what to listen for):
+   1. Χαίρετε,  ->  kairète,
+      χ→k, unaspirated; αι is a glide; è keeps the unstressed final ε from becoming a schwa
+   2. ὦ,  ->  oo,
+      long ω: oo is [oː], Attic [ɔː] is more open; it must be clearly longer than a short o
+   3. ἄνδρες,  ->  andrès,
+      νδρ cluster; r should be trilled; the final ες must stay a full vowel, not [əs]
+   4. Ἀθηναῖοι,  ->  ateenaioi,
+      θ→t; long η as ee; two glides in a row, ai + oi, not 'aj-oj'
+   5. ἄγγελος,  ->  angèlos,
+      γγ is [ŋg]; Dutch ng gives only [ŋ], so the g is lost; è keeps the middle ε full
+   6. θάλαττα,  ->  tallatta,
+      ττ is a long [tː], Dutch has no geminates; the ll only closes the first syllable so that the short α is not lengthened
+   7. φύσει,  ->  pussei,
+      φ→p, not f; υ is [y], Dutch u; ss for the σ between vowels, a single s would be z; ει as ei (Erasmian; Classical is [eː])
+   8. ζῷον,  ->  zdooön,
+      ζ is [zd], not [z] or [dz]; ῳ is a long ō followed by a separate short o: the trema makes two syllables
+   9. ψυχή,  ->  psukee,
+      ψ→ps at the start of a word; υ is long here, [yː]; χ→k; η→ee
+  10. ξένος,  ->  ksènos,
+      ξ→ks at the start of a word; è keeps the short ε short (Dutch e in an open stressed syllable would be long)
+  11. οὐδέν,  ->  oedèn,
+      ου→oe [u]; δ is a plain d; è keeps the final ε full
+  12. βασιλεύς,  ->  bassilèoes,
+      β is a real [b]; ss between vowels; ευ→èoe, because Dutch eu is [ø]; the closed first syllable keeps α short
+  13. γνῶθι,  ->  gnooti,
+      γ is a stop [g]: Dutch g is a throaty fricative, the most likely failure; γν at the start of a word; long ω; θι→ti with a short i
+  14. σεαυτόν,  ->  sèauton,
+      initial σ is [s]; è keeps ε full; αυ is a glide; the final ον has a short o
+  15. ῥήτωρ,  ->  rheetoor,
+      ῥ is a voiceless rho, here just rh; η→ee; ω→oo; the final r should be trilled and audible
+  16. ἡμέρα,  ->  heemèraa,
+      rough breathing: the initial h must be heard; η→ee; è for ε; the final α is long (ᾱ after ρ): aa
+  17. τιμή,  ->  tiemee,
+      ι is long (ῑ): ie; η→ee
+  18. σῦκον,  ->  suukon,
+      υ is long: uu [yː]; the final on is short
+  19. υἱός,  ->  huïos,
+      rough breathing; υι is [yi]: the trema stops Dutch ui [œy] from forming
+  20. κτῆμα.  ->  kteema.
+      κτ cluster at the start of a word, watch for an inserted schwa ('kətee'); η→ee
+
+== German voice, voices de-* ==
+
+Spoken text: kairätä, oh, andräss, atähnaioi, anggäloss, tallatta, püssee, sdoh-onn, psükäh, ksennoss, udenn, bassilä-uss, gnohti, ßäautonn, rhähtohr, hähmärah, tiemäh, ßühkonn, hüioss, ktähma.
+
+Respelling conventions:
+  - vowels: η äh, ω oh, υ ü, ου u, ει ee (Classical [eː]; German ei is [aɪ]), οι oi, αι ai, αυ au, ευ ä-u with a hyphen (German eu is [ɔɪ]), υι üi; long ᾱ ah, ῑ ie, ῡ üh; an iota subscript is not spoken
+  - consonants: θ t, φ p, χ k (German p, t, k are aspirated, which suits φ θ χ), ζ sd, ξ ks, ψ ps, γγ ngg, ῥ rh; rough breathing is h
+  - σ at the start of a word is ß (s before a vowel would be [z]), σ between vowels is ss
+  - short vowels get a doubled consonant (onn, oss, tallatta); long vowels take h or doubling (äh, oh, ah, üh, ie)
+  - ä for a short or unstressed ε, so that it is not reduced to a schwa; a hyphen separates two vowels, because an h before a vowel is pronounced (as in Ahorn)
+
+Pitfalls in general:
+  - r is uvular, and after a vowel it becomes [ɐ]; it is not the trill of ρ.
+  - π τ κ are aspirated too, though Greek has them plain.
+  - No real geminates (ττ, γγ): a doubled letter only shortens the vowel before it.
+  - Stress follows German rules; the Attic pitch accent cannot be written.
+  - A hyphen may add a tiny pause; an ß at the start of a word is unusual, check that it is read as [s]; unusual clusters (ψ-, κτ-, γν-) may get an inserted schwa.
+
+Word by word (original -> respelling, then what to listen for):
+   1. Χαίρετε,  ->  kairätä,
+      χ→k gets a natural puff; ai is [aɪ]; ä keeps the unstressed ε from becoming a schwa
+   2. ὦ,  ->  oh,
+      long ω: oh is [oː]; it must be clearly longer than a short o
+   3. ἄνδρες,  ->  andräss,
+      r will be uvular or vowel-like instead of trilled; ä keeps ε full
+   4. Ἀθηναῖοι,  ->  atähnaioi,
+      θ→t with a puff; long open η as äh [ɛː]; two glides in a row, ai + oi
+   5. ἄγγελος,  ->  anggäloss,
+      γγ is [ŋg]; ngg should give both sounds, if only [ŋ] is heard it is German ng again
+   6. θάλαττα,  ->  tallatta,
+      ττ is a long [tː], German has no real geminates; the ll keeps the first α short
+   7. φύσει,  ->  püssee,
+      φ→p with a puff, not f; ü is [y]; ss for the σ between vowels; ει is written ee ([eː], the Classical value) because German ei is [aɪ]
+   8. ζῷον,  ->  sdoh-onn,
+      ζ is [zd], written sd; a long ō and then a separate short o: the hyphen marks the hiatus (an h would be pronounced); expect a tiny pause
+   9. ψυχή,  ->  psükäh,
+      ps at the start of a word; ü is long here, [yː]; χ→k; long open η as äh
+  10. ξένος,  ->  ksennoss,
+      ks at the start of a word; nn keeps the short ε short; short o in the final oss
+  11. οὐδέν,  ->  udenn,
+      ου→u [uː]; δ is a plain d; nn keeps ε a full short vowel
+  12. βασιλεύς,  ->  bassilä-uss,
+      β is a real [b]; ss between vowels; ευ→ä-u with a hyphen, because German eu/äu is [ɔɪ]; expect a tiny pause
+  13. γνῶθι,  ->  gnohti,
+      γ is [g] in German, this is where German should beat Dutch; long ω as oh; θ→t with a puff
+  14. σεαυτόν,  ->  ßäautonn,
+      ß so that the initial s is [s], not [z]; ä keeps ε full; αυ is a glide; nn keeps the o short
+  15. ῥήτωρ,  ->  rhähtohr,
+      rh; long open η as äh; long ω as oh; the final r tends to become a vowel [ɐ]: expect 'tohɐ'
+  16. ἡμέρα,  ->  hähmärah,
+      the initial h must be heard; äh; ä for ε; the final α is long (ᾱ after ρ): ah
+  17. τιμή,  ->  tiemäh,
+      ι is long (ῑ): ie [iː]; äh
+  18. σῦκον,  ->  ßühkonn,
+      ß for the initial σ; üh is a long [yː]; nn keeps the o short
+  19. υἱός,  ->  hüioss,
+      rough breathing; υι is [yi]; check that 'io' is not read as [jo]
+  20. κτῆμα.  ->  ktähma.
+      κτ cluster at the start of a word, watch for an inserted schwa; long open η as äh

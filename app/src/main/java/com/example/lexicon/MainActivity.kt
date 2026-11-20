@@ -60,6 +60,7 @@ private sealed interface Screen {
     data object Languages : Screen
     data class Modes(val lang: Language) : Screen
     data class Learning(val lang: Language) : Screen
+    data class Checking(val lang: Language) : Screen
     data class Start(val lang: Language) : Screen
     data class Racing(val lang: Language, val options: RaceOptions) : Screen
     data class Results(val lang: Language, val options: RaceOptions, val result: RaceResult) : Screen
@@ -84,6 +85,7 @@ private fun LexiconApp(prefs: Prefs, feedback: Feedback, speech: Speech) {
             Screen.Languages -> s
             is Screen.Modes -> Screen.Languages
             is Screen.Learning -> Screen.Modes(s.lang)
+            is Screen.Checking -> Screen.Modes(s.lang)
             is Screen.Start -> Screen.Modes(s.lang)
             is Screen.Racing -> Screen.Start(s.lang)
             is Screen.Results -> Screen.Start(s.lang)
@@ -124,7 +126,12 @@ private fun LexiconApp(prefs: Prefs, feedback: Feedback, speech: Speech) {
                         prefs.saveOptions(s.lang.folder, it)
                     },
                     mistakes = mistakes,
-                    onLearn = { screen = Screen.Learning(s.lang) },
+                    onLearn = {
+                        // Check follows Learn: it opens next at the unit Learn ends at.
+                        prefs.saveCheckUnit(s.lang.folder, null)
+                        screen = Screen.Learning(s.lang)
+                    },
+                    onCheck = { screen = Screen.Checking(s.lang) },
                     onRace = { screen = Screen.Start(s.lang) },
                     onCorrect = { screen = Screen.Correcting(s.lang, options) },
                 )
@@ -136,6 +143,24 @@ private fun LexiconApp(prefs: Prefs, feedback: Feedback, speech: Speech) {
                 start = remember(s.lang) { prefs.learnAt(s.lang.folder) },
                 onPlace = { unit, entry -> prefs.saveLearnAt(s.lang.folder, unit, entry) },
             )
+            is Screen.Checking -> {
+                val options = remember(s.lang) { prefs.options(s.lang.folder) }
+                val start = remember(s.lang) {
+                    val id = prefs.checkUnit(s.lang.folder) ?: prefs.learnAt(s.lang.folder)?.first
+                    (s.lang.units.find { it.id == id } ?: s.lang.units.first()).also { prefs.saveCheckUnit(s.lang.folder, it.id) }
+                }
+                CheckScreen(
+                    lang = s.lang,
+                    color = colorOf(s.lang),
+                    speech = speech,
+                    options = options,
+                    start = start,
+                    onUnit = { prefs.saveCheckUnit(s.lang.folder, it.id) },
+                    onCue = { feedback.play(it, feedbackOptions) },
+                    onMiss = { if (options.checkMistakes) prefs.addMistake(s.lang.folder, it.id) },
+                    onDone = { screen = Screen.Modes(s.lang) },
+                )
+            }
             is Screen.Start -> {
                 val options = remember(s.lang) { prefs.options(s.lang.folder) }
                 val extra = remember(s.lang) { s.lang.poorlyLearned(prefs.mistakes(s.lang.folder)).size }
