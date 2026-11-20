@@ -3,6 +3,6 @@
 
     <style name="Theme.Lexicon" parent="android:Theme.Material.Light.NoActionBar">
         <!-- System splash (launcher icon) until the first frame, then the Compose Splash poster. -->
-        <item name="android:windowSplashScreenBackground">@color/ic_launcher_background</item>
+        <item name="android:windowSplashScreenBackground">@color/splash_background</item>
     </style>
 </resources>

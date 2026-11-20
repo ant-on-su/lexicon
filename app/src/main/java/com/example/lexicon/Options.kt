@@ -16,6 +16,10 @@ data class RaceOptions(
     val rounds: Int = 3,
     val showForms: Boolean = false,
     val showGender: Boolean = false,
+    /** Check: translations to choose from, whether its mistakes go to "Correct mistakes", and whether mistaken words come back. */
+    val choices: Int = 4,
+    val checkMistakes: Boolean = true,
+    val checkRepeat: Boolean = false,
 )
 
 /** Sound and vibration, shared by all languages. A cue's sound is a [Tone] name, a phone sound's URI, or "" for none. */
@@ -42,6 +46,9 @@ class Prefs(context: Context) {
         rounds = prefs.getInt("$lang.rounds", 3).coerceIn(RoundsRange),
         showForms = prefs.getBoolean("$lang.showForms", false),
         showGender = prefs.getBoolean("$lang.showGender", false),
+        choices = prefs.getInt("$lang.choices", 4).coerceIn(ChoicesRange),
+        checkMistakes = prefs.getBoolean("$lang.checkMistakes", true),
+        checkRepeat = prefs.getBoolean("$lang.checkRepeat", false),
     )
 
     fun saveOptions(lang: String, options: RaceOptions) = prefs.edit {
@@ -51,6 +58,9 @@ class Prefs(context: Context) {
         putInt("$lang.rounds", options.rounds)
         putBoolean("$lang.showForms", options.showForms)
         putBoolean("$lang.showGender", options.showGender)
+        putInt("$lang.choices", options.choices)
+        putBoolean("$lang.checkMistakes", options.checkMistakes)
+        putBoolean("$lang.checkRepeat", options.checkRepeat)
     }
 
     fun feedback() = FeedbackOptions(
@@ -83,6 +93,11 @@ class Prefs(context: Context) {
         putString("$lang.learnUnit", unit)
         putString("$lang.learnEntry", entry)
     }
+
+    /** The unit Check was left at. Opening Learn clears it, so Check then follows Learn. */
+    fun checkUnit(lang: String): String? = prefs.getString("$lang.checkUnit", null)
+
+    fun saveCheckUnit(lang: String, unit: String?) = prefs.edit { putString("$lang.checkUnit", unit) }
 
     fun best(key: String): Long? = prefs.getLong("best.$key", -1L).takeIf { it >= 0 }
 

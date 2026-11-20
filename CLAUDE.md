@@ -24,13 +24,14 @@ After making changes, build and run lint and unit tests before calling a task do
 - `Race.kt`: pure race logic (board, refill, card picking). Compose snapshot state, no UI. `PENALTY_MS`, `RaceResult`.
 - `Options.kt`: `RaceOptions`, `FeedbackOptions`, `Prefs` (SharedPreferences: options per language, sound/vibration and best times), `bestKey()`.
 - `Speech.kt`: Learn's speaker: the word's audio file if there is one, else the phone's text-to-speech (not for Latin and Greek).
-- `LearnScreen.kt`: Learn: loading animation, then a pager over every entry of every unit, a units drawer on the right; the place is saved in `Prefs.learnAt`.
+- `LearnScreen.kt`: Learn: loading animation, then a pager over every entry of every unit, a units drawer on the right (`UnitDrawer`, shared with Check); the place is saved in `Prefs.learnAt`.
+- `Check.kt`: pure Check logic (`Check`, `Question`): one unit's words in random order, options, hints, mistakes. `CheckScreen.kt`: its UI and end-of-unit stats.
 - `Feedback.kt`: sound and vibration per `Cue` (countdown, go, correct, mistake, finish, new best). Built-in `Tone`s are synthesized in code (no audio files) and played from static `AudioTrack`s; phone sounds via `RingtoneManager`.
 - `MainActivity.kt`: screen navigation as a `Screen` sealed interface in `remember` state, plus `BackHandler`. No nav library, no ViewModel.
 - `Screens.kt`: Language (+ general settings sheet: word folder), Mode (+ language settings sheet: Units, then a section per mode), Start, Results. `RaceScreen.kt`: countdown, timer, board UI.
-- `Components.kt`: `Chunky` / `ChunkyButton` (press-down button), `FitText` (auto-size text), `Confetti`, `formatTime`.
+- `Components.kt`: `Chunky` / `ChunkyButton` (press-down button), `FitText` (auto-size text), `Confetti`, `Dissolve` (particles), `shakeOffset`, `formatTime`.
 - `ui/theme/`: colours (`Pastels` per language, `Cream`, `Ink`, …) and `LexiconTheme`. Light only, no dynamic colour.
-- Tests in `app/src/test/`: `WordsTest`, `RaceTest`. They read the demo files and the full lists via `wordFolders` (`File("demo")`, `File("../Resources")`).
+- Tests in `app/src/test/`: `WordsTest`, `RaceTest`, `CheckTest`. They read the demo files and the full lists via `wordFolders` (`File("demo")`, `File("../Resources")`).
 
 ## Word data
 
@@ -48,7 +49,16 @@ After making changes, build and run lint and unit tests before calling a task do
 - Pairs 5–10 (default 6), rounds 3–10 (default 3). Units are stored as excluded, so new units are on by default. An "All units" tri-state toggle can clear them all; Race! is then disabled until a unit is picked.
 - Mistakes are counted per card id and per language over all races (`Prefs.mistakes`, from all units, saved at each miss). "Correct mistakes" (below Race!) shows the number of mistaken words: pink, or red while some are poorly learned. Below 3 words it only shows them with their translations. From 3 it runs an untimed race over all of them, highest count first, with the same retries; words matched without a mistake are cleared, and clearing all is applauded.
 - Poorly learned words (3+ mistakes, `POORLY_LEARNED`, from any unit) are added to every race on top of pairs × rounds, spread over it at random; the last round is then shorter. Matched without a mistake, they're cleared. Mistakes never block a race.
-- Learn and Race! exist; Test is a "soon" placeholder. Learn shows all units, whatever the unit selection.
+- Learn, Check and Race! exist. Learn and Check show all units, whatever the unit selection.
+
+## Check rules (agreed with the user)
+
+- One unit at a time, language → Dutch only, every word once in random order. Unit drawer as in Learn. Opening Learn clears `Prefs.checkUnit`, so Check then opens at Learn's unit; otherwise it opens where it was left.
+- 3–5 options (`choices`, default 4), one right; wrong ones are random from the unit (other units if too few), never sharing a meaning (`conflictsWith`). A `card_per_sense` card shows all senses, gets at most 3 options, and other multi-sense cards are its preferred wrong ones (avoided for single-sense cards).
+- Right: green, grows, the others dissolve, then the next word after 1.8 s (tap it to skip). Wrong: red, shakes, a mistake. Tapping the term speaks it.
+- Hint: the first tap shows the first example phrase (without translation; tap to play), each next tap removes a wrong option and is counted; one untapped wrong option always stays. Grammar shows gender and the term's forms, never the Dutch ones.
+- Settings per language: add mistakes to `Prefs.mistakes` (default on), repeat mistaken words at the end until right first time (default off).
+- End: applause, confetti, "<unit> is learned!", words without mistakes, mistakes per word and hints per word (highest first); Again, Next unit, Done.
 
 ## Build gotchas
 

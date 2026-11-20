@@ -9,6 +9,7 @@ import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.ColumnScope
 import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxSize
@@ -135,7 +136,6 @@ private fun Words(
             ?: pages.indexOfFirst { it.unit.id == unit }.coerceAtLeast(0)
     }
     val pager = rememberPagerState(first) { pages.size }
-    val drawer = rememberDrawerState(DrawerValue.Closed)
     val scope = rememberCoroutineScope()
     val page = pages[pager.currentPage]
 
@@ -145,6 +145,49 @@ private fun Words(
             onPlace(pages[it].unit.id, pages[it].entry.id)
         }
     }
+
+    UnitDrawer(lang, color, page.unit, onPick = { i -> pager.scrollToPage(unitStarts[i]) }) {
+        HorizontalPager(
+            pager,
+            Modifier.weight(1f).fillMaxWidth(),
+            contentPadding = PaddingValues(horizontal = 20.dp),
+            pageSpacing = 12.dp,
+        ) { i ->
+            WordCard(pages[i].entry, lang, color, speech)
+        }
+        Row(
+            Modifier.fillMaxWidth().padding(start = 20.dp, end = 20.dp, bottom = 16.dp),
+            verticalAlignment = Alignment.CenterVertically,
+        ) {
+            val go = { to: Int -> scope.launch { pager.animateScrollToPage(to) }; Unit }
+            StepButton("‹ Previous", Color.White, pager.currentPage > 0, Modifier.weight(1f)) { go(pager.targetPage - 1) }
+            Text(
+                "${page.index + 1} / ${page.unit.entries.size}",
+                Modifier.width(88.dp),
+                color = Muted,
+                fontSize = 16.sp,
+                fontWeight = FontWeight.Bold,
+                textAlign = TextAlign.Center,
+            )
+            StepButton("Next ›", color, pager.currentPage < pages.lastIndex, Modifier.weight(1f)) { go(pager.targetPage + 1) }
+        }
+    }
+}
+
+/**
+ * The [current] unit's title and a ☰ button above [content]. The button opens the units drawer from the right,
+ * where picking a unit runs [onPick] with its index, then closes the drawer.
+ */
+@Composable
+fun UnitDrawer(
+    lang: Language,
+    color: Color,
+    current: WordUnit,
+    onPick: suspend (Int) -> Unit,
+    content: @Composable ColumnScope.() -> Unit,
+) {
+    val drawer = rememberDrawerState(DrawerValue.Closed)
+    val scope = rememberCoroutineScope()
     BackHandler(drawer.isOpen) { scope.launch { drawer.close() } }
 
     // The drawer slides in from the right: laid out right-to-left, with the contents back to the app's direction.
@@ -156,9 +199,9 @@ private fun Words(
             drawerContent = {
                 ModalDrawerSheet(Modifier.width(300.dp), drawerContainerColor = Cream) {
                     CompositionLocalProvider(LocalLayoutDirection provides direction) {
-                        UnitList(lang, color, current = page.unit) { i ->
+                        UnitList(lang, color, current) { i ->
                             scope.launch {
-                                pager.scrollToPage(unitStarts[i])
+                                onPick(i)
                                 drawer.close()
                             }
                         }
@@ -170,7 +213,7 @@ private fun Words(
                 Column(Modifier.fillMaxSize()) {
                     Row(Modifier.fillMaxWidth().padding(start = 24.dp, end = 16.dp, top = 16.dp), verticalAlignment = Alignment.CenterVertically) {
                         Text(
-                            page.unit.title,
+                            current.title,
                             Modifier.weight(1f),
                             color = Muted,
                             fontSize = 18.sp,
@@ -182,30 +225,7 @@ private fun Words(
                             Text("☰", fontSize = 24.sp, color = Muted)
                         }
                     }
-                    HorizontalPager(
-                        pager,
-                        Modifier.weight(1f).fillMaxWidth(),
-                        contentPadding = PaddingValues(horizontal = 20.dp),
-                        pageSpacing = 12.dp,
-                    ) { i ->
-                        WordCard(pages[i].entry, lang, color, speech)
-                    }
-                    Row(
-                        Modifier.fillMaxWidth().padding(start = 20.dp, end = 20.dp, bottom = 16.dp),
-                        verticalAlignment = Alignment.CenterVertically,
-                    ) {
-                        val go = { to: Int -> scope.launch { pager.animateScrollToPage(to) }; Unit }
-                        StepButton("‹ Previous", Color.White, pager.currentPage > 0, Modifier.weight(1f)) { go(pager.targetPage - 1) }
-                        Text(
-                            "${page.index + 1} / ${page.unit.entries.size}",
-                            Modifier.width(88.dp),
-                            color = Muted,
-                            fontSize = 16.sp,
-                            fontWeight = FontWeight.Bold,
-                            textAlign = TextAlign.Center,
-                        )
-                        StepButton("Next ›", color, pager.currentPage < pages.lastIndex, Modifier.weight(1f)) { go(pager.targetPage + 1) }
-                    }
+                    content()
                 }
             }
         }
